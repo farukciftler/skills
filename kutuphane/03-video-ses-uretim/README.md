@@ -47,7 +47,7 @@ Mass-produces 9:16 vertical physics Reels/Shorts/TikToks with no window, no edit
 Names and optimises functional-audio releases for YouTube — healing music, 432 Hz / 528 Hz / solfeggio, binaural and delta beds, sleep, meditation, study, spa, reiki, lo-fi, ambient — covering the track name, the search title, description, chapters, tags, hashtags, playlist and series architecture, plus the claim and duplication gates that keep a Suno-fed catalogue monetisable. Use whenever a track or long-form upload needs a title or rename, a batch needs a naming system, or titles need auditing for truncation, health-claim risk, false duration or templated repetition. Trigger on "şarkı ismi ne olsun", "youtube başlığı yaz", "432 hz videosuna isim", "healing music kanalı", "başlık optimizasyonu", "hangi keyword'ü hedefleyelim", "bu isim aratılır mı", "AI diye demonetize olur muyum", "seri isimlendirmesi", "playlist ismi", "uzun format başlığı". Use it even when someone only says "isim bul" or "başlık" about a music upload — on YouTube the name IS the distribution.
 
 - **Ölçü:** 10.730 bayt · 7 ek dosya · script içerir · referans dosyaları var
-- **Kaynak:** ~/Documents/GitHub/weftrecords/.claude/skills/healing-audio-youtube-seo, ~/projects/reelsindustry/.claude/skills/healing-audio-youtube-seo, ~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo, ~/Documents/GitHub/reelsindustry/.claude/skills/healing-audio-youtube-seo
+- **Kaynak:** ~/Documents/GitHub/weftrecords/.claude/skills/healing-audio-youtube-seo, ~/projects/reelsindustry/.claude/skills/healing-audio-youtube-seo, ~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo, ~/Documents/GitHub/reelsindustry/.claude/skills/healing-audio-youtube-seo, claude.ai senkronu (efemer önbellek)
 
 ## `kling-video-uretim`
 
@@ -65,7 +65,7 @@ Moonstone Residence için bir render ya da fotoğraftan fal.ai üzerinde Kling i
 Builds and runs a rigid-body physics pipeline that mass-produces 9:16 vertical "satisfying physics" Reels/Shorts/TikToks on Apple Silicon — falling cubes, jointed chains whipping over a pivot, dominoes, ball-pit fills, tower collapses — via Godot+Jolt on Metal, deterministic Movie Maker capture, impulse-driven impact audio and VideoToolbox encoding. Use whenever the deliverable is a physics-driven short-form video or its machinery — scene recipes, chain tuning, seed sweeps, batch rendering, render speed, safe-zone framing, seamless loops, impact sound, export settings. Trigger on "fizik motoruyla video üret", "düşen küpler videosu", "zincir simülasyonu", "satisfying physics reels", "toplu video üret", "seed varyasyonu", "render çok yavaş", "9:16 dikey render", "çarpışma sesi ekle", "Godot ile video çıkar", "loop olacak video" — even when the user only says "viral video üretmek istiyorum" but the mechanism is a simulation, or asks whether to use Godot, Blender, Rapier or a custom Metal engine for this genre.
 
 - **Ölçü:** 11.460 bayt · 14 ek dosya · script içerir · referans dosyaları var
-- **Kaynak:** ~/projects/instagram-reels/docs/physics-reel-forge, ~/Documents/GitHub/instagram-reels/docs/physics-reel-forge
+- **Kaynak:** ~/projects/instagram-reels/docs/physics-reel-forge, ~/Documents/GitHub/instagram-reels/docs/physics-reel-forge, claude.ai senkronu (efemer önbellek)
 
 ## `procedural-game-audio`
 
@@ -83,7 +83,7 @@ Build procedural (rule-generated, zero-asset) music and SFX engines for Apple-ec
 A full retro record label in one skill — names the release, art-directs and RENDERS period-accurate album covers at 3000×3000 (procedural plates or the user's own photo, run through halftone/duotone/riso/VHS/xerox treatments), then writes the globally optimised English release metadata — YouTube title, description, tags, hashtags and chapters, plus DSP-legal track and album titles. Use whenever someone needs cover art, an album or song name, or release copy — "albüm kapağı yap", "retro kapak tasarla", "şarkı ismi bul", "albüm ismi öner", "youtube açıklaması yaz", "single çıkaracağım", "kapak alternatifleri üret", "plak kapağı", "70ler tarzı kapak", "spotify kapak boyutu", "bu şarkıyı nasıl adlandırayım", "keyword'leri optimize et". Trigger even when the request covers only one department (just the name, just the cover, just the description), and whenever a track from suno-composer needs packaging for release.
 
 - **Ölçü:** 9.897 bayt · 13 ek dosya · script içerir · referans dosyaları var
-- **Kaynak:** ~/Documents/GitHub/weftrecords/.claude/skills/retro-record-label, ~/projects/weftrecords/.claude/skills/retro-record-label
+- **Kaynak:** ~/Documents/GitHub/weftrecords/.claude/skills/retro-record-label, ~/projects/weftrecords/.claude/skills/retro-record-label, claude.ai senkronu (efemer önbellek)
 
 ## `shorts-strategy`
 
@@ -110,7 +110,7 @@ Builds YouTube Shorts (9:16, 1080x1920) and full music videos (16:9) by cutting 
 Composes a song as a trained musician would — key/mode, tempo, meter, harmonic plan, form with bar counts, arrangement and vocal tessitura — then translates those decisions into a Suno-ready Style field, Exclude field and metatagged lyrics. Use this whenever someone wants a song, a Suno prompt, a style/song description, lyrics for an AI music tool, an instrumental bed, a jingle, an intro theme, game or app background music, or wants an existing prompt diagnosed ("why does my Suno track sound generic / rushed / wrong genre / like AI"). Trigger on Turkish phrasings too — "şarkı yaz", "suno prompt'u üret", "song description hazırla", "beste yap", "müzik promptu", "jingle lazım", "oyunuma müzik", "şu prompt neden kötü çıkıyor", "enstrümantal parça", "sözlerini de yaz". Use it even when the person never says "Suno" — if the deliverable is a text description that some model turns into music, this applies.
 
 - **Ölçü:** 10.678 bayt · 3 ek dosya · referans dosyaları var
-- **Kaynak:** ~/Documents/GitHub/weftrecords/.claude/skills/suno-composer, ~/projects/weftrecords/.claude/skills/suno-composer
+- **Kaynak:** ~/Documents/GitHub/weftrecords/.claude/skills/suno-composer, ~/projects/weftrecords/.claude/skills/suno-composer, claude.ai senkronu (efemer önbellek)
 
 ## `weft-channel`
 

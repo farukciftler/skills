@@ -119,7 +119,7 @@ Bir günün tahmin ve kanıt kayıtlarını, commit edilmeden önce ADVERSARYAL 
 Türkiye merkezli yazılım, SaaS, oyun ve yapay zekâ şirketleri için devlet desteklerini, hibeleri, vergi istisnalarını ve uluslararası fonları tarar; profile göre uygunluk elemesi yapar, harcamayı doğru programla eşleştirir, çağrı takvimini birincil kaynaktan doğrular, 90 günlük başvuru planı çıkarır. Kapsamda TÜBİTAK (1501, 1507, 1711, 1707, Eurostars, BiGG), KOSGEB, Ticaret Bakanlığı Atılım Programı ve E-TURQUALITY, teknokent 4691, Ar-Ge merkezi 5746, Teknogirişim Rozeti, HIT-30, kalkınma ajansları, Ufuk Avrupa, EIC ve bulut kredileri var. Şunlarda devreye gir - hibe var mı, devlet desteği alabilir miyim, TÜBİTAK'a başvuralım mı, KOSGEB desteği, teknokente girelim mi, Ar-Ge merkezi kuralım mı, e-Turquality başvurusu, yazılımcı maaşını devlet karşılıyor mu, sunucu faturasına destek, yurt dışı reklama hibe, yapay zekâ kredisi, AB fonu, bu destek geçerli mi. Kullanıcı hibe demese de soru bu maliyeti kim finanse eder anlamına geliyorsa geçerlidir. Ezberden rakam vermez, kaynaktan doğrular.
 
 - **Ölçü:** 12.838 bayt · 6 ek dosya · referans dosyaları var
-- **Kaynak:** 
+- **Kaynak:** claude.ai senkronu (efemer önbellek)
 
 ## `vakif-katilim-yatirim`
 

@@ -2,7 +2,7 @@
 
 Doğal Türkçe/İngilizce metin, dikey video anlatısı, çok dilli çeviri, içerik stratejisi ve üretimi.
 
-14 skill. Üst dizin: [../../README.md](../../README.md)
+15 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `backlog`
 
@@ -111,6 +111,15 @@ ComeSyria için görsel odaklı, marka kimliğine tam uyumlu, üç dilli (TR/EN/
 
 - **Ölçü:** 5.076 bayt · 0 ek dosya
 - **Kaynak:** ~/projects/kirkit/data/skills/skills/sosyal-medya-post-uret
+
+## `trend-setter`
+
+[SKILL.md](trend-setter/SKILL.md)
+
+Full-stack social media content studio that produces platform-native posts, scripts, captions, threads, and carousel designs that read and look fully human — no AI tells in the writing, no AI-default look in the visuals. Researches live trends before writing and builds or follows brand design systems for visual output. Use this skill whenever the user wants ANY social media content or strategy — an X/Twitter post or thread, LinkedIn post, Instagram caption or carousel, TikTok/Reels/Shorts script, YouTube title or hook, content calendar, campaign, bio, hook ideas, or trend research — or asks to humanize/de-AI existing copy, adapt one piece across platforms, or create branded post visuals. Also trigger on Turkish requests like "post yaz", "içerik üret", "sosyal medya postu", "tweet at", "carousel hazırla", "reels senaryosu", "viral içerik", "trend araştır", "insan gibi yaz", "AI yazdığı belli olmasın".
+
+- **Ölçü:** 7.632 bayt · 6 ek dosya · referans dosyaları var
+- **Kaynak:** claude.ai senkronu (efemer önbellek)
 
 ## `turkce-anlati`
 

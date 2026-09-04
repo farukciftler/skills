@@ -74,7 +74,7 @@ Finds, scores, clearance-checks and downloads royalty-free Pexels photos and vid
 Finds, scores, clearance-checks and downloads royalty-free Pexels photos and video for music deliverables — album covers, YouTube thumbnails and long-form backgrounds, lyric-video and Spotify Canvas beds, Reels/Shorts footage, press kits. Turns a vague or Turkish brief into queries that actually return usable frames, ranks candidates against the real spec (resolution headroom, crop survival, brand colour, text room, clip duration and loopability), flags model-release and trademark risk before anything ships, and writes attribution files. Use whenever someone needs stock visuals or B-roll for music, a cover image, a thumbnail or a video background, or mentions Pexels — including Turkish phrasings like "telifsiz görsel bul", "albüm kapağı için fotoğraf", "youtube thumbnail görseli", "arka plan videosu lazım", "stok video indir", "pexels api ile görsel çek", "ücretsiz stok fotoğraf". Trigger even when Pexels is never named — if the task is picking the right free image or clip for a deliverable, this applies.
 
 - **Ölçü:** 7.441 bayt · 4 ek dosya · script içerir · referans dosyaları var
-- **Kaynak:** ~/Documents/GitHub/weftrecords/.claude/skills/pexels-media-scout
+- **Kaynak:** ~/Documents/GitHub/weftrecords/.claude/skills/pexels-media-scout, claude.ai senkronu (efemer önbellek)
 
 ## `post-forge`
 
@@ -83,5 +83,5 @@ Finds, scores, clearance-checks and downloads royalty-free Pexels photos and vid
 Designs and RENDERS finished social post visuals — Instagram feed posts (4:5, 1:1), Stories frames, Instagram carousels and LinkedIn document carousels — as pixel-exact HTML/SVG exported to PNG and PDF. Builds custom SVG illustration, hand-drawn charts and product mockups (phone frame, laptop, browser window, isometric app screens, floating UI cards) instead of stock templates, locked to a brand design system. Use whenever the deliverable is the IMAGE, not the caption — "instagram postu tasarla", "post görseli üret", "carousel hazırla", "LinkedIn carousel", "şu ekranı telefon mockup'ında göster", "özel SVG çiz", "bu postlar birbirine benziyor, farklılaştır", "screenshot'u güzelleştir", "story görseli", "metrik kartı tasarla". Trigger even when the user only says "post" but points at a screenshot, a product screen, a metric or a design system, and for redesign or de-templating of existing visuals. Hand caption copy to trend-setter; this skill owns the pixels.
 
 - **Ölçü:** 11.147 bayt · 11 ek dosya · script içerir · referans dosyaları var
-- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/post-forge, ~/Documents/GitHub/pipsworn/.claude/skills/post-forge
+- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/post-forge, ~/Documents/GitHub/pipsworn/.claude/skills/post-forge, claude.ai senkronu (efemer önbellek)
 

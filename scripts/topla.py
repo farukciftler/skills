@@ -59,7 +59,7 @@ KATEGORI = {
         "helal-yatirim-uzmani", "portfoy-tahmin", "tahmin-savcisi",
         "helal-portfoy-uzmanlari", "harcama-analizi", "ev-yatirim-analisti",
         "vakif-katilim-yatirim", "sahis-vergi-yukumluluk", "fiyatlandirma-uzmani",
-        "domain-portfoy-degerleme", "startup-degerleme",
+        "domain-portfoy-degerleme", "startup-degerleme", "tesvik-avcisi",
     ],
     "02-masifico-ahsap-oyuncak": [
         "masifico-uretim-muhendisi", "masifico-parti-uretim", "masifico-tedarik-rfq",
@@ -78,13 +78,13 @@ KATEGORI = {
     "04-icerik-yazim-ceviri": [
         "insanca", "turkce-anlati", "english-narration", "ceviri", "icerik-strateji",
         "icerik-uret", "yeme-icme", "backlog-arastir", "backlog",
-        "sosyal-medya-post-uret", "icerik-yaz",
+        "sosyal-medya-post-uret", "icerik-yaz", "trend-setter",
     ],
     "05-pazarlama-buyume": [
         "seo-expert", "aso-expert", "aso-optimizer", "youtube-shorts-optimizer",
         "reklam-ve-performans",
         "viral-artifact-scout", "hedef-arastirma", "klinik-lead-akisi",
-        "appstore-market-analyst",
+        "appstore-market-analyst", "hypercasual-lab",
     ],
     "06-ux-urun": [
         "mobile-ux-flow-expert", "web-ux-flow-expert", "ota-mobile-tablet-ux",
@@ -99,7 +99,7 @@ KATEGORI = {
         "docker-compose-orchestration", "oauth2-authentication", "gitnexus-guide",
         "gitnexus-cli", "gitnexus-exploring", "gitnexus-debugging",
         "gitnexus-impact-analysis", "gitnexus-refactoring", "hyperscaler-expert",
-        "serverim-build", "apple-platform-architect",
+        "serverim-build", "apple-platform-architect", "finops-expert",
     ],
     "08-ai-ml": [
         "ml-expert", "automl", "kaggle-kaggle-skill", "llm-engineering-expert",
@@ -120,15 +120,22 @@ KATEGORI = {
     "13-ofis-belge": ["docx", "pptx", "xlsx", "pdf"],
     "14-meta-sistem": [
         "skill-creator", "kirkit-skill-author", "consolidate-memory",
-        "import-memory", "morning", "schedule", "setup-cowork", "explain-usage",
+        "import-memory", "morning", "schedule", "setup-cowork", "explain-usage", "product-self-knowledge",
     ],
 }
 KATEGORI_ESLEME = {ad: kat for kat, adlar in KATEGORI.items() for ad in adlar}
 DIGER = "99-siniflandirilmamis"
 
 
-def cloud_dizini():
-    """claude.ai senkronunun en yeni yerel anlık görüntüsünü bulur."""
+def cloud_dizinleri():
+    """claude.ai senkronunun yerel anlık görüntülerini, yeniden eskiye döndürür.
+
+    Yalnız en yeni anlık görüntüye bakmak yetmez: claude.ai'dan silinen bir
+    skill yalnız eski anlık görüntüde kalır ve o tek kopyadır. Eskiler de
+    taranır; içerikçe özdeş kopyaları `ekle.py` zaten eler, kütüphanedeki
+    kopyanın üst kümesi olanlar (ör. `physics-reel-forge`'un script'leri)
+    girdiyi tazeler.
+    """
     adaylar = []
     for kok, dizinler, _ in os.walk(CLOUD_KOK):
         if kok.count(os.sep) - CLOUD_KOK.count(os.sep) > 3:
@@ -137,7 +144,7 @@ def cloud_dizini():
         if os.path.basename(kok) == "skills":
             adaylar.append((os.path.getmtime(kok), kok))
             dizinler[:] = []
-    return max(adaylar)[1] if adaylar else None
+    return [kok for _, kok in sorted(adaylar, reverse=True)]
 
 
 def dizin_ozeti(dizin):
@@ -227,8 +234,7 @@ def bul():
             continue
         if "SKILL.md" in dosyalar:
             bulunan.append(kok)
-    cloud = cloud_dizini()
-    if cloud:
+    for cloud in cloud_dizinleri():
         for kok, _, dosyalar in os.walk(cloud):
             if "SKILL.md" in dosyalar:
                 bulunan.append(kok)

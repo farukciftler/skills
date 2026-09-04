@@ -21,7 +21,7 @@ Bu yüzden buradaki bir dosyayı düzenlemek, o skill'in davranışını **deği
 
 ## Bir skill ararken
 
-1. **[INDEX.md](INDEX.md)** — 157 girdilik alfabetik tablo, tek satırlık özetlerle.
+1. **[INDEX.md](INDEX.md)** — 159 girdilik alfabetik tablo, tek satırlık özetlerle.
 2. **`katalog/skills.json`** — programatik arama için. Her kayıtta `ad`, `ozet`,
    `aciklama` (tam frontmatter), `kategori`, `yol`, `kaynaklar`, `script_var`.
 3. Kategori sayfaları — `kutuphane/<kategori>/README.md`, o alandaki her skill'in
@@ -43,7 +43,10 @@ python3 -c "import json;[print(f\"{x['ad']:34} {x['ozet'][:70]}\") for x in json
 - `ceviri--comesyriacontent` / `ceviri--abdullahfarukcom-gh` → aynı isimli ama
   **gerçekten farklı iki skill**. İkisi de eklenti alır; birini diğeri sanma.
 - `--cloud` ekli olanlar claude.ai'daki kopyadır ve genelde **daha eskidir**
-  (bkz. `TASIMA.md` § Bayat cloud kopyaları).
+  (bkz. `TASIMA.md` § Bayat cloud kopyaları). claude.ai önbelleğinde birden
+  çok oturum anlık görüntüsü durur; tarama hepsine bakar ama bir ad en yeni
+  görüntüde varsa eskilerdeki kopyası elenir — eskiden gelen tek şey,
+  claude.ai'dan **silinmiş** skill'lerdir (bkz. § Eski bulut anlık görüntüsü).
 - İkinci makine taramasından gelen 8 girdide **"düz ad daha yenidir" kuralı
   geçerli değil** — hangisinin yeni olduğu belirlenemedi. Listesi ve gerekçesi:
   `TASIMA.md` § İkinci makine taraması.

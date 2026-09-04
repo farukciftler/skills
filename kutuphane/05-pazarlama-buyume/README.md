@@ -11,7 +11,7 @@ SEO/ASO denetimi, Shorts optimizasyonu, viral ürün avı, lead üretimi.
 App Store market analyst for the global and Türkiye markets — category size, what people actually pay for, what price to set, whether paid-upfront / freemium / subscription fits, what an app realistically earns, which categories are saturated, what the most expensive apps charge and why, and how Turkish pricing, taxes and purchasing power change the answer. Use when deciding what app to build, what to charge, whether an idea can make money, how a category monetizes, what competitors charge, or how an app compares to benchmarks. Trigger on Turkish phrasings — "hangi uygulama para kazandırır", "kaç dolara satmalıyım", "abonelik mi tek seferlik mi", "Türkiye'de ne kadar kazanılır", "bu kategori doymuş mu", "rakipler ne kadar alıyor", "fiyatlandırma stratejisi", "en pahalı uygulamalar", "ücretli uygulama satar mı". Use it even when someone only describes an app idea and asks whether it is worth building — that is a market question. Always pulls live figures rather than quoting stale numbers as current.
 
 - **Ölçü:** 6.596 bayt · 5 ek dosya · referans dosyaları var
-- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst, ~/Documents/GitHub/pipsworn/.claude/skills/appstore-market-analyst
+- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst, ~/Documents/GitHub/pipsworn/.claude/skills/appstore-market-analyst, claude.ai senkronu (efemer önbellek)
 
 ## `aso-expert`
 
@@ -47,7 +47,7 @@ Danışmanlığı satabileceğimiz firmaları bulur, eler, puanlar ve Attio'ya y
 Ship and test hyper-casual / hybrid-casual iOS games on a small budget — live trend scanning for mechanics worth building, ad-creative-first validation, the Unity vs native SpriteKit decision, ad mediation and monetization wiring (AppLovin MAX, Unity LevelPlay, ATT, interstitial and rewarded cadence), and a gated CPI + retention test protocol with explicit kill criteria. Use whenever the work is a small mobile game meant to earn from ads — what to build, whether a concept is worth building, how to structure the app, how to wire ad SDKs, how much to spend testing, self-publish vs pitching Voodoo/Homa/Supersonic, or reading test results. Trigger on "hypercasual", "hyperscaler oyun", "hiper kazüel", "basit oyun yapıp para kazanmak", "reklam gelirli oyun", "CPI testi", "oyun trendi araştır", "bunu klonlasam olur mu", "publisher'a göndereyim mi", "günlük X TL bütçeyle oyun test etmek", "D1 retention kaç olmalı". Use it even when they only say they want a quick game that makes money.
 
 - **Ölçü:** 11.916 bayt · 4 ek dosya · referans dosyaları var
-- **Kaynak:** 
+- **Kaynak:** claude.ai senkronu (efemer önbellek)
 
 ## `klinik-lead-akisi`
 

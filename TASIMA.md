@@ -16,8 +16,10 @@ dağıtıldı.
 
 Ardından 175 GitHub deposu tarandı ve yalnız orada duran 6 skill eklendi
 (§ GitHub taraması). Son olarak ikinci bir bilgisayar tarandı ve oradan 16 girdi
-geldi (§ İkinci makine taraması). **Güncel toplam: 127 benzersiz skill,
-153 girdi.**
+geldi (§ İkinci makine taraması). Son olarak claude.ai önbelleğinin eski
+oturum anlık görüntüleri tarandı ve yalnız orada kalan 5 skill eklendi
+(§ Eski bulut anlık görüntüsü). **Güncel toplam: 132 benzersiz skill,
+159 girdi.**
 
 Tam yedek: `~/skills-yedek-20260904-135254.tar.gz` (2,6 MB).
 
@@ -105,6 +107,59 @@ yeniden yükle. `portfoy-tahmin`'in cloud kopyası da (9,6 KB → 17,4 KB) gerid
 - `ceviri--comesyriacontent` — TR / küresel İngilizce / Suriye Arapçası,
   ad-sayı sadakati ve yapay zekâ tikliği denetim script'leriyle (9,7 KB)
 - `ceviri--abdullahfarukcom-gh` — düz TR↔EN çeviri (5,7 KB)
+
+## Eski bulut anlık görüntüsü (4 Eylül 2026)
+
+`topla.py` claude.ai önbelleğinden **yalnız en yeni** anlık görüntüyü okuyordu.
+Önbellekte üç görüntü var:
+
+| Görüntü | Tarih | Skill |
+|---|---|---|
+| `19b5885a…/15af82d8…` | 4 Eyl 2026 | 49 — claude.ai'ın **güncel** hâli |
+| `19b5885a…/f181d07d…` | 26 Ağu 2026 | 36 |
+| `2fee50bc…/f181d07d…` | 26 Ağu 2026 | 35 |
+
+En eski görüntüde, güncel claude.ai listesinde **artık olmayan** 5 skill duruyordu;
+yerel önbellek bunların elde kalan tek kopyasıydı:
+
+| Skill | Boyut | Kategori |
+|---|---|---|
+| `finops-expert` | 84 K, 6 dosya | 07-yazilim-muhendislik |
+| `tesvik-avcisi` | 68 K, 7 dosya | 01-finans-yatirim |
+| `trend-setter` | 60 K, 7 dosya | 04-icerik-yazim-ceviri |
+| `hypercasual-lab` | 48 K, 5 dosya | 05-pazarlama-buyume |
+| `product-self-knowledge` | 4 K, 1 dosya | 14-meta-sistem |
+
+Aynı görüntü `physics-reel-forge`'un kütüphanede eksik olan 4 script'ini de
+taşıyordu; girdi yerinde tazelendi (üst küme, ayrı girdi açılmadı):
+`synth_impacts.py` (18,7 K) · `batch_render.py` (15,2 K) · `encode_reel.sh` (6,7 K) ·
+`preflight.sh` (4,8 K).
+
+### Tarama nasıl düzeltildi
+
+`cloud_dizini()` → `cloud_dizinleri()`: artık **tüm** anlık görüntüler taranıyor.
+Gürültüyü `ekle.py` içindeki `en_yeni_cloud()` eliyor — bir ad en yeni görüntüde
+varsa eskilerdeki kopyası aday sayılmaz, çünkü tanım gereği geridedir. Bu kural
+olmasa `docx`, `pptx`, `xlsx` ve `setup-cowork` için dört `--cloud` girdisi daha
+açılırdı.
+
+Kuralın dışında kalan, yalnız eski görüntüde duran ama kütüphanedeki kopyası
+**ileride** olan ikisi `ekle.py`'ın `ATLA` listesine yazıldı:
+
+| Skill | Kütüphanedeki kopyanın fazlası |
+|---|---|
+| `ucuz-bilet-avcisi` | `scripts/fiyat_deposu.py` içinde `from __future__ import annotations` |
+| `ambient-video-forge` | `check_env.sh` macOS `sysctl` ve ffmpeg 8.x filtre düzeltmeleri; `presets.json` 2,7 K daha dolu |
+
+### Buluta geri yüklenmesi gerekenler
+
+Bu taramada, kütüphanedeki sürümün claude.ai'dakinden ileride olduğu bir vaka
+daha çıktı — § Bayat cloud kopyaları listesine ek:
+
+| Skill | Bulutta eksik olan |
+|---|---|
+| `procedural-game-audio` | `references/theme-design.md` (4,8 K) |
+
 
 ## Bağlama (yıkıcı adım — henüz yapılmadı)
 

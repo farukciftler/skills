@@ -34,7 +34,15 @@ MANIFEST = os.path.join(topla.KATALOG, "manifest.json")
 # içerikçe özdeş kopyalar. Yeni bir girdi açmaları gürültüden ibaret olur.
 ATLA = {
     "~/Documents/GitHub/pipsworn/.claude/skills/chibi-character-factory",
+    # 9 Ağustos claude.ai anlık görüntüsünde kalmış, kütüphanedeki kopya ileride
+    # olan ikisi (ikisi de yalnız bu eski görüntüde duruyor, `en_yeni_cloud`
+    # elemesine takılmıyorlar). Elle doğrulandı:
+    #   ucuz-bilet-avcisi   cloud'da `from __future__ import annotations` yok
+    #   ambient-video-forge cloud'da macOS `sysctl` ve ffmpeg 8.x filtre düzeltmeleri yok
+    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/ucuz-bilet-avcisi",
+    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/ambient-video-forge",
 }
+
 
 
 def dosya_kumesi(dizin):
@@ -69,6 +77,31 @@ def kapsam(kaynak, hedef):
     return "ust" if hd < kd else "alt"
 
 
+def en_yeni_cloud(kayitlar):
+    """Eski claude.ai anlık görüntülerinin gereksiz kopyalarını eler.
+
+    Önbellekte birden çok oturum anlık görüntüsü durur ve aynı skill hepsinde
+    bulunur. Bir ad en yeni görüntüde varsa eskilerdeki kopyası tanım gereği
+    geride kalmıştır — ayrı girdi açması gürültüdür. Yalnız *sadece* eski bir
+    görüntüde kalanlar (claude.ai'dan silinmiş skill'ler) aday olarak kalır.
+    """
+    sira = {yol: i for i, yol in enumerate(topla.cloud_dizinleri())}
+    en_iyi = {}
+    for kayit in kayitlar:
+        if kayit["tur"] != "cloud":
+            continue
+        kok = os.path.dirname(kayit["dizin"].replace("~", EV, 1))
+        en_iyi[kayit["ad"]] = min(en_iyi.get(kayit["ad"], 10**6), sira.get(kok, 10**6))
+    elenen = set()
+    for kayit in kayitlar:
+        if kayit["tur"] != "cloud":
+            continue
+        kok = os.path.dirname(kayit["dizin"].replace("~", EV, 1))
+        if sira.get(kok, 10**6) > en_iyi[kayit["ad"]]:
+            elenen.add(kayit["dizin"])
+    return elenen
+
+
 def kutuphane_girdileri():
     """kutuphane/<kategori>/<slug> dizinlerini içerik özetiyle döndürür."""
     girdiler = {}
@@ -95,8 +128,10 @@ def main():
     adlar = {m["name"] for m in manifest}
 
     ayni, tazele, ekle = [], [], []
-    for kayit in topla.bul():
-        if kayit["dizin"] in ATLA:
+    kayitlar = topla.bul()
+    bayat_cloud = en_yeni_cloud(kayitlar)
+    for kayit in kayitlar:
+        if kayit["dizin"] in ATLA or kayit["dizin"] in bayat_cloud:
             continue
         eslesme = ozetler.get(kayit["ozet"])
         if eslesme:

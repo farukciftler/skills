@@ -56,7 +56,7 @@ Render the user's morning brief as a styled HTML artifact, or set it up as a rec
 Stop and consult this skill whenever your response would include specific facts about Anthropic's products. Covers: Claude Code (how to install, Node.js requirements, platform/OS support, MCP server integration, configuration), Claude API (function calling/tool use, batch processing, SDK usage, rate limits, pricing, models, streaming), and Claude.ai (Pro vs Team vs Enterprise plans, feature limits). Trigger this even for coding tasks that use the Anthropic SDK, content creation mentioning Claude capabilities or pricing, or LLM provider comparisons. Any time you would otherwise rely on memory for Anthropic product details, verify here instead — your training data may be outdated or wrong.
 
 - **Ölçü:** 2.599 bayt · 0 ek dosya
-- **Kaynak:** 
+- **Kaynak:** claude.ai senkronu (efemer önbellek)
 
 ## `schedule`
 

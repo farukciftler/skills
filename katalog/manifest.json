@@ -56,11 +56,13 @@
   "variant": 0,
   "srcs": [
    "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect",
-   "~/Documents/GitHub/pipsworn/.claude/skills/apple-platform-architect"
+   "~/Documents/GitHub/pipsworn/.claude/skills/apple-platform-architect",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/apple-platform-architect"
   ],
   "kinds": [
    "github",
-   "install"
+   "install",
+   "cloud"
   ],
   "bytes": 0,
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/apple-platform-architect",
@@ -68,7 +70,8 @@
    "~/Documents/GitHub/pipsworn/.claude/skills/apple-platform-architect"
   ],
   "mirrored": [
-   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect"
+   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/apple-platform-architect"
   ]
  },
  {
@@ -79,11 +82,13 @@
   "variant": 0,
   "srcs": [
    "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst",
-   "~/Documents/GitHub/pipsworn/.claude/skills/appstore-market-analyst"
+   "~/Documents/GitHub/pipsworn/.claude/skills/appstore-market-analyst",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/appstore-market-analyst"
   ],
   "kinds": [
    "github",
-   "install"
+   "install",
+   "cloud"
   ],
   "bytes": 0,
   "lib": "~/skills/kutuphane/05-pazarlama-buyume/appstore-market-analyst",
@@ -91,7 +96,8 @@
    "~/Documents/GitHub/pipsworn/.claude/skills/appstore-market-analyst"
   ],
   "mirrored": [
-   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst"
+   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/appstore-market-analyst"
   ]
  },
  {
@@ -636,6 +642,25 @@
   ]
  },
  {
+  "name": "finops-expert",
+  "slug": "finops-expert",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "c80bb7ccdaa6",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/finops-expert"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 10392,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/finops-expert",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/finops-expert"
+  ]
+ },
+ {
   "name": "fiyatlandirma-uzmani",
   "slug": "fiyatlandirma-uzmani",
   "cat": "01-finans-yatirim",
@@ -985,13 +1010,15 @@
    "~/Documents/GitHub/weftrecords/.claude/skills/healing-audio-youtube-seo",
    "~/projects/reelsindustry/.claude/skills/healing-audio-youtube-seo",
    "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo",
-   "~/Documents/GitHub/reelsindustry/.claude/skills/healing-audio-youtube-seo"
+   "~/Documents/GitHub/reelsindustry/.claude/skills/healing-audio-youtube-seo",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/healing-audio-youtube-seo"
   ],
   "kinds": [
    "install",
    "install",
    "install",
-   "install"
+   "install",
+   "cloud"
   ],
   "bytes": 10730,
   "files": 8,
@@ -1002,7 +1029,9 @@
    "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo",
    "~/Documents/GitHub/reelsindustry/.claude/skills/healing-audio-youtube-seo"
   ],
-  "mirrored": []
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/healing-audio-youtube-seo"
+  ]
  },
  {
   "name": "hedef-arastirma",
@@ -1062,6 +1091,25 @@
   "linked": [],
   "mirrored": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/helal-yatirim-uzmani"
+  ]
+ },
+ {
+  "name": "hypercasual-lab",
+  "slug": "hypercasual-lab",
+  "cat": "05-pazarlama-buyume",
+  "hash": "a38a1092369d",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/hypercasual-lab"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 12016,
+  "lib": "~/skills/kutuphane/05-pazarlama-buyume/hypercasual-lab",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/hypercasual-lab"
   ]
  },
  {
@@ -1214,11 +1262,13 @@
   "variant": 0,
   "srcs": [
    "github:farukciftler/pipsworn → .claude/skills/jira-task-writer",
-   "~/Documents/GitHub/pipsworn/.claude/skills/jira-task-writer"
+   "~/Documents/GitHub/pipsworn/.claude/skills/jira-task-writer",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/jira-task-writer"
   ],
   "kinds": [
    "github",
-   "install"
+   "install",
+   "cloud"
   ],
   "bytes": 0,
   "lib": "~/skills/kutuphane/06-ux-urun/jira-task-writer",
@@ -1226,7 +1276,8 @@
    "~/Documents/GitHub/pipsworn/.claude/skills/jira-task-writer"
   ],
   "mirrored": [
-   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer"
+   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/jira-task-writer"
   ]
  },
  {
@@ -2209,10 +2260,12 @@
   "hash": "cd77ac0c798d",
   "variant": 1,
   "srcs": [
-   "~/Documents/GitHub/weftrecords/.claude/skills/pexels-media-scout"
+   "~/Documents/GitHub/weftrecords/.claude/skills/pexels-media-scout",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/pexels-media-scout"
   ],
   "kinds": [
-   "install"
+   "install",
+   "cloud"
   ],
   "bytes": 7441,
   "files": 5,
@@ -2220,29 +2273,34 @@
   "linked": [
    "~/Documents/GitHub/weftrecords/.claude/skills/pexels-media-scout"
   ],
-  "mirrored": []
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/pexels-media-scout"
+  ]
  },
  {
   "name": "physics-reel-forge",
   "slug": "physics-reel-forge",
   "cat": "03-video-ses-uretim",
-  "hash": "6a09effd5a39",
+  "hash": "d6c395a4eb3d",
   "variant": 0,
   "srcs": [
    "~/projects/instagram-reels/docs/physics-reel-forge",
-   "~/Documents/GitHub/instagram-reels/docs/physics-reel-forge"
+   "~/Documents/GitHub/instagram-reels/docs/physics-reel-forge",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/physics-reel-forge"
   ],
   "kinds": [
    "content",
-   "content"
+   "content",
+   "cloud"
   ],
-  "bytes": 11460,
+  "bytes": 11585,
   "files": 11,
   "lib": "~/skills/kutuphane/03-video-ses-uretim/physics-reel-forge",
   "linked": [],
   "mirrored": [
    "~/projects/instagram-reels/docs/physics-reel-forge",
-   "~/Documents/GitHub/instagram-reels/docs/physics-reel-forge"
+   "~/Documents/GitHub/instagram-reels/docs/physics-reel-forge",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/physics-reel-forge"
   ]
  },
  {
@@ -2333,11 +2391,13 @@
   "variant": 0,
   "srcs": [
    "github:farukciftler/pipsworn → .claude/skills/post-forge",
-   "~/Documents/GitHub/pipsworn/.claude/skills/post-forge"
+   "~/Documents/GitHub/pipsworn/.claude/skills/post-forge",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/post-forge"
   ],
   "kinds": [
    "github",
-   "install"
+   "install",
+   "cloud"
   ],
   "bytes": 0,
   "lib": "~/skills/kutuphane/09-cad-gorsel/post-forge",
@@ -2345,7 +2405,8 @@
    "~/Documents/GitHub/pipsworn/.claude/skills/post-forge"
   ],
   "mirrored": [
-   "github:farukciftler/pipsworn → .claude/skills/post-forge"
+   "github:farukciftler/pipsworn → .claude/skills/post-forge",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/post-forge"
   ]
  },
  {
@@ -2439,6 +2500,25 @@
   ],
   "mirrored": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/procedural-game-audio"
+  ]
+ },
+ {
+  "name": "product-self-knowledge",
+  "slug": "product-self-knowledge",
+  "cat": "14-meta-sistem",
+  "hash": "db4e041c6cb7",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/product-self-knowledge"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 2605,
+  "lib": "~/skills/kutuphane/14-meta-sistem/product-self-knowledge",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/product-self-knowledge"
   ]
  },
  {
@@ -2574,11 +2654,13 @@
   "variant": 0,
   "srcs": [
    "~/Documents/GitHub/weftrecords/.claude/skills/retro-record-label",
-   "~/projects/weftrecords/.claude/skills/retro-record-label"
+   "~/projects/weftrecords/.claude/skills/retro-record-label",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/retro-record-label"
   ],
   "kinds": [
    "install",
-   "install"
+   "install",
+   "cloud"
   ],
   "bytes": 9897,
   "files": 14,
@@ -2587,7 +2669,9 @@
    "~/Documents/GitHub/weftrecords/.claude/skills/retro-record-label",
    "~/projects/weftrecords/.claude/skills/retro-record-label"
   ],
-  "mirrored": []
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/retro-record-label"
+  ]
  },
  {
   "name": "rpdm-mevzuat",
@@ -2950,11 +3034,13 @@
   "variant": 0,
   "srcs": [
    "~/Documents/GitHub/weftrecords/.claude/skills/suno-composer",
-   "~/projects/weftrecords/.claude/skills/suno-composer"
+   "~/projects/weftrecords/.claude/skills/suno-composer",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/suno-composer"
   ],
   "kinds": [
    "install",
-   "install"
+   "install",
+   "cloud"
   ],
   "bytes": 10678,
   "files": 4,
@@ -2963,7 +3049,9 @@
    "~/Documents/GitHub/weftrecords/.claude/skills/suno-composer",
    "~/projects/weftrecords/.claude/skills/suno-composer"
   ],
-  "mirrored": []
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/suno-composer"
+  ]
  },
  {
   "name": "suriye-is-mevzuat",
@@ -3072,6 +3160,44 @@
   "linked": [],
   "mirrored": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/tech-etkinlik-kesif"
+  ]
+ },
+ {
+  "name": "tesvik-avcisi",
+  "slug": "tesvik-avcisi",
+  "cat": "01-finans-yatirim",
+  "hash": "080fb3f1a008",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/tesvik-avcisi"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 14039,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/tesvik-avcisi",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/tesvik-avcisi"
+  ]
+ },
+ {
+  "name": "trend-setter",
+  "slug": "trend-setter",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "8da5b38e8e72",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/trend-setter"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 7690,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/trend-setter",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/trend-setter"
   ]
  },
  {

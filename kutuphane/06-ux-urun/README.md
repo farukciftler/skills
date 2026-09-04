@@ -29,7 +29,7 @@ Kartela Klinik OS arayüzünü uçtan uca denetler — üç demo rolüyle (danı
 Writes and creates Jira issues that contain ONLY what the user actually said - no invented scope, no best-practice padding, no unrequested sections. Every missing-but-relevant consideration is raised as a warning in chat instead of being written into the ticket. Use whenever the user wants a Jira task/story/bug/epic created, drafted, rewritten or cleaned up - "jira'ya task aç", "şunu ticket'a çevir", "FINOPS'a bir task gir", "bunu Jira'ya yaz", "task açalım", "issue oluştur", "acceptance criteria yaz", "bu maili task'a dönüştür", "şu spec'i Jira'ya taşı" - and also when reviewing an existing ticket for scope creep or hallucinated requirements. Trigger even if the user never says "skill" or gives only two sentences of input; short input must produce a short ticket, not an inflated one.
 
 - **Ölçü:** 8.445 bayt · 0 ek dosya
-- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/jira-task-writer, ~/Documents/GitHub/pipsworn/.claude/skills/jira-task-writer
+- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/jira-task-writer, ~/Documents/GitHub/pipsworn/.claude/skills/jira-task-writer, claude.ai senkronu (efemer önbellek)
 
 ## `kartela-web-ux`
 

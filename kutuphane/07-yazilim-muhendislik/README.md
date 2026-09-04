@@ -2,7 +2,7 @@
 
 Framework ve altyapı referansları, kod grafiği araçları, çoklu bulut ve sunucu operasyonu.
 
-21 skill. Üst dizin: [../../README.md](../../README.md)
+22 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `apple-platform-architect`
 
@@ -11,7 +11,7 @@ Framework ve altyapı referansları, kod grafiği araçları, çoklu bulut ve su
 Staff-level Apple platform engineering judgement for iOS, iPadOS, macOS, watchOS, tvOS and visionOS — choosing an app architecture, picking the right framework, designing on-device AI with Foundation Models / Core AI / MLX, building games, sizing work against real device hardware, and getting a build through App Review. Use whenever work touches Swift, SwiftUI, UIKit, SwiftData, concurrency, App Intents, Metal, RealityKit, SpriteKit, ARKit, WidgetKit, StoreKit, Xcode or App Store Connect. Trigger on Turkish phrasings — "iOS uygulaması yapacağım", "hangi mimariyi kullanayım", "SwiftData mı Core Data mı", "on-device model çalışır mı", "hangi cihazda döner", "oyun için ne kullanmalıyım", "Metal mi RealityKit mi", "App Store reddetti", "iOS 27'de ne değişti", "concurrency hatası alıyorum". Use it even when no framework is named — if the question is what to build an Apple-platform feature WITH, or whether the hardware can carry it, this applies. Verifies against live Apple sources instead of trusting stale memory.
 
 - **Ölçü:** 8.818 bayt · 7 ek dosya · referans dosyaları var
-- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/apple-platform-architect, ~/Documents/GitHub/pipsworn/.claude/skills/apple-platform-architect
+- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/apple-platform-architect, ~/Documents/GitHub/pipsworn/.claude/skills/apple-platform-architect, claude.ai senkronu (efemer önbellek)
 
 ## `docker-compose-orchestration`
 
@@ -30,6 +30,15 @@ Comprehensive guide for building production-ready microservices with FastAPI inc
 
 - **Ölçü:** 34.502 bayt · 2 ek dosya
 - **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/fastapi-microservices-development, ~/projects/mcailabs-v4.0/.claude/skills/fastapi-microservices-development, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/fastapi-microservices-development, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/fastapi-microservices-development
+
+## `finops-expert`
+
+[SKILL.md](finops-expert/SKILL.md)
+
+Senior FinOps practitioner expertise grounded in FinOps Framework 2026, FOCUS 1.4, and State of FinOps 2026. Use whenever work touches cloud or technology cost management - cost allocation, showback/chargeback, tagging strategy, unit economics, forecasting, budgets, anomaly detection, commitment and rate optimization (RI/SP/CUD), rightsizing, Kubernetes cost splitting, SaaS and license spend, data platform cost, data center and private cloud cost, AI/LLM token economics and GPU spend, FOCUS schema design, FinOps KPIs and dashboards, maturity assessments, FinOps product roadmaps, or FinOps certification. Also trigger on Turkish phrasings like "bulut maliyeti", "maliyet optimizasyonu", "maliyet dagitimi", "token maliyeti", "birim ekonomi", "taahhut yonetimi", and whenever someone designs, builds, sells, or evaluates a cloud cost product. Use it even when the user never says "FinOps" - if the question is who pays for what technology spend and how to cut or explain it, this applies.
+
+- **Ölçü:** 10.336 bayt · 5 ek dosya · referans dosyaları var
+- **Kaynak:** claude.ai senkronu (efemer önbellek)
 
 ## `gitnexus-cli`
 

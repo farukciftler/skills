@@ -1,0 +1,158 @@
+# FOCUS — FinOps Open Cost and Usage Specification
+
+Current as of July 2026. FOCUS is a Joint Development Foundation project supported by the FinOps Foundation. Canonical source: focus.finops.org.
+
+## Contents
+1. Why FOCUS exists
+2. Version history and what's in each
+3. Core structure: datasets, columns, attributes
+4. Cost metrics — get these exactly right
+5. Key dimension columns
+6. FOCUS 1.3 additions
+7. FOCUS 1.4 additions
+8. FOCUS 1.5 (in development)
+9. Adoption reality and conformance
+10. Practical guidance
+
+---
+
+## 1. Why FOCUS exists
+
+Before FOCUS, every multi-cloud cost dashboard contained a private translation layer mapping AWS CUR, Azure Cost Details, GCP Billing Export, and a dozen SaaS invoices into one schema. Every team maintained its own; nobody outside the team trusted it. FOCUS replaces that translation layer with a spec that *generators* implement, so consumers can write one set of queries.
+
+Practical payoffs: chargeback/showback, commitment optimization, invoice reconciliation, and unit economics run on one schema regardless of provider; and cost history stays portable if tooling changes, which reduces vendor lock-in at the data layer.
+
+## 2. Version history
+
+| Version | Ratified | Headline |
+|---|---|---|
+| 1.0 | 2024 | GA. Common schema and terminology for cloud billing data |
+| 1.1 | 2024 | Incremental refinements |
+| 1.2 | 29 May 2025 | SaaS/PaaS foundation: pricing currencies, effective cost, non-monetary contracted pricing (credits, tokens); invoice association; deeper allocation dimensions |
+| 1.3 | 4–5 Dec 2025 | Contract Commitment dataset; split cost allocation columns; recency/completeness flags; Service Provider vs Host Provider |
+| **1.4** | **4 June 2026** | Invoice Detail + Billing Period datasets; Contract Commitment 13→30 columns; commitment eligibility; covering/covered cost recognition; integrity attributes |
+| 1.5 | In development | Native AI (model identity, input/output tokens); Price Sheet dataset; Migration Guide |
+
+**Version reality check:** providers implement on their own timelines. The version a customer's export actually emits — not the latest spec — determines which analyses are possible. Always ask which version and validate the export.
+
+## 3. Core structure
+
+**Datasets** (as of 1.4):
+- **Cost and Usage** — the primary dataset; one row per charge
+- **Contract Commitment** (added 1.3, expanded 1.4) — commitment terms isolated from consumption rows
+- **Invoice Detail** (added 1.4) — charges as they appear on issued invoices
+- **Billing Period** (added 1.4) — issuer-aware billing period boundaries and status
+
+**Columns** are typed as *metrics* (quantitative, aggregatable — e.g. BilledCost) or *dimensions* (qualitative, for filtering and grouping — e.g. AvailabilityZone).
+
+**Custom columns** use the `x_` prefix. This is the sanctioned extension mechanism: provider-native fields that don't map to a FOCUS column are carried as `x_` columns. Under 1.4's Dataset Completeness attribute, generators are expected to carry native columns as `x_` columns rather than dropping them silently.
+
+**Attributes** define generator behavior (format rules, correction handling, delivery handling, completeness) rather than data content.
+
+## 4. Cost metrics — get these exactly right
+
+Confusing these is the most common and most damaging error in FinOps analysis.
+
+- **BilledCost** — the basis for invoicing. Includes reduced rates and discounts. *Excludes* amortization of upfront charges — a $100k RI prepayment lands as $100k in one period.
+- **EffectiveCost** — amortized view. Upfront commitment costs are spread across the periods they cover, so consumption shows what it actually costs to run. This is what you use for allocation, chargeback, and unit economics.
+- **ListCost** — cost at public list price, no discounts. The denominator for savings calculations.
+- **ContractedCost** — cost at negotiated/contracted rates, before commitment discounts.
+
+**Savings math, unambiguously:**
+- Rate savings = ListCost − ContractedCost
+- Commitment savings = ContractedCost − EffectiveCost
+- Effective Savings Rate (ESR) = (ListCost − EffectiveCost) / ListCost
+
+**FOCUS 1.4's covering/covered rule** replaced provider-specific amortization logic with one constant: across a covering charge and everything it covers, EffectiveCost and BilledCost sum to the same total within the covering charge's charge period.
+
+- A **covering charge** is a purchase that pays for other charges (RI prepayment, marketplace credit pool). Its EffectiveCost is 0; the cost flows to the usage it covers.
+- A **covered charge** is consumption drawing against a covering charge; it carries the recognized share.
+- Standalone items (uncovered usage, Tax, Credit, purchases that neither cover nor are covered) have EffectiveCost = BilledCost.
+- Adjustment charges may differ, reflecting post-charge corrections.
+- Anti-double-count rule: when dataset instances are merged, charges generated by entities that did not originate the cost and usage data have EffectiveCost = 0.
+
+If someone's cross-provider accrual report doesn't tie out, this rule is usually what they've implemented per-provider instead of once.
+
+## 5. Key dimension columns
+
+Frequently used in allocation and analysis (this is the working set, not the full spec):
+
+- `BillingAccountId` / `BillingAccountName` / `BillingAccountType`
+- `SubAccountId` / `SubAccountName` / `SubAccountType`
+- `ServiceName`, `ServiceCategory`, `ServiceSubcategory`
+- `ChargeCategory` (Usage, Purchase, Tax, Credit, Adjustment), `ChargeClass`, `ChargeDescription`, `ChargeFrequency`
+- `ChargePeriodStart` / `ChargePeriodEnd`, `BillingPeriodStart` / `BillingPeriodEnd`
+- `ResourceId`, `ResourceName`, `ResourceType`
+- `Region`, `AvailabilityZone`
+- `Tags` — the allocation workhorse
+- `PricingCategory`, `PricingUnit`, `PricingQuantity`
+- `ConsumedQuantity`, `ConsumedUnit`
+- `CommitmentDiscountId` / `Name` / `Type` / `Category` / `Status`
+- `SkuId`, `SkuPriceId`
+- `InvoiceId`, `InvoiceIssuerName`
+- `ServiceProviderName`, `HostProviderName` — added 1.3
+- `BillingCurrency`, `PricingCurrency`
+
+**Deprecation note:** `ProviderName` and `PublisherName` were removed in 1.4. Their roles are covered by ServiceProviderName, HostProviderName, InvoiceIssuerName, and Data Generator metadata. Code referencing them breaks on 1.4 exports.
+
+Verify exact column names against focus.finops.org/focus-columns before shipping schema — do not guess column names from memory.
+
+## 6. FOCUS 1.3 additions (Dec 2025)
+
+- **Contract Commitment dataset** (13 columns) — commitment terms (start/end, remaining units, descriptions) isolated from cost/usage rows, so one query shows all active commitments. First extension of FOCUS to an adjacent dataset.
+- **Split cost allocation columns** — generators expose *how* they split shared costs across workloads, not just the result. Aimed at Kubernetes pods, shared databases, multi-tenant clusters.
+- **Recency and completeness dimensions** — generators must timestamp datasets and flag whether data is final or subject to revision, so consumers stop processing incomplete periods.
+- **Service Provider vs Host Provider** — distinguishes who sells the service from whose infrastructure it runs on. Disambiguates reseller and marketplace relationships.
+
+## 7. FOCUS 1.4 additions (June 2026)
+
+47 new columns, 2 new datasets, 6 attributes, 17 glossary entries, 2 supported features. Zero incompatible changes beyond the completed ProviderName/PublisherName deprecation.
+
+**Invoice reconciliation (the bridge to finance):**
+- **Invoice Detail** dataset — charges as invoiced, with payment currency, payment terms, due date, purchase order number, and tax lines typically absent from Cost and Usage.
+- **Billing Period** dataset — issuer-aware period boundaries and status, so period-over-period analysis survives billing periods that don't align to calendar months.
+- **Invoice Reconciliation** supported feature — joins Invoice Detail to Cost and Usage on `InvoiceId`; `InvoiceDetailId` enables line-item reconciliation; `PaymentCurrencyInvoiceDetailId` links records when billing and payment currencies are tracked at different grain.
+- **Rounding Variance Tolerance** — a defined formula for reconciling high-precision cost data against two-decimal invoice totals, so sums match within tolerance instead of failing on rounding noise.
+
+**Commitment depth:**
+- Contract Commitment grows 13 → 30 columns across four groups: identification, lifecycle and periods, commitment structure, cost and quantity. Answers "what's the payment schedule," "usage-based or spend-based," "what discount rate" from a table instead of a contract PDF.
+- `ContractApplied` on Cost and Usage gains a formalized JSON Object Schema (replacing 1.3's looser inline structure) so it parses without provider-specific knowledge.
+- **Commitment Program Eligibility Details** — a JSON column with a `CommitmentPrograms` array identifying which `ProgramType` a charge qualifies for, *regardless of whether a commitment is applied*. Covers discount-bearing programs (flexible spend plans, resource reservations) and capacity reservations. This is what finally makes eligibility-adjusted coverage rates computable without reverse-engineering provider rules — and lets SaaS providers who can't itemize row-level discounts still surface eligibility.
+
+**Integrity attributes** (what makes FOCUS usable as system of record rather than a supplement):
+- **Correction Handling** — generators must document which of three styles they use: *Replacement* (complete snapshot overwrites prior), *Delta* (additive net-change records), *Ledger* (explicit reversals and re-entries, full audit trail).
+- **Delivery Handling** — Overwrite (complete snapshot) vs Append; they combine in practice (overwrite an open period, append once closed). The spec explicitly bars implementations that would force consumers to deduplicate.
+- **Dataset Completeness** — native columns must be carried as `x_` columns; dropping one requires a documented, justified reason.
+- **Dataset Configuration** — consumers may trim a dataset to only needed columns and stay conformant, cutting storage and processing cost.
+
+Also: BCP-14 keyword alignment (RECOMMENDED → SHOULD), mandated numeric formats and precisions, normative unit format rules.
+
+## 8. FOCUS 1.5 (in development)
+
+- **Native AI support** — model identity and input/output token consumption in Cost and Usage, with worked examples for token- and generation-based billing.
+- **Price Sheet dataset** — standardized provider list pricing separate from consumption records, giving a stable reference for unit price analysis and contract benchmarking without parsing pricing APIs.
+- **Migration Guide** — help moving between FOCUS versions.
+
+Until 1.5 ships, AI/token spend in FOCUS relies on 1.2's non-monetary contracted pricing support plus `x_` columns. Any tool claiming "native FOCUS AI support" today is doing something custom.
+
+## 9. Adoption reality and conformance
+
+- **No provider is fully conformant.** Coverage is uneven — AWS's GA release closed most but not all specification gaps; Google Cloud has lagged on one-click export. Validate each export rather than assuming parity.
+- **FOCUS Validator** supports 1.3 conformance testing today; 1.4 support arrives later in Q3 2026.
+- A **conformance certification program** for data generators launched in 2026, publishing sample data validating conformance, mapping from native format to FOCUS (1:1, transformation, or unsupported), and a conformance gap report. This is real procurement leverage — ask vendors for their gap report.
+- Shared/split cost allocation is still maturing; provider-determined splits with limited visibility remain common despite 1.3's columns.
+- Generator coverage has expanded well past hyperscalers into SaaS, software, data, and platform providers.
+
+## 10. Practical guidance
+
+**When designing a cost data model:** make FOCUS the canonical layer. Land native exports raw, transform to FOCUS, build everything downstream on FOCUS column names. Keep provider-specific fields as `x_` columns rather than inventing your own names — future you will thank present you when a second provider arrives.
+
+**What doesn't map cleanly** — be explicit about these rather than pretending:
+- Kubernetes and other shared-infrastructure splitting, where the allocation method itself is the interesting part
+- On-prem and data center cost, which has no native billing export at all — you're constructing FOCUS rows from depreciation schedules, and that's legitimate but must be labeled
+- AI/token spend until 1.5
+- Anything requiring business context (which team owns this) — that's a join to your own metadata, not something FOCUS provides
+
+**In vendor conversations, the questions that matter:** which FOCUS version do you emit and/or ingest; do you have a published conformance gap report; how do you handle corrections (replacement/delta/ledger); do you carry native columns as `x_`.
+
+**Migration cost is real.** A 1.2→1.4 move means auditing every query for removed columns, re-validating amortization logic against the covering/covered rule, and adding the new datasets to pipelines. Budget it as a project, not a config change.

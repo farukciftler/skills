@@ -317,10 +317,16 @@
   "script_var": false,
   "referans_var": true,
   "varyant": 0,
-  "kaynaklar": [],
-  "kaynak_tipleri": [],
+  "kaynaklar": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/tesvik-avcisi"
+  ],
+  "kaynak_tipleri": [
+   "claude.ai"
+  ],
   "baglanacak": [],
-  "ayna": []
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/tesvik-avcisi"
+  ]
  },
  {
   "ad": "vakif-katilim-yatirim",
@@ -960,9 +966,11 @@
    "~/Documents/GitHub/weftrecords/.claude/skills/healing-audio-youtube-seo",
    "~/projects/reelsindustry/.claude/skills/healing-audio-youtube-seo",
    "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo",
-   "~/Documents/GitHub/reelsindustry/.claude/skills/healing-audio-youtube-seo"
+   "~/Documents/GitHub/reelsindustry/.claude/skills/healing-audio-youtube-seo",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/healing-audio-youtube-seo"
   ],
   "kaynak_tipleri": [
+   "claude.ai",
    "kurulu"
   ],
   "baglanacak": [
@@ -971,7 +979,9 @@
    "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo",
    "~/Documents/GitHub/reelsindustry/.claude/skills/healing-audio-youtube-seo"
   ],
-  "ayna": []
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/healing-audio-youtube-seo"
+  ]
  },
  {
   "ad": "kling-video-uretim",
@@ -1014,15 +1024,18 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/instagram-reels/docs/physics-reel-forge",
-   "~/Documents/GitHub/instagram-reels/docs/physics-reel-forge"
+   "~/Documents/GitHub/instagram-reels/docs/physics-reel-forge",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/physics-reel-forge"
   ],
   "kaynak_tipleri": [
+   "claude.ai",
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
    "~/projects/instagram-reels/docs/physics-reel-forge",
-   "~/Documents/GitHub/instagram-reels/docs/physics-reel-forge"
+   "~/Documents/GitHub/instagram-reels/docs/physics-reel-forge",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/physics-reel-forge"
   ]
  },
  {
@@ -1072,16 +1085,20 @@
   "varyant": 0,
   "kaynaklar": [
    "~/Documents/GitHub/weftrecords/.claude/skills/retro-record-label",
-   "~/projects/weftrecords/.claude/skills/retro-record-label"
+   "~/projects/weftrecords/.claude/skills/retro-record-label",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/retro-record-label"
   ],
   "kaynak_tipleri": [
+   "claude.ai",
    "kurulu"
   ],
   "baglanacak": [
    "~/Documents/GitHub/weftrecords/.claude/skills/retro-record-label",
    "~/projects/weftrecords/.claude/skills/retro-record-label"
   ],
-  "ayna": []
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/retro-record-label"
+  ]
  },
  {
   "ad": "shorts-strategy",
@@ -1153,16 +1170,20 @@
   "varyant": 0,
   "kaynaklar": [
    "~/Documents/GitHub/weftrecords/.claude/skills/suno-composer",
-   "~/projects/weftrecords/.claude/skills/suno-composer"
+   "~/projects/weftrecords/.claude/skills/suno-composer",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/suno-composer"
   ],
   "kaynak_tipleri": [
+   "claude.ai",
    "kurulu"
   ],
   "baglanacak": [
    "~/Documents/GitHub/weftrecords/.claude/skills/suno-composer",
    "~/projects/weftrecords/.claude/skills/suno-composer"
   ],
-  "ayna": []
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/suno-composer"
+  ]
  },
  {
   "ad": "weft-channel",
@@ -1552,6 +1573,31 @@
   ]
  },
  {
+  "ad": "trend-setter",
+  "slug": "trend-setter",
+  "kategori": "04-icerik-yazim-ceviri",
+  "kategori_adi": "İçerik, Yazım & Çeviri",
+  "aciklama": "Full-stack social media content studio that produces platform-native posts, scripts, captions, threads, and carousel designs that read and look fully human — no AI tells in the writing, no AI-default look in the visuals. Researches live trends before writing and builds or follows brand design systems for visual output. Use this skill whenever the user wants ANY social media content or strategy — an X/Twitter post or thread, LinkedIn post, Instagram caption or carousel, TikTok/Reels/Shorts script, YouTube title or hook, content calendar, campaign, bio, hook ideas, or trend research — or asks to humanize/de-AI existing copy, adapt one piece across platforms, or create branded post visuals. Also trigger on Turkish requests like \"post yaz\", \"içerik üret\", \"sosyal medya postu\", \"tweet at\", \"carousel hazırla\", \"reels senaryosu\", \"viral içerik\", \"trend araştır\", \"insan gibi yaz\", \"AI yazdığı belli olmasın\".",
+  "ozet": "Full-stack social media content studio that produces platform-native posts, scripts, captions, threads, and carousel designs that read and look fully human — no AI…",
+  "yol": "kutuphane/04-icerik-yazim-ceviri/trend-setter",
+  "bayt": 7632,
+  "satir": 86,
+  "ek_dosya": 6,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/trend-setter"
+  ],
+  "kaynak_tipleri": [
+   "claude.ai"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/trend-setter"
+  ]
+ },
+ {
   "ad": "turkce-anlati",
   "slug": "turkce-anlati",
   "kategori": "04-icerik-yazim-ceviri",
@@ -1619,17 +1665,20 @@
   "varyant": 0,
   "kaynaklar": [
    "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst",
-   "~/Documents/GitHub/pipsworn/.claude/skills/appstore-market-analyst"
+   "~/Documents/GitHub/pipsworn/.claude/skills/appstore-market-analyst",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/appstore-market-analyst"
   ],
   "kaynak_tipleri": [
    "GitHub (yerelde yok)",
+   "claude.ai",
    "kurulu"
   ],
   "baglanacak": [
    "~/Documents/GitHub/pipsworn/.claude/skills/appstore-market-analyst"
   ],
   "ayna": [
-   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst"
+   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/appstore-market-analyst"
   ]
  },
  {
@@ -1728,10 +1777,16 @@
   "script_var": false,
   "referans_var": true,
   "varyant": 0,
-  "kaynaklar": [],
-  "kaynak_tipleri": [],
+  "kaynaklar": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/hypercasual-lab"
+  ],
+  "kaynak_tipleri": [
+   "claude.ai"
+  ],
   "baglanacak": [],
-  "ayna": []
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/hypercasual-lab"
+  ]
  },
  {
   "ad": "klinik-lead-akisi",
@@ -1952,17 +2007,20 @@
   "varyant": 0,
   "kaynaklar": [
    "github:farukciftler/pipsworn → .claude/skills/jira-task-writer",
-   "~/Documents/GitHub/pipsworn/.claude/skills/jira-task-writer"
+   "~/Documents/GitHub/pipsworn/.claude/skills/jira-task-writer",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/jira-task-writer"
   ],
   "kaynak_tipleri": [
    "GitHub (yerelde yok)",
+   "claude.ai",
    "kurulu"
   ],
   "baglanacak": [
    "~/Documents/GitHub/pipsworn/.claude/skills/jira-task-writer"
   ],
   "ayna": [
-   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer"
+   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/jira-task-writer"
   ]
  },
  {
@@ -2233,17 +2291,20 @@
   "varyant": 0,
   "kaynaklar": [
    "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect",
-   "~/Documents/GitHub/pipsworn/.claude/skills/apple-platform-architect"
+   "~/Documents/GitHub/pipsworn/.claude/skills/apple-platform-architect",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/apple-platform-architect"
   ],
   "kaynak_tipleri": [
    "GitHub (yerelde yok)",
+   "claude.ai",
    "kurulu"
   ],
   "baglanacak": [
    "~/Documents/GitHub/pipsworn/.claude/skills/apple-platform-architect"
   ],
   "ayna": [
-   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect"
+   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/apple-platform-architect"
   ]
  },
  {
@@ -2310,6 +2371,31 @@
   "ayna": [
    "~/projects/mcailabs-v4.0/.agents/skills/fastapi-microservices-development",
    "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/fastapi-microservices-development"
+  ]
+ },
+ {
+  "ad": "finops-expert",
+  "slug": "finops-expert",
+  "kategori": "07-yazilim-muhendislik",
+  "kategori_adi": "Yazılım Mühendisliği",
+  "aciklama": "Senior FinOps practitioner expertise grounded in FinOps Framework 2026, FOCUS 1.4, and State of FinOps 2026. Use whenever work touches cloud or technology cost management - cost allocation, showback/chargeback, tagging strategy, unit economics, forecasting, budgets, anomaly detection, commitment and rate optimization (RI/SP/CUD), rightsizing, Kubernetes cost splitting, SaaS and license spend, data platform cost, data center and private cloud cost, AI/LLM token economics and GPU spend, FOCUS schema design, FinOps KPIs and dashboards, maturity assessments, FinOps product roadmaps, or FinOps certification. Also trigger on Turkish phrasings like \"bulut maliyeti\", \"maliyet optimizasyonu\", \"maliyet dagitimi\", \"token maliyeti\", \"birim ekonomi\", \"taahhut yonetimi\", and whenever someone designs, builds, sells, or evaluates a cloud cost product. Use it even when the user never says \"FinOps\" - if the question is who pays for what technology spend and how to cut or explain it, this applies.",
+  "ozet": "Senior FinOps practitioner expertise grounded in FinOps Framework 2026, FOCUS 1.4, and State of FinOps 2026.",
+  "yol": "kutuphane/07-yazilim-muhendislik/finops-expert",
+  "bayt": 10336,
+  "satir": 85,
+  "ek_dosya": 5,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/finops-expert"
+  ],
+  "kaynak_tipleri": [
+   "claude.ai"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/finops-expert"
   ]
  },
  {
@@ -3256,15 +3342,19 @@
   "referans_var": true,
   "varyant": 1,
   "kaynaklar": [
-   "~/Documents/GitHub/weftrecords/.claude/skills/pexels-media-scout"
+   "~/Documents/GitHub/weftrecords/.claude/skills/pexels-media-scout",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/pexels-media-scout"
   ],
   "kaynak_tipleri": [
+   "claude.ai",
    "kurulu"
   ],
   "baglanacak": [
    "~/Documents/GitHub/weftrecords/.claude/skills/pexels-media-scout"
   ],
-  "ayna": []
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/pexels-media-scout"
+  ]
  },
  {
   "ad": "post-forge",
@@ -3282,17 +3372,20 @@
   "varyant": 0,
   "kaynaklar": [
    "github:farukciftler/pipsworn → .claude/skills/post-forge",
-   "~/Documents/GitHub/pipsworn/.claude/skills/post-forge"
+   "~/Documents/GitHub/pipsworn/.claude/skills/post-forge",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/post-forge"
   ],
   "kaynak_tipleri": [
    "GitHub (yerelde yok)",
+   "claude.ai",
    "kurulu"
   ],
   "baglanacak": [
    "~/Documents/GitHub/pipsworn/.claude/skills/post-forge"
   ],
   "ayna": [
-   "github:farukciftler/pipsworn → .claude/skills/post-forge"
+   "github:farukciftler/pipsworn → .claude/skills/post-forge",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/post-forge"
   ]
  },
  {
@@ -4044,10 +4137,16 @@
   "script_var": false,
   "referans_var": false,
   "varyant": 0,
-  "kaynaklar": [],
-  "kaynak_tipleri": [],
+  "kaynaklar": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/product-self-knowledge"
+  ],
+  "kaynak_tipleri": [
+   "claude.ai"
+  ],
   "baglanacak": [],
-  "ayna": []
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/product-self-knowledge"
+  ]
  },
  {
   "ad": "schedule",

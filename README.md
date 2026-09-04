@@ -1,23 +1,23 @@
 # Skill Kütüphanesi
 
 Faruk'un tüm Claude skill'lerinin tek merkezi. Projelerde, `~/.claude/skills`
-altında, claude.ai'da ve GitHub depolarında dağınık duran **128 benzersiz skill**
+altında, claude.ai'da ve GitHub depolarında dağınık duran **132 benzersiz skill**
 burada kategorize edilmiş, ölçülmüş ve dokümante edilmiş halde duruyor.
 
 | | |
 |---|---|
-| **Kütüphane girdisi** | 154 (128 benzersiz ad + 26 ayrışmış sürüm) |
+| **Kütüphane girdisi** | 159 (132 benzersiz ad + 27 ayrışmış sürüm) |
 | **Kategori** | 14 |
-| **Toplam SKILL.md** | ~1,8 MB · 740 ek dosya |
-| **Script içeren** | 47 skill |
-| **Referans dosyası olan** | 81 skill |
-| **Kaynak dağılımı** | 67 kurulu · 53 proje-içi · 50 claude.ai · 6 yalnız GitHub |
+| **Toplam SKILL.md** | ~1,8 MB · 780 ek dosya |
+| **Script içeren** | 48 skill |
+| **Referans dosyası olan** | 85 skill |
+| **Kaynak dağılımı** | 67 kurulu · 53 proje-içi · 64 claude.ai · 6 yalnız GitHub |
 
 ## Nereden başlamalı
 
 | İhtiyaç | Dosya |
 |---|---|
-| Bir skill'i isimden aramak | **[INDEX.md](INDEX.md)** — 154 girdilik alfabetik tablo |
+| Bir skill'i isimden aramak | **[INDEX.md](INDEX.md)** — 159 girdilik alfabetik tablo |
 | Claude'un buradan nasıl çalışacağı | **[CLAUDE.md](CLAUDE.md)** |
 | Ne taşındı, ne taşınmadı, nasıl geri alınır | **[TASIMA.md](TASIMA.md)** |
 | Başka bir bilgisayarda kurmak | **[KURULUM.md](KURULUM.md)** |
@@ -27,20 +27,20 @@ burada kategorize edilmiş, ölçülmüş ve dokümante edilmiş halde duruyor.
 
 | # | Kategori | Adet | Kapsam |
 |---|---|---|---|
-| 01 | **[Finans & Yatırım](kutuphane/01-finans-yatirim/)** | 13 | Helal/katılım yatırım, portföy kalibrasyonu, bütçe, vergi, fiyatlandırma, değerleme |
+| 01 | **[Finans & Yatırım](kutuphane/01-finans-yatirim/)** | 14 | Helal/katılım yatırım, portföy kalibrasyonu, bütçe, vergi, fiyatlandırma, değerleme, devlet teşvikleri |
 | 02 | **[Masifico — Ahşap Oyuncak](kutuphane/02-masifico-ahsap-oyuncak/)** | 19 | Tasarım → üretim → kalite → CE mevzuatı → pazar zinciri |
 | 03 | **[Video & Ses Üretimi](kutuphane/03-video-ses-uretim/)** | 15 | Fizik/ambient video hatları, besteleme, plak etiketi, kanal, prosedürel ses |
-| 04 | **[İçerik, Yazım & Çeviri](kutuphane/04-icerik-yazim-ceviri/)** | 14 | Doğal Türkçe, dikey video anlatısı, çok dilli çeviri, içerik stratejisi |
-| 05 | **[Pazarlama & Büyüme](kutuphane/05-pazarlama-buyume/)** | 10 | SEO/ASO denetimi, Shorts optimizasyonu, viral ürün avı, lead üretimi |
+| 04 | **[İçerik, Yazım & Çeviri](kutuphane/04-icerik-yazim-ceviri/)** | 15 | Doğal Türkçe, dikey video anlatısı, çok dilli çeviri, içerik ve sosyal medya stratejisi |
+| 05 | **[Pazarlama & Büyüme](kutuphane/05-pazarlama-buyume/)** | 11 | SEO/ASO denetimi, Shorts optimizasyonu, viral ürün avı, lead üretimi, hyper-casual oyun testi |
 | 06 | **[UX & Ürün Yönetimi](kutuphane/06-ux-urun/)** | 12 | Mobil/web akış tasarımı ve denetimi, ürün kararı incelemesi |
-| 07 | **[Yazılım Mühendisliği](kutuphane/07-yazilim-muhendislik/)** | 21 | Framework/altyapı referansları, kod grafiği, çoklu bulut, sunucu operasyonu |
+| 07 | **[Yazılım Mühendisliği](kutuphane/07-yazilim-muhendislik/)** | 22 | Framework/altyapı referansları, kod grafiği, çoklu bulut, sunucu operasyonu, bulut maliyeti |
 | 08 | **[AI & Makine Öğrenmesi](kutuphane/08-ai-ml/)** | 8 | Kaggle/ML iş akışı, AutoML, LLM ve SLM mimarisi, GPU hibeleri |
 | 09 | **[CAD & Görsel Üretim](kutuphane/09-cad-gorsel/)** | 9 | Parametrik mobilya zinciri, markalı görsel hattı, sunum tasarımı, stok görsel keşfi |
 | 10 | **[Yaşam & Türkiye Hizmetleri](kutuphane/10-yasam-turkiye/)** | 13 | Satın alma, seyahat, vize, hak arama, mahremiyet, etkinlik, bölgesel mevzuat |
 | 11 | **[Öğrenme & Dil](kutuphane/11-ogrenme/)** | 3 | Arapça ve İngilizce koçluğu, genel öğrenme rehberliği |
 | 12 | **[Marka & Müşteri Projeleri](kutuphane/12-marka-musteri/)** | 4 | Markaya bağlı kimlik, içerik ve mevzuat kaynakları |
 | 13 | **[Ofis & Belge](kutuphane/13-ofis-belge/)** | 4 | Word/PowerPoint/Excel/PDF (Anthropic yerleşik) |
-| 14 | **[Meta & Sistem](kutuphane/14-meta-sistem/)** | 9 | Skill yazımı ve değerlendirmesi, hafıza, zamanlama, kurulum |
+| 14 | **[Meta & Sistem](kutuphane/14-meta-sistem/)** | 10 | Skill yazımı ve değerlendirmesi, hafıza, zamanlama, kurulum |
 
 Her kategori klasöründe, o kategorideki her skill'in tam açıklamasını ve ölçüsünü
 veren bir `README.md` var.

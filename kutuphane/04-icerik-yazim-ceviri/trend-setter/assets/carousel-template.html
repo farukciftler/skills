@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Carousel Template — restyle via tokens, do not ship this look verbatim</title>
+<!--
+  PARAMETRIC CAROUSEL TEMPLATE (1080×1350 slides)
+  ------------------------------------------------
+  Usage by the skill:
+  1. Replace every CSS variable in :root with the project's token system
+     (see references/design-system.md §2). The layout grammar below is the
+     reusable part; the visual style is NOT — restyle it per brand.
+  2. Swap fonts in the Google Fonts import to the token typefaces.
+  3. Duplicate slide sections as needed; keep margins/positions identical
+     across content slides (the "scanning path" rule).
+  4. Render at 100% browser zoom and screenshot each .slide, or print
+     each slide to PDF pages for LinkedIn documents.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* ==== TOKENS — replace all of these per project ==== */
+    --bg: #0E1116;
+    --surface: #161B22;
+    --text: #E9EDF1;
+    --muted: #9AA4AF;
+    --accent: #E8A33D;
+    --accent-ink: #141414;
+    --display: 'Sora', sans-serif;
+    --body: 'Inter', sans-serif;
+    --h1: 104px;      /* hook headline */
+    --h2: 64px;       /* content slide headline */
+    --body-size: 44px;
+    --caption: 30px;
+    --margin: 88px;
+    --lh: 1.25;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #333; display: flex; flex-direction: column; gap: 40px; align-items: center; padding: 40px 0; }
+
+  .slide {
+    width: 1080px; height: 1350px;
+    background: var(--bg); color: var(--text);
+    position: relative; overflow: hidden;
+    padding: var(--margin);
+    display: flex; flex-direction: column; justify-content: center;
+    font-family: var(--body);
+  }
+
+  /* Brand anchor — the recurring device. Replace with the project's anchor. */
+  .anchor {
+    position: absolute; top: 0; left: 0;
+    background: var(--accent); color: var(--accent-ink);
+    font-family: var(--display); font-weight: 800; font-size: var(--caption);
+    padding: 12px 28px;
+  }
+  .handle {
+    position: absolute; bottom: 40px; right: var(--margin);
+    color: var(--muted); font-size: var(--caption);
+  }
+  .progress {
+    position: absolute; bottom: 0; left: 0; height: 10px;
+    background: var(--accent);
+  }
+
+  h1 { font-family: var(--display); font-weight: 800; font-size: var(--h1); line-height: 1.08; letter-spacing: -0.02em; }
+  h2 { font-family: var(--display); font-weight: 700; font-size: var(--h2); line-height: 1.12; margin-bottom: 40px; }
+  p  { font-size: var(--body-size); line-height: var(--lh); color: var(--text); }
+  .muted { color: var(--muted); }
+  .accent { color: var(--accent); }
+
+  .kicker { font-size: var(--caption); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 32px; }
+  .bignum { font-family: var(--display); font-weight: 800; font-size: 220px; line-height: 1; color: var(--accent); }
+
+  .cta { background: var(--accent); color: var(--accent-ink); }
+  .cta h2, .cta p { color: var(--accent-ink); }
+  .cta .handle { color: var(--accent-ink); opacity: .7; }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — HOOK: one focal idea, max type, max negative space -->
+<section class="slide">
+  <div class="anchor">01</div>
+  <p class="kicker">Series or topic label</p>
+  <h1>One sharp claim that earns the swipe.</h1>
+  <div class="handle">@brand</div>
+  <div class="progress" style="width: 12.5%"></div>
+</section>
+
+<!-- SLIDE 2 — RE-HOOK: the stake, cost, or "why now" -->
+<section class="slide">
+  <div class="anchor">02</div>
+  <h2>The cost of ignoring this:</h2>
+  <p class="bignum">%37</p>
+  <p class="muted" style="margin-top: 24px;">One line of context under the number. Non-round numbers read true.</p>
+  <div class="handle">@brand</div>
+  <div class="progress" style="width: 25%"></div>
+</section>
+
+<!-- SLIDE 3..n — CONTENT: identical margins and text position on every one -->
+<section class="slide">
+  <div class="anchor">03</div>
+  <h2>One idea per slide</h2>
+  <p>Max ~25 words. The caption carries nuance; the slide carries the skeleton. Keep this text block in the same position on every content slide.</p>
+  <div class="handle">@brand</div>
+  <div class="progress" style="width: 37.5%"></div>
+</section>
+
+<!-- QUOTE variant — optional content-slide flavor within the same grammar -->
+<section class="slide">
+  <div class="anchor">04</div>
+  <h2 class="accent" style="font-size: 76px;">"A short human quote, with a specific detail in it."</h2>
+  <p class="muted">— attribution, role</p>
+  <div class="handle">@brand</div>
+  <div class="progress" style="width: 50%"></div>
+</section>
+
+<!-- FINAL SLIDE — CTA: highest contrast of the set, one action only -->
+<section class="slide cta">
+  <div class="anchor" style="background: var(--bg); color: var(--text);">05</div>
+  <h2>One clear ask.</h2>
+  <p>A save trigger or an honest question — never three CTAs at once.</p>
+  <div class="handle">@brand</div>
+</section>
+
+</body>
+</html>
