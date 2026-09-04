@@ -1,0 +1,131 @@
+{
+  "yt-thumbnail": {
+    "media": "photo",
+    "target_w": 1280,
+    "target_h": 720,
+    "orientation": "landscape",
+    "min_size": "medium",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "Right or left third should be quiet for the title block."
+  },
+  "yt-banner": {
+    "media": "photo",
+    "target_w": 2560,
+    "target_h": 1440,
+    "orientation": "landscape",
+    "min_size": "large",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "Only the centre 1546x423 is safe on every device."
+  },
+  "yt-longform-bg": {
+    "media": "video",
+    "target_w": 1920,
+    "target_h": 1080,
+    "orientation": "landscape",
+    "min_duration": 15,
+    "max_duration": 60,
+    "commercial": true,
+    "note": "Loopable bed for 1h mixes. Low subject motion, no hard cuts, no visible faces."
+  },
+  "reels-short": {
+    "media": "video",
+    "target_w": 1080,
+    "target_h": 1920,
+    "orientation": "portrait",
+    "min_duration": 10,
+    "max_duration": 90,
+    "commercial": true,
+    "note": "Keep top 250px / bottom 400px clear of subject — UI overlays."
+  },
+  "ig-feed-45": {
+    "media": "photo",
+    "target_w": 1080,
+    "target_h": 1350,
+    "orientation": "portrait",
+    "min_size": "medium",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "4:5 feed post."
+  },
+  "ig-story": {
+    "media": "photo",
+    "target_w": 1080,
+    "target_h": 1920,
+    "orientation": "portrait",
+    "min_size": "medium",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "9:16 story frame."
+  },
+  "web-hero": {
+    "media": "photo",
+    "target_w": 2560,
+    "target_h": 1440,
+    "orientation": "landscape",
+    "min_size": "large",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "Landing page hero; expect a text panel over one half."
+  },
+  "press-kit": {
+    "media": "photo",
+    "target_w": 3000,
+    "target_h": 2000,
+    "orientation": "landscape",
+    "min_size": "large",
+    "commercial": true,
+    "note": "EPK / blog-supplied art. Print-adjacent, so favour originals."
+  },
+  "og-image": {
+    "media": "photo",
+    "target_w": 1200,
+    "target_h": 630,
+    "orientation": "landscape",
+    "min_size": "medium",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "Site OG / paylasim karti. Sag ya da sol ucte sessiz kalsin, uzerine logo ve proje adi gelecek."
+  },
+  "blog-kapak": {
+    "media": "photo",
+    "target_w": 1600,
+    "target_h": 900,
+    "orientation": "landscape",
+    "min_size": "medium",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "Blog yazisi kapagi. Konu gorseli — proje gorseli DEGIL."
+  },
+  "web-bolum": {
+    "media": "photo",
+    "target_w": 2560,
+    "target_h": 1200,
+    "orientation": "landscape",
+    "min_size": "large",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "Site bolum arka plani. Uzerine koyu katman gelecek; dusuk kontrastli, sakin kare tercih et."
+  },
+  "doku": {
+    "media": "photo",
+    "target_w": 2000,
+    "target_h": 2000,
+    "orientation": "square",
+    "min_size": "large",
+    "needs_negative_space": false,
+    "commercial": true,
+    "note": "Doku/malzeme plakasi — beton, mermer, ahsap, cam, kagit. Kirpilarak zemin olarak kullanilir."
+  },
+  "reels-bstok": {
+    "media": "video",
+    "target_w": 1080,
+    "target_h": 1920,
+    "orientation": "portrait",
+    "min_duration": 5,
+    "max_duration": 30,
+    "commercial": true,
+    "note": "Reels/Story ara kesit. Ust 250px / alt 400px konudan uzak dursun. Bina cephesi ICEREN klip kullanma."
+  }
+}

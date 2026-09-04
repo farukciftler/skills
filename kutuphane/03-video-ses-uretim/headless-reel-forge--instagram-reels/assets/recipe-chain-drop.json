@@ -1,0 +1,56 @@
+{
+  "recipe": "chain-drop",
+  "fps": 60,
+  "duration": 5.0,
+  "physics_hz": 480,
+  "solver_iterations": 16,
+  "gravity": -9.81,
+  "energy_floor": 0.6,
+  "params": {
+    "links": 30,
+    "link_length": 0.11,
+    "link_radius": 0.032,
+    "bar_height": 2.45,
+    "bar_radius": 0.085,
+    "bias": 0.62,
+    "jitter": 0.008,
+    "restitution": 0.04,
+    "friction": 0.3,
+    "material": "metal",
+    "bar_length": 0.12
+  },
+  "look": {
+    "palette": [
+      "#33333c",
+      "#d9a441",
+      "#f2c14e",
+      "#7fb2a6",
+      "#eae4d8"
+    ],
+    "background": "#0e0e13",
+    "camera": {
+      "position": [
+        0.0,
+        1.25,
+        2.95
+      ],
+      "look_at": [
+        0.0,
+        1.35,
+        0.0
+      ],
+      "fov": 46.0
+    },
+    "key_light": {
+      "direction": [
+        -0.5,
+        -0.8,
+        -0.65
+      ],
+      "illuminance": 15000.0
+    },
+    "ambient": 520.0,
+    "bloom": 0.14,
+    "shadow_distance": 9.0
+  }
+}

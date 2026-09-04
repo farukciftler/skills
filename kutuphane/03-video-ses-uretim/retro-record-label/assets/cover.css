@@ -1,0 +1,110 @@
+/* cover.css — base canvas for retro-record-label.
+   Copy next to your HTML and <link> it. Design at 1000×1000; render.py scales
+   to 3000 with a device scale factor so type is rasterised, never upscaled. */
+
+:root {
+  --w: 1000px;
+  --h: 1000px;
+
+  /* Ink system. Override per cover — nothing downstream hardcodes a hex. */
+  --paper: #ede3cb;
+  --ink: #14161c;
+  --accent: #c8452f;
+  --second: #2f5d7c;
+  --muted: #8b8577;
+
+  /* Type. Set these to faces you actually installed via fetch_fonts.py. */
+  --display: "Archivo Black", "Liberation Sans", sans-serif;
+  --grotesk: "Libre Franklin", "Liberation Sans", sans-serif;
+  --mono: "Space Mono", "DejaVu Sans Mono", monospace;
+
+  /* Sleeve margin. 6–8% reads like a printed jacket; below 4% looks like a
+     screenshot of a design, not a record. */
+  --edge: 72px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #1b1b1d;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  font-kerning: normal;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cover {
+  width: var(--w);
+  height: var(--h);
+  position: relative;
+  overflow: hidden;              /* the printed edge, not a way to hide bad layout */
+  background: var(--paper);
+  color: var(--ink);
+  isolation: isolate;
+}
+
+/* The treated plate from darkroom.py. Always cover, never contain — a letterboxed
+   plate instantly reads as a mistake. */
+.plate {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Ink overlays: multiply keeps type sitting *in* the print rather than on top of it. */
+.plate.multiply { mix-blend-mode: multiply; }
+.plate.screen   { mix-blend-mode: screen; }
+
+.layer { position: absolute; inset: 0; z-index: 1; }
+.pad   { position: absolute; inset: var(--edge); z-index: 2;
+         display: flex; flex-direction: column; }
+
+/* Typographic defaults that stop the output looking like a slide deck. */
+.title {
+  font-family: var(--display);
+  line-height: 0.86;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-size: 132px;
+}
+.title.tight   { letter-spacing: -0.045em; }
+.title.wide    { letter-spacing: 0.06em; }
+.artist {
+  font-family: var(--grotesk);
+  font-weight: 700;
+  font-size: 34px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.meta {
+  font-family: var(--mono);
+  font-size: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Catalogue furniture — the small marks that make a square read as a record
+   sleeve instead of a poster: catalogue number, label mark, rule, stereo badge. */
+.rule { height: 4px; background: currentColor; width: 100%; }
+.badge {
+  font-family: var(--grotesk);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 3px solid currentColor;
+  padding: 6px 12px 5px;
+  display: inline-block;
+}
+
+/* Stack helpers */
+.col { display: flex; flex-direction: column; }
+.row { display: flex; align-items: baseline; gap: 16px; }
+.grow { flex: 1; }
+.bottom { margin-top: auto; }

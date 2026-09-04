@@ -1,0 +1,52 @@
+<!doctype html>
+<!--
+  T2 — BİLGİ KARTI / KARUSEL KAPAĞI
+  Üstte kategori etiketi, ortada başlık, altta kısa açıklama.
+  Kartela şeridi YALNIZCA kapak karesinde bulunur; iç sayfalarda tekrarlanmaz.
+-->
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="ortak.css">
+</head>
+<body>
+<div class="tuval {{boyut}} {{zemin}}">
+
+  {{foto}}
+
+  <div class="icerik">
+    <p class="ust-etiket">{{etiket}}</p>
+
+    <div style="flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;gap:28px">
+      <h1 class="h1">{{baslik}}</h1>
+      <!--#if altmetin-->
+      <p class="lead">{{altmetin}}</p>
+      <!--#endif-->
+    </div>
+
+    <div class="kartela tam">
+      <span class="k1"></span><span class="k2"></span><span class="k3"></span><span class="k4"></span>
+    </div>
+
+    <!--#if kaydir-->
+    <p class="meta" style="display:flex;align-items:center;gap:12px">
+      <span>{{kaydir}}</span>
+      <svg width="34" height="20" viewBox="0 0 34 20" fill="none" stroke="currentColor"
+           stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M2 10h28M23 3l7 7-7 7"/>
+      </svg>
+    </p>
+    <!--#endif-->
+  </div>
+
+  <div class="altbar">
+    <div class="logo">
+      <span class="logo-yazi">KARTELA</span>
+      <span class="logo-ruhsat">{{ruhsat_adi}}</span>
+    </div>
+    {{karekod}}
+  </div>
+
+</div>
+</body>
+</html>

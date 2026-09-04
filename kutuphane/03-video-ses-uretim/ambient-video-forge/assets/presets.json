@@ -1,0 +1,1281 @@
+{
+ "sufi-incense": {
+  "note": "Ney, tanbur, makam-based devotional. One incense plume rising off-centre, warm candle grade, almost no camera move.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 30
+  },
+  "loop": 26,
+  "ss": 1.5,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.035,
+   "zoom_cycles": 1,
+   "drift": [
+    18,
+    10
+   ],
+   "warp": 0.05
+  },
+  "layers": [
+   {
+    "plate": "plume",
+    "blend": "screen",
+    "opacity": 0.46,
+    "scale": 1.45,
+    "pan": [
+     70,
+     -120
+    ],
+    "cycles": 1,
+    "blur": 3,
+    "tint": [
+     1.0,
+     0.93,
+     0.82
+    ],
+    "pulse": 0.05,
+    "crush": 0.3
+   },
+   {
+    "plate": "plume",
+    "blend": "screen",
+    "opacity": 0.18,
+    "scale": 1.8,
+    "pan": [
+     -110,
+     90
+    ],
+    "cycles": 1,
+    "phase": 2.4,
+    "blur": 9,
+    "tint": [
+     1.0,
+     0.88,
+     0.7
+    ]
+   },
+   {
+    "plate": "fog",
+    "blend": "softlight",
+    "opacity": 0.3,
+    "scale": 1.3,
+    "pan": [
+     45,
+     18
+    ],
+    "cycles": 1,
+    "phase": 4.1,
+    "blur": 5
+   },
+   {
+    "plate": "dust",
+    "blend": "screen",
+    "opacity": 0.16,
+    "scale": 1.25,
+    "pan": [
+     30,
+     -55
+    ],
+    "cycles": 1,
+    "phase": 0.8,
+    "tint": [
+     1.0,
+     0.95,
+     0.85
+    ],
+    "pulse": 0.08,
+    "pulse_cycles": 3
+   }
+  ],
+  "post": {
+   "bloom": 0.3,
+   "bloom_threshold": 0.6,
+   "bloom_radius": 30,
+   "grade": "candle",
+   "vignette": 0.55,
+   "grain": 9
+  }
+ },
+ "deep-sleep": {
+  "note": "8-hour sleep/delta content. Deliberately almost static: any fast motion wakes people up. Dark, low contrast, heavy vignette.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 24
+  },
+  "loop": 30,
+  "ss": 1.5,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.018,
+   "zoom_cycles": 1,
+   "drift": [
+    10,
+    6
+   ],
+   "warp": 0.0
+  },
+  "layers": [
+   {
+    "plate": "fog",
+    "blend": "screen",
+    "opacity": 0.26,
+    "scale": 1.35,
+    "pan": [
+     38,
+     14
+    ],
+    "cycles": 1,
+    "blur": 8,
+    "tint": [
+     0.82,
+     0.88,
+     1.0
+    ]
+   },
+   {
+    "plate": "fog",
+    "blend": "softlight",
+    "opacity": 0.2,
+    "scale": 1.6,
+    "pan": [
+     -52,
+     -20
+    ],
+    "cycles": 1,
+    "phase": 3.0,
+    "blur": 14
+   },
+   {
+    "plate": "bokeh",
+    "blend": "screen",
+    "opacity": 0.1,
+    "scale": 1.3,
+    "pan": [
+     22,
+     -30
+    ],
+    "cycles": 1,
+    "phase": 1.2,
+    "blur": 6,
+    "tint": [
+     0.85,
+     0.9,
+     1.0
+    ],
+    "pulse": 0.05
+   }
+  ],
+  "post": {
+   "bloom": 0.22,
+   "bloom_threshold": 0.7,
+   "bloom_radius": 40,
+   "grade": "moonlit",
+   "vignette": 0.8,
+   "grain": 7
+  }
+ },
+ "forest-mist": {
+  "note": "Birdsong, forest ambience, 432Hz nature content. Ground fog plus shafts of light through canopy.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 30
+  },
+  "loop": 24,
+  "ss": 1.5,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.045,
+   "zoom_cycles": 1,
+   "drift": [
+    26,
+    12
+   ],
+   "warp": 0.0
+  },
+  "layers": [
+   {
+    "plate": "rays",
+    "blend": "screen",
+    "opacity": 0.22,
+    "scale": 1.5,
+    "pan": [
+     40,
+     0
+    ],
+    "cycles": 1,
+    "rotate": 1.2,
+    "blur": 4,
+    "tint": [
+     1.0,
+     0.97,
+     0.84
+    ],
+    "pulse": 0.07
+   },
+   {
+    "plate": "fog",
+    "blend": "screen",
+    "opacity": 0.32,
+    "scale": 1.4,
+    "pan": [
+     60,
+     16
+    ],
+    "cycles": 1,
+    "phase": 2.2,
+    "blur": 6,
+    "tint": [
+     0.95,
+     1.0,
+     0.95
+    ]
+   },
+   {
+    "plate": "dust",
+    "blend": "screen",
+    "opacity": 0.2,
+    "scale": 1.2,
+    "pan": [
+     34,
+     -70
+    ],
+    "cycles": 1,
+    "phase": 5.0,
+    "pulse": 0.1,
+    "pulse_cycles": 4
+   }
+  ],
+  "post": {
+   "bloom": 0.34,
+   "bloom_threshold": 0.58,
+   "bloom_radius": 28,
+   "grade": "forest",
+   "vignette": 0.5,
+   "grain": 8
+  }
+ },
+ "cosmic-drift": {
+  "note": "Space ambient, drone, binaural. Starfield parallax over the artwork, slow liquid warp.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 30
+  },
+  "loop": 28,
+  "ss": 1.5,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.05,
+   "zoom_cycles": 1,
+   "drift": [
+    22,
+    14
+   ],
+   "warp": 0.09
+  },
+  "layers": [
+   {
+    "plate": "stars",
+    "blend": "screen",
+    "opacity": 0.5,
+    "scale": 1.5,
+    "pan": [
+     90,
+     40
+    ],
+    "cycles": 1,
+    "tint": [
+     0.9,
+     0.95,
+     1.0
+    ],
+    "pulse": 0.06,
+    "pulse_cycles": 5
+   },
+   {
+    "plate": "stars",
+    "blend": "screen",
+    "opacity": 0.3,
+    "scale": 1.15,
+    "pan": [
+     40,
+     18
+    ],
+    "cycles": 1,
+    "phase": 2.8,
+    "blur": 1.5
+   },
+   {
+    "plate": "ink",
+    "blend": "screen",
+    "opacity": 0.2,
+    "scale": 1.7,
+    "pan": [
+     -70,
+     50
+    ],
+    "cycles": 1,
+    "phase": 1.1,
+    "blur": 10,
+    "tint": [
+     0.75,
+     0.85,
+     1.0
+    ]
+   },
+   {
+    "plate": "bokeh",
+    "blend": "screen",
+    "opacity": 0.12,
+    "scale": 1.35,
+    "pan": [
+     55,
+     -35
+    ],
+    "cycles": 1,
+    "phase": 4.4,
+    "blur": 8,
+    "tint": [
+     0.8,
+     0.9,
+     1.0
+    ]
+   }
+  ],
+  "post": {
+   "bloom": 0.4,
+   "bloom_threshold": 0.55,
+   "bloom_radius": 36,
+   "grade": "deep-space",
+   "vignette": 0.7,
+   "grain": 9,
+   "glow": 0.45
+  }
+ },
+ "water-healing": {
+  "note": "Water sounds, whale song, flotation content. The artwork itself ripples via displace; caustic light on top.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 30
+  },
+  "loop": 24,
+  "ss": 1.5,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.03,
+   "zoom_cycles": 1,
+   "drift": [
+    14,
+    8
+   ],
+   "warp": 0.14
+  },
+  "layers": [
+   {
+    "plate": "caustics",
+    "blend": "softlight",
+    "opacity": 0.34,
+    "scale": 1.4,
+    "pan": [
+     70,
+     46
+    ],
+    "cycles": 1,
+    "blur": 3,
+    "tint": [
+     0.85,
+     0.97,
+     1.0
+    ]
+   },
+   {
+    "plate": "caustics",
+    "blend": "screen",
+    "opacity": 0.14,
+    "scale": 1.9,
+    "pan": [
+     -90,
+     -30
+    ],
+    "cycles": 1,
+    "phase": 3.4,
+    "blur": 10
+   },
+   {
+    "plate": "fog",
+    "blend": "screen",
+    "opacity": 0.2,
+    "scale": 1.35,
+    "pan": [
+     40,
+     20
+    ],
+    "cycles": 1,
+    "phase": 1.6,
+    "blur": 9,
+    "tint": [
+     0.85,
+     0.95,
+     1.0
+    ]
+   }
+  ],
+  "post": {
+   "bloom": 0.3,
+   "bloom_threshold": 0.6,
+   "bloom_radius": 30,
+   "grade": "cool-teal",
+   "vignette": 0.6,
+   "grain": 8
+  }
+ },
+ "candle-meditation": {
+  "note": "Guided meditation, breathwork, yoga nidra. Breathing zoom tuned to ~6 breaths/min, warm bokeh.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 30
+  },
+  "loop": 20,
+  "ss": 1.5,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.028,
+   "zoom_cycles": 2,
+   "drift": [
+    12,
+    7
+   ],
+   "warp": 0.0
+  },
+  "layers": [
+   {
+    "plate": "bokeh",
+    "blend": "screen",
+    "opacity": 0.2,
+    "scale": 1.3,
+    "pan": [
+     26,
+     -40
+    ],
+    "cycles": 1,
+    "blur": 5,
+    "tint": [
+     1.0,
+     0.9,
+     0.72
+    ],
+    "pulse": 0.09,
+    "pulse_cycles": 2
+   },
+   {
+    "plate": "plume",
+    "blend": "screen",
+    "opacity": 0.16,
+    "scale": 1.7,
+    "pan": [
+     40,
+     -80
+    ],
+    "cycles": 1,
+    "phase": 2.0,
+    "blur": 12,
+    "tint": [
+     1.0,
+     0.92,
+     0.8
+    ]
+   },
+   {
+    "plate": "dust",
+    "blend": "screen",
+    "opacity": 0.2,
+    "scale": 1.2,
+    "pan": [
+     20,
+     -45
+    ],
+    "cycles": 1,
+    "phase": 4.6,
+    "tint": [
+     1.0,
+     0.94,
+     0.82
+    ],
+    "pulse": 0.1,
+    "pulse_cycles": 3
+   }
+  ],
+  "post": {
+   "bloom": 0.36,
+   "bloom_threshold": 0.58,
+   "bloom_radius": 34,
+   "grade": "warm-amber",
+   "vignette": 0.62,
+   "grain": 8
+  }
+ },
+ "lofi-dust": {
+  "note": "Lo-fi, tape ambient, study beats. Reads as a scanned print: grain forward, texture over motion.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 24
+  },
+  "loop": 20,
+  "ss": 1.25,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.022,
+   "zoom_cycles": 1,
+   "drift": [
+    16,
+    9
+   ],
+   "warp": 0.03
+  },
+  "layers": [
+   {
+    "plate": "dust",
+    "blend": "screen",
+    "opacity": 0.22,
+    "scale": 1.15,
+    "pan": [
+     24,
+     -34
+    ],
+    "cycles": 1,
+    "pulse": 0.12,
+    "pulse_cycles": 5
+   },
+   {
+    "plate": "fog",
+    "blend": "softlight",
+    "opacity": 0.34,
+    "scale": 1.3,
+    "pan": [
+     30,
+     12
+    ],
+    "cycles": 1,
+    "phase": 2.9,
+    "blur": 7
+   },
+   {
+    "plate": "grain",
+    "blend": "overlay",
+    "opacity": 0.12,
+    "scale": 1.05,
+    "pan": [
+     8,
+     6
+    ],
+    "cycles": 3
+   }
+  ],
+  "post": {
+   "bloom": 0.18,
+   "bloom_threshold": 0.68,
+   "bloom_radius": 22,
+   "grade": "sepia-dust",
+   "vignette": 0.66,
+   "grain": 14,
+   "chroma": 0.08
+  }
+ },
+ "singing-bowls": {
+  "note": "Tibetan bowls, gongs, sound bath. Dense curling smoke and strong bloom on every strike.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 30
+  },
+  "loop": 26,
+  "ss": 1.5,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.04,
+   "zoom_cycles": 1,
+   "drift": [
+    20,
+    12
+   ],
+   "warp": 0.07
+  },
+  "layers": [
+   {
+    "plate": "ink",
+    "blend": "screen",
+    "opacity": 0.38,
+    "scale": 1.5,
+    "pan": [
+     -80,
+     60
+    ],
+    "cycles": 1,
+    "blur": 6,
+    "tint": [
+     1.0,
+     0.9,
+     0.8
+    ],
+    "crush": 0.32
+   },
+   {
+    "plate": "ink",
+    "blend": "softlight",
+    "opacity": 0.26,
+    "scale": 1.8,
+    "pan": [
+     90,
+     -40
+    ],
+    "cycles": 1,
+    "phase": 3.2,
+    "blur": 12
+   },
+   {
+    "plate": "rays",
+    "blend": "screen",
+    "opacity": 0.14,
+    "scale": 1.6,
+    "pan": [
+     30,
+     0
+    ],
+    "cycles": 1,
+    "phase": 1.4,
+    "rotate": 0.8,
+    "blur": 8,
+    "tint": [
+     1.0,
+     0.93,
+     0.78
+    ],
+    "pulse": 0.08
+   }
+  ],
+  "post": {
+   "bloom": 0.42,
+   "bloom_threshold": 0.55,
+   "bloom_radius": 38,
+   "grade": "rose-dawn",
+   "vignette": 0.58,
+   "grain": 9
+  }
+ },
+ "rain-window": {
+  "note": "Rain, thunder, sleep-with-rain. Glass-like warp plus low fog; keep it dark so rain audio does the work.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 30
+  },
+  "loop": 22,
+  "ss": 1.5,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.024,
+   "zoom_cycles": 1,
+   "drift": [
+    12,
+    8
+   ],
+   "warp": 0.17
+  },
+  "layers": [
+   {
+    "plate": "caustics",
+    "blend": "softlight",
+    "opacity": 0.2,
+    "scale": 1.6,
+    "pan": [
+     30,
+     90
+    ],
+    "cycles": 2,
+    "blur": 6,
+    "tint": [
+     0.85,
+     0.9,
+     1.0
+    ]
+   },
+   {
+    "plate": "fog",
+    "blend": "screen",
+    "opacity": 0.24,
+    "scale": 1.4,
+    "pan": [
+     44,
+     16
+    ],
+    "cycles": 1,
+    "phase": 2.6,
+    "blur": 10,
+    "tint": [
+     0.86,
+     0.9,
+     1.0
+    ]
+   },
+   {
+    "plate": "bokeh",
+    "blend": "screen",
+    "opacity": 0.1,
+    "scale": 1.25,
+    "pan": [
+     18,
+     40
+    ],
+    "cycles": 1,
+    "phase": 5.1,
+    "blur": 4,
+    "tint": [
+     0.9,
+     0.94,
+     1.0
+    ]
+   }
+  ],
+  "post": {
+   "bloom": 0.26,
+   "bloom_threshold": 0.66,
+   "bloom_radius": 32,
+   "grade": "moonlit",
+   "vignette": 0.78,
+   "grain": 10
+  }
+ },
+ "desert-oud": {
+  "note": "Oud, qanun, Levantine/Anatolian ambient. Dry haze, low sun rays, sepia warmth.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 30
+  },
+  "loop": 24,
+  "ss": 1.5,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.04,
+   "zoom_cycles": 1,
+   "drift": [
+    24,
+    10
+   ],
+   "warp": 0.04
+  },
+  "layers": [
+   {
+    "plate": "rays",
+    "blend": "screen",
+    "opacity": 0.2,
+    "scale": 1.55,
+    "pan": [
+     50,
+     0
+    ],
+    "cycles": 1,
+    "rotate": 1.0,
+    "blur": 6,
+    "tint": [
+     1.0,
+     0.9,
+     0.7
+    ],
+    "pulse": 0.06
+   },
+   {
+    "plate": "fog",
+    "blend": "screen",
+    "opacity": 0.3,
+    "scale": 1.45,
+    "pan": [
+     70,
+     14
+    ],
+    "cycles": 1,
+    "phase": 2.1,
+    "blur": 7,
+    "tint": [
+     1.0,
+     0.94,
+     0.82
+    ]
+   },
+   {
+    "plate": "dust",
+    "blend": "screen",
+    "opacity": 0.18,
+    "scale": 1.2,
+    "pan": [
+     40,
+     -50
+    ],
+    "cycles": 1,
+    "phase": 4.0,
+    "tint": [
+     1.0,
+     0.92,
+     0.78
+    ],
+    "pulse": 0.1,
+    "pulse_cycles": 4
+   }
+  ],
+  "post": {
+   "bloom": 0.3,
+   "bloom_threshold": 0.6,
+   "bloom_radius": 30,
+   "grade": "sepia-dust",
+   "vignette": 0.6,
+   "grain": 10
+  }
+ },
+ "piano-snow": {
+  "note": "Solo piano, winter, grief/comfort playlists. Falling dust reads as snow; keep the frame bright and airy.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 30
+  },
+  "loop": 24,
+  "ss": 1.5,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.03,
+   "zoom_cycles": 1,
+   "drift": [
+    14,
+    20
+   ],
+   "warp": 0.0
+  },
+  "layers": [
+   {
+    "plate": "dust",
+    "blend": "screen",
+    "opacity": 0.4,
+    "scale": 1.3,
+    "pan": [
+     30,
+     140
+    ],
+    "cycles": 1,
+    "blur": 1.5
+   },
+   {
+    "plate": "dust",
+    "blend": "screen",
+    "opacity": 0.24,
+    "scale": 1.7,
+    "pan": [
+     -40,
+     90
+    ],
+    "cycles": 1,
+    "phase": 2.5,
+    "blur": 5
+   },
+   {
+    "plate": "fog",
+    "blend": "screen",
+    "opacity": 0.22,
+    "scale": 1.35,
+    "pan": [
+     36,
+     10
+    ],
+    "cycles": 1,
+    "phase": 4.8,
+    "blur": 9,
+    "tint": [
+     0.94,
+     0.97,
+     1.0
+    ]
+   }
+  ],
+  "post": {
+   "bloom": 0.3,
+   "bloom_threshold": 0.62,
+   "bloom_radius": 26,
+   "grade": "cool-teal",
+   "vignette": 0.42,
+   "grain": 8
+  }
+ },
+ "dark-drone": {
+  "note": "Dark ambient, horror drone, dungeon synth. Nearly monochrome, heavy vignette, slow black smoke.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 24
+  },
+  "loop": 28,
+  "ss": 1.5,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.026,
+   "zoom_cycles": 1,
+   "drift": [
+    12,
+    8
+   ],
+   "warp": 0.1
+  },
+  "layers": [
+   {
+    "plate": "ink",
+    "blend": "multiply",
+    "opacity": 0.3,
+    "scale": 1.5,
+    "pan": [
+     -60,
+     40
+    ],
+    "cycles": 1,
+    "blur": 8,
+    "gamma": 0.8
+   },
+   {
+    "plate": "ink",
+    "blend": "screen",
+    "opacity": 0.14,
+    "scale": 1.9,
+    "pan": [
+     70,
+     -30
+    ],
+    "cycles": 1,
+    "phase": 3.6,
+    "blur": 16
+   },
+   {
+    "plate": "fog",
+    "blend": "softlight",
+    "opacity": 0.3,
+    "scale": 1.35,
+    "pan": [
+     26,
+     10
+    ],
+    "cycles": 1,
+    "phase": 1.0,
+    "blur": 12
+   }
+  ],
+  "post": {
+   "bloom": 0.16,
+   "bloom_threshold": 0.72,
+   "bloom_radius": 40,
+   "grade": "monochrome",
+   "vignette": 0.9,
+   "grain": 12
+  }
+ },
+ "weft-neyistan": {
+  "note": "WEFT WR-016 NEYISTAN. sufi-incense'in genisletilmis hali: iki tutsu plume'unun ustune isik huzmeleri, bokeh ve ince bir kostik katmani. Sahne sisli bir sazlik oldugu icin fog opakligi dusuruldu — fotografin kendi sisi zaten var, ustune bir kat daha binince goruntu sutlesiyor (trap 1 ile ayni mantik). TUNE 2: ilk denemede rays+bokeh screen'de kirpilmadan bindi ve kare sutlendi (SKILL.md trap 1). crush 0.64/0.68'e cikarildi, opaklik yariya indi, vignette 0.58'e geri alindi. BOYUT: 1440p/crf16 varsayilaniyla 30 sn'lik dongu 253 MB cikti ve concat 125 kez tekrarlayinca ~32 GB ediyordu. Bir saatlik yayinlarda tavan 1 GB; ses (AAC 320k) bunun sadece 150 MB'i ve dokunulmuyor, kalan 850 MB = 1.81 Mbit/s video. Cozum sirasi: once cozunurluk (1440p->1080p, 2.25x), sonra crf (21->23, 1.4x). GREN ATILMAZ (trap 8) ve FPS DUSURULMEZ — yavas suruklenen sis 12 fps'te takiliyor. OLCUM TUZAGI: CRF egrisini MEVCUT bir encode'u yeniden kodlayarak olcmek boyutu KUCUK gosteriyor — ilk sikistirmada kaybolan detay ikinci gecise ucuza mal oluyor. crf 27 yeniden-kodlamada 5.4 MB dedi, temiz render'da 8.9 MB cikti (%65 fark). Dogru olcum: dongoyu hedef ayarla BIR KEZ render edip bak. 1 GB tavani icin son ayar: 1080p / 24 fps / crf 27 / post.grain 9->5. NIHAI: Faruk 2026-08-09'da 1 GB tavanini kaldirdi (3-4 GB uygun, yayindan sonra dosya siliniyor). O yuzden ayar KALITEYE geri alindi: 1440p / 24 fps / crf 21 / grain 9. 1 GB'a sikismak gerekirse sira: cozunurluk -> crf -> gren; FPS'e ve SESE dokunulmaz.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 24
+  },
+  "loop": 30,
+  "ss": 1.5,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.035,
+   "zoom_cycles": 1,
+   "drift": [
+    18,
+    10
+   ],
+   "warp": 0.075
+  },
+  "layers": [
+   {
+    "plate": "plume",
+    "blend": "screen",
+    "opacity": 0.46,
+    "scale": 1.45,
+    "pan": [
+     70,
+     -120
+    ],
+    "cycles": 1,
+    "blur": 3,
+    "tint": [
+     1.0,
+     0.93,
+     0.82
+    ],
+    "pulse": 0.05,
+    "crush": 0.4
+   },
+   {
+    "plate": "plume",
+    "blend": "screen",
+    "opacity": 0.18,
+    "scale": 1.8,
+    "pan": [
+     -110,
+     90
+    ],
+    "cycles": 1,
+    "phase": 2.4,
+    "blur": 9,
+    "tint": [
+     1.0,
+     0.88,
+     0.7
+    ]
+   },
+   {
+    "plate": "fog",
+    "blend": "softlight",
+    "opacity": 0.16,
+    "scale": 1.3,
+    "pan": [
+     45,
+     18
+    ],
+    "cycles": 1,
+    "phase": 4.1,
+    "blur": 5
+   },
+   {
+    "plate": "dust",
+    "blend": "screen",
+    "opacity": 0.16,
+    "scale": 1.25,
+    "pan": [
+     30,
+     -55
+    ],
+    "cycles": 1,
+    "phase": 0.8,
+    "tint": [
+     1.0,
+     0.95,
+     0.85
+    ],
+    "pulse": 0.08,
+    "pulse_cycles": 3
+   },
+   {
+    "plate": "rays",
+    "blend": "screen",
+    "opacity": 0.13,
+    "scale": 1.6,
+    "pan": [
+     -25,
+     12
+    ],
+    "cycles": 1,
+    "phase": 1.7,
+    "blur": 6,
+    "tint": [
+     1.0,
+     0.9,
+     0.72
+    ],
+    "pulse": 0.1,
+    "pulse_cycles": 2,
+    "crush": 0.64
+   },
+   {
+    "plate": "bokeh",
+    "blend": "screen",
+    "opacity": 0.085,
+    "scale": 1.35,
+    "pan": [
+     -40,
+     -70
+    ],
+    "cycles": 1,
+    "phase": 3.3,
+    "blur": 2,
+    "tint": [
+     1.0,
+     0.93,
+     0.8
+    ],
+    "pulse": 0.12,
+    "pulse_cycles": 2,
+    "crush": 0.68
+   },
+   {
+    "plate": "caustics",
+    "blend": "softlight",
+    "opacity": 0.1,
+    "scale": 1.5,
+    "pan": [
+     55,
+     -20
+    ],
+    "cycles": 2,
+    "phase": 5.0,
+    "blur": 4,
+    "crush": 0.45
+   }
+  ],
+  "post": {
+   "bloom": 0.36,
+   "bloom_threshold": 0.6,
+   "bloom_radius": 30,
+   "grade": "candle",
+   "vignette": 0.58,
+   "grain": 9
+  },
+  "crf": 23
+ },
+ "weft-soc": {
+  "note": "WEFT — Soul of Cities ortak preseti. Sehir basina DEGISEN: post.grade ve wash. Video ayari SERI BOYUNCA KILITLI: 1920x1080 / 24 fps / crf 27 / ss 1.5 / grain 9. Gerekce: yedi yayin x 4 GB = 4.5 saat yukleme; crf 27'de 1.3 GB ve 1.4 saat. Olculdu (WR-016): crf 23 -> 4016 MB, crf 27 -> 1270 MB, ayni goruntu.",
+  "canvas": {
+   "res": "1920x1080",
+   "fps": 24
+  },
+  "loop": 30,
+  "ss": 1.5,
+  "layout": "auto",
+  "base": {
+   "zoom": 0.035,
+   "zoom_cycles": 1,
+   "drift": [
+    18,
+    10
+   ],
+   "warp": 0.075
+  },
+  "layers": [
+   {
+    "plate": "plume",
+    "blend": "screen",
+    "opacity": 0.46,
+    "scale": 1.45,
+    "pan": [
+     70,
+     -120
+    ],
+    "cycles": 1,
+    "blur": 3,
+    "tint": [
+     1.0,
+     0.93,
+     0.82
+    ],
+    "pulse": 0.05,
+    "crush": 0.4
+   },
+   {
+    "plate": "plume",
+    "blend": "screen",
+    "opacity": 0.18,
+    "scale": 1.8,
+    "pan": [
+     -110,
+     90
+    ],
+    "cycles": 1,
+    "phase": 2.4,
+    "blur": 9,
+    "tint": [
+     1.0,
+     0.88,
+     0.7
+    ]
+   },
+   {
+    "plate": "fog",
+    "blend": "softlight",
+    "opacity": 0.16,
+    "scale": 1.3,
+    "pan": [
+     45,
+     18
+    ],
+    "cycles": 1,
+    "phase": 4.1,
+    "blur": 5
+   },
+   {
+    "plate": "dust",
+    "blend": "screen",
+    "opacity": 0.16,
+    "scale": 1.25,
+    "pan": [
+     30,
+     -55
+    ],
+    "cycles": 1,
+    "phase": 0.8,
+    "tint": [
+     1.0,
+     0.95,
+     0.85
+    ],
+    "pulse": 0.08,
+    "pulse_cycles": 3
+   },
+   {
+    "plate": "rays",
+    "blend": "screen",
+    "opacity": 0.13,
+    "scale": 1.6,
+    "pan": [
+     -25,
+     12
+    ],
+    "cycles": 1,
+    "phase": 1.7,
+    "blur": 6,
+    "tint": [
+     1.0,
+     0.9,
+     0.72
+    ],
+    "pulse": 0.1,
+    "pulse_cycles": 2,
+    "crush": 0.64
+   },
+   {
+    "plate": "bokeh",
+    "blend": "screen",
+    "opacity": 0.085,
+    "scale": 1.35,
+    "pan": [
+     -40,
+     -70
+    ],
+    "cycles": 1,
+    "phase": 3.3,
+    "blur": 2,
+    "tint": [
+     1.0,
+     0.93,
+     0.8
+    ],
+    "pulse": 0.12,
+    "pulse_cycles": 2,
+    "crush": 0.68
+   },
+   {
+    "plate": "caustics",
+    "blend": "softlight",
+    "opacity": 0.1,
+    "scale": 1.5,
+    "pan": [
+     55,
+     -20
+    ],
+    "cycles": 2,
+    "phase": 5.0,
+    "blur": 4,
+    "crush": 0.45
+   }
+  ],
+  "post": {
+   "bloom": 0.36,
+   "bloom_threshold": 0.6,
+   "bloom_radius": 30,
+   "grade": "candle",
+   "vignette": 0.58,
+   "grain": 9
+  },
+  "crf": 27
+ }
+}

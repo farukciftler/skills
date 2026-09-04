@@ -1,0 +1,6 @@
+keyword,intent_cluster,source,volume,relevance,chance,rank,competitor_top3,placement,notes
+habit tracker,category,ASA search terms,58,95,40,7,"Streaks; Habitify; Done",title,head term - realistic in 6mo
+routine builder,feature,autocomplete,31,88,72,24,"Routinery; Fabulous",keyword field,winnable now
+build good habits,problem,review mining,22,92,68,0,"Fabulous; Atoms",keyword field,unranked - high relevance
+daily streak,feature,competitor gap,18,80,85,41,"Streaks",keyword field,low difficulty
+morning routine app,long-tail,autocomplete,12,85,90,0,"Fabulous",subtitle,cheap win

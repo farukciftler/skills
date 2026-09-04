@@ -1,0 +1,605 @@
+/* ============================================================================
+ * ortak.css — Kartela sosyal medya tuval tasarım sistemi
+ * ----------------------------------------------------------------------------
+ * Kaynak: docs/marka-kimligi.md (renk, tipografi, şablon kuralları §8.4)
+ *
+ * TUVAL ÖLÇÜLERİ
+ *   gönderi   1080 × 1350  (4:5 — varsayılan)
+ *   kare      1080 × 1080
+ *   hikaye    1080 × 1920  (9:16) — üst/alt 250 px arayüz bandı
+ *
+ * Bütün ölçüler 1080 px genişlikteki tuvale göredir. Şablon farklı boyutta
+ * render edilse bile oranlar korunur.
+ * ========================================================================== */
+
+/* --- Yazı tipleri: YEREL. Ağ isteği yapılmaz. ------------------------------ */
+@font-face {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 200 800;
+	font-display: block;
+	src: url('../../../../src/icerik/fontlar/Manrope-normal-latin.woff2') format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 200 800;
+	font-display: block;
+	src: url('../../../../src/icerik/fontlar/Manrope-normal-latin-ext.woff2') format('woff2');
+	unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Source Sans 3';
+	font-style: normal;
+	font-weight: 200 900;
+	font-display: block;
+	src: url('../../../../src/icerik/fontlar/SourceSans3-normal-latin.woff2') format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
+}
+
+@font-face {
+	font-family: 'Source Sans 3';
+	font-style: normal;
+	font-weight: 200 900;
+	font-display: block;
+	src: url('../../../../src/icerik/fontlar/SourceSans3-normal-latin-ext.woff2') format('woff2');
+	unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* --- Token'lar ------------------------------------------------------------- */
+:root {
+	/* Kartela paleti — docs/marka-kimligi.md §4.1 */
+	--brand: #005f7f;
+	--brand-deep: #004a63;
+	--mint: #e4efe9;
+	--rose: #ddb0b8;
+	--yellow: #dcdb8e;
+	--sky: #93c9d8;
+	--paper: #ffffff;
+
+	/* Metin taşıyan türevler — §4.3 */
+	--ink: #1b3a45;        /* beyaz üzerinde 12,08:1 */
+	--ink-soft: #4a6670;   /* 6,13:1 */
+	--rose-ink: #96525e;
+	--blue-ink: #2e6e82;
+	--olive-ink: #6e6d2f;
+
+	/* Çok açık dolgular */
+	--tint-brand: #e2eef3;
+	--tint-rose: #f7eaec;
+	--tint-yellow: #f6f5df;
+	--tint-sky: #e6f2f6;
+
+	--ff-baslik: 'Manrope', 'Segoe UI', system-ui, sans-serif;
+	--ff-govde: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
+
+	/* Tipografi ölçeği — 1080 px tuvalde.
+	 * Tabanlar University of Maryland erişilebilirlik eşiklerinin üzerindedir
+	 * (başlık ≥48pt, kilit bilgi 32–40pt, ikincil ≥24pt — §8.4). */
+	--fs-display: 92px;
+	--fs-h1: 68px;
+	--fs-h2: 50px;
+	--fs-lead: 38px;
+	--fs-body: 32px;
+	--fs-meta: 26px;
+	--fs-kucuk: 22px;
+
+	/* Güvenli kenar boşluğu — §8.4 */
+	--kenar: 84px;
+
+	--r-sm: 12px;
+	--r-md: 20px;
+	--r-lg: 32px;
+}
+
+/* --- Sıfırlama ------------------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	inline-size: 100%;
+	block-size: 100%;
+}
+
+body {
+	font-family: var(--ff-govde);
+	color: var(--ink);
+	background: var(--paper);
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	/* Türkçe: iki yana yaslama yok, sola dayalı (§5.12) */
+	text-align: start;
+}
+
+/* --- Tuval ---------------------------------------------------------------- */
+.tuval {
+	position: relative;
+	inline-size: 1080px;
+	block-size: 1350px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background: var(--paper);
+	/* mix-blend-mode arkasındaki HER ŞEYLE karışır — yalnız kardeşiyle değil.
+	 * Bu olmadan grain katmanı tuvalin zeminiyle de karışır ve renkler kayar.
+	 * Blend'i tuvalin içine hapseder. */
+	isolation: isolate;
+}
+
+.tuval.kare {
+	block-size: 1080px;
+}
+
+.tuval.hikaye {
+	block-size: 1920px;
+}
+
+/* Zemin varyantları — bölüm ritmi renkleri */
+.z-beyaz  { background: var(--paper); }
+.z-nane   { background: var(--mint); }
+.z-gul    { background: var(--tint-rose); }
+.z-sari   { background: var(--tint-yellow); }
+.z-mavi   { background: var(--tint-sky); }
+.z-petrol { background: var(--brand); color: var(--paper); }
+
+.z-petrol .ust-etiket,
+.z-petrol .alt-metin { color: #d7e6e0; }
+
+/* --- İçerik alanı --------------------------------------------------------- */
+.icerik {
+	position: relative;
+	flex: 1 1 auto;
+	min-block-size: 0;   /* taşma altbar'ı tuvalin dışına itmesin */
+	display: flex;
+	flex-direction: column;
+	padding: var(--kenar);
+	gap: 28px;
+}
+
+/* Hikayede üst ve alt 250 px arayüz tarafından kapanabilir (§8.4). */
+.hikaye .icerik {
+	padding-block: 290px 290px;
+}
+
+.orta   { justify-content: center; }
+.alta   { justify-content: flex-end; }
+.uste   { justify-content: flex-start; }
+
+/* --- Tipografi ------------------------------------------------------------ */
+.display,
+.h1,
+.h2 {
+	font-family: var(--ff-baslik);
+	font-weight: 700;
+	letter-spacing: -0.018em;
+	line-height: 1.1;
+	text-wrap: balance;
+}
+
+.display { font-size: var(--fs-display); }
+.h1      { font-size: var(--fs-h1); }
+.h2      { font-size: var(--fs-h2); line-height: 1.18; }
+
+.lead {
+	font-size: var(--fs-lead);
+	line-height: 1.42;
+	color: var(--ink-soft);
+	max-inline-size: 24ch;
+}
+
+.govde {
+	font-size: var(--fs-body);
+	line-height: 1.55;
+	max-inline-size: 30ch;
+}
+
+.meta {
+	font-size: var(--fs-meta);
+	line-height: 1.45;
+	color: var(--ink-soft);
+}
+
+/* Üst etiket — bölüm/kategori adı. All-caps YALNIZCA burada (§5.12). */
+.ust-etiket {
+	font-family: var(--ff-baslik);
+	font-size: var(--fs-kucuk);
+	font-weight: 600;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--brand);
+}
+
+.z-petrol .display,
+.z-petrol .h1,
+.z-petrol .h2,
+.z-petrol .govde { color: var(--paper); }
+
+.z-petrol .lead { color: #d7e6e0; }
+
+/* --- Kartela şeridi — markanın imzası. Tuvalde EN FAZLA BİR KEZ (§4.6/5). -- */
+.kartela {
+	display: flex;
+	gap: 10px;
+	inline-size: 300px;
+	flex: none;
+}
+
+.kartela span {
+	flex: 1 1 0;
+	block-size: 12px;
+	border-radius: 999px;
+}
+
+.kartela .k1 { background: var(--brand); }
+.kartela .k2 { background: var(--rose); }
+.kartela .k3 { background: var(--yellow); }
+.kartela .k4 { background: var(--sky); }
+
+.z-petrol .kartela .k1 { background: var(--paper); }
+
+/* Koyu perde üzerinde de petrol bant kaybolur — orada da beyaza döner. */
+.uzeri .kartela .k1 { background: var(--paper); }
+
+.kartela.tam { inline-size: 100%; }
+
+/* --- Alt bar: logo + karekod ---------------------------------------------- */
+.altbar {
+	flex: none;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 32px;
+	padding: 0 var(--kenar) var(--kenar);
+}
+
+.hikaye .altbar { padding-block-end: 290px; }
+
+/* Kelime markası — el çizimi logo YOKSA metin karşılığı kullanılır.
+ * Logo dosyası geldiğinde (assets/marka/) .logo-gorsel devreye girer. */
+.logo {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.logo-gorsel {
+	display: block;
+	inline-size: 240px;
+	block-size: auto;
+}
+
+.logo-yazi {
+	font-family: var(--ff-baslik);
+	font-size: 42px;
+	font-weight: 800;
+	letter-spacing: 0.06em;
+	color: var(--brand);
+	line-height: 1;
+}
+
+.z-petrol .logo-yazi { color: var(--paper); }
+
+/* Ruhsat adı — MEB ÖÖK Yön. m.7/4 gereği tanıtım materyalinde bulunur. */
+.logo-ruhsat {
+	font-family: var(--ff-govde);
+	font-size: 19px;
+	line-height: 1.35;
+	color: var(--ink-soft);
+	max-inline-size: 34ch;
+}
+
+.z-petrol .logo-ruhsat { color: #d7e6e0; }
+
+/* Karekod — ÖÖK Yön. Ek m.4/2 gereği her tanıtım materyalinde ZORUNLU. */
+.karekod {
+	flex: none;
+	inline-size: 180px;
+	block-size: 180px;
+	background: var(--paper);
+	border-radius: var(--r-sm);
+	padding: 10px;
+}
+
+.karekod img {
+	inline-size: 100%;
+	block-size: 100%;
+	display: block;
+}
+
+/* Karekod eksikse yer tutucu görünür — üretimde uyarı verir. */
+.karekod.eksik {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px dashed var(--rose);
+	font-size: 18px;
+	color: var(--rose-ink);
+	text-align: center;
+	line-height: 1.3;
+}
+
+/* --- Görsel --------------------------------------------------------------- */
+.gorsel-tam {
+	position: absolute;
+	inset: 0;
+	inline-size: 100%;
+	block-size: 100%;
+	object-fit: cover;
+}
+
+/* Perde — fotoğraf üzerine metin gelecekse kontrastı garanti eder.
+ * Marka kuralı: doğrudan fotoğraf üstüne metin YAZILMAZ; ya bu perde ya da
+ * düz renk şerit kullanılır (§6.2). */
+.perde {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		to top,
+		rgba(11, 30, 36, 0.92) 0%,
+		rgba(11, 30, 36, 0.78) 28%,
+		rgba(11, 30, 36, 0.35) 55%,
+		rgba(11, 30, 36, 0.08) 100%
+	);
+}
+
+.perde-ust {
+	background: linear-gradient(
+		to bottom,
+		rgba(11, 30, 36, 0.88) 0%,
+		rgba(11, 30, 36, 0.45) 40%,
+		rgba(11, 30, 36, 0.05) 100%
+	);
+}
+
+.uzeri .display,
+.uzeri .h1,
+.uzeri .h2,
+.uzeri .govde,
+.uzeri .logo-yazi { color: var(--paper); }
+
+.uzeri .lead,
+.uzeri .meta,
+.uzeri .logo-ruhsat { color: #dfe9ec; }
+
+.uzeri .ust-etiket { color: var(--sky); }
+
+/* --- Bilgi satırları (duyuru şablonu) ------------------------------------- */
+.satirlar {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	margin-block-start: 8px;
+}
+
+.satir {
+	display: flex;
+	align-items: baseline;
+	gap: 20px;
+	font-size: var(--fs-body);
+	line-height: 1.35;
+}
+
+.satir dt {
+	flex: none;
+	inline-size: 190px;
+	font-size: var(--fs-meta);
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: var(--ink-soft);
+	font-family: var(--ff-baslik);
+}
+
+.satir dd {
+	font-weight: 600;
+	color: var(--ink);
+}
+
+.uzeri .satir dt { color: #c3d3d8; }
+.uzeri .satir dd { color: var(--paper); }
+
+/* --- Numaralı rozet (karusel iç sayfası) ---------------------------------- */
+.numara {
+	flex: none;
+	inline-size: 84px;
+	block-size: 84px;
+	border-radius: 999px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--ff-baslik);
+	font-size: 40px;
+	font-weight: 700;
+	background: var(--brand);
+	color: var(--paper);
+}
+
+.numara.n-gul  { background: var(--rose);   color: #5c2b34; }
+.numara.n-sari { background: var(--yellow); color: #4a4a1a; }
+.numara.n-mavi { background: var(--sky);    color: #123c4a; }
+
+/* --- Alıntı işareti ------------------------------------------------------- */
+.tirnak {
+	font-family: var(--ff-baslik);
+	font-size: 150px;
+	font-weight: 800;
+	line-height: 0.75;
+	color: var(--rose);
+	block-size: 78px;
+}
+
+/* --- Reels altyazı güvenli alanı işareti (yalnız önizlemede) -------------- */
+.kilavuz {
+	position: absolute;
+	inset-inline: 0;
+	block-size: 250px;
+	background: rgba(221, 176, 184, 0.25);
+	pointer-events: none;
+}
+
+.kilavuz.ust { inset-block-start: 0; }
+.kilavuz.alt { inset-block-end: 0; }
+
+/* ============================================================================
+ * FOTOĞRAF KATMANI
+ * ----------------------------------------------------------------------------
+ * KURAL 1 — Her gönderide fotoğraf bulunur. Görselsiz gönderi üretilmez.
+ * KURAL 2 — Fotoğraf "sayfaya yapıştırılmış dikdörtgen blok" olarak KONMAZ.
+ *           Daima en az iki kenardan taşar ve/veya maskeyle zemine erir.
+ * KURAL 3 — Fotoğraf duotone ile markanın paletine çekilir; stok fotoğrafın
+ *           kendi renkleri kompozisyona sızmaz.
+ * KURAL 4 — Fotoğraf üzerine doğrudan metin yazılmaz; perde (scrim) zorunludur.
+ * ========================================================================== */
+
+.foto-kap {
+	position: absolute;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.foto-kap img {
+	inline-size: 100%;
+	block-size: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+/* --- Duotone / renk işleme ------------------------------------------------ */
+.dt-petrol img { filter: url(#dt-petrol); }
+.dt-gul    img { filter: url(#dt-gul); }
+.dt-mavi   img { filter: url(#dt-mavi); }
+.dt-sari   img { filter: url(#dt-sari); }
+.dt-yumusak img { filter: url(#ft-yumusak); }
+
+/* --- Grain: dijital düzlüğü kıran ince doku ------------------------------- */
+.foto-kap.grain::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	filter: url(#ft-grain);
+	opacity: 0.16;
+	mix-blend-mode: multiply;
+}
+
+/* ---------------------------------------------------------------------------
+ * YERLEŞİM 1 — TAM ZEMİN
+ * Fotoğraf tuvalin tamamıdır. Metin perdenin üstünde durur.
+ * ------------------------------------------------------------------------- */
+.foto-tam {
+	inset: 0;
+}
+
+/* ---------------------------------------------------------------------------
+ * YERLEŞİM 2 — ALT TAŞMA
+ * Fotoğraf alt yarıyı kaplar, sol/sağ/alt kenardan TAŞAR ve üst kenarı
+ * maskeyle zemine erir. Hiçbir yerde sert dikdörtgen kenar yoktur.
+ * ------------------------------------------------------------------------- */
+.foto-alt {
+	inset-inline: 0;
+	inset-block-end: 0;
+	block-size: 58%;
+	/* İKİ UÇTAN erir: üstte zemine, altta alt bara. Böylece ne sert dikdörtgen
+	 * kenar oluşur ne de logo/karekod fotoğrafın üstünde okunmaz hâle gelir.
+	 * Sol ve sağ kenardan taşmaya devam eder — blok değil, banttır. */
+	-webkit-mask-image: linear-gradient(to bottom,
+		transparent 0%, #000 22%, #000 72%, transparent 99%);
+	mask-image: linear-gradient(to bottom,
+		transparent 0%, #000 22%, #000 72%, transparent 99%);
+}
+
+/* ---------------------------------------------------------------------------
+ * YERLEŞİM 3 — KEMER (arch)
+ * Üstten taşan, altı yuvarlatılmış kemer. Editorial his verir; dikdörtgen
+ * bloktan tamamen uzaklaşır.
+ * ------------------------------------------------------------------------- */
+.foto-kemer {
+	inset-block-start: 0;
+	inset-inline: 0;
+	block-size: 58%;
+	border-end-start-radius: 50% 22%;
+	border-end-end-radius: 50% 22%;
+}
+
+/* ---------------------------------------------------------------------------
+ * YERLEŞİM 4 — KÖŞE DAİRESİ
+ * Sağ üstten taşan büyük daire parçası. Metin sol tarafta serbest kalır.
+ * ------------------------------------------------------------------------- */
+.foto-kose {
+	inset-block-start: -14%;
+	inset-inline-end: -18%;
+	inline-size: 78%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+}
+
+/* ---------------------------------------------------------------------------
+ * YERLEŞİM 5 — YAN ŞERİT
+ * Sağ kenardan taşan dikey şerit; sol kenarı maskeyle erir.
+ * ------------------------------------------------------------------------- */
+.foto-yan {
+	inset-block: 0;
+	inset-inline-end: 0;
+	inline-size: 46%;
+	-webkit-mask-image: linear-gradient(to right, transparent 0%, #000 22%);
+	mask-image: linear-gradient(to right, transparent 0%, #000 22%);
+}
+
+/* --- Perde (scrim) — metin okunabilirliğini GARANTİ eder ------------------ */
+/* Opaklıklar ölçüldü: perde altındaki en açık fotoğraf pikselinde bile
+ * beyaz metin ≥ 4,5:1 kalır (docs/marka-kimligi.md §8.4). */
+.perde-alt {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		to top,
+		rgba(10, 26, 32, 0.94) 0%,
+		rgba(10, 26, 32, 0.86) 26%,
+		rgba(10, 26, 32, 0.52) 52%,
+		rgba(10, 26, 32, 0.12) 78%,
+		rgba(10, 26, 32, 0) 100%
+	);
+}
+
+.perde-tam {
+	position: absolute;
+	inset: 0;
+	background: rgba(10, 26, 32, 0.62);
+}
+
+/* Zemine erime perdesi — .foto-alt ile birlikte kullanılır, fotoğrafın üst
+ * kenarının zemin rengiyle birleşmesini sağlar. */
+.perde-erime {
+	position: absolute;
+	inset-inline: 0;
+	inset-block-start: 0;
+	block-size: 34%;
+	background: linear-gradient(to bottom, var(--erime-renk, var(--mint)) 12%, transparent 100%);
+}
+
+/* --- İçerik fotoğrafın üstünde kalsın ------------------------------------- */
+.tuval > .icerik,
+.tuval > .altbar {
+	position: relative;
+	z-index: 2;
+}
+
+/* Alt bar koruma perdesi — logo ve karekod fotoğrafın üstüne düştüğünde
+ * okunabilirliği garanti eder. Zemin renginden yukarı doğru erir. */
+.perde-altbar {
+	position: absolute;
+	inset-inline: 0;
+	inset-block-end: 0;
+	block-size: 30%;
+	background: linear-gradient(to top,
+		var(--erime-renk, var(--mint)) 22%,
+		color-mix(in srgb, var(--erime-renk, var(--mint)) 70%, transparent) 55%,
+		transparent 100%);
+	z-index: 1;
+}

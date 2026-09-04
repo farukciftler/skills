@@ -1,0 +1,104 @@
+{
+  "_yorum": "Üç dilli kayıt şeması. yayimla.php bunu okur. `fields` anahtarları cs_ öneki olmadan yazılır; geçerli anahtarlar için wp/plugins/comesyria-content/includes/fields.php dosyasına bak — şemada olmayan anahtar sessizce düşer.",
+  "_iliskiler": "city ve stops.place alanlarına KİMLİK değil TÜRKÇE SLUG yazılır. Betik önce Türkçe kaydı bulur, sonra her dilde o dilin karşılığına eşler.",
+  "type": "place",
+  "status": "publish",
+  "featured_media": "gun-dogumunda-halep-kalesi-nin-kalintilari",
+  "gallery": [
+    "eski-sam-da-guvercinlerin-ucustugu-tarihi-bir-sokak"
+  ],
+  "city": "halep",
+  "ortak": {
+    "lat": 36.1995,
+    "lng": 37.1626,
+    "duration": 120,
+    "kind": "castle"
+  },
+  "tr": {
+    "slug": "halep-kalesi",
+    "title": "Halep Kalesi",
+    "excerpt": "Şehrin ortasındaki höyüğün üstünde duran kale, Halep'in en eski katmanı. Giriş 1500 SYP, gezmek iki saat; rampada nelere bakılacağı.",
+    "content": "<p>Kale bir tepenin üstünde değil; tepenin kendisi. Altında MÖ 3. binyıla inen katmanlar var ve bugün gördüğün duvarların çoğu Eyyûbî dönemine ait.</p><h2>Nasıl gidilir</h2><p>...</p><h2>Ne kadar sürer</h2><p>...</p><h2>Neyi kaçırma</h2><p>...</p>",
+    "fields": {
+      "subtitle": "Halep · 12. yüzyıl",
+      "period": "Eyyûbî",
+      "opening_hours": "09:00–17:00, pazartesi kapalı",
+      "entry_fee": "1500 SYP",
+      "best_time": "Sabah, rampada gölge varken",
+      "address": "Kale Meydanı, Halep",
+      "tips": [
+        "Rampa taş ve dik; kaygan tabanlı ayakkabı zorlar",
+        "Giriş köprüsünün sağındaki taş kitabe çoğu ziyaretçinin kaçırdığı yer"
+      ]
+    }
+  },
+  "en": {
+    "slug": "aleppo-citadel",
+    "title": "The Aleppo Citadel",
+    "excerpt": "The castle on the mound at the centre of Aleppo is the city's oldest layer. Entry is 1500 SYP, two hours to walk it, and what to look for on the ramp.",
+    "content": "<p>It does not sit on a hill; it is the hill. Beneath it the layers run back to the 3rd millennium BC, and most of the walls you see today are Ayyubid.</p><h2>Getting there</h2><p>...</p><h2>How long it takes</h2><p>...</p><h2>Do not miss</h2><p>...</p>",
+    "fields": {
+      "subtitle": "Aleppo · 12th century",
+      "period": "Ayyubid",
+      "opening_hours": "09:00–17:00, closed Mondays",
+      "entry_fee": "1500 SYP",
+      "best_time": "Morning, while the ramp is still in shade",
+      "address": "Citadel Square, Aleppo",
+      "tips": [
+        "The ramp is stone and steep; smooth soles will fight you",
+        "The stone inscription right of the entrance bridge is what most visitors walk past"
+      ]
+    }
+  },
+  "ar": {
+    "slug": "qalaat-halab",
+    "title": "قلعة حلب",
+    "excerpt": "القلعة القائمة على التلّ في وسط حلب هي أقدم طبقات المدينة. الدخول 1500 ليرة، والجولة ساعتان، وما الذي تنتبه له على المنحدر.",
+    "content": "<p>هي ليست فوق تلّة؛ هي التلّة نفسها. تحتها طبقات تعود إلى الألف الثالث ق.م، ومعظم الأسوار التي تراها اليوم أيوبية.</p><h2>كيف تصل</h2><p>...</p><h2>كم تستغرق</h2><p>...</p><h2>لا تفوّت</h2><p>...</p>",
+    "fields": {
+      "subtitle": "حلب · القرن الثاني عشر",
+      "period": "أيوبي",
+      "opening_hours": "09:00–17:00، مغلق يوم الاثنين",
+      "entry_fee": "1500 ليرة",
+      "best_time": "الصباح، ما دام المنحدر في الظلّ",
+      "address": "ساحة القلعة، حلب",
+      "tips": [
+        "المنحدر حجري وشديد الميل؛ النعل الأملس يتعبك",
+        "الكتابة الحجرية عن يمين جسر المدخل هي ما يمرّ بجانبه معظم الزوار"
+      ]
+    }
+  },
+  "_rota_ornegi": {
+    "_not": "Rota kayıtlarında ayrıca `stops` bulunur; her dil bloğu kendi `stop_notes` dizisini taşır ve sıra korunur.",
+    "stops": [
+      {
+        "place": "hamidiye-carsisi",
+        "note": "Çarşının doğu girişinden gir."
+      },
+      {
+        "place": "emevi-camii",
+        "note": "Çarşı seni caminin batı kapısına bırakıyor."
+      }
+    ],
+    "tr": {
+      "stop_notes": [
+        "Çarşının doğu girişinden gir.",
+        "Çarşı seni caminin batı kapısına bırakıyor."
+      ]
+    },
+    "en": {
+      "stop_notes": [
+        "Enter from the east end of the souq.",
+        "The souq drops you at the west gate."
+      ]
+    },
+    "ar": {
+      "stop_notes": [
+        "ادخل من الطرف الشرقي للسوق.",
+        "السوق يوصلك إلى الباب الغربي."
+      ]
+    }
+  },
+  "_medya": "featured_media ve gallery alanlarina KIMLIK degil MEDYA ANAHTARI yazilir — content/media.json icindeki anahtar, yani uzantisiz dosya adi. Kimlik kullanilsaydi veritabani yeniden kuruldugunda her sayfa yanlis fotografi gosterirdi.",
+  "_gorselsiz": "Dogrulanmis gorsel bulunamadiysa featured_media'yi bos birak ve bunun yerine gerekceli bir `gorselsiz` alani yaz. Envanter gerekce gorurse kaydi bir daha listelemez; gerekcesiz bayragi hata sayar."
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<!--
+  T4 — DUYURU / ETKİNLİK
+  Program adı + tarih/saat/yaş/yer + kayıt yolu. Karekod ZORUNLU.
+  Aciliyet ve kıtlık dili kullanılmaz ("son 3 kontenjan" YASAK — marka sesi §7.2).
+-->
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="ortak.css">
+</head>
+<body>
+<div class="tuval {{boyut}} {{zemin}}">
+
+  {{foto}}
+
+  <div class="icerik" style="gap:0">
+    <p class="ust-etiket">{{etiket}}</p>
+
+    <h1 class="h1" style="margin-block-start:14px">{{baslik}}</h1>
+
+    <!--#if altmetin-->
+    <p class="lead" style="margin-block-start:22px;max-inline-size:27ch">{{altmetin}}</p>
+    <!--#endif-->
+
+    <dl class="satirlar" style="margin-block-start:34px">
+      {{satirlar}}
+    </dl>
+
+    <!--#if kayit_notu-->
+    <p class="govde" style="font-weight:600;max-inline-size:28ch;margin-block-start:30px">{{kayit_notu}}</p>
+    <!--#endif-->
+
+    <!-- Esneme burada: bilgi bloğu üstte temiz zeminde toplanır, imza altta
+         durur. Fotoğraf aradaki boşluğu doldurur — ölü alan kalmaz. -->
+    <div style="flex:1 1 auto;min-block-size:0"></div>
+
+    <div class="kartela tam" style="margin-block-start:32px">
+      <span class="k1"></span><span class="k2"></span><span class="k3"></span><span class="k4"></span>
+    </div>
+  </div>
+
+  <div class="altbar">
+    <div class="logo">
+      <span class="logo-yazi">KARTELA</span>
+      <span class="logo-ruhsat">{{ruhsat_adi}}</span>
+    </div>
+    {{karekod}}
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,2764 @@
+[
+ {
+  "name": "ab-gpu-hibe-uzmani",
+  "slug": "ab-gpu-hibe-uzmani",
+  "cat": "08-ai-ml",
+  "hash": "e4090333e8eb",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/ab-gpu-hibe-uzmani"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 8152,
+  "files": 5,
+  "lib": "~/skills/kutuphane/08-ai-ml/ab-gpu-hibe-uzmani",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/ab-gpu-hibe-uzmani"
+  ]
+ },
+ {
+  "name": "ambient-video-forge",
+  "slug": "ambient-video-forge",
+  "cat": "03-video-ses-uretim",
+  "hash": "6bfc690bc891",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/ambient-video-forge",
+   "~/projects/reelsindustry/.claude/skills/ambient-video-forge",
+   "~/projects/weftrecords/.claude/skills/ambient-video-forge"
+  ],
+  "kinds": [
+   "install",
+   "install",
+   "install"
+  ],
+  "bytes": 9829,
+  "files": 10,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/ambient-video-forge",
+  "linked": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/ambient-video-forge",
+   "~/projects/reelsindustry/.claude/skills/ambient-video-forge",
+   "~/projects/weftrecords/.claude/skills/ambient-video-forge"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "arac-uzmani",
+  "slug": "arac-uzmani",
+  "cat": "10-yasam-turkiye",
+  "hash": "91d4b176a1b5",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/arac-uzmani"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 7550,
+  "files": 3,
+  "lib": "~/skills/kutuphane/10-yasam-turkiye/arac-uzmani",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/arac-uzmani"
+  ]
+ },
+ {
+  "name": "arapca-ogretmeni",
+  "slug": "arapca-ogretmeni",
+  "cat": "11-ogrenme",
+  "hash": "72405bf14d19",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/arapca-ogretmeni"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 7519,
+  "files": 6,
+  "lib": "~/skills/kutuphane/11-ogrenme/arapca-ogretmeni",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/arapca-ogretmeni"
+  ]
+ },
+ {
+  "name": "aso-expert",
+  "slug": "aso-expert",
+  "cat": "05-pazarlama-buyume",
+  "hash": "1b079b86ae26",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/aso-expert",
+   "~/projects/startup değerleme/skill/ilgili-skiller/aso-expert"
+  ],
+  "kinds": [
+   "cloud",
+   "content"
+  ],
+  "bytes": 14187,
+  "files": 14,
+  "lib": "~/skills/kutuphane/05-pazarlama-buyume/aso-expert",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/aso-expert",
+   "~/projects/startup değerleme/skill/ilgili-skiller/aso-expert"
+  ]
+ },
+ {
+  "name": "automl",
+  "slug": "automl",
+  "cat": "08-ai-ml",
+  "hash": "4f41d2bc0907",
+  "variant": 0,
+  "srcs": [
+   "~/projects/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 4124,
+  "files": 2,
+  "lib": "~/skills/kutuphane/08-ai-ml/automl",
+  "linked": [],
+  "mirrored": [
+   "~/projects/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl"
+  ]
+ },
+ {
+  "name": "automl",
+  "slug": "automl--autonomous-agent-prediction",
+  "cat": "08-ai-ml",
+  "hash": "0308ffe979e1",
+  "variant": 1,
+  "srcs": [
+   "~/projects/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 3727,
+  "files": 2,
+  "lib": "~/skills/kutuphane/08-ai-ml/automl--autonomous-agent-prediction",
+  "linked": [],
+  "mirrored": [
+   "~/projects/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl"
+  ]
+ },
+ {
+  "name": "automl",
+  "slug": "automl--autonomous-agent-prediction-3",
+  "cat": "08-ai-ml",
+  "hash": "fc2bc50f1789",
+  "variant": 2,
+  "srcs": [
+   "~/projects/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 3727,
+  "files": 2,
+  "lib": "~/skills/kutuphane/08-ai-ml/automl--autonomous-agent-prediction-3",
+  "linked": [],
+  "mirrored": [
+   "~/projects/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl"
+  ]
+ },
+ {
+  "name": "backlog",
+  "slug": "backlog",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "cbbffe98daa6",
+  "variant": 0,
+  "srcs": [
+   "~/projects/comesyriacontent/backlog"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 3788,
+  "files": 7,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/backlog",
+  "linked": [],
+  "mirrored": [
+   "~/projects/comesyriacontent/backlog"
+  ]
+ },
+ {
+  "name": "backlog-arastir",
+  "slug": "backlog-arastir",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "acbe3fc1fc57",
+  "variant": 0,
+  "srcs": [
+   "~/projects/comesyriacontent/.claude/skills/backlog-arastir"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 3197,
+  "files": 1,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/backlog-arastir",
+  "linked": [
+   "~/projects/comesyriacontent/.claude/skills/backlog-arastir"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "backlog-arastir",
+  "slug": "backlog-arastir--kirkit",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "e5f5b983a611",
+  "variant": 1,
+  "srcs": [
+   "~/projects/kirkit/data/skills/skills/backlog-arastir"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 2836,
+  "files": 1,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/backlog-arastir--kirkit",
+  "linked": [],
+  "mirrored": [
+   "~/projects/kirkit/data/skills/skills/backlog-arastir"
+  ]
+ },
+ {
+  "name": "ceviri",
+  "slug": "ceviri--abdullahfarukcom-gh",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "9daaa1007c58",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/abdullahfarukcom/.claude/skills/ceviri",
+   "~/projects/abdullahfarukcom/.claude/skills/ceviri"
+  ],
+  "kinds": [
+   "install",
+   "install"
+  ],
+  "bytes": 5690,
+  "files": 1,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/ceviri--abdullahfarukcom-gh",
+  "linked": [
+   "~/Documents/GitHub/abdullahfarukcom/.claude/skills/ceviri",
+   "~/projects/abdullahfarukcom/.claude/skills/ceviri"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "ceviri",
+  "slug": "ceviri--comesyriacontent",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "d3d18c59b0bf",
+  "variant": 1,
+  "srcs": [
+   "~/projects/comesyriacontent/.claude/skills/ceviri"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 9734,
+  "files": 7,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/ceviri--comesyriacontent",
+  "linked": [
+   "~/projects/comesyriacontent/.claude/skills/ceviri"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "chibi-character-factory",
+  "slug": "chibi-character-factory",
+  "cat": "03-video-ses-uretim",
+  "hash": "abd53d60f0af",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/chibi-character-factory"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 23326,
+  "files": 1,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/chibi-character-factory",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/chibi-character-factory"
+  ]
+ },
+ {
+  "name": "consolidate-memory",
+  "slug": "consolidate-memory",
+  "cat": "14-meta-sistem",
+  "hash": "e99a5d5b87a1",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/consolidate-memory"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 1965,
+  "files": 1,
+  "lib": "~/skills/kutuphane/14-meta-sistem/consolidate-memory",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/consolidate-memory"
+  ]
+ },
+ {
+  "name": "dijital-iz-denetcisi",
+  "slug": "dijital-iz-denetcisi",
+  "cat": "10-yasam-turkiye",
+  "hash": "2481aa03cb65",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/dijital-iz-denetcisi"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 13621,
+  "files": 7,
+  "lib": "~/skills/kutuphane/10-yasam-turkiye/dijital-iz-denetcisi",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/dijital-iz-denetcisi"
+  ]
+ },
+ {
+  "name": "docker-compose-orchestration",
+  "slug": "docker-compose-orchestration",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "f61af99ed539",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/docker-compose-orchestration",
+   "~/projects/mcailabs-v4.0/.claude/skills/docker-compose-orchestration"
+  ],
+  "kinds": [
+   "content",
+   "install"
+  ],
+  "bytes": 47466,
+  "files": 4,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/docker-compose-orchestration",
+  "linked": [
+   "~/projects/mcailabs-v4.0/.claude/skills/docker-compose-orchestration"
+  ],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/docker-compose-orchestration"
+  ]
+ },
+ {
+  "name": "docx",
+  "slug": "docx",
+  "cat": "13-ofis-belge",
+  "hash": "d3a5a5f8548a",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/docx"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 7036,
+  "files": 61,
+  "lib": "~/skills/kutuphane/13-ofis-belge/docx",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/docx"
+  ]
+ },
+ {
+  "name": "domain-portfoy-degerleme",
+  "slug": "domain-portfoy-degerleme",
+  "cat": "01-finans-yatirim",
+  "hash": "7fee40a15d38",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/domain-portfoy-degerleme"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 6086,
+  "files": 2,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/domain-portfoy-degerleme",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/domain-portfoy-degerleme"
+  ]
+ },
+ {
+  "name": "english-narration",
+  "slug": "english-narration",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "21da8bddf5fd",
+  "variant": 0,
+  "srcs": [
+   "~/projects/reelsindustry/.claude/skills/english-narration"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 5828,
+  "files": 1,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/english-narration",
+  "linked": [
+   "~/projects/reelsindustry/.claude/skills/english-narration"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "ev-yatirim-analisti",
+  "slug": "ev-yatirim-analisti",
+  "cat": "01-finans-yatirim",
+  "hash": "6d34e980c7a4",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/ev-yatirim-analisti"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 11523,
+  "files": 9,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/ev-yatirim-analisti",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/ev-yatirim-analisti"
+  ]
+ },
+ {
+  "name": "explain-usage",
+  "slug": "explain-usage",
+  "cat": "14-meta-sistem",
+  "hash": "4cfc375c0914",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/explain-usage"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 1378,
+  "files": 1,
+  "lib": "~/skills/kutuphane/14-meta-sistem/explain-usage",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/explain-usage"
+  ]
+ },
+ {
+  "name": "fastapi-microservices-development",
+  "slug": "fastapi-microservices-development",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "daa045bde0ad",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/fastapi-microservices-development",
+   "~/projects/mcailabs-v4.0/.claude/skills/fastapi-microservices-development"
+  ],
+  "kinds": [
+   "content",
+   "install"
+  ],
+  "bytes": 34502,
+  "files": 3,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/fastapi-microservices-development",
+  "linked": [
+   "~/projects/mcailabs-v4.0/.claude/skills/fastapi-microservices-development"
+  ],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/fastapi-microservices-development"
+  ]
+ },
+ {
+  "name": "fiyatlandirma-uzmani",
+  "slug": "fiyatlandirma-uzmani",
+  "cat": "01-finans-yatirim",
+  "hash": "b526d7633a90",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/fiyatlandirma-uzmani"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 13617,
+  "files": 5,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/fiyatlandirma-uzmani",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/fiyatlandirma-uzmani"
+  ]
+ },
+ {
+  "name": "gitnexus-cli",
+  "slug": "gitnexus-cli",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "448fdf0948e5",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 3433,
+  "files": 1,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/gitnexus-cli",
+  "linked": [],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli"
+  ]
+ },
+ {
+  "name": "gitnexus-cli",
+  "slug": "gitnexus-cli--mcailabs-v4-0",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "bf1a21b57d6d",
+  "variant": 1,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 3280,
+  "files": 1,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/gitnexus-cli--mcailabs-v4-0",
+  "linked": [],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli"
+  ]
+ },
+ {
+  "name": "gitnexus-debugging",
+  "slug": "gitnexus-debugging",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "b19e63afc02a",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-debugging",
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging"
+  ],
+  "kinds": [
+   "content",
+   "content"
+  ],
+  "bytes": 3120,
+  "files": 1,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/gitnexus-debugging",
+  "linked": [],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-debugging",
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging"
+  ]
+ },
+ {
+  "name": "gitnexus-exploring",
+  "slug": "gitnexus-exploring",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "00016c0abbc0",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-exploring",
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring"
+  ],
+  "kinds": [
+   "content",
+   "content"
+  ],
+  "bytes": 2993,
+  "files": 1,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/gitnexus-exploring",
+  "linked": [],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-exploring",
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring"
+  ]
+ },
+ {
+  "name": "gitnexus-guide",
+  "slug": "gitnexus-guide",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "aeb67dc28fb7",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-guide",
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide"
+  ],
+  "kinds": [
+   "content",
+   "content"
+  ],
+  "bytes": 3468,
+  "files": 1,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/gitnexus-guide",
+  "linked": [],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-guide",
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide"
+  ]
+ },
+ {
+  "name": "gitnexus-impact-analysis",
+  "slug": "gitnexus-impact-analysis",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "774374f29963",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-impact-analysis",
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis"
+  ],
+  "kinds": [
+   "content",
+   "content"
+  ],
+  "bytes": 2889,
+  "files": 1,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/gitnexus-impact-analysis",
+  "linked": [],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-impact-analysis",
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis"
+  ]
+ },
+ {
+  "name": "gitnexus-refactoring",
+  "slug": "gitnexus-refactoring",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "908e1a6a537c",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-refactoring",
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring"
+  ],
+  "kinds": [
+   "content",
+   "content"
+  ],
+  "bytes": 4039,
+  "files": 1,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/gitnexus-refactoring",
+  "linked": [],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-refactoring",
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring"
+  ]
+ },
+ {
+  "name": "gorsel-uretim",
+  "slug": "gorsel-uretim",
+  "cat": "09-cad-gorsel",
+  "hash": "1da6fc830e4e",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/moonstone/.claude/skills/gorsel-uretim"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 9418,
+  "files": 7,
+  "lib": "~/skills/kutuphane/09-cad-gorsel/gorsel-uretim",
+  "linked": [
+   "~/Documents/GitHub/moonstone/.claude/skills/gorsel-uretim"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "hak-arama-turkiye",
+  "slug": "hak-arama-turkiye",
+  "cat": "10-yasam-turkiye",
+  "hash": "f655b01d7678",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/hak-arama-turkiye"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 6379,
+  "files": 3,
+  "lib": "~/skills/kutuphane/10-yasam-turkiye/hak-arama-turkiye",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/hak-arama-turkiye"
+  ]
+ },
+ {
+  "name": "harcama-analizi",
+  "slug": "harcama-analizi",
+  "cat": "01-finans-yatirim",
+  "hash": "a7bd9ca17c19",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/harcama-analizi"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 16047,
+  "files": 5,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/harcama-analizi",
+  "linked": [
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/harcama-analizi"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "headless-reel-forge",
+  "slug": "headless-reel-forge",
+  "cat": "03-video-ses-uretim",
+  "hash": "60161b370f50",
+  "variant": 0,
+  "srcs": [
+   "~/.claude/skills/headless-reel-forge",
+   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/headless-reel-forge",
+   "~/.gemini/config/plugins/kirkit-skills/skills/headless-reel-forge",
+   "~/projects/kirkit/data/skills/skills/headless-reel-forge"
+  ],
+  "kinds": [
+   "install",
+   "install",
+   "content",
+   "content"
+  ],
+  "bytes": 10722,
+  "files": 13,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/headless-reel-forge",
+  "linked": [
+   "~/.claude/skills/headless-reel-forge",
+   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/headless-reel-forge"
+  ],
+  "mirrored": [
+   "~/.gemini/config/plugins/kirkit-skills/skills/headless-reel-forge",
+   "~/projects/kirkit/data/skills/skills/headless-reel-forge"
+  ]
+ },
+ {
+  "name": "headless-reel-forge",
+  "slug": "headless-reel-forge--instagram-reels",
+  "cat": "03-video-ses-uretim",
+  "hash": "fc892e11a990",
+  "variant": 1,
+  "srcs": [
+   "~/projects/instagram-reels/docs/headless-reel-forge"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 10722,
+  "files": 18,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/headless-reel-forge--instagram-reels",
+  "linked": [],
+  "mirrored": [
+   "~/projects/instagram-reels/docs/headless-reel-forge"
+  ]
+ },
+ {
+  "name": "healing-audio-youtube-seo",
+  "slug": "healing-audio-youtube-seo",
+  "cat": "03-video-ses-uretim",
+  "hash": "5f35c27527d0",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/healing-audio-youtube-seo",
+   "~/projects/reelsindustry/.claude/skills/healing-audio-youtube-seo",
+   "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo"
+  ],
+  "kinds": [
+   "install",
+   "install",
+   "install"
+  ],
+  "bytes": 10730,
+  "files": 8,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/healing-audio-youtube-seo",
+  "linked": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/healing-audio-youtube-seo",
+   "~/projects/reelsindustry/.claude/skills/healing-audio-youtube-seo",
+   "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "hedef-arastirma",
+  "slug": "hedef-arastirma",
+  "cat": "05-pazarlama-buyume",
+  "hash": "7a6ac117097e",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/abdullahfarukcom/claudedanismanlik/.claude/skills/hedef-arastirma"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 6794,
+  "files": 6,
+  "lib": "~/skills/kutuphane/05-pazarlama-buyume/hedef-arastirma",
+  "linked": [
+   "~/Documents/GitHub/abdullahfarukcom/claudedanismanlik/.claude/skills/hedef-arastirma"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "helal-portfoy-uzmanlari",
+  "slug": "helal-portfoy-uzmanlari",
+  "cat": "01-finans-yatirim",
+  "hash": "45e4af39411f",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/helal-portfoy-uzmanlari"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 6328,
+  "files": 3,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/helal-portfoy-uzmanlari",
+  "linked": [
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/helal-portfoy-uzmanlari"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "helal-yatirim-uzmani",
+  "slug": "helal-yatirim-uzmani",
+  "cat": "01-finans-yatirim",
+  "hash": "0938095c1607",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/helal-yatirim-uzmani"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 9739,
+  "files": 6,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/helal-yatirim-uzmani",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/helal-yatirim-uzmani"
+  ]
+ },
+ {
+  "name": "hyperscaler-expert",
+  "slug": "hyperscaler-expert",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "a26b21271cf5",
+  "variant": 0,
+  "srcs": [
+   "~/projects/hyperscalerexpert/.claude/skills/hyperscaler-expert"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 7163,
+  "files": 9,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/hyperscaler-expert",
+  "linked": [
+   "~/projects/hyperscalerexpert/.claude/skills/hyperscaler-expert"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "icerik-strateji",
+  "slug": "icerik-strateji",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "ea6da275c14f",
+  "variant": 0,
+  "srcs": [
+   "~/projects/comesyriacontent/.claude/skills/icerik-strateji"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 6055,
+  "files": 6,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/icerik-strateji",
+  "linked": [
+   "~/projects/comesyriacontent/.claude/skills/icerik-strateji"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "icerik-uret",
+  "slug": "icerik-uret",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "29824c8e2c22",
+  "variant": 0,
+  "srcs": [
+   "~/projects/comesyriacontent/.claude/skills/icerik-uret"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 11038,
+  "files": 12,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/icerik-uret",
+  "linked": [
+   "~/projects/comesyriacontent/.claude/skills/icerik-uret"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "import-memory",
+  "slug": "import-memory",
+  "cat": "14-meta-sistem",
+  "hash": "2fba7c2bfee7",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/import-memory"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 10615,
+  "files": 1,
+  "lib": "~/skills/kutuphane/14-meta-sistem/import-memory",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/import-memory"
+  ]
+ },
+ {
+  "name": "ingilizce-kocu",
+  "slug": "ingilizce-kocu",
+  "cat": "11-ogrenme",
+  "hash": "edc5008c8ff8",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/ingilizce-kocu"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 8134,
+  "files": 4,
+  "lib": "~/skills/kutuphane/11-ogrenme/ingilizce-kocu",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/ingilizce-kocu"
+  ]
+ },
+ {
+  "name": "insanca",
+  "slug": "insanca",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "e208ed84b976",
+  "variant": 0,
+  "srcs": [
+   "~/projects/reelsindustry/.claude/skills/insanca"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 76126,
+  "files": 5,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/insanca",
+  "linked": [
+   "~/projects/reelsindustry/.claude/skills/insanca"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "kaggle-kaggle-skill",
+  "slug": "kaggle-kaggle-skill",
+  "cat": "08-ai-ml",
+  "hash": "1f03a63f0c8b",
+  "variant": 0,
+  "srcs": [
+   "~/projects/autonomous-agent-prediction/kaggle-kaggle-skill"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 8878,
+  "files": 7,
+  "lib": "~/skills/kutuphane/08-ai-ml/kaggle-kaggle-skill",
+  "linked": [],
+  "mirrored": [
+   "~/projects/autonomous-agent-prediction/kaggle-kaggle-skill"
+  ]
+ },
+ {
+  "name": "kartela-icerik",
+  "slug": "kartela-icerik",
+  "cat": "12-marka-musteri",
+  "hash": "40946db5bc21",
+  "variant": 0,
+  "srcs": [
+   "~/projects/kartelastrateji/.claude/skills/kartela-icerik"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 7182,
+  "files": 20,
+  "lib": "~/skills/kutuphane/12-marka-musteri/kartela-icerik",
+  "linked": [
+   "~/projects/kartelastrateji/.claude/skills/kartela-icerik"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "kartela-web-ux",
+  "slug": "kartela-web-ux",
+  "cat": "06-ux-urun",
+  "hash": "013a27aab27f",
+  "variant": 0,
+  "srcs": [
+   "~/projects/kartelastrateji/.claude/skills/kartela-web-ux"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 5058,
+  "files": 5,
+  "lib": "~/skills/kutuphane/06-ux-urun/kartela-web-ux",
+  "linked": [
+   "~/projects/kartelastrateji/.claude/skills/kartela-web-ux"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "kirkit-skill-author",
+  "slug": "kirkit-skill-author",
+  "cat": "14-meta-sistem",
+  "hash": "9a2238a1bccc",
+  "variant": 0,
+  "srcs": [
+   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/kirkit-skill-author",
+   "~/.gemini/config/plugins/kirkit-skills/skills/kirkit-skill-author",
+   "~/projects/kirkit/data/skills/skills/kirkit-skill-author"
+  ],
+  "kinds": [
+   "install",
+   "content",
+   "content"
+  ],
+  "bytes": 1370,
+  "files": 1,
+  "lib": "~/skills/kutuphane/14-meta-sistem/kirkit-skill-author",
+  "linked": [
+   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/kirkit-skill-author"
+  ],
+  "mirrored": [
+   "~/.gemini/config/plugins/kirkit-skills/skills/kirkit-skill-author",
+   "~/projects/kirkit/data/skills/skills/kirkit-skill-author"
+  ]
+ },
+ {
+  "name": "kling-video-uretim",
+  "slug": "kling-video-uretim",
+  "cat": "03-video-ses-uretim",
+  "hash": "9a3fc4082794",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/moonstone/.claude/skills/kling-video-uretim"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 11143,
+  "files": 14,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/kling-video-uretim",
+  "linked": [
+   "~/Documents/GitHub/moonstone/.claude/skills/kling-video-uretim"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "klinik-lead-akisi",
+  "slug": "klinik-lead-akisi",
+  "cat": "05-pazarlama-buyume",
+  "hash": "dce49967dd63",
+  "variant": 0,
+  "srcs": [
+   "~/projects/terapipanel/.claude/skills/klinik-lead-akisi"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 13019,
+  "files": 2,
+  "lib": "~/skills/kutuphane/05-pazarlama-buyume/klinik-lead-akisi",
+  "linked": [
+   "~/projects/terapipanel/.claude/skills/klinik-lead-akisi"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "konaklama-kesif",
+  "slug": "konaklama-kesif",
+  "cat": "10-yasam-turkiye",
+  "hash": "6efa46007e69",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/konaklama-kesif"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 7529,
+  "files": 3,
+  "lib": "~/skills/kutuphane/10-yasam-turkiye/konaklama-kesif",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/konaklama-kesif"
+  ]
+ },
+ {
+  "name": "kultur-sanat-radari",
+  "slug": "kultur-sanat-radari",
+  "cat": "10-yasam-turkiye",
+  "hash": "bd694772ea17",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/kultur-sanat-radari"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 5007,
+  "files": 2,
+  "lib": "~/skills/kutuphane/10-yasam-turkiye/kultur-sanat-radari",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/kultur-sanat-radari"
+  ]
+ },
+ {
+  "name": "learn",
+  "slug": "learn",
+  "cat": "11-ogrenme",
+  "hash": "9e4d775f8b15",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/learn"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 13354,
+  "files": 2,
+  "lib": "~/skills/kutuphane/11-ogrenme/learn",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/learn"
+  ]
+ },
+ {
+  "name": "llm-engineering-expert",
+  "slug": "llm-engineering-expert",
+  "cat": "08-ai-ml",
+  "hash": "03525c630a5e",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/llm-engineering-expert"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 6482,
+  "files": 6,
+  "lib": "~/skills/kutuphane/08-ai-ml/llm-engineering-expert",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/llm-engineering-expert"
+  ]
+ },
+ {
+  "name": "masifico-ahsap-kultur",
+  "slug": "masifico-ahsap-kultur",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "fee61513eb5a",
+  "variant": 0,
+  "srcs": [
+   "~/projects/masifico/skills/masifico-ahsap-kultur"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 6089,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-ahsap-kultur",
+  "linked": [],
+  "mirrored": [
+   "~/projects/masifico/skills/masifico-ahsap-kultur"
+  ]
+ },
+ {
+  "name": "masifico-farklilasma",
+  "slug": "masifico-farklilasma",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "f8badc47ae58",
+  "variant": 0,
+  "srcs": [
+   "~/projects/masifico/skills/masifico-farklilasma"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 8631,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-farklilasma",
+  "linked": [],
+  "mirrored": [
+   "~/projects/masifico/skills/masifico-farklilasma"
+  ]
+ },
+ {
+  "name": "masifico-farklilasma",
+  "slug": "masifico-farklilasma--cloud",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "86c9f30bce57",
+  "variant": 1,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/masifico-farklilasma"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 4589,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-farklilasma--cloud",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/masifico-farklilasma"
+  ]
+ },
+ {
+  "name": "masifico-kalite-izlenebilirlik",
+  "slug": "masifico-kalite-izlenebilirlik",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "7f287b2f2c59",
+  "variant": 0,
+  "srcs": [
+   "~/projects/masifico/skills/masifico-kalite-izlenebilirlik"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 14647,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-kalite-izlenebilirlik",
+  "linked": [],
+  "mirrored": [
+   "~/projects/masifico/skills/masifico-kalite-izlenebilirlik"
+  ]
+ },
+ {
+  "name": "masifico-maliyet-fiyat",
+  "slug": "masifico-maliyet-fiyat--masifico",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "a8c38620a52d",
+  "variant": 0,
+  "srcs": [
+   "~/projects/masifico/skills/masifico-maliyet-fiyat"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 8751,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-maliyet-fiyat--masifico",
+  "linked": [],
+  "mirrored": [
+   "~/projects/masifico/skills/masifico-maliyet-fiyat"
+  ]
+ },
+ {
+  "name": "masifico-maliyet-fiyat",
+  "slug": "masifico-maliyet-fiyat--cloud",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "5714073bb6cb",
+  "variant": 1,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/masifico-maliyet-fiyat"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 5583,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-maliyet-fiyat--cloud",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/masifico-maliyet-fiyat"
+  ]
+ },
+ {
+  "name": "masifico-parti-uretim",
+  "slug": "masifico-parti-uretim",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "7e471392e268",
+  "variant": 0,
+  "srcs": [
+   "~/projects/masifico/skills/masifico-parti-uretim"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 6258,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-parti-uretim",
+  "linked": [],
+  "mirrored": [
+   "~/projects/masifico/skills/masifico-parti-uretim"
+  ]
+ },
+ {
+  "name": "masifico-tedarik-rfq",
+  "slug": "masifico-tedarik-rfq",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "bcc1c2410701",
+  "variant": 0,
+  "srcs": [
+   "~/projects/masifico/skills/masifico-tedarik-rfq"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 9124,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-tedarik-rfq",
+  "linked": [],
+  "mirrored": [
+   "~/projects/masifico/skills/masifico-tedarik-rfq"
+  ]
+ },
+ {
+  "name": "masifico-teknik-dosya",
+  "slug": "masifico-teknik-dosya",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "03ab040a44bf",
+  "variant": 0,
+  "srcs": [
+   "~/projects/masifico/skills/masifico-teknik-dosya"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 12264,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-teknik-dosya",
+  "linked": [],
+  "mirrored": [
+   "~/projects/masifico/skills/masifico-teknik-dosya"
+  ]
+ },
+ {
+  "name": "masifico-uretim-muhendisi",
+  "slug": "masifico-uretim-muhendisi--masifico",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "e03f4f91f1aa",
+  "variant": 0,
+  "srcs": [
+   "~/projects/masifico/skills/masifico-uretim-muhendisi"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 11139,
+  "files": 3,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-uretim-muhendisi--masifico",
+  "linked": [],
+  "mirrored": [
+   "~/projects/masifico/skills/masifico-uretim-muhendisi"
+  ]
+ },
+ {
+  "name": "masifico-uretim-muhendisi",
+  "slug": "masifico-uretim-muhendisi--cloud",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "3feb7266de98",
+  "variant": 1,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/masifico-uretim-muhendisi"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 5472,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-uretim-muhendisi--cloud",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/masifico-uretim-muhendisi"
+  ]
+ },
+ {
+  "name": "masifico-urun-gorsel",
+  "slug": "masifico-urun-gorsel",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "8ab81b148db2",
+  "variant": 0,
+  "srcs": [
+   "~/projects/masifico/skills/masifico-urun-gorsel"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 7360,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-urun-gorsel",
+  "linked": [],
+  "mirrored": [
+   "~/projects/masifico/skills/masifico-urun-gorsel"
+  ]
+ },
+ {
+  "name": "masifico-video-uretim",
+  "slug": "masifico-video-uretim",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "36b5978891bc",
+  "variant": 0,
+  "srcs": [
+   "~/projects/masifico/skills/masifico-video-uretim"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 8109,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-video-uretim",
+  "linked": [],
+  "mirrored": [
+   "~/projects/masifico/skills/masifico-video-uretim"
+  ]
+ },
+ {
+  "name": "ml-expert",
+  "slug": "ml-expert",
+  "cat": "08-ai-ml",
+  "hash": "5d52f80a09fb",
+  "variant": 0,
+  "srcs": [
+   "~/.claude/skills/ml-expert",
+   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/ml-expert",
+   "~/.gemini/config/plugins/kirkit-skills/skills/ml-expert",
+   "~/projects/kirkit/data/skills/skills/ml-expert"
+  ],
+  "kinds": [
+   "install",
+   "install",
+   "content",
+   "content"
+  ],
+  "bytes": 12314,
+  "files": 15,
+  "lib": "~/skills/kutuphane/08-ai-ml/ml-expert",
+  "linked": [
+   "~/.claude/skills/ml-expert",
+   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/ml-expert"
+  ],
+  "mirrored": [
+   "~/.gemini/config/plugins/kirkit-skills/skills/ml-expert",
+   "~/projects/kirkit/data/skills/skills/ml-expert"
+  ]
+ },
+ {
+  "name": "mobile-ux-flow-expert",
+  "slug": "mobile-ux-flow-expert",
+  "cat": "06-ux-urun",
+  "hash": "ea712818e93d",
+  "variant": 0,
+  "srcs": [
+   "~/.claude/skills/mobile-ux-flow-expert",
+   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/mobile-ux-flow-expert",
+   "~/.gemini/config/plugins/kirkit-skills/skills/mobile-ux-flow-expert",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/mobile-ux-flow-expert",
+   "~/projects/kirkit/data/skills/skills/mobile-ux-flow-expert",
+   "~/projects/startup değerleme/skill/ilgili-skiller/mobile-ux-flow-expert"
+  ],
+  "kinds": [
+   "install",
+   "install",
+   "content",
+   "cloud",
+   "content",
+   "content"
+  ],
+  "bytes": 13851,
+  "files": 8,
+  "lib": "~/skills/kutuphane/06-ux-urun/mobile-ux-flow-expert",
+  "linked": [
+   "~/.claude/skills/mobile-ux-flow-expert",
+   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/mobile-ux-flow-expert"
+  ],
+  "mirrored": [
+   "~/.gemini/config/plugins/kirkit-skills/skills/mobile-ux-flow-expert",
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/mobile-ux-flow-expert",
+   "~/projects/kirkit/data/skills/skills/mobile-ux-flow-expert",
+   "~/projects/startup değerleme/skill/ilgili-skiller/mobile-ux-flow-expert"
+  ]
+ },
+ {
+  "name": "mobilya-cad",
+  "slug": "mobilya-cad",
+  "cat": "09-cad-gorsel",
+  "hash": "bed9b79e64f0",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/mobilya/.claude/skills/mobilya-cad"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 18267,
+  "files": 29,
+  "lib": "~/skills/kutuphane/09-cad-gorsel/mobilya-cad",
+  "linked": [
+   "~/Documents/GitHub/mobilya/.claude/skills/mobilya-cad"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "moonstone-residence",
+  "slug": "moonstone-residence",
+  "cat": "12-marka-musteri",
+  "hash": "fbe023838a35",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/moonstone/.claude/skills/moonstone-residence"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 7918,
+  "files": 12,
+  "lib": "~/skills/kutuphane/12-marka-musteri/moonstone-residence",
+  "linked": [
+   "~/Documents/GitHub/moonstone/.claude/skills/moonstone-residence"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "morning",
+  "slug": "morning",
+  "cat": "14-meta-sistem",
+  "hash": "04b4fefac63f",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/morning"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 17948,
+  "files": 3,
+  "lib": "~/skills/kutuphane/14-meta-sistem/morning",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/morning"
+  ]
+ },
+ {
+  "name": "nextjs-development",
+  "slug": "nextjs-development",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "e0422c0dda96",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/nextjs-development",
+   "~/projects/mcailabs-v4.0/.claude/skills/nextjs-development"
+  ],
+  "kinds": [
+   "content",
+   "install"
+  ],
+  "bytes": 34861,
+  "files": 3,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/nextjs-development",
+  "linked": [
+   "~/projects/mcailabs-v4.0/.claude/skills/nextjs-development"
+  ],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/nextjs-development"
+  ]
+ },
+ {
+  "name": "oauth2-authentication",
+  "slug": "oauth2-authentication",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "0929973e5ba2",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/oauth2-authentication",
+   "~/projects/mcailabs-v4.0/.claude/skills/oauth2-authentication"
+  ],
+  "kinds": [
+   "content",
+   "install"
+  ],
+  "bytes": 69491,
+  "files": 2,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/oauth2-authentication",
+  "linked": [
+   "~/projects/mcailabs-v4.0/.claude/skills/oauth2-authentication"
+  ],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/oauth2-authentication"
+  ]
+ },
+ {
+  "name": "ota-mobile-tablet-ux",
+  "slug": "ota-mobile-tablet-ux",
+  "cat": "06-ux-urun",
+  "hash": "77265389820b",
+  "variant": 0,
+  "srcs": [
+   "~/projects/comesyriaweb/.claude/skills/ota-mobile-tablet-ux"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 17469,
+  "files": 1,
+  "lib": "~/skills/kutuphane/06-ux-urun/ota-mobile-tablet-ux",
+  "linked": [
+   "~/projects/comesyriaweb/.claude/skills/ota-mobile-tablet-ux"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "oyuncak-mevzuat",
+  "slug": "oyuncak-mevzuat--masifico",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "b1cdb30a3e68",
+  "variant": 0,
+  "srcs": [
+   "~/projects/masifico/skills/oyuncak-mevzuat"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 20398,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/oyuncak-mevzuat--masifico",
+  "linked": [],
+  "mirrored": [
+   "~/projects/masifico/skills/oyuncak-mevzuat"
+  ]
+ },
+ {
+  "name": "oyuncak-mevzuat",
+  "slug": "oyuncak-mevzuat--cloud",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "f1ddba98ac12",
+  "variant": 1,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/oyuncak-mevzuat"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 7720,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/oyuncak-mevzuat--cloud",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/oyuncak-mevzuat"
+  ]
+ },
+ {
+  "name": "oyuncak-pazar-radari",
+  "slug": "oyuncak-pazar-radari",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "75b275b49974",
+  "variant": 0,
+  "srcs": [
+   "~/projects/masifico/skills/oyuncak-pazar-radari"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 10143,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/oyuncak-pazar-radari",
+  "linked": [],
+  "mirrored": [
+   "~/projects/masifico/skills/oyuncak-pazar-radari"
+  ]
+ },
+ {
+  "name": "oyuncak-pazar-radari",
+  "slug": "oyuncak-pazar-radari--cloud",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "866561cf859f",
+  "variant": 1,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/oyuncak-pazar-radari"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 8480,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/oyuncak-pazar-radari--cloud",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/oyuncak-pazar-radari"
+  ]
+ },
+ {
+  "name": "pdf",
+  "slug": "pdf",
+  "cat": "13-ofis-belge",
+  "hash": "d52c0cc6aa26",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/pdf"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 8035,
+  "files": 12,
+  "lib": "~/skills/kutuphane/13-ofis-belge/pdf",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/pdf"
+  ]
+ },
+ {
+  "name": "pexels-gorsel-bulucu",
+  "slug": "pexels-gorsel-bulucu",
+  "cat": "09-cad-gorsel",
+  "hash": "6744e8f3348c",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/moonstone/.claude/skills/pexels-gorsel-bulucu"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 7639,
+  "files": 5,
+  "lib": "~/skills/kutuphane/09-cad-gorsel/pexels-gorsel-bulucu",
+  "linked": [
+   "~/Documents/GitHub/moonstone/.claude/skills/pexels-gorsel-bulucu"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "pexels-media-scout",
+  "slug": "pexels-media-scout",
+  "cat": "09-cad-gorsel",
+  "hash": "24c0fb346d1e",
+  "variant": 0,
+  "srcs": [
+   "~/projects/reelsindustry/.claude/skills/pexels-media-scout",
+   "~/projects/weftrecords/.claude/skills/pexels-media-scout"
+  ],
+  "kinds": [
+   "install",
+   "install"
+  ],
+  "bytes": 7441,
+  "files": 5,
+  "lib": "~/skills/kutuphane/09-cad-gorsel/pexels-media-scout",
+  "linked": [
+   "~/projects/reelsindustry/.claude/skills/pexels-media-scout",
+   "~/projects/weftrecords/.claude/skills/pexels-media-scout"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "pexels-media-scout",
+  "slug": "pexels-media-scout--weftrecords-gh",
+  "cat": "09-cad-gorsel",
+  "hash": "cd77ac0c798d",
+  "variant": 1,
+  "srcs": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/pexels-media-scout"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 7441,
+  "files": 5,
+  "lib": "~/skills/kutuphane/09-cad-gorsel/pexels-media-scout--weftrecords-gh",
+  "linked": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/pexels-media-scout"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "physics-reel-forge",
+  "slug": "physics-reel-forge",
+  "cat": "03-video-ses-uretim",
+  "hash": "6a09effd5a39",
+  "variant": 0,
+  "srcs": [
+   "~/projects/instagram-reels/docs/physics-reel-forge"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 11460,
+  "files": 11,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/physics-reel-forge",
+  "linked": [],
+  "mirrored": [
+   "~/projects/instagram-reels/docs/physics-reel-forge"
+  ]
+ },
+ {
+  "name": "pm-decision-review",
+  "slug": "pm-decision-review",
+  "cat": "06-ux-urun",
+  "hash": "a911b3b8cd27",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/pm-decision-review"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 11489,
+  "files": 1,
+  "lib": "~/skills/kutuphane/06-ux-urun/pm-decision-review",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/pm-decision-review"
+  ]
+ },
+ {
+  "name": "portfoy-tahmin",
+  "slug": "portfoy-tahmin",
+  "cat": "01-finans-yatirim",
+  "hash": "f06a9e104d6f",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/portfoy-tahmin"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 17407,
+  "files": 7,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/portfoy-tahmin",
+  "linked": [
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/portfoy-tahmin"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "portfoy-tahmin",
+  "slug": "portfoy-tahmin--portfoy-butce",
+  "cat": "01-finans-yatirim",
+  "hash": "285c4f7fbeed",
+  "variant": 1,
+  "srcs": [
+   "~/projects/portfoy-butce/.claude/skills/portfoy-tahmin"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 16585,
+  "files": 7,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/portfoy-tahmin--portfoy-butce",
+  "linked": [
+   "~/projects/portfoy-butce/.claude/skills/portfoy-tahmin"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "portfoy-tahmin",
+  "slug": "portfoy-tahmin--cloud",
+  "cat": "01-finans-yatirim",
+  "hash": "85c6303ed3dd",
+  "variant": 2,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/portfoy-tahmin"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 9583,
+  "files": 7,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/portfoy-tahmin--cloud",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/portfoy-tahmin"
+  ]
+ },
+ {
+  "name": "postgresql",
+  "slug": "postgresql",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "a61b656b2417",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.claude/skills/postgresql"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 34955,
+  "files": 2,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/postgresql",
+  "linked": [
+   "~/projects/mcailabs-v4.0/.claude/skills/postgresql"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "postgresql",
+  "slug": "postgresql--mcailabs-v4-0",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "df22ac31d561",
+  "variant": 1,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/postgresql"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 34954,
+  "files": 2,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/postgresql--mcailabs-v4-0",
+  "linked": [],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/postgresql"
+  ]
+ },
+ {
+  "name": "pptx",
+  "slug": "pptx",
+  "cat": "13-ofis-belge",
+  "hash": "8cb7116ea89e",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/pptx"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 21423,
+  "files": 65,
+  "lib": "~/skills/kutuphane/13-ofis-belge/pptx",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/pptx"
+  ]
+ },
+ {
+  "name": "procedural-game-audio",
+  "slug": "procedural-game-audio",
+  "cat": "03-video-ses-uretim",
+  "hash": "85cf165d00d4",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/procedural-game-audio"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 9646,
+  "files": 1,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/procedural-game-audio",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/procedural-game-audio"
+  ]
+ },
+ {
+  "name": "pydantic",
+  "slug": "pydantic",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "fe50217f222a",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/pydantic",
+   "~/projects/mcailabs-v4.0/.claude/skills/pydantic"
+  ],
+  "kinds": [
+   "content",
+   "install"
+  ],
+  "bytes": 32906,
+  "files": 3,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/pydantic",
+  "linked": [
+   "~/projects/mcailabs-v4.0/.claude/skills/pydantic"
+  ],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/pydantic"
+  ]
+ },
+ {
+  "name": "pytest",
+  "slug": "pytest",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "0af0e478343c",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.claude/skills/pytest"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 65786,
+  "files": 3,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/pytest",
+  "linked": [
+   "~/projects/mcailabs-v4.0/.claude/skills/pytest"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "pytest",
+  "slug": "pytest--mcailabs-v4-0",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "f311d3a3a532",
+  "variant": 1,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/pytest"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 65785,
+  "files": 3,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/pytest--mcailabs-v4-0",
+  "linked": [],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/pytest"
+  ]
+ },
+ {
+  "name": "react-patterns",
+  "slug": "react-patterns",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "c8bdf09eb991",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/react-patterns",
+   "~/projects/mcailabs-v4.0/.claude/skills/react-patterns"
+  ],
+  "kinds": [
+   "content",
+   "install"
+  ],
+  "bytes": 37724,
+  "files": 3,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/react-patterns",
+  "linked": [
+   "~/projects/mcailabs-v4.0/.claude/skills/react-patterns"
+  ],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/react-patterns"
+  ]
+ },
+ {
+  "name": "retro-record-label",
+  "slug": "retro-record-label",
+  "cat": "03-video-ses-uretim",
+  "hash": "e0678cca589b",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/retro-record-label",
+   "~/projects/weftrecords/.claude/skills/retro-record-label"
+  ],
+  "kinds": [
+   "install",
+   "install"
+  ],
+  "bytes": 9897,
+  "files": 14,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/retro-record-label",
+  "linked": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/retro-record-label",
+   "~/projects/weftrecords/.claude/skills/retro-record-label"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "rpdm-mevzuat",
+  "slug": "rpdm-mevzuat",
+  "cat": "12-marka-musteri",
+  "hash": "0e172ecec26a",
+  "variant": 0,
+  "srcs": [
+   "~/projects/kartelastrateji/.claude/skills/rpdm-mevzuat"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 5540,
+  "files": 6,
+  "lib": "~/skills/kutuphane/12-marka-musteri/rpdm-mevzuat",
+  "linked": [
+   "~/projects/kartelastrateji/.claude/skills/rpdm-mevzuat"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "sahis-vergi-yukumluluk",
+  "slug": "sahis-vergi-yukumluluk",
+  "cat": "01-finans-yatirim",
+  "hash": "666270eead09",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/sahis-vergi-yukumluluk"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 5829,
+  "files": 3,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/sahis-vergi-yukumluluk",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/sahis-vergi-yukumluluk"
+  ]
+ },
+ {
+  "name": "schedule",
+  "slug": "schedule",
+  "cat": "14-meta-sistem",
+  "hash": "b3d42ad08f81",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/schedule"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 2387,
+  "files": 1,
+  "lib": "~/skills/kutuphane/14-meta-sistem/schedule",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/schedule"
+  ]
+ },
+ {
+  "name": "schengen-randevu-tr",
+  "slug": "schengen-randevu-tr",
+  "cat": "10-yasam-turkiye",
+  "hash": "756c32560ae3",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/schengen-randevu-tr"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 9198,
+  "files": 1,
+  "lib": "~/skills/kutuphane/10-yasam-turkiye/schengen-randevu-tr",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/schengen-randevu-tr"
+  ]
+ },
+ {
+  "name": "seo-expert",
+  "slug": "seo-expert",
+  "cat": "05-pazarlama-buyume",
+  "hash": "2403b35d1926",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/seo-expert",
+   "~/projects/startup değerleme/skill/ilgili-skiller/seo-expert"
+  ],
+  "kinds": [
+   "cloud",
+   "content"
+  ],
+  "bytes": 10710,
+  "files": 6,
+  "lib": "~/skills/kutuphane/05-pazarlama-buyume/seo-expert",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/seo-expert",
+   "~/projects/startup değerleme/skill/ilgili-skiller/seo-expert"
+  ]
+ },
+ {
+  "name": "serverim-build",
+  "slug": "serverim-build",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "76fa6f62138b",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/serverim-build"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 9349,
+  "files": 1,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/serverim-build",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/serverim-build"
+  ]
+ },
+ {
+  "name": "setup-cowork",
+  "slug": "setup-cowork",
+  "cat": "14-meta-sistem",
+  "hash": "69ddfab79079",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/setup-cowork"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 11901,
+  "files": 1,
+  "lib": "~/skills/kutuphane/14-meta-sistem/setup-cowork",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/setup-cowork"
+  ]
+ },
+ {
+  "name": "shorts-strategy",
+  "slug": "shorts-strategy",
+  "cat": "03-video-ses-uretim",
+  "hash": "b23d6d858bd1",
+  "variant": 0,
+  "srcs": [
+   "~/projects/instagram-reels/.claude/skills/shorts-strategy"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 2630,
+  "files": 1,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/shorts-strategy",
+  "linked": [
+   "~/projects/instagram-reels/.claude/skills/shorts-strategy"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "skill-creator",
+  "slug": "skill-creator",
+  "cat": "14-meta-sistem",
+  "hash": "2b9390b6fc6a",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/skill-creator"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 33168,
+  "files": 18,
+  "lib": "~/skills/kutuphane/14-meta-sistem/skill-creator",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/skill-creator"
+  ]
+ },
+ {
+  "name": "slm-architecture-lead",
+  "slug": "slm-architecture-lead",
+  "cat": "08-ai-ml",
+  "hash": "5b1dc1f648b8",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/slm-architecture-lead"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 8730,
+  "files": 5,
+  "lib": "~/skills/kutuphane/08-ai-ml/slm-architecture-lead",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/slm-architecture-lead"
+  ]
+ },
+ {
+  "name": "sosyal-medya-post-uret",
+  "slug": "sosyal-medya-post-uret",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "1a9702ebc49c",
+  "variant": 0,
+  "srcs": [
+   "~/projects/comesyriacontent/.claude/skills/sosyal-medya-post-uret"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 7969,
+  "files": 1,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/sosyal-medya-post-uret",
+  "linked": [
+   "~/projects/comesyriacontent/.claude/skills/sosyal-medya-post-uret"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "sosyal-medya-post-uret",
+  "slug": "sosyal-medya-post-uret--kirkit",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "45f8e499bb2d",
+  "variant": 1,
+  "srcs": [
+   "~/projects/kirkit/data/skills/skills/sosyal-medya-post-uret"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 5076,
+  "files": 1,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/sosyal-medya-post-uret--kirkit",
+  "linked": [],
+  "mirrored": [
+   "~/projects/kirkit/data/skills/skills/sosyal-medya-post-uret"
+  ]
+ },
+ {
+  "name": "startup-degerleme",
+  "slug": "startup-degerleme",
+  "cat": "01-finans-yatirim",
+  "hash": "5a59c8950077",
+  "variant": 0,
+  "srcs": [
+   "~/.claude/skills/startup-degerleme",
+   "~/projects/startup değerleme/skill/startup-degerleme"
+  ],
+  "kinds": [
+   "install",
+   "content"
+  ],
+  "bytes": 24395,
+  "files": 18,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/startup-degerleme",
+  "linked": [
+   "~/.claude/skills/startup-degerleme"
+  ],
+  "mirrored": [
+   "~/projects/startup değerleme/skill/startup-degerleme"
+  ]
+ },
+ {
+  "name": "stock-footage-forge",
+  "slug": "stock-footage-forge",
+  "cat": "03-video-ses-uretim",
+  "hash": "f475f5628ee6",
+  "variant": 0,
+  "srcs": [
+   "~/projects/reelsindustry/.claude/skills/stock-footage-forge",
+   "~/projects/weftrecords/.claude/skills/stock-footage-forge"
+  ],
+  "kinds": [
+   "install",
+   "install"
+  ],
+  "bytes": 6085,
+  "files": 6,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/stock-footage-forge",
+  "linked": [
+   "~/projects/reelsindustry/.claude/skills/stock-footage-forge",
+   "~/projects/weftrecords/.claude/skills/stock-footage-forge"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "suno-composer",
+  "slug": "suno-composer",
+  "cat": "03-video-ses-uretim",
+  "hash": "e3a95cc2fff0",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/suno-composer",
+   "~/projects/weftrecords/.claude/skills/suno-composer"
+  ],
+  "kinds": [
+   "install",
+   "install"
+  ],
+  "bytes": 10678,
+  "files": 4,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/suno-composer",
+  "linked": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/suno-composer",
+   "~/projects/weftrecords/.claude/skills/suno-composer"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "suriye-is-mevzuat",
+  "slug": "suriye-is-mevzuat",
+  "cat": "10-yasam-turkiye",
+  "hash": "1d6031f23b9d",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/suriye-is-mevzuat"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 7839,
+  "files": 6,
+  "lib": "~/skills/kutuphane/10-yasam-turkiye/suriye-is-mevzuat",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/suriye-is-mevzuat"
+  ]
+ },
+ {
+  "name": "tahmin-savcisi",
+  "slug": "tahmin-savcisi",
+  "cat": "01-finans-yatirim",
+  "hash": "6d2725abf53b",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/tahmin-savcisi"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 3486,
+  "files": 2,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/tahmin-savcisi",
+  "linked": [
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/tahmin-savcisi"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "tailwind-css",
+  "slug": "tailwind-css",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "f2339dda940d",
+  "variant": 0,
+  "srcs": [
+   "~/projects/mcailabs-v4.0/.agents/skills/tailwind-css",
+   "~/projects/mcailabs-v4.0/.claude/skills/tailwind-css"
+  ],
+  "kinds": [
+   "content",
+   "install"
+  ],
+  "bytes": 31218,
+  "files": 3,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/tailwind-css",
+  "linked": [
+   "~/projects/mcailabs-v4.0/.claude/skills/tailwind-css"
+  ],
+  "mirrored": [
+   "~/projects/mcailabs-v4.0/.agents/skills/tailwind-css"
+  ]
+ },
+ {
+  "name": "tech-etkinlik-kesif",
+  "slug": "tech-etkinlik-kesif",
+  "cat": "10-yasam-turkiye",
+  "hash": "e0071f439f3a",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/tech-etkinlik-kesif"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 7918,
+  "files": 2,
+  "lib": "~/skills/kutuphane/10-yasam-turkiye/tech-etkinlik-kesif",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/tech-etkinlik-kesif"
+  ]
+ },
+ {
+  "name": "turkce-anlati",
+  "slug": "turkce-anlati",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "a55ea2aeedb4",
+  "variant": 0,
+  "srcs": [
+   "~/projects/reelsindustry/.claude/skills/turkce-anlati"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 6938,
+  "files": 2,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/turkce-anlati",
+  "linked": [
+   "~/projects/reelsindustry/.claude/skills/turkce-anlati"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "ucuz-bilet-avcisi",
+  "slug": "ucuz-bilet-avcisi",
+  "cat": "10-yasam-turkiye",
+  "hash": "fd8076c2041f",
+  "variant": 0,
+  "srcs": [
+   "~/projects/ucakbileti/.claude/skills/ucuz-bilet-avcisi"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 15040,
+  "files": 8,
+  "lib": "~/skills/kutuphane/10-yasam-turkiye/ucuz-bilet-avcisi",
+  "linked": [
+   "~/projects/ucakbileti/.claude/skills/ucuz-bilet-avcisi"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "urun-kesif",
+  "slug": "urun-kesif",
+  "cat": "10-yasam-turkiye",
+  "hash": "9794ada1894d",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/urun-kesif"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 8265,
+  "files": 4,
+  "lib": "~/skills/kutuphane/10-yasam-turkiye/urun-kesif",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/urun-kesif"
+  ]
+ },
+ {
+  "name": "vakif-katilim-yatirim",
+  "slug": "vakif-katilim-yatirim",
+  "cat": "01-finans-yatirim",
+  "hash": "9d7bcce25c45",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/vakif-katilim-yatirim"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 6085,
+  "files": 4,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/vakif-katilim-yatirim",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/vakif-katilim-yatirim"
+  ]
+ },
+ {
+  "name": "viral-artifact-scout",
+  "slug": "viral-artifact-scout",
+  "cat": "05-pazarlama-buyume",
+  "hash": "9fa9176de1de",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/viral-artifact-scout"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 15127,
+  "files": 7,
+  "lib": "~/skills/kutuphane/05-pazarlama-buyume/viral-artifact-scout",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/viral-artifact-scout"
+  ]
+ },
+ {
+  "name": "vize-giris-kurallari",
+  "slug": "vize-giris-kurallari",
+  "cat": "10-yasam-turkiye",
+  "hash": "b76465a19239",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/vize-giris-kurallari"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 6705,
+  "files": 2,
+  "lib": "~/skills/kutuphane/10-yasam-turkiye/vize-giris-kurallari",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/vize-giris-kurallari"
+  ]
+ },
+ {
+  "name": "web-ux-flow-expert",
+  "slug": "web-ux-flow-expert",
+  "cat": "06-ux-urun",
+  "hash": "3342b1632d99",
+  "variant": 0,
+  "srcs": [
+   "~/.claude/skills/web-ux-flow-expert",
+   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/web-ux-flow-expert",
+   "~/.gemini/config/plugins/kirkit-skills/skills/web-ux-flow-expert",
+   "~/projects/kirkit/data/skills/skills/web-ux-flow-expert",
+   "~/projects/startup değerleme/skill/ilgili-skiller/web-ux-flow-expert"
+  ],
+  "kinds": [
+   "install",
+   "install",
+   "content",
+   "content",
+   "content"
+  ],
+  "bytes": 5119,
+  "files": 1,
+  "lib": "~/skills/kutuphane/06-ux-urun/web-ux-flow-expert",
+  "linked": [
+   "~/.claude/skills/web-ux-flow-expert",
+   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/web-ux-flow-expert"
+  ],
+  "mirrored": [
+   "~/.gemini/config/plugins/kirkit-skills/skills/web-ux-flow-expert",
+   "~/projects/kirkit/data/skills/skills/web-ux-flow-expert",
+   "~/projects/startup değerleme/skill/ilgili-skiller/web-ux-flow-expert"
+  ]
+ },
+ {
+  "name": "weft-channel",
+  "slug": "weft-channel",
+  "cat": "03-video-ses-uretim",
+  "hash": "930934954ccd",
+  "variant": 0,
+  "srcs": [
+   "~/projects/reelsindustry/.claude/skills/weft-channel",
+   "~/projects/weftrecords/.claude/skills/weft-channel"
+  ],
+  "kinds": [
+   "install",
+   "install"
+  ],
+  "bytes": 8107,
+  "files": 9,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/weft-channel",
+  "linked": [
+   "~/projects/reelsindustry/.claude/skills/weft-channel",
+   "~/projects/weftrecords/.claude/skills/weft-channel"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "weft-channel",
+  "slug": "weft-channel--weftrecords-gh",
+  "cat": "03-video-ses-uretim",
+  "hash": "fb996708f36d",
+  "variant": 1,
+  "srcs": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/weft-channel"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 8107,
+  "files": 9,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/weft-channel--weftrecords-gh",
+  "linked": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/weft-channel"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "weft-release",
+  "slug": "weft-release",
+  "cat": "03-video-ses-uretim",
+  "hash": "23dad5bf06cd",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/weft-release",
+   "~/projects/weftrecords/.claude/skills/weft-release"
+  ],
+  "kinds": [
+   "install",
+   "install"
+  ],
+  "bytes": 3763,
+  "files": 1,
+  "lib": "~/skills/kutuphane/03-video-ses-uretim/weft-release",
+  "linked": [
+   "~/Documents/GitHub/weftrecords/.claude/skills/weft-release",
+   "~/projects/weftrecords/.claude/skills/weft-release"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "xlsx",
+  "slug": "xlsx",
+  "cat": "13-ofis-belge",
+  "hash": "9697a251e1a4",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/xlsx"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 8542,
+  "files": 53,
+  "lib": "~/skills/kutuphane/13-ofis-belge/xlsx",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/xlsx"
+  ]
+ },
+ {
+  "name": "yeme-icme",
+  "slug": "yeme-icme",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "4d58b3629f61",
+  "variant": 0,
+  "srcs": [
+   "~/projects/comesyriacontent/.claude/skills/yeme-icme"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 6558,
+  "files": 4,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/yeme-icme",
+  "linked": [
+   "~/projects/comesyriacontent/.claude/skills/yeme-icme"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "youtube-shorts-optimizer",
+  "slug": "youtube-shorts-optimizer",
+  "cat": "05-pazarlama-buyume",
+  "hash": "d09a583483f0",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/youtube-shorts-optimizer"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 7920,
+  "files": 5,
+  "lib": "~/skills/kutuphane/05-pazarlama-buyume/youtube-shorts-optimizer",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/youtube-shorts-optimizer"
+  ]
+ }
+]

@@ -1,0 +1,14 @@
+{
+  "as_of": "2026-07-30",
+  "market_state": {"usdtry": 41.2, "xauusd": 3350, "dxy": 97.1},
+  "evidence": [
+    {"id":"e1","asset":"gram_altin","direction":"up","weight":"orta","claim":"Fed tutanaklarinda faiz indirimi sinyali","source":"reuters.com","url":"https://example.com/a"},
+    {"id":"e2","asset":"KTJ","direction":"down","weight":"dusuk","claim":"Yari iletken hisselerinde kar satisi","source":"bloomberg.com","url":"https://example.com/b"}
+  ],
+  "forecasts": [
+    {"asset":"gram_altin","horizon":"1d","point_pct":0.3,"low_pct":-1.2,"high_pct":1.8,"p_up":0.56,"confidence":"dusuk","drivers":["e1"],"rationale":"Reel faiz beklentisi asagi.","invalidator":"DXY 98 uzeri kapanis"},
+    {"asset":"gram_altin","horizon":"1w","point_pct":0.8,"low_pct":-3.5,"high_pct":5.0,"p_up":0.55,"confidence":"dusuk","drivers":["e1"],"rationale":"Trend yukari ama gurultu yuksek."},
+    {"asset":"KTJ","horizon":"1d","point_pct":-0.2,"low_pct":-2.0,"high_pct":1.6,"p_up":0.45,"confidence":"dusuk","drivers":["e2"],"rationale":"ABD teknoloji zayif kapatti."},
+    {"asset":"vakif_gunluk","horizon":"1d","point_pct":0.1,"low_pct":0,"high_pct":0.2,"p_up":1.0}
+  ]
+}

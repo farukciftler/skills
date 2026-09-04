@@ -1,0 +1,28 @@
+{
+  "slug": "oyun-gruplari",
+  "ruhsat_adi": "Özel Kartela Rehberlik ve Psikolojik Danışma Merkezi",
+  "karekod_url": "https://kartelapsikoloji.com/kurumsal-bilgi",
+
+  "seslendirme": "Her çocuk aynı tonda değildir. Kimi sabahları sessiz, kimi akşamları hareketlidir. Oyun gruplarımızda çocukları bir kalıba sokmuyoruz. Kendi ritimlerini tanımalarına eşlik ediyoruz. Eylül dönemi grupları açıldı. Sormak için yazmanız yeterli.",
+
+  "klipler": [
+    { "kategori": "mekan",   "sira": 0, "baslangic": 1, "sure": 5, "duotone": "petrol" },
+    { "kategori": "malzeme", "sira": 1, "baslangic": 2, "sure": 5, "duotone": "sari" },
+    { "kategori": "atolye",  "sira": 3, "baslangic": 3, "sure": 5, "duotone": "gul" },
+    { "kategori": "doga",    "sira": 2, "baslangic": 2, "sure": 5, "duotone": "mavi" }
+  ],
+
+  "kapanis": {
+    "zemin": "z-nane",
+    "gorsel": "website/frontend/public/gorseller/mekan/mekan-06-16433504.jpg",
+    "yerlesim": "alt",
+    "sure": 5,
+    "etiket": "Eylül dönemi",
+    "baslik": "Oyun Grupları",
+    "altmetin": "20–50 ay · haftada bir gün · 70 dakika",
+    "eylem": "Sormak için yazmanız yeterli."
+  },
+
+  "aciklama": "Eylül dönemi oyun grupları için gün ve saat seçimi başvuru formundan yapılıyor.\n\nKarar vermek zorunda değilsiniz. Sadece sormak için de yazabilirsiniz.\n\n5580 sayılı Kanun kapsamında ruhsatlıdır.",
+  "etiketler": ["oyungrubu", "cocukgelisimi", "ebeveynlik", "fatih"]
+}

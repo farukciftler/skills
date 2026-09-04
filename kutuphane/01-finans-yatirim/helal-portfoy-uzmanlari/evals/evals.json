@@ -1,0 +1,35 @@
+{
+ "skill_name": "helal-portfoy-uzmanlari",
+ "evals": [
+  {
+   "id": 0,
+   "prompt": "helal portföy uzmanlarım toplansın, portföyümü yorumlasınlar — herkes kendi karakterinden konuşsun, ben olsam ne yapardım desinler",
+   "expected_output": "Beş ayrı persona bölümü (Hacı Mahmut, Zeynep, Süleyman Bey, Elif Hanım, Ömer Hoca), her biri gerçek defter sayılarına atıfla yorum + 'ben olsam' + yeni para önerisi + sahibine soru; sonda sentez tablosu ve tavsiye-değildir uyarısı",
+   "files": [],
+   "assertions": [
+    "Bes personanin besi de (Haci Mahmut, Zeynep, Suleyman, Elif, Omer) kendi bolumuyle var",
+    "Her personada 'Ben olsam' niteliginde somut bir hamle blogu var",
+    "Gercek defter sayilari kullanilmis: hane/portfoy toplami (~970 bin / ~1,00 milyon), altin agirligi (~%35-40) ve toplamda en az 10 farkli gercek sayi",
+    "Panelin sonunda sentez tablosu VE 'kimsenin savunmadigi' satiri var",
+    "Kapaniste 'yatirim tavsiyesi degildir / kurgudur' uyarisi var",
+    "Uydurma sayi yok: defterde/veri sayfasinda olmayan fiyat, oran veya tutar gecmiyor",
+    "Personalar gercekten ayrisiyor: en az bir konuda iki persona ZIT hukum veriyor",
+    "Suleyman Bey fon iclerindeki 'belirsiz' dilimine veya arindirmaya deginiyor"
+   ]
+  },
+  {
+   "id": 1,
+   "prompt": "uzmanlara sor: eylül başında yatıracağım ~100 bin TL'yi kendileri olsalar nereye koyarlardı? kısa kısa",
+   "expected_output": "Soru turu modu: beş persona yalnız bu soruyu kısa cevaplar, cevaplar birbirinden farklı, gerçek portföy ağırlıklarına ve kullanıcının S1/S2 planına atıf var, sonda uyarı",
+   "files": [],
+   "assertions": [
+    "Bes personanin besi de kisa cevap veriyor (soru turu modu - persona basina ~2-5 cumle)",
+    "Cevaplar ayrisiyor: en az 3 farkli istikamet/varlik onerisi var",
+    "Kullanicinin beyan ettigi plana (S1 = TL kira sertifikasi/sukuk, sonra S2 likidite) en az bir persona atif yapiyor",
+    "Gercek portfoy agirliklarina veya nakit akisi gercegine atif var",
+    "Kapaniste tavsiye-degildir uyarisi var",
+    "Kimse 'sen sunu yap' demiyor - 'ben olsam' cercevesi korunuyor"
+   ]
+  }
+ ]
+}

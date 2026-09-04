@@ -1,0 +1,72 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="cover.css">
+
+<!-- PLUMBING REFERENCE ONLY. Do not ship these layouts with the text swapped —
+     read references/era-playbook.md and compose for the brief. What matters here
+     is the mechanics: .cover declares --w/--h and data-name, .plate carries the
+     darkroom output, type sits in .pad, and every colour comes from a variable. -->
+
+<!-- 1 · hard-bop: type crushed into one corner, plate does the talking -->
+<div class="cover" data-name="01-hardbop" style="
+      --w:1000px; --h:1000px;
+      --paper:#e9dcbf; --ink:#0b1a2e; --accent:#c9552f;
+      --display:'Archivo Black', sans-serif;
+      --grotesk:'Libre Franklin', sans-serif;">
+  <div class="plate" style="background-image:url('plate-bn.png')"></div>
+  <div class="pad col">
+    <div>
+      <div class="artist" style="color:var(--accent)">The Nazlı Bektaş Quintet</div>
+      <div class="title tight" style="margin-top:18px; font-size:150px; color:var(--paper)">
+        Night<br>Ferry
+      </div>
+    </div>
+    <div class="bottom row" style="color:var(--paper); justify-content:space-between">
+      <span class="meta" style="color:var(--accent)">Bosphorus Sound · BS-1207</span>
+      <span class="badge">Stereo</span>
+    </div>
+  </div>
+</div>
+
+<!-- 2 · 70s fat-slab: centred, symmetrical, plate multiplied under the type -->
+<div class="cover" data-name="02-fatslab" style="
+      --w:1000px; --h:1000px;
+      --paper:#f2d9a0; --ink:#3a1408; --accent:#c8622a;
+      --display:'Alfa Slab One', serif;
+      --grotesk:'Josefin Sans', sans-serif;">
+  <div class="plate" style="background-image:url('plate-soul.png')"></div>
+  <div class="pad" style="align-items:center; text-align:center">
+    <div class="title" style="font-size:118px; letter-spacing:-0.01em; color:var(--paper);
+         text-shadow:7px 7px 0 var(--ink)">
+      Kadıköy<br>Sunrise
+    </div>
+    <!-- a solid band is the 70s answer to type-over-busy-art: it guarantees
+         contrast without adding a drop shadow to every line -->
+    <div class="bottom" style="width:100%; background:var(--paper); color:var(--ink);
+         padding:20px 0 17px; display:flex; flex-direction:column; gap:8px">
+      <span class="artist">Deniz Arslan</span>
+      <span class="meta" style="color:var(--ink); opacity:.7">Long Player · 1975</span>
+    </div>
+  </div>
+</div>
+
+<!-- 3 · post-punk: white sleeve, line-screen plate boxed, type as catalogue card -->
+<div class="cover" data-name="03-postpunk" style="
+      --w:1000px; --h:1000px;
+      --paper:#d8d8d2; --ink:#0e0e10; --accent:#8c9aa6;
+      --display:'Oswald', sans-serif;
+      --mono:'Space Mono', monospace;
+      --edge:84px;">
+  <div class="pad col">
+    <div style="width:100%; aspect-ratio:1/0.72; background:url('plate-pp.png') center/cover;
+                border:5px solid var(--ink)"></div>
+    <div style="margin-top:44px">
+      <div class="title wide" style="font-size:96px; font-weight:700">Signal / Ruin</div>
+      <div class="rule" style="margin:26px 0 20px"></div>
+      <div class="row" style="justify-content:space-between">
+        <span class="meta" style="color:var(--ink)">Ertan Çoban</span>
+        <span class="meta">Side A · 22:41</span>
+      </div>
+    </div>
+  </div>
+</div>

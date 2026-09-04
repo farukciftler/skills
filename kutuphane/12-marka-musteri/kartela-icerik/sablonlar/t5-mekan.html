@@ -1,0 +1,44 @@
+<!doctype html>
+<!--
+  T5 — MEKÂN / EKİP / FOTOĞRAF
+  Tam kadraj fotoğraf + perde + altta tek cümle.
+
+  MEVZUAT UYARISI (ÖÖK Yön. Ek m.4/1 · KVKK m.6)
+  Bu şablona DANIŞAN fotoğrafı konulamaz. Tanınabilir çocuk yüzü konulamaz.
+  Yalnızca mekân, nesne ve rızası alınmış EKİP fotoğrafı kullanılır.
+  Yer tutucu (Pexels) görseller yalnızca taslak içindir; yayında gerçek fotoğraf.
+-->
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="ortak.css">
+</head>
+<body>
+<div class="tuval {{boyut}} {{zemin}} {{uzeri}}">
+
+  {{foto}}
+
+  <div class="icerik alta">
+    <!--#if etiket-->
+    <p class="ust-etiket">{{etiket}}</p>
+    <!--#endif-->
+    <h1 class="h1">{{baslik}}</h1>
+    <!--#if altmetin-->
+    <p class="lead" style="max-inline-size:26ch">{{altmetin}}</p>
+    <!--#endif-->
+    <div class="kartela" style="margin-block-start:12px">
+      <span class="k1"></span><span class="k2"></span><span class="k3"></span><span class="k4"></span>
+    </div>
+  </div>
+
+  <div class="altbar">
+    <div class="logo">
+      <span class="logo-yazi">KARTELA</span>
+      <span class="logo-ruhsat">{{ruhsat_adi}}</span>
+    </div>
+    {{karekod}}
+  </div>
+
+</div>
+</body>
+</html>

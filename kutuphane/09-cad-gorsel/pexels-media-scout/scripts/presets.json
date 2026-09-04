@@ -1,0 +1,130 @@
+{
+  "album-cover-3000": {
+    "media": "photo",
+    "target_w": 3000,
+    "target_h": 3000,
+    "orientation": "square",
+    "min_size": "large",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "DSP cover art. Square, 3000px, artist+title must overlay legibly."
+  },
+  "podcast-cover-3000": {
+    "media": "photo",
+    "target_w": 3000,
+    "target_h": 3000,
+    "orientation": "square",
+    "min_size": "large",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "Apple/Spotify podcast art; must read at 55px."
+  },
+  "yt-thumbnail": {
+    "media": "photo",
+    "target_w": 1280,
+    "target_h": 720,
+    "orientation": "landscape",
+    "min_size": "medium",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "Right or left third should be quiet for the title block."
+  },
+  "yt-banner": {
+    "media": "photo",
+    "target_w": 2560,
+    "target_h": 1440,
+    "orientation": "landscape",
+    "min_size": "large",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "Only the centre 1546x423 is safe on every device."
+  },
+  "yt-longform-bg": {
+    "media": "video",
+    "target_w": 1920,
+    "target_h": 1080,
+    "orientation": "landscape",
+    "min_duration": 15,
+    "max_duration": 60,
+    "commercial": true,
+    "note": "Loopable bed for 1h mixes. Low subject motion, no hard cuts, no visible faces."
+  },
+  "lyric-video-bg": {
+    "media": "video",
+    "target_w": 1920,
+    "target_h": 1080,
+    "orientation": "landscape",
+    "min_duration": 10,
+    "max_duration": 60,
+    "commercial": true,
+    "note": "Needs a calm centre band so lyrics stay readable."
+  },
+  "spotify-canvas": {
+    "media": "video",
+    "target_w": 1080,
+    "target_h": 1920,
+    "orientation": "portrait",
+    "min_duration": 3,
+    "max_duration": 8,
+    "commercial": true,
+    "note": "Vertical 3-8s silent loop; Spotify strips audio anyway."
+  },
+  "reels-short": {
+    "media": "video",
+    "target_w": 1080,
+    "target_h": 1920,
+    "orientation": "portrait",
+    "min_duration": 10,
+    "max_duration": 90,
+    "commercial": true,
+    "note": "Keep top 250px / bottom 400px clear of subject — UI overlays."
+  },
+  "ig-feed-45": {
+    "media": "photo",
+    "target_w": 1080,
+    "target_h": 1350,
+    "orientation": "portrait",
+    "min_size": "medium",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "4:5 feed post."
+  },
+  "ig-story": {
+    "media": "photo",
+    "target_w": 1080,
+    "target_h": 1920,
+    "orientation": "portrait",
+    "min_size": "medium",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "9:16 story frame."
+  },
+  "web-hero": {
+    "media": "photo",
+    "target_w": 2560,
+    "target_h": 1440,
+    "orientation": "landscape",
+    "min_size": "large",
+    "needs_negative_space": true,
+    "commercial": true,
+    "note": "Landing page hero; expect a text panel over one half."
+  },
+  "press-kit": {
+    "media": "photo",
+    "target_w": 3000,
+    "target_h": 2000,
+    "orientation": "landscape",
+    "min_size": "large",
+    "commercial": true,
+    "note": "EPK / blog-supplied art. Print-adjacent, so favour originals."
+  },
+  "merch-print": {
+    "media": "photo",
+    "target_w": 4000,
+    "target_h": 4000,
+    "orientation": "square",
+    "min_size": "large",
+    "commercial": true,
+    "note": "HIGH RISK: selling unaltered Pexels media on merch violates the licence. Only use as a component in a substantially new composition."
+  }
+}

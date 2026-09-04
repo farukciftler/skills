@@ -1,0 +1,41 @@
+{
+  "slug": "eylul-oyun-gruplari",
+  "sablon": "t4-duyuru",
+  "zemin": "z-nane",
+  "tanitim": true,
+  "mecra": "instagram",
+  "ruhsat_adi": "Özel Kartela Rehberlik ve Psikolojik Danışma Merkezi",
+  "karekod_url": "https://kartelapsikoloji.com/kurumsal-bilgi",
+  "etiket": "Eylül dönemi",
+  "baslik": "Oyun Grupları",
+  "altmetin": "Psikolog eşliğinde, küçük gruplarla haftada bir gün.",
+  "satirlar": [
+    [
+      "Yaş",
+      "20–28 ay · 28–40 ay · 40–50 ay"
+    ],
+    [
+      "Gün",
+      "Çarşamba, Perşembe, Cuma, Cumartesi"
+    ],
+    [
+      "Süre",
+      "70 dakika"
+    ],
+    [
+      "Yer",
+      "Fatih, İstanbul"
+    ]
+  ],
+  "kayit_notu": "Ay sonunda bireysel geri bildirim veriyoruz.",
+  "aciklama": "Eylül dönemi oyun grupları için gün ve saat seçimi başvuru formu üzerinden yapılıyor. Karar vermek zorunda değilsiniz — sadece sormak için de yazabilirsiniz.\n\n5580 sayılı Kanun kapsamında ruhsatlıdır.",
+  "etiketler": [
+    "oyungrubu",
+    "cocukgelisimi",
+    "fatih",
+    "ebeveynlik"
+  ],
+  "gorsel": "website/frontend/public/gorseller/oyun-grubu/oyun-grubu-01-1337385.jpg",
+  "yerlesim": "alt",
+  "grain": true
+}

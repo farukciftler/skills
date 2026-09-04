@@ -1,0 +1,71 @@
+{
+  "recipe": "marble-race",
+  "fps": 60,
+  "duration": 13.0,
+  "physics_hz": 240,
+  "solver_iterations": 8,
+  "gravity": -9.81,
+  "energy_floor": 0.5,
+  "params": {
+    "teams": 4,
+    "ball_radius": 0.06,
+    "ramps": 5,
+    "ramp_gap": 0.55,
+    "tilt_deg": 12.0,
+    "course_width": 0.92,
+    "drop_gap": 0.3,
+    "top_y": 3.15,
+    "bumps_per_ramp": 3,
+    "bump_radius": 0.02,
+    "restitution": 0.3,
+    "friction": 0.45,
+    "material": "porcelain"
+  },
+  "look": {
+    "palette": [
+      "#1e1c23",
+      "#e8623c",
+      "#f4b942",
+      "#3f8f7a",
+      "#f0e8d8",
+      "#7d838d",
+      "#565d68"
+    ],
+    "teams": [
+      "ORANGE",
+      "YELLOW",
+      "TEAL",
+      "WHITE"
+    ],
+    "background": "#141218",
+    "camera": {
+      "position": [
+        0.0,
+        1.85,
+        4.35
+      ],
+      "look_at": [
+        0.0,
+        1.8,
+        0.0
+      ],
+      "fov": 46.0
+    },
+    "key_light": {
+      "direction": [
+        -0.3,
+        -0.7,
+        -0.8
+      ],
+      "illuminance": 26000.0
+    },
+    "ambient": 95.0,
+    "env_intensity": 1000.0,
+    "env_warmth": 0.65,
+    "dof_fstop": 2.8,
+    "body_roughness": 0.1,
+    "floor_roughness": 0.5,
+    "bloom": 0.1,
+    "shadow_distance": 8.5
+  }
+}

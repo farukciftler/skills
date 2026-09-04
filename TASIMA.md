@@ -1,0 +1,148 @@
+# Taşıma Raporu
+
+Ne tarandı, ne toplandı, ne **toplanamadı**, ayrışmış sürümler ve nasıl geri
+alınacağı. Kütüphane kurulurken kaynak konumlara **dokunulmadı** — hepsi
+yerinde duruyor.
+
+## Ne yapıldı
+
+Ev dizini ve claude.ai yerel önbelleği tarandı, **174 skill kaynağı** bulundu
+(1.966 `SKILL.md` görüldü; 1.792'si `~/.claude/remote/plugins/` altındaki eski
+oturum anlık görüntüleriydi, IDE eklentileri ve iş dizinleriyle birlikte elendi).
+
+Kalan 174 kaynak **113 benzersiz skill**'e, oradan da **131 kütüphane girdisine**
+indirildi (18 ayrışmış sürüm ayrı girdi olarak korundu) ve 14 kategoriye
+dağıtıldı.
+
+Tam yedek: `~/skills-yedek-20260904-135254.tar.gz` (2,6 MB).
+
+## Kaynak konumları üç sınıfa ayrıldı
+
+**1 · Gerçek kurulum noktası — bağlanabilir (69 kaynak).**
+Claude'un skill'i fiilen yüklediği yerler: `~/.claude/skills/<ad>` ve
+`<proje>/.claude/skills/<ad>`. Bunlar symlink'e çevrilebilir; kütüphane gerçek
+tek kaynak olur.
+
+| Depo | Adet | | Depo | Adet |
+|---|---|---|---|---|
+| `projects/mcailabs-v4.0` | 9 | | `Documents/GitHub/moonstone` | 4 |
+| `projects/reelsindustry` | 8 | | `Documents/GitHub/portfoy-butce` | 4 |
+| `projects/weftrecords` | 8 | | `projects/kartelastrateji` | 3 |
+| `Documents/GitHub/weftrecords` | 7 | | `.gemini/…/kirkit-skills` | 5 |
+| `projects/comesyriacontent` | 6 | | `~/.claude/skills` (global) | 5 |
+| diğer 10 depo (1'er) | 10 | | | |
+
+**2 · Proje altyapısı — bağlanamaz (57 kaynak), ayna kopya alındı.**
+`SKILL.md` içeriyorlar ama skill kurulum noktası değiller; proje kodu veya
+derlemesi onlara bağlı. Symlink'e çevirmek bu projeleri bozardı:
+
+| Konum | Neden taşınamaz |
+|---|---|
+| `projects/masifico/skills/` | `build-skills.sh` bunları `docs/skills/*.skill` zip'lerine paketliyor |
+| `projects/kirkit/data/skills/skills/` | `apps/server/src/skills/store.ts` çalışma anında okuyor |
+| `projects/instagram-reels/docs/` | `README.md`, `CLAUDE.md` ve `forge/pipeline/order_report.py` referans veriyor |
+| `projects/comesyriacontent/backlog/` | Kendi `scripts/*.mjs` ve CSV/JSON veri dosyalarıyla bir arada |
+| `projects/mcailabs-v4.0/.agents/skills/` | Başka bir ajan aracının ayna dizini |
+| `projects/autonomous-agent-prediction/submissions/` | Yarışma teslim artefaktı — değişmemeli |
+| `projects/startup değerleme/skill/` | Çalışma klasörü |
+
+**3 · claude.ai senkronu — taşınamaz (48 kaynak), ayna kopya alındı.**
+Bu skill'ler `~/Library/…/local-agent-mode-sessions/skills-plugin/<oturum-id>/…`
+altında yaşıyor. Yol **her oturumda yeniden üretilen geçici bir önbellek**;
+oraya symlink koymak bir sonraki senkronda kaybolur. Bunların gerçek kaynağı
+claude.ai hesabındaki skill deposudur — düzenleme oradan yapılır, kütüphanedeki
+kopya arşiv/okuma amaçlıdır.
+
+## Ayrışmış sürümler (16 ad)
+
+Aynı isimli kopyalar körlemesine birleştirilmedi; farklı olan hiçbir şey
+kaybolmadı. Düz ad **birincil** (en yeni içerik), `--` ekli olanlar diğer
+sürümler.
+
+### Aynı skill'in sürüklenmiş kopyaları
+
+| Skill | Birincil | Geride kalan |
+|---|---|---|
+| `weft-channel` | `projects/weftrecords` + `reelsindustry` | `Documents/GitHub/weftrecords` — `superseded` statüsü ve geçmiş-URL mantığı eksik |
+| `pexels-media-scout` | `projects/weftrecords` + `reelsindustry` | `Documents/GitHub/weftrecords` — `credits.json` birleştirme düzeltmesi eksik (WR-040) |
+| `portfoy-tahmin` | `Documents/GitHub/portfoy-butce` (17,4 KB) | `projects/portfoy-butce` (16,6 KB), claude.ai (9,6 KB) |
+| `backlog-arastir` | `comesyriacontent` | `kirkit` veri deposu (2,8 KB) |
+| `sosyal-medya-post-uret` | `comesyriacontent` (8,0 KB) | `kirkit` veri deposu (5,1 KB) |
+| `headless-reel-forge` | global + kirkit aynaları | `instagram-reels/docs` (5 ek dosya fazla) |
+| `postgresql`, `pytest`, `gitnexus-cli` | `mcailabs-v4.0/.claude` | `mcailabs-v4.0/.agents` aynası |
+| `automl` | `submissions/03_hardened` | `01_baseline`, `02_gemini_fallback` — kasıtlı deney varyantları |
+
+> **`projects/` ve `Documents/GitHub/` aynı repoların ayrı klonları.** Farklı
+> commit'lerde ve her biri farklı yerlerde önde: `weftrecords`'ta `projects/`
+> ileri, `portfoy-butce`'de `Documents/GitHub/` ileri. Bağlamadan önce bu
+> klonları git tarafında hizalamak gerekir.
+
+### Bayat claude.ai kopyaları
+
+Bu beş skill claude.ai'da, projedeki halinden **belirgin biçimde eski** duruyor.
+Desktop/web oturumlarında eski sürüm tetiklenir:
+
+| Skill | Proje sürümü | claude.ai sürümü |
+|---|---|---|
+| `oyuncak-mevzuat` | 20,4 KB | 7,7 KB |
+| `masifico-uretim-muhendisi` | 11,1 KB | 5,5 KB |
+| `oyuncak-pazar-radari` | 10,1 KB | 8,5 KB |
+| `masifico-maliyet-fiyat` | 8,8 KB | 5,6 KB |
+| `masifico-farklilasma` | 8,6 KB | 4,6 KB |
+
+**Yapılacak:** `projects/masifico/skills/` altındaki güncel sürümleri claude.ai'a
+yeniden yükle. `portfoy-tahmin`'in cloud kopyası da (9,6 KB → 17,4 KB) geride.
+
+### Aynı isim, farklı skill
+
+`ceviri` iki ayrı iştir; birleştirilmedi, ikisi de eklenti aldı:
+
+- `ceviri--comesyriacontent` — TR / küresel İngilizce / Suriye Arapçası,
+  ad-sayı sadakati ve yapay zekâ tikliği denetim script'leriyle (9,7 KB)
+- `ceviri--abdullahfarukcom-gh` — düz TR↔EN çeviri (5,7 KB)
+
+## Bağlama (yıkıcı adım — henüz yapılmadı)
+
+Kurulum noktalarını kütüphaneye bağlamak dizini silip yerine symlink koyar.
+Bundan sonra skill tek yerden düzenlenir. Git deposundaki bir kurulum noktası
+symlink'e dönüşünce repo'da **silme + symlink** olarak görünür — bu yüzden
+depo başına ilerle.
+
+```bash
+python3 scripts/bagla.py                        # tüm kapsamı göster
+python3 scripts/bagla.py --proje kartelastrateji
+python3 scripts/bagla.py --proje kartelastrateji --uygula
+```
+
+`bagla.py` bir kaynağı, kütüphanedeki kopyayla **birebir aynı olduğunu
+doğrulamadan** değiştirmez; sürüklenmiş bir dizin sessizce ezilmez, atlanır.
+Her işlem `katalog/baglanti-kaydi.json`'a yazılır.
+
+Bağlamadan önce:
+
+1. `projects/` ↔ `Documents/GitHub/` klonlarını git tarafında hizala (yukarıdaki
+   ayrışma tablosu).
+2. Kirli depolarda (`mobilya`, `moonstone`, `weftrecords`, `instagram-reels`,
+   `portfoy-butce`) mevcut değişiklikleri commit'le.
+
+### Geri alma
+
+```bash
+python3 scripts/coz.py --uygula                  # tümü
+python3 scripts/coz.py --proje weftrecords --uygula
+```
+
+Symlink silinir, yerine kütüphanedeki içeriğin gerçek kopyası konur. Tam geri
+dönüş için yedek: `~/skills-yedek-20260904-135254.tar.gz`.
+
+## Yeniden tarama
+
+```bash
+python3 scripts/topla.py             # planı göster
+python3 scripts/topla.py --uygula    # kutuphane/ + manifest tazele
+python3 scripts/katalog_uret.py      # INDEX + katalog + kategori README'leri
+```
+
+Yeni bir skill kategoriye girmezse `topla.py` uyarır ve onu
+`kutuphane/99-siniflandirilmamis/` altına koyar; kategori eşlemesi hem
+`scripts/topla.py` hem `scripts/katalog_uret.py` içinde güncellenmeli.

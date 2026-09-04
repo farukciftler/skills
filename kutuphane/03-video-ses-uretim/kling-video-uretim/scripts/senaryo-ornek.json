@@ -1,0 +1,28 @@
+{
+  "baslik": "01 · Marka açılışı — Reels 10 sn",
+  "format": "reels",
+  "hedef_sure_sn": 10,
+  "cikti_dizini": "Sosyal Medya Çıktıları/video/2026-09/01-marka-acilisi",
+  "kaynak_notu": "TASLAK: kaynak katalog türevi (web/assets 894 px). Ofis orijinali gelince yeniden üretilecek.",
+  "varsayilan": { "model": "v3-pro", "sure": 5, "cfg": 0.5, "ses": false, "tekrar": 2 },
+  "cekimler": [
+    {
+      "ad": "01-crane-inis",
+      "rol": "kanca",
+      "gorsel": "Sosyal Medya Çıktıları/video/2026-09/01-marka-acilisi/kaynak/cephe-9x16.jpg",
+      "prompt": "Slow crane down from the roofline toward the entrance over the full duration, smooth. As the camera descends, the apartment windows light up floor by floor with warm light, blue-hour sky above. The building stays perfectly still and rigid, straight lines remain straight. No people, no cars, no text."
+    },
+    {
+      "ad": "02-yaklasma",
+      "rol": "govde",
+      "gorsel": "Sosyal Medya Çıktıları/video/2026-09/01-marka-acilisi/kaynak/cephe-9x16.jpg",
+      "prompt": "The building stays perfectly still and rigid, straight lines remain straight. Blue-hour sky darkens very gradually, warm interior lights glow brighter behind the glass, ground-floor shopfronts glow softly. Thin clouds drift slowly. No people, no cars, no text. Slow, steady push-in toward the entrance, 35mm, smooth gimbal, then settles.",
+      "ekran_metni": "Ay taşının zarafeti, yaşamın en değerli hali"
+    }
+  ],
+  "kapanis": { "kart": "logo", "sure": 2.5 },
+  "ekran_metni": "Ay taşının zarafeti, yaşamın en değerli hali",
+  "aciklama": "Ay taşının zarafeti, yaşamın en değerli hali.\n\nMoonstone Residence, Tuzla Aydıntepe'de yeni bir yaşam alanı olarak tasarlandı. Zemin katlarda ticari alan, üst katlarda rezidans daireleri.\n\nAyhanlar Mimarlık Yapı ve İnşaat.\n\nTemsili görseldir; görseller yapay zekâ desteğiyle hareketlendirilmiştir.\n\n#moonstoneresidence #tuzla #aydıntepe #rezidans #mimari",
+  "alt_metin": "Mavi saatte aydınlatılmış Moonstone Residence cephesi, temsili render.",
+  "montaj": "python3 scripts/bitir.py 01-crane-inis-1.mp4 02-yaklasma-1.mp4 --preset reels --katman katman.png --katman-baslangic 5 --kapanis logo-kart.png --bekle 1 --out 01-marka-acilisi.mp4"
+}

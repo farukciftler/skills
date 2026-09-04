@@ -1,0 +1,28 @@
+{
+  "slug": "ilk-gorusme",
+  "ruhsat_adi": "Özel Kartela Rehberlik ve Psikolojik Danışma Merkezi",
+  "karekod_url": "https://kartelapsikoloji.com/nasil-basliyoruz",
+
+  "seslendirme": "İlk görüşmeye gelmeden önce ne olacağını bilmek, gelmeyi kolaylaştırır. Kapıda sizi psikolog karşılar. Sakin bir odada oturur, konuşuruz. Siz anlatırsınız, biz dinleriz. Görüşmenin sonunda devam edip etmemeye siz karar verirsiniz. Karar vermek zorunda değilsiniz. Sadece sormak için de yazabilirsiniz.",
+
+  "klipler": [
+    { "kategori": "mekan",   "sira": 2, "baslangic": 2, "sure": 5, "duotone": "petrol" },
+    { "kategori": "mekan",   "sira": 1, "baslangic": 4, "sure": 5, "duotone": "mavi" },
+    { "kategori": "malzeme", "sira": 2, "baslangic": 6, "sure": 5, "duotone": "gul" },
+    { "kategori": "doga",    "sira": 1, "baslangic": 8, "sure": 5, "duotone": "mavi" }
+  ],
+
+  "kapanis": {
+    "zemin": "z-nane",
+    "gorsel": "website/frontend/public/gorseller/mekan/mekan-06-16433504.jpg",
+    "yerlesim": "alt",
+    "sure": 5,
+    "etiket": "İlk görüşme",
+    "baslik": "Ne olacağını biliyorsunuz.",
+    "altmetin": "Süreci önceden anlatıyoruz.",
+    "eylem": "Sormak için yazmanız yeterli."
+  },
+
+  "aciklama": "İlk görüşmeye gelmek, ne olacağını bilmediğinizde zorlaşır. Biz de bu yüzden süreci önceden anlatıyoruz: kim karşılıyor, nerede oturuyoruz, ne konuşuyoruz, sonunda ne oluyor.\n\nGörüşmenin sonunda devam edip etmemeye siz karar verirsiniz.\n\nKarar vermek zorunda değilsiniz. Sadece sormak için de yazabilirsiniz.\n\n5580 sayılı Kanun kapsamında ruhsatlıdır.",
+  "etiketler": ["psikolojikdanisma", "ilkgorusme", "ebeveynlik", "fatih", "istanbul"]
+}

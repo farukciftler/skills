@@ -1,0 +1,74 @@
+{
+  "recipe": "marble-gauntlet",
+  "fps": 60,
+  "duration": 47.0,
+  "physics_hz": 240,
+  "solver_iterations": 8,
+  "gravity": -9.81,
+  "energy_floor": 0.4,
+  "params": {
+    "teams": 4,
+    "ball_radius": 0.05,
+    "channel_width": 0.38,
+    "rail_height": 0.15,
+    "turn_deg": 64.0,
+    "junction_drop": 0.26,
+    "restitution": 0.35,
+    "friction": 0.2,
+    "material": "porcelain",
+    "finish_y": 0.42
+  },
+  "look": {
+    "palette": [
+      "#1e1c23",
+      "#e8623c",
+      "#f4b942",
+      "#3f8f7a",
+      "#f0e8d8",
+      "#7d838d",
+      "#aeb4bd",
+      "#3a3d46"
+    ],
+    "teams": [
+      "ORANGE",
+      "YELLOW",
+      "TEAL",
+      "WHITE"
+    ],
+    "background": "#101016",
+    "camera": {
+      "position": [
+        0.0,
+        10.5,
+        3.0
+      ],
+      "look_at": [
+        0.0,
+        10.0,
+        0.0
+      ],
+      "fov": 50.0
+    },
+    "key_light": {
+      "direction": [
+        -0.3,
+        -0.8,
+        -0.55
+      ],
+      "illuminance": 24000.0
+    },
+    "ambient": 140.0,
+    "env_intensity": 950.0,
+    "env_warmth": 0.6,
+    "dof_fstop": 2.4,
+    "body_roughness": 0.1,
+    "floor_roughness": 0.45,
+    "bloom": 0.1,
+    "shadow_distance": 9.0,
+    "follow_distance": 2.45,
+    "follow_height": 1.15,
+    "follow_stiffness": 3.5,
+    "follow_yaw_stiffness": 2.2,
+    "follow_lead": 0.4
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "recipe": "plinko",
+  "fps": 60,
+  "duration": 14.0,
+  "physics_hz": 240,
+  "solver_iterations": 8,
+  "gravity": -9.81,
+  "energy_floor": 0.8,
+  "params": {
+    "count": 110,
+    "ball_radius": 0.055,
+    "peg_radius": 0.03,
+    "rows": 8,
+    "cols": 7,
+    "peg_spacing": 0.23,
+    "field_top": 2.6,
+    "bins": 7,
+    "bin_height": 0.85,
+    "drop_rate": 9.0,
+    "restitution": 0.42,
+    "friction": 0.15,
+    "material": "porcelain",
+    "palette_slots": 4
+  },
+  "look": {
+    "palette": [
+      "#1e1c23",
+      "#e8623c",
+      "#f4b942",
+      "#3f8f7a",
+      "#f0e8d8",
+      "#7d838d"
+    ],
+    "background": "#141218",
+    "camera": {
+      "position": [
+        0.0,
+        1.5,
+        4.0
+      ],
+      "look_at": [
+        0.0,
+        1.42,
+        0.0
+      ],
+      "fov": 46.0
+    },
+    "key_light": {
+      "direction": [
+        -0.25,
+        -0.7,
+        -0.85
+      ],
+      "illuminance": 26000.0
+    },
+    "ambient": 90.0,
+    "env_intensity": 1000.0,
+    "env_warmth": 0.65,
+    "dof_fstop": 2.8,
+    "body_roughness": 0.12,
+    "floor_roughness": 0.5,
+    "bloom": 0.1,
+    "shadow_distance": 8.0
+  }
+}

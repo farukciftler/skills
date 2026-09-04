@@ -1,0 +1,41 @@
+<!doctype html>
+<!--
+  T3 — KARUSEL İÇ SAYFASI
+  Numaralı rozet + tek fikir + açıklama. Kartela şeridi burada YOK
+  (bir karusel dizisinde şerit yalnızca kapakta bulunur — §4.6/5).
+  Kare başına en fazla ~45 kelime.
+-->
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="ortak.css">
+</head>
+<body>
+<div class="tuval {{boyut}} {{zemin}}">
+
+  {{foto}}
+
+  <div class="icerik">
+    <div style="display:flex;align-items:center;justify-content:space-between">
+      <span class="numara {{numara_tonu}}">{{numara}}</span>
+      <span class="meta">{{sayfa_bilgisi}}</span>
+    </div>
+
+    <div style="flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;gap:26px">
+      <h2 class="h2">{{baslik}}</h2>
+      <!--#if altmetin-->
+      <p class="govde">{{altmetin}}</p>
+      <!--#endif-->
+    </div>
+  </div>
+
+  <div class="altbar">
+    <div class="logo">
+      <span class="logo-yazi">KARTELA</span>
+    </div>
+    {{karekod}}
+  </div>
+
+</div>
+</body>
+</html>

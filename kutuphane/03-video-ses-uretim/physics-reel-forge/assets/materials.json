@@ -1,0 +1,173 @@
+{
+  "_source": "Rayleigh damping coefficients alpha/beta for wood, plastic, metal, glass and porcelain are the values estimated from real recordings in Ren, Yeh & Lin, 'Example-Guided Physically Based Modal Sound Synthesis', ACM TOG 32(1), 2013, Table I. That paper's finding is that alpha and beta are geometry-invariant material properties, which is why they transfer to arbitrary objects here. f0_scale, mode_gain_rolloff and the remaining materials are practical values for this pipeline, tuned by ear rather than measured \u2014 adjust freely.",
+  "_math": "For each mode i: omega_i = 2*pi*f_i, and the decay rate is d_i = 0.5*(alpha + beta*omega_i^2). Amplitude decays as exp(-d_i * t), so the -60 dB time is 6.91/d_i. Because beta multiplies omega^2, high modes always die first \u2014 that single relationship is what makes metal ring and plastic thud.",
+  "materials": {
+    "metal": {
+      "alpha": 6.3035,
+      "beta": 2.116e-08,
+      "f0_scale": 380.0,
+      "mode_gain_rolloff": 0.55,
+      "inharmonicity": 0.04,
+      "click_gain": 0.5,
+      "click_ms": 2.0,
+      "click_hp_hz": 2500.0,
+      "shape_template": "plate",
+      "_note": "Lowest beta in the bank, so highs survive \u2014 this is the ring. Use for cans, bars, sheet, chain links."
+    },
+    "porcelain": {
+      "alpha": 0.037388,
+      "beta": 8.4142e-08,
+      "f0_scale": 520.0,
+      "mode_gain_rolloff": 0.7,
+      "inharmonicity": 0.05,
+      "click_gain": 0.6,
+      "click_ms": 1.6,
+      "click_hp_hz": 3500.0,
+      "shape_template": "plate",
+      "_note": "Near-zero alpha means very little uniform damping: the longest, purest ring in the bank. Ceramic tiles, plates, marbles."
+    },
+    "glass": {
+      "alpha": 18.301,
+      "beta": 1.4342e-07,
+      "f0_scale": 600.0,
+      "mode_gain_rolloff": 0.75,
+      "inharmonicity": 0.06,
+      "click_gain": 0.7,
+      "click_ms": 1.2,
+      "click_hp_hz": 4000.0,
+      "shape_template": "shell"
+    },
+    "wood": {
+      "alpha": 2.1364,
+      "beta": 3.0828e-06,
+      "f0_scale": 300.0,
+      "mode_gain_rolloff": 1.0,
+      "inharmonicity": 0.08,
+      "click_gain": 1.0,
+      "click_ms": 4.0,
+      "click_hp_hz": 900.0,
+      "shape_template": "bar",
+      "_note": "High beta kills the highs almost immediately, leaving a short woody knock. The default for cubes and blocks.",
+      "click_lp_hz": 6000
+    },
+    "plastic": {
+      "alpha": 52.627,
+      "beta": 8.7753e-07,
+      "f0_scale": 340.0,
+      "mode_gain_rolloff": 1.1,
+      "inharmonicity": 0.09,
+      "click_gain": 1.1,
+      "click_ms": 3.0,
+      "click_hp_hz": 1200.0,
+      "shape_template": "box",
+      "_note": "Very high alpha damps every mode hard: a dry tick with almost no pitch. Lego-like bricks, toy blocks.",
+      "click_lp_hz": 5000
+    },
+    "cardboard": {
+      "alpha": 140.0,
+      "beta": 6e-06,
+      "f0_scale": 180.0,
+      "mode_gain_rolloff": 1.4,
+      "inharmonicity": 0.12,
+      "click_gain": 1.4,
+      "click_ms": 7.0,
+      "click_hp_hz": 400.0,
+      "shape_template": "box",
+      "_note": "Extrapolated, not measured. Almost pure click \u2014 the modal layer barely contributes, which is exactly right for boxes.",
+      "click_lp_hz": 2600
+    },
+    "rubber": {
+      "alpha": 260.0,
+      "beta": 9e-06,
+      "f0_scale": 120.0,
+      "mode_gain_rolloff": 1.8,
+      "inharmonicity": 0.15,
+      "click_gain": 1.2,
+      "click_ms": 12.0,
+      "click_hp_hz": 200.0,
+      "shape_template": "box",
+      "_note": "Extrapolated. A soft thud with no ring. Good for making a pile settle without chatter.",
+      "click_lp_hz": 1100
+    },
+    "stone": {
+      "alpha": 8.0,
+      "beta": 9e-07,
+      "f0_scale": 420.0,
+      "mode_gain_rolloff": 0.9,
+      "inharmonicity": 0.1,
+      "click_gain": 1.0,
+      "click_ms": 2.5,
+      "click_hp_hz": 1800.0,
+      "shape_template": "box",
+      "_note": "Extrapolated. Between wood and porcelain: a hard crack with a short tail.",
+      "click_lp_hz": 8000
+    }
+  },
+  "shape_templates": {
+    "_note": "Frequency ratios relative to the fundamental. bar ratios approximate the transverse modes of a free-free bar (the marimba series) and are strongly inharmonic, which is why struck bars sound like bars. plate and box are denser and less ordered. sphere is sparse and nearly harmonic.",
+    "bar": [
+      1.0,
+      2.756,
+      5.404,
+      8.933,
+      13.34,
+      18.64,
+      24.82,
+      31.87
+    ],
+    "plate": [
+      1.0,
+      1.73,
+      2.33,
+      2.98,
+      3.62,
+      4.13,
+      4.88,
+      5.42,
+      6.11,
+      6.79,
+      7.42,
+      8.18
+    ],
+    "box": [
+      1.0,
+      1.41,
+      1.73,
+      2.0,
+      2.24,
+      2.45,
+      2.65,
+      2.83,
+      3.16,
+      3.32,
+      3.61,
+      3.87,
+      4.12,
+      4.36
+    ],
+    "shell": [
+      1.0,
+      1.59,
+      2.14,
+      2.3,
+      2.65,
+      3.11,
+      3.42,
+      3.87,
+      4.2,
+      4.66,
+      5.03,
+      5.51
+    ],
+    "sphere": [
+      1.0,
+      1.44,
+      1.83,
+      2.19,
+      2.53,
+      2.86,
+      3.18,
+      3.49
+    ]
+  }
+}

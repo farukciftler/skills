@@ -1,0 +1,62 @@
+{
+  "base_currency": "TRY",
+  "created_at": "2026-08-01T17:19:32+00:00",
+  "assets": {
+    "gram_altin": {
+      "label": "Gram Altın",
+      "class": "spot",
+      "unit": "gram",
+      "quantity": 48.0,
+      "value_try": null,
+      "price_source": null,
+      "accrual_apr": null,
+      "notes": "",
+      "updated_at": "2026-08-01T17:19:32+00:00"
+    },
+    "KTJ": {
+      "label": "KT Teknoloji",
+      "class": "fund_tefas",
+      "unit": null,
+      "quantity": 213128.038898,
+      "value_try": null,
+      "price_source": null,
+      "accrual_apr": null,
+      "notes": "",
+      "updated_at": "2026-08-01T17:19:32+00:00"
+    },
+    "KIK": {
+      "label": "KT Çoklu Tema",
+      "class": "fund_tefas",
+      "unit": null,
+      "quantity": 50000.0,
+      "value_try": null,
+      "price_source": null,
+      "accrual_apr": null,
+      "notes": "",
+      "updated_at": "2026-08-01T17:19:32+00:00"
+    },
+    "KUT": {
+      "label": "KT Altın+Gümüş",
+      "class": "fund_tefas",
+      "unit": null,
+      "quantity": 50000.0,
+      "value_try": null,
+      "price_source": null,
+      "accrual_apr": null,
+      "notes": "",
+      "updated_at": "2026-08-01T17:19:32+00:00"
+    },
+    "vakif_gunluk": {
+      "label": "Vakıf Katılım Günlük",
+      "class": "accrual",
+      "unit": null,
+      "quantity": null,
+      "value_try": 50000.0,
+      "price_source": null,
+      "accrual_apr": 42.0,
+      "notes": "Katilim bankaciligi: kar/zarar ortakligi, getiri garanti degil. accrual_apr sadece projeksiyon; gercek bakiye geldiginde snapshot ile ezilir.",
+      "updated_at": "2026-08-01T17:19:32+00:00"
+    }
+  },
+  "_aciklama": "Ornek portfoy. Miktar bilinen (gram_altin) ve TL degeriyle girilip ilk fiyattan miktar turetilen (fonlar) iki yontem de var. accrual sinifi tahmin edilmez, projekte edilir."
+}

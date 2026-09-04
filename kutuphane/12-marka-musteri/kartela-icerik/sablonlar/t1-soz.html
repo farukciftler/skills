@@ -1,0 +1,38 @@
+<!doctype html>
+<!--
+  T1 — SÖZ / KISA MESAJ
+  Tek bir fikir. En fazla 12 kelime. Kartela şeridi burada imzadır.
+  Zemin: {{zemin}} (z-nane varsayılan)
+-->
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="ortak.css">
+</head>
+<body>
+<div class="tuval {{boyut}} {{zemin}}">
+
+  {{foto}}
+
+  <div class="icerik orta">
+    <div class="tirnak" aria-hidden="true">“</div>
+    <p class="display">{{baslik}}</p>
+    <!--#if altmetin-->
+    <p class="lead">{{altmetin}}</p>
+    <!--#endif-->
+    <div class="kartela" style="margin-block-start:16px">
+      <span class="k1"></span><span class="k2"></span><span class="k3"></span><span class="k4"></span>
+    </div>
+  </div>
+
+  <div class="altbar">
+    <div class="logo">
+      <span class="logo-yazi">KARTELA</span>
+      <span class="logo-ruhsat">{{ruhsat_adi}}</span>
+    </div>
+    {{karekod}}
+  </div>
+
+</div>
+</body>
+</html>

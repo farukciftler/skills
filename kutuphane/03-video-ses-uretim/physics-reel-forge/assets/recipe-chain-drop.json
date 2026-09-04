@@ -1,0 +1,36 @@
+{
+  "_comment": "Starting recipe for batch_render.py. Copy, edit paths, sweep. Parameter reasoning and failure modes are in references/recipes.md section 1.",
+
+  "name": "chain-drop",
+  "project": "/CHANGE/ME/physics-reels",
+  "scene": "res://scenes/chain_drop.tscn",
+  "rendering_driver": "metal",
+
+  "seeds": [1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008],
+
+  "duration_s": 13,
+  "fps": 60,
+  "preview_resolution": "540x960",
+  "final_resolution": "1080x1920",
+
+  "params": {
+    "link_count": 24,
+    "link_size_x": 0.18,
+    "link_size_y": 0.30,
+    "link_size_z": 0.18,
+    "link_mass": 0.4,
+    "link_gap": 0.02,
+    "joint_type": "pin",
+    "spawn_height": 7.0,
+    "spawn_offset_x": 0.6,
+    "spawn_rotation_z": 0.15,
+    "pivot_radius": 0.25,
+    "pivot_height": 2.0,
+    "friction": 0.6,
+    "restitution": 0.0,
+    "velocity_iters": 20,
+    "physics_ticks": 180,
+    "warmup_ticks": 12,
+    "palette": "ember"
+  }
+}

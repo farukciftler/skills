@@ -1,0 +1,10 @@
+# mobilya-cad — CAD venv bağımlılıkları (~/mobilya-venv).
+# Sürümler bu Mac'te doğrulanmış (Ağustos 2026). references/toolchain.md'deki
+# 12 tuzak bu sürümlere göredir; yükseltmeden önce oradaki notları oku.
+# Blender ayrı kurulur (brew install --cask blender, 5.2 LTS) — render.py
+# Blender'ın kendi Python'unda çalışır, bu venv'i kullanmaz.
+build123d==0.11.1
+ezdxf==1.4.4
+PyMuPDF==1.28.2
+Pillow==12.3.0
+reportlab==5.0.1

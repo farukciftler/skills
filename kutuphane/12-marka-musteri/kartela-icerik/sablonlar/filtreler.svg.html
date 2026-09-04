@@ -1,0 +1,126 @@
+<!--
+  filtreler.svg.html — fotoğraf işleme filtreleri.
+  uret.py bu bloğu HER şablonun <body> etiketinden hemen sonra otomatik enjekte eder.
+
+  NEDEN DUOTONE
+  -------------
+  Stok fotoğraf markanın paletiyle çarpışır: canlı, rastgele, doygun. Duotone
+  (Photoshop'taki "Gradient Map"in karşılığı) fotoğrafın parlaklık bilgisini
+  korur, rengini markanın iki tonuna eşler. Sonuç: hangi fotoğraf gelirse gelsin
+  palet bozulmaz.
+
+  YÖNTEM
+  ------
+  1. feColorMatrix — luminance ağırlıklarıyla gri tonlamaya indirger
+     (0.2126 R + 0.7152 G + 0.0722 B — WCAG'ın da kullandığı ağırlıklar)
+  2. feComponentTransfer — gri değeri iki renk arasında lineer eşler
+     tableValues="<koyu_uc> <açık_uc>" her kanal için ayrı
+
+  Renk uçları docs/marka-kimligi.md §4.1 paletinden türetilmiştir.
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+
+    <!-- PETROL → NANE : ana duotone. Sakin, kurumsal, birincil seçim. -->
+    <filter id="dt-petrol" color-interpolation-filters="sRGB"
+            x="0%" y="0%" width="100%" height="100%">
+      <feColorMatrix type="matrix" values="
+        0.2126 0.7152 0.0722 0 0
+        0.2126 0.7152 0.0722 0 0
+        0.2126 0.7152 0.0722 0 0
+        0      0      0      1 0"/>
+      <feComponentTransfer>
+        <!-- koyu uç #0A2A36 · açık uç #E4EFE9 -->
+        <feFuncR type="table" tableValues="0.039 0.894"/>
+        <feFuncG type="table" tableValues="0.165 0.937"/>
+        <feFuncB type="table" tableValues="0.212 0.914"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- GÜL KURUSU → KREM : sıcak. Aile, ergen, duygu içerikleri. -->
+    <filter id="dt-gul" color-interpolation-filters="sRGB"
+            x="0%" y="0%" width="100%" height="100%">
+      <feColorMatrix type="matrix" values="
+        0.2126 0.7152 0.0722 0 0
+        0.2126 0.7152 0.0722 0 0
+        0.2126 0.7152 0.0722 0 0
+        0      0      0      1 0"/>
+      <feComponentTransfer>
+        <!-- koyu uç #4A2129 · açık uç #F7EAEC -->
+        <feFuncR type="table" tableValues="0.290 0.969"/>
+        <feFuncG type="table" tableValues="0.129 0.918"/>
+        <feFuncB type="table" tableValues="0.161 0.925"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- AÇIK MAVİ → BUZ : serin. Bilgi, süreç, kurumsal içerik. -->
+    <filter id="dt-mavi" color-interpolation-filters="sRGB"
+            x="0%" y="0%" width="100%" height="100%">
+      <feColorMatrix type="matrix" values="
+        0.2126 0.7152 0.0722 0 0
+        0.2126 0.7152 0.0722 0 0
+        0.2126 0.7152 0.0722 0 0
+        0      0      0      1 0"/>
+      <feComponentTransfer>
+        <!-- koyu uç #0F323E · açık uç #E6F2F6 -->
+        <feFuncR type="table" tableValues="0.059 0.902"/>
+        <feFuncG type="table" tableValues="0.196 0.949"/>
+        <feFuncB type="table" tableValues="0.243 0.965"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- ZEYTİN → SAMAN : toprak. Oyun grupları, atölye, çocuk içerikleri. -->
+    <filter id="dt-sari" color-interpolation-filters="sRGB"
+            x="0%" y="0%" width="100%" height="100%">
+      <feColorMatrix type="matrix" values="
+        0.2126 0.7152 0.0722 0 0
+        0.2126 0.7152 0.0722 0 0
+        0.2126 0.7152 0.0722 0 0
+        0      0      0      1 0"/>
+      <feComponentTransfer>
+        <!-- koyu uç #38381A · açık uç #F6F5DF -->
+        <feFuncR type="table" tableValues="0.220 0.965"/>
+        <feFuncG type="table" tableValues="0.220 0.961"/>
+        <feFuncB type="table" tableValues="0.102 0.875"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- YUMUŞAK : duotone değil, yalnızca sakinleştirme.
+         Gerçek mekân/ekip fotoğrafı geldiğinde bu kullanılır — gerçek renkleri
+         korur ama doygunluğu düşürür ve gölgeleri kaldırır (matte film etkisi). -->
+    <filter id="ft-yumusak" color-interpolation-filters="sRGB"
+            x="0%" y="0%" width="100%" height="100%">
+      <feColorMatrix type="saturate" values="0.55"/>
+      <feComponentTransfer>
+        <!-- Gölgeler kaldırılır: siyah uç 0 yerine 0,09'dan başlar -->
+        <feFuncR type="linear" slope="0.90" intercept="0.09"/>
+        <feFuncG type="linear" slope="0.90" intercept="0.09"/>
+        <feFuncB type="linear" slope="0.88" intercept="0.10"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- GRAIN : ince film dokusu. Dijital düzlüğü kırar, baskı hissi verir.
+         Tek başına kullanılmaz; .grain sınıfıyla üst katman olarak biner. -->
+    <filter id="ft-grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+
+
+    <!-- TRİ-TONE : petrol → açık mavi → nane.
+         Üç durak iki enterpolasyon aralığı üretir: gölge / orta ton / parlaklık.
+         "Bir kartela tek doğru rengi dayatmaz" fikrinin fotoğraftaki karşılığı.
+         UYARI: tri-tone zaten bir kartela jestidir — aynı tuvalde ayrıca
+         kartela şeridi KULLANILMAZ (§4.6/5). -->
+    <filter id="dt-kartela" color-interpolation-filters="sRGB"
+            x="0%" y="0%" width="100%" height="100%">
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="0     0.576 0.894"/>
+        <feFuncG type="table" tableValues="0.373 0.788 0.937"/>
+        <feFuncB type="table" tableValues="0.498 0.847 0.914"/>
+      </feComponentTransfer>
+    </filter>
+
+  </defs>
+</svg>
