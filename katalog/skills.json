@@ -3025,6 +3025,31 @@
   ]
  },
  {
+  "ad": "deck-studio",
+  "slug": "deck-studio",
+  "kategori": "09-cad-gorsel",
+  "kategori_adi": "CAD & Görsel Üretim",
+  "aciklama": "Sunum tasarım stüdyosu — bir marka kimliği veya seçilmiş bir sanat yönetimi (art direction) üzerine kurulu, özel tipografili, kendi ürettiği illüstrasyon ve ürün mockup'larını içeren, jenerik AI şablonundan uzak .pptx desteleri üretir; mevcut desteleri de yeniden tasarlar ve denetler. Kullanıcı 'sunum hazırla', 'deck', 'pitch deck', 'yatırımcı sunumu', 'slayt', 'pptx', 'sunumu güzelleştir', 'şu desteyi yeniden tasarla', 'mockup ekle', 'illüstrasyon üret', 'marka kimliğine göre sunum', 'make me a deck', 'design these slides', 'redesign this presentation' dediğinde kullan. Bir teklif, rapor, strateji, lansman veya yatırımcı görüşmesi için slayt gerektiği anlaşıldığında — 'tasarım' kelimesi hiç geçmese bile — devreye gir. Sunuma girecek cihaz mockup'ı, arayüz ekranı, vektör illüstrasyon veya özel font gerektiğinde tek başına da kullan. Şablon doldurmaz; her deste için tek bir sanat yönetimi kararı verir, kilitler, her slaytta uygular.",
+  "ozet": "Sunum tasarım stüdyosu — bir marka kimliği veya seçilmiş bir sanat yönetimi (art direction) üzerine kurulu, özel tipografili, kendi ürettiği illüstrasyon ve ürün…",
+  "yol": "kutuphane/09-cad-gorsel/deck-studio",
+  "bayt": 10093,
+  "satir": 207,
+  "ek_dosya": 9,
+  "script_var": true,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/deck-studio"
+  ],
+  "kaynak_tipleri": [
+   "claude.ai"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/deck-studio"
+  ]
+ },
+ {
   "ad": "gorsel-uretim",
   "slug": "gorsel-uretim",
   "kategori": "09-cad-gorsel",

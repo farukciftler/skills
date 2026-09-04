@@ -61,7 +61,8 @@ KATEGORI_BASLIK = {
     ),
     "09-cad-gorsel": (
         "CAD & Görsel Üretim",
-        "Parametrik mobilya/CAD zinciri, markalı görsel hattı, stok görsel keşfi.",
+        "Parametrik mobilya/CAD zinciri, markalı görsel hattı, sunum tasarımı, "
+        "stok görsel keşfi.",
     ),
     "10-yasam-turkiye": (
         "Yaşam & Türkiye Hizmetleri",

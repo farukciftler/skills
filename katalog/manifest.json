@@ -434,6 +434,25 @@
   ]
  },
  {
+  "name": "deck-studio",
+  "slug": "deck-studio",
+  "cat": "09-cad-gorsel",
+  "hash": "30451b683a78",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/deck-studio"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 10811,
+  "lib": "~/skills/kutuphane/09-cad-gorsel/deck-studio",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/deck-studio"
+  ]
+ },
+ {
   "name": "dijital-iz-denetcisi",
   "slug": "dijital-iz-denetcisi",
   "cat": "10-yasam-turkiye",

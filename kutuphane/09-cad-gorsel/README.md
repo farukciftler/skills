@@ -1,8 +1,17 @@
 # CAD & Görsel Üretim
 
-Parametrik mobilya/CAD zinciri, markalı görsel hattı, stok görsel keşfi.
+Parametrik mobilya/CAD zinciri, markalı görsel hattı, sunum tasarımı, stok görsel keşfi.
 
-8 skill. Üst dizin: [../../README.md](../../README.md)
+9 skill. Üst dizin: [../../README.md](../../README.md)
+
+## `deck-studio`
+
+[SKILL.md](deck-studio/SKILL.md)
+
+Sunum tasarım stüdyosu — bir marka kimliği veya seçilmiş bir sanat yönetimi (art direction) üzerine kurulu, özel tipografili, kendi ürettiği illüstrasyon ve ürün mockup'larını içeren, jenerik AI şablonundan uzak .pptx desteleri üretir; mevcut desteleri de yeniden tasarlar ve denetler. Kullanıcı 'sunum hazırla', 'deck', 'pitch deck', 'yatırımcı sunumu', 'slayt', 'pptx', 'sunumu güzelleştir', 'şu desteyi yeniden tasarla', 'mockup ekle', 'illüstrasyon üret', 'marka kimliğine göre sunum', 'make me a deck', 'design these slides', 'redesign this presentation' dediğinde kullan. Bir teklif, rapor, strateji, lansman veya yatırımcı görüşmesi için slayt gerektiği anlaşıldığında — 'tasarım' kelimesi hiç geçmese bile — devreye gir. Sunuma girecek cihaz mockup'ı, arayüz ekranı, vektör illüstrasyon veya özel font gerektiğinde tek başına da kullan. Şablon doldurmaz; her deste için tek bir sanat yönetimi kararı verir, kilitler, her slaytta uygular.
+
+- **Ölçü:** 10.093 bayt · 9 ek dosya · script içerir · referans dosyaları var
+- **Kaynak:** claude.ai senkronu (efemer önbellek)
 
 ## `gorsel-uretim`
 

@@ -107,7 +107,7 @@ KATEGORI = {
     ],
     "09-cad-gorsel": [
         "mobilya-cad", "gorsel-uretim", "pexels-gorsel-bulucu", "pexels-media-scout",
-        "post-forge",
+        "post-forge", "deck-studio",
     ],
     "10-yasam-turkiye": [
         "arac-uzmani", "urun-kesif", "konaklama-kesif", "ucuz-bilet-avcisi",

@@ -1,6 +1,6 @@
 # Alfabetik Skill Dizini
 
-153 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
+154 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
 
 | Skill | Kategori | Ne yapar | Kaynak |
 |---|---|---|---|
@@ -24,6 +24,7 @@
 | [`ceviri--comesyriacontent`](kutuphane/04-icerik-yazim-ceviri/ceviri--comesyriacontent/SKILL.md) ⚙️ | İçerik, Yazım & Çeviri | ComeSyria içeriğini Türkçe, küresel İngilizce ve Suriye Arapçası arasında çevirir — makine kokmayan, o dilin okuru için baştan yazılmış metinler üretir; ad/sayı… | kurulu |
 | [`chibi-character-factory`](kutuphane/03-video-ses-uretim/chibi-character-factory/SKILL.md) | Video & Ses Üretimi | Production pipeline for building low-poly chibi game characters using Claude + Blender MCP only (no third-party generators), from parametric base mesh to a rigged… | claude.ai |
 | [`consolidate-memory`](kutuphane/14-meta-sistem/consolidate-memory/SKILL.md) | Meta & Sistem | Reflective pass over your memory files — merge duplicates, fix stale facts, prune the index. | claude.ai |
+| [`deck-studio`](kutuphane/09-cad-gorsel/deck-studio/SKILL.md) ⚙️ | CAD & Görsel Üretim | Sunum tasarım stüdyosu — bir marka kimliği veya seçilmiş bir sanat yönetimi (art direction) üzerine kurulu, özel tipografili, kendi ürettiği illüstrasyon ve ürün… | claude.ai |
 | [`dijital-iz-denetcisi`](kutuphane/10-yasam-turkiye/dijital-iz-denetcisi/SKILL.md) | Yaşam & Türkiye Hizmetleri | Bir kişinin kendi (veya açık yetki verdiği bir müvekkilin) dijital ayak izini uçtan uca tarar — arama motorları, veri simsarları, sosyal platformlar, sızıntı… | claude.ai |
 | [`docker-compose-orchestration`](kutuphane/07-yazilim-muhendislik/docker-compose-orchestration/SKILL.md) | Yazılım Mühendisliği | Container orchestration with Docker Compose for multi-container applications, networking, volumes, and production deployment | kurulu, proje-içi |
 | [`docx`](kutuphane/13-ofis-belge/docx/SKILL.md) ⚙️ | Ofis & Belge | Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx) or Word templates (.dotx). | claude.ai |
