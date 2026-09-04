@@ -3,7 +3,7 @@
 
 Kaynak konumlarına dokunmaz — yalnızca kopyalar ve `katalog/manifest.json`
 yazar. Kaynakları kütüphaneye bağlamak (symlink) ayrı bir iştir:
-`scripts/bagla.sh`.
+`scripts/bagla.py`.
 
 Kullanım:
     python3 scripts/topla.py            # kuru çalıştırma, plan basar
@@ -73,15 +73,17 @@ KATEGORI = {
     "04-icerik-yazim-ceviri": [
         "insanca", "turkce-anlati", "english-narration", "ceviri", "icerik-strateji",
         "icerik-uret", "yeme-icme", "backlog-arastir", "backlog",
-        "sosyal-medya-post-uret",
+        "sosyal-medya-post-uret", "icerik-yaz",
     ],
     "05-pazarlama-buyume": [
         "seo-expert", "aso-expert", "youtube-shorts-optimizer",
         "viral-artifact-scout", "hedef-arastirma", "klinik-lead-akisi",
+        "appstore-market-analyst",
     ],
     "06-ux-urun": [
         "mobile-ux-flow-expert", "web-ux-flow-expert", "ota-mobile-tablet-ux",
-        "kartela-web-ux", "pm-decision-review",
+        "kartela-web-ux", "pm-decision-review", "arayuz-denetimi",
+        "jira-task-writer",
     ],
     "07-yazilim-muhendislik": [
         "nextjs-development", "react-patterns", "tailwind-css",
@@ -89,7 +91,7 @@ KATEGORI = {
         "docker-compose-orchestration", "oauth2-authentication", "gitnexus-guide",
         "gitnexus-cli", "gitnexus-exploring", "gitnexus-debugging",
         "gitnexus-impact-analysis", "gitnexus-refactoring", "hyperscaler-expert",
-        "serverim-build",
+        "serverim-build", "apple-platform-architect",
     ],
     "08-ai-ml": [
         "ml-expert", "automl", "kaggle-kaggle-skill", "llm-engineering-expert",
@@ -97,6 +99,7 @@ KATEGORI = {
     ],
     "09-cad-gorsel": [
         "mobilya-cad", "gorsel-uretim", "pexels-gorsel-bulucu", "pexels-media-scout",
+        "post-forge",
     ],
     "10-yasam-turkiye": [
         "arac-uzmani", "urun-kesif", "konaklama-kesif", "ucuz-bilet-avcisi",

@@ -1,0 +1,31 @@
+{
+  "brand": "Example Co",
+  "color": {
+    "ink": "#0B0F14",
+    "surface": "#FFFFFF",
+    "surfaceAlt": "#F4F6F8",
+    "accent": "#2F6BFF",
+    "accentAlt": "#00C2A8",
+    "muted": "#6B7683"
+  },
+  "font": {
+    "display": "\"Space Grotesk\", \"Inter\", system-ui, sans-serif",
+    "text": "\"Inter\", system-ui, sans-serif",
+    "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+    "source": "google | local-base64 | system",
+    "files": []
+  },
+  "radius": { "sm": 8, "md": 16, "lg": 28, "device": 56 },
+  "space": { "gutter": 72, "unit": 8 },
+  "type": {
+    "displayMax": 184,
+    "displayDefault": 132,
+    "bodyMin": 28,
+    "labelMin": 22,
+    "displayTracking": "-0.03em"
+  },
+  "grain": 0.04,
+  "signature": "Describe the one repeating device: e.g. '8px accent rule top-left + mono eyebrow + numeral in the outer margin'",
+  "handle": "@example",
+  "notes": "Where these tokens came from (brand guide / tailwind.config.ts / screenshot sampling), so the next run doesn't re-derive them differently."
+}

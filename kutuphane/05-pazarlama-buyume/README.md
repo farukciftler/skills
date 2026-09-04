@@ -2,7 +2,16 @@
 
 SEO/ASO denetimi, Shorts optimizasyonu, viral ürün avı, lead üretimi.
 
-6 skill. Üst dizin: [../../README.md](../../README.md)
+7 skill. Üst dizin: [../../README.md](../../README.md)
+
+## `appstore-market-analyst`
+
+[SKILL.md](appstore-market-analyst/SKILL.md)
+
+App Store market analyst for the global and Türkiye markets — category size, what people actually pay for, what price to set, whether paid-upfront / freemium / subscription fits, what an app realistically earns, which categories are saturated, what the most expensive apps charge and why, and how Turkish pricing, taxes and purchasing power change the answer. Use when deciding what app to build, what to charge, whether an idea can make money, how a category monetizes, what competitors charge, or how an app compares to benchmarks. Trigger on Turkish phrasings — "hangi uygulama para kazandırır", "kaç dolara satmalıyım", "abonelik mi tek seferlik mi", "Türkiye'de ne kadar kazanılır", "bu kategori doymuş mu", "rakipler ne kadar alıyor", "fiyatlandırma stratejisi", "en pahalı uygulamalar", "ücretli uygulama satar mı". Use it even when someone only describes an app idea and asks whether it is worth building — that is a market question. Always pulls live figures rather than quoting stale numbers as current.
+
+- **Ölçü:** 6.596 bayt · 5 ek dosya · referans dosyaları var
+- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst
 
 ## `aso-expert`
 

@@ -90,6 +90,7 @@ KAYNAK_ETIKET = {
     "install": "kurulu",
     "content": "proje-içi",
     "cloud": "claude.ai",
+    "github": "GitHub (yerelde yok)",
 }
 
 

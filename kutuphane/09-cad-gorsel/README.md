@@ -2,7 +2,7 @@
 
 Parametrik mobilya/CAD zinciri, markalı görsel hattı, stok görsel keşfi.
 
-5 skill. Üst dizin: [../../README.md](../../README.md)
+6 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `gorsel-uretim`
 
@@ -48,4 +48,13 @@ Finds, scores, clearance-checks and downloads royalty-free Pexels photos and vid
 
 - **Ölçü:** 7.441 bayt · 4 ek dosya · script içerir · referans dosyaları var
 - **Kaynak:** ~/Documents/GitHub/weftrecords/.claude/skills/pexels-media-scout
+
+## `post-forge`
+
+[SKILL.md](post-forge/SKILL.md)
+
+Designs and RENDERS finished social post visuals — Instagram feed posts (4:5, 1:1), Stories frames, Instagram carousels and LinkedIn document carousels — as pixel-exact HTML/SVG exported to PNG and PDF. Builds custom SVG illustration, hand-drawn charts and product mockups (phone frame, laptop, browser window, isometric app screens, floating UI cards) instead of stock templates, locked to a brand design system. Use whenever the deliverable is the IMAGE, not the caption — "instagram postu tasarla", "post görseli üret", "carousel hazırla", "LinkedIn carousel", "şu ekranı telefon mockup'ında göster", "özel SVG çiz", "bu postlar birbirine benziyor, farklılaştır", "screenshot'u güzelleştir", "story görseli", "metrik kartı tasarla". Trigger even when the user only says "post" but points at a screenshot, a product screen, a metric or a design system, and for redesign or de-templating of existing visuals. Hand caption copy to trend-setter; this skill owns the pixels.
+
+- **Ölçü:** 11.147 bayt · 11 ek dosya · script içerir · referans dosyaları var
+- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/post-forge
 

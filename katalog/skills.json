@@ -1357,6 +1357,31 @@
   "ayna": []
  },
  {
+  "ad": "icerik-yaz",
+  "slug": "icerik-yaz",
+  "kategori": "04-icerik-yazim-ceviri",
+  "kategori_adi": "İçerik, Yazım & Çeviri",
+  "aciklama": "Türkçe ve İngilizce uzun form içerik yazar. Metin elle yazılmış gibi okunur: yapay zeka imzası taşımaz, uzun çizgi kullanmaz, kalıp geçiş ifadelerine sığınmaz, somut sayı ve isim verir. SEO tarafı 2026 gerçeğine dayanır, folklora değil. \"Yazı yaz\", \"blog yazısı\", \"makale\", \"içerik üret\", \"SEO içeriği\", \"uzun yazı\", \"İngilizcesini de yaz\", \"metni denetle\", \"bu metin yapay zeka gibi mi duruyor\", \"meta açıklama yaz\" dendiğinde kullan. Yazıyı teslim etmeden önce scripts/denetle.py ile taramak bu becerinin parçasıdır.",
+  "ozet": "Türkçe ve İngilizce uzun form içerik yazar.",
+  "yol": "kutuphane/04-icerik-yazim-ceviri/icerik-yaz",
+  "bayt": 10837,
+  "satir": 223,
+  "ek_dosya": 6,
+  "script_var": true,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "github:farukciftler/masifico-web → .claude/skills/icerik-yaz"
+  ],
+  "kaynak_tipleri": [
+   "GitHub (yerelde yok)"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "github:farukciftler/masifico-web → .claude/skills/icerik-yaz"
+  ]
+ },
+ {
   "ad": "insanca",
   "slug": "insanca",
   "kategori": "04-icerik-yazim-ceviri",
@@ -1480,6 +1505,31 @@
    "~/projects/comesyriacontent/.claude/skills/yeme-icme"
   ],
   "ayna": []
+ },
+ {
+  "ad": "appstore-market-analyst",
+  "slug": "appstore-market-analyst",
+  "kategori": "05-pazarlama-buyume",
+  "kategori_adi": "Pazarlama & Büyüme",
+  "aciklama": "App Store market analyst for the global and Türkiye markets — category size, what people actually pay for, what price to set, whether paid-upfront / freemium / subscription fits, what an app realistically earns, which categories are saturated, what the most expensive apps charge and why, and how Turkish pricing, taxes and purchasing power change the answer. Use when deciding what app to build, what to charge, whether an idea can make money, how a category monetizes, what competitors charge, or how an app compares to benchmarks. Trigger on Turkish phrasings — \"hangi uygulama para kazandırır\", \"kaç dolara satmalıyım\", \"abonelik mi tek seferlik mi\", \"Türkiye'de ne kadar kazanılır\", \"bu kategori doymuş mu\", \"rakipler ne kadar alıyor\", \"fiyatlandırma stratejisi\", \"en pahalı uygulamalar\", \"ücretli uygulama satar mı\". Use it even when someone only describes an app idea and asks whether it is worth building — that is a market question. Always pulls live figures rather than quoting stale numbers as current.",
+  "ozet": "App Store market analyst for the global and Türkiye markets — category size, what people actually pay for, what price to set, whether paid-upfront / freemium /…",
+  "yol": "kutuphane/05-pazarlama-buyume/appstore-market-analyst",
+  "bayt": 6596,
+  "satir": 84,
+  "ek_dosya": 5,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst"
+  ],
+  "kaynak_tipleri": [
+   "GitHub (yerelde yok)"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst"
+  ]
  },
  {
   "ad": "aso-expert",
@@ -1638,6 +1688,56 @@
   ]
  },
  {
+  "ad": "arayuz-denetimi",
+  "slug": "arayuz-denetimi",
+  "kategori": "06-ux-urun",
+  "kategori_adi": "UX & Ürün Yönetimi",
+  "aciklama": "Kartela Klinik OS arayüzünü uçtan uca denetler — üç demo rolüyle (danışman, sekreter, yönetici) her rotanın mobil / yatay tablet / masaüstü ekran görüntüsünü alır, kart-liste-tablo düzenlerini, erişilebilirliği, renk kontrastını, dokunma hedeflerini ve kullanıcı akışlarını puanlar, bulguları düzeltilebilir maddelere çevirir. Arayüz denetimi, UI/UX incelemesi, ekran görüntüsü alma, responsive kontrol, erişilebilirlik taraması, akış/user story incelemesi istendiğinde kullan.",
+  "ozet": "Kartela Klinik OS arayüzünü uçtan uca denetler — üç demo rolüyle (danışman, sekreter, yönetici) her rotanın mobil / yatay tablet / masaüstü ekran görüntüsünü alır…",
+  "yol": "kutuphane/06-ux-urun/arayuz-denetimi",
+  "bayt": 11434,
+  "satir": 237,
+  "ek_dosya": 4,
+  "script_var": true,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "github:farukciftler/terapipanel → .claude/skills/arayuz-denetimi"
+  ],
+  "kaynak_tipleri": [
+   "GitHub (yerelde yok)"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "github:farukciftler/terapipanel → .claude/skills/arayuz-denetimi"
+  ]
+ },
+ {
+  "ad": "jira-task-writer",
+  "slug": "jira-task-writer",
+  "kategori": "06-ux-urun",
+  "kategori_adi": "UX & Ürün Yönetimi",
+  "aciklama": "Writes and creates Jira issues that contain ONLY what the user actually said - no invented scope, no best-practice padding, no unrequested sections. Every missing-but-relevant consideration is raised as a warning in chat instead of being written into the ticket. Use whenever the user wants a Jira task/story/bug/epic created, drafted, rewritten or cleaned up - \"jira'ya task aç\", \"şunu ticket'a çevir\", \"FINOPS'a bir task gir\", \"bunu Jira'ya yaz\", \"task açalım\", \"issue oluştur\", \"acceptance criteria yaz\", \"bu maili task'a dönüştür\", \"şu spec'i Jira'ya taşı\" - and also when reviewing an existing ticket for scope creep or hallucinated requirements. Trigger even if the user never says \"skill\" or gives only two sentences of input; short input must produce a short ticket, not an inflated one.",
+  "ozet": "Writes and creates Jira issues that contain ONLY what the user actually said - no invented scope, no best-practice padding, no unrequested sections.",
+  "yol": "kutuphane/06-ux-urun/jira-task-writer",
+  "bayt": 8445,
+  "satir": 200,
+  "ek_dosya": 0,
+  "script_var": false,
+  "referans_var": false,
+  "varyant": 0,
+  "kaynaklar": [
+   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer"
+  ],
+  "kaynak_tipleri": [
+   "GitHub (yerelde yok)"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer"
+  ]
+ },
+ {
   "ad": "kartela-web-ux",
   "slug": "kartela-web-ux",
   "kategori": "06-ux-urun",
@@ -1783,6 +1883,31 @@
    "~/.gemini/config/plugins/kirkit-skills/skills/web-ux-flow-expert",
    "~/projects/kirkit/data/skills/skills/web-ux-flow-expert",
    "~/projects/startup değerleme/skill/ilgili-skiller/web-ux-flow-expert"
+  ]
+ },
+ {
+  "ad": "apple-platform-architect",
+  "slug": "apple-platform-architect",
+  "kategori": "07-yazilim-muhendislik",
+  "kategori_adi": "Yazılım Mühendisliği",
+  "aciklama": "Staff-level Apple platform engineering judgement for iOS, iPadOS, macOS, watchOS, tvOS and visionOS — choosing an app architecture, picking the right framework, designing on-device AI with Foundation Models / Core AI / MLX, building games, sizing work against real device hardware, and getting a build through App Review. Use whenever work touches Swift, SwiftUI, UIKit, SwiftData, concurrency, App Intents, Metal, RealityKit, SpriteKit, ARKit, WidgetKit, StoreKit, Xcode or App Store Connect. Trigger on Turkish phrasings — \"iOS uygulaması yapacağım\", \"hangi mimariyi kullanayım\", \"SwiftData mı Core Data mı\", \"on-device model çalışır mı\", \"hangi cihazda döner\", \"oyun için ne kullanmalıyım\", \"Metal mi RealityKit mi\", \"App Store reddetti\", \"iOS 27'de ne değişti\", \"concurrency hatası alıyorum\". Use it even when no framework is named — if the question is what to build an Apple-platform feature WITH, or whether the hardware can carry it, this applies. Verifies against live Apple sources instead of trusting stale memory.",
+  "ozet": "Staff-level Apple platform engineering judgement for iOS, iPadOS, macOS, watchOS, tvOS and visionOS — choosing an app architecture, picking the right framework…",
+  "yol": "kutuphane/07-yazilim-muhendislik/apple-platform-architect",
+  "bayt": 8818,
+  "satir": 81,
+  "ek_dosya": 7,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect"
+  ],
+  "kaynak_tipleri": [
+   "GitHub (yerelde yok)"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect"
   ]
  },
  {
@@ -2657,6 +2782,31 @@
    "~/Documents/GitHub/weftrecords/.claude/skills/pexels-media-scout"
   ],
   "ayna": []
+ },
+ {
+  "ad": "post-forge",
+  "slug": "post-forge",
+  "kategori": "09-cad-gorsel",
+  "kategori_adi": "CAD & Görsel Üretim",
+  "aciklama": "Designs and RENDERS finished social post visuals — Instagram feed posts (4:5, 1:1), Stories frames, Instagram carousels and LinkedIn document carousels — as pixel-exact HTML/SVG exported to PNG and PDF. Builds custom SVG illustration, hand-drawn charts and product mockups (phone frame, laptop, browser window, isometric app screens, floating UI cards) instead of stock templates, locked to a brand design system. Use whenever the deliverable is the IMAGE, not the caption — \"instagram postu tasarla\", \"post görseli üret\", \"carousel hazırla\", \"LinkedIn carousel\", \"şu ekranı telefon mockup'ında göster\", \"özel SVG çiz\", \"bu postlar birbirine benziyor, farklılaştır\", \"screenshot'u güzelleştir\", \"story görseli\", \"metrik kartı tasarla\". Trigger even when the user only says \"post\" but points at a screenshot, a product screen, a metric or a design system, and for redesign or de-templating of existing visuals. Hand caption copy to trend-setter; this skill owns the pixels.",
+  "ozet": "Designs and RENDERS finished social post visuals — Instagram feed posts (4:5, 1:1), Stories frames, Instagram carousels and LinkedIn document carousels — as…",
+  "yol": "kutuphane/09-cad-gorsel/post-forge",
+  "bayt": 11147,
+  "satir": 129,
+  "ek_dosya": 11,
+  "script_var": true,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "github:farukciftler/pipsworn → .claude/skills/post-forge"
+  ],
+  "kaynak_tipleri": [
+   "GitHub (yerelde yok)"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "github:farukciftler/pipsworn → .claude/skills/post-forge"
+  ]
  },
  {
   "ad": "arac-uzmani",

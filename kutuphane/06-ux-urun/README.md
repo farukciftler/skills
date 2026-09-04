@@ -2,7 +2,25 @@
 
 Mobil ve web akış tasarımı/denetimi, ürün kararı incelemesi.
 
-5 skill. Üst dizin: [../../README.md](../../README.md)
+7 skill. Üst dizin: [../../README.md](../../README.md)
+
+## `arayuz-denetimi`
+
+[SKILL.md](arayuz-denetimi/SKILL.md)
+
+Kartela Klinik OS arayüzünü uçtan uca denetler — üç demo rolüyle (danışman, sekreter, yönetici) her rotanın mobil / yatay tablet / masaüstü ekran görüntüsünü alır, kart-liste-tablo düzenlerini, erişilebilirliği, renk kontrastını, dokunma hedeflerini ve kullanıcı akışlarını puanlar, bulguları düzeltilebilir maddelere çevirir. Arayüz denetimi, UI/UX incelemesi, ekran görüntüsü alma, responsive kontrol, erişilebilirlik taraması, akış/user story incelemesi istendiğinde kullan.
+
+- **Ölçü:** 11.434 bayt · 4 ek dosya · script içerir · referans dosyaları var
+- **Kaynak:** github:farukciftler/terapipanel → .claude/skills/arayuz-denetimi
+
+## `jira-task-writer`
+
+[SKILL.md](jira-task-writer/SKILL.md)
+
+Writes and creates Jira issues that contain ONLY what the user actually said - no invented scope, no best-practice padding, no unrequested sections. Every missing-but-relevant consideration is raised as a warning in chat instead of being written into the ticket. Use whenever the user wants a Jira task/story/bug/epic created, drafted, rewritten or cleaned up - "jira'ya task aç", "şunu ticket'a çevir", "FINOPS'a bir task gir", "bunu Jira'ya yaz", "task açalım", "issue oluştur", "acceptance criteria yaz", "bu maili task'a dönüştür", "şu spec'i Jira'ya taşı" - and also when reviewing an existing ticket for scope creep or hallucinated requirements. Trigger even if the user never says "skill" or gives only two sentences of input; short input must produce a short ticket, not an inflated one.
+
+- **Ölçü:** 8.445 bayt · 0 ek dosya
+- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/jira-task-writer
 
 ## `kartela-web-ux`
 

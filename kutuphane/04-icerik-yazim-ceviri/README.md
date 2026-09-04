@@ -2,7 +2,7 @@
 
 Doğal Türkçe/İngilizce metin, dikey video anlatısı, çok dilli çeviri, içerik stratejisi ve üretimi.
 
-13 skill. Üst dizin: [../../README.md](../../README.md)
+14 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `backlog`
 
@@ -75,6 +75,15 @@ ComeSyria için üç dilde (TR/EN/AR) SEO uyumlu şehir, mekan ve rota içeriği
 
 - **Ölçü:** 11.038 bayt · 11 ek dosya · script içerir · referans dosyaları var
 - **Kaynak:** ~/projects/comesyriacontent/.claude/skills/icerik-uret
+
+## `icerik-yaz`
+
+[SKILL.md](icerik-yaz/SKILL.md)
+
+Türkçe ve İngilizce uzun form içerik yazar. Metin elle yazılmış gibi okunur: yapay zeka imzası taşımaz, uzun çizgi kullanmaz, kalıp geçiş ifadelerine sığınmaz, somut sayı ve isim verir. SEO tarafı 2026 gerçeğine dayanır, folklora değil. "Yazı yaz", "blog yazısı", "makale", "içerik üret", "SEO içeriği", "uzun yazı", "İngilizcesini de yaz", "metni denetle", "bu metin yapay zeka gibi mi duruyor", "meta açıklama yaz" dendiğinde kullan. Yazıyı teslim etmeden önce scripts/denetle.py ile taramak bu becerinin parçasıdır.
+
+- **Ölçü:** 10.837 bayt · 6 ek dosya · script içerir · referans dosyaları var
+- **Kaynak:** github:farukciftler/masifico-web → .claude/skills/icerik-yaz
 
 ## `insanca`
 

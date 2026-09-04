@@ -14,6 +14,9 @@ Kalan 174 kaynak **113 benzersiz skill**'e, oradan da **131 kütüphane girdisin
 indirildi (18 ayrışmış sürüm ayrı girdi olarak korundu) ve 14 kategoriye
 dağıtıldı.
 
+Ardından 175 GitHub deposu tarandı ve yalnız orada duran 6 skill eklendi
+(§ GitHub taraması). **Güncel toplam: 119 benzersiz skill, 137 girdi.**
+
 Tam yedek: `~/skills-yedek-20260904-135254.tar.gz` (2,6 MB).
 
 ## Kaynak konumları üç sınıfa ayrıldı
@@ -146,3 +149,51 @@ python3 scripts/katalog_uret.py      # INDEX + katalog + kategori README'leri
 Yeni bir skill kategoriye girmezse `topla.py` uyarır ve onu
 `kutuphane/99-siniflandirilmamis/` altına koyar; kategori eşlemesi hem
 `scripts/topla.py` hem `scripts/katalog_uret.py` içinde güncellenmeli.
+
+## GitHub taraması (175 depo)
+
+Yerel diskte olmayan skill'ler için hesaptaki tüm depoların varsayılan dal
+ağacı tarandı. **20 depoda** `SKILL.md` bulundu; bunların 14'ü zaten yerelde
+klonlu.
+
+Yalnız GitHub'da duran **6 skill** kütüphaneye alındı:
+
+| Skill | Depo | Kategori |
+|---|---|---|
+| `apple-platform-architect` | `pipsworn` | 07-yazilim-muhendislik |
+| `appstore-market-analyst` | `pipsworn` | 05-pazarlama-buyume |
+| `jira-task-writer` | `pipsworn` | 06-ux-urun |
+| `post-forge` | `pipsworn` | 09-cad-gorsel |
+| `arayuz-denetimi` | `terapipanel` | 06-ux-urun |
+| `icerik-yaz` | `masifico-web` | 04-icerik-yazim-ceviri |
+
+> `terapipanel` yerelde klonlu ama `arayuz-denetimi` yalnız GitHub'da — yerel
+> klon geride. `pipsworn`, `masifico-web`, `portfolio-afc` ve `agentpanel` bu
+> makinede hiç klonlu değil.
+
+Alınmayan 5 bulgu üçüncü taraf, senin yazdığın skill değil:
+
+| Skill | Nerede | Neden alınmadı |
+|---|---|---|
+| `fastapi`, `typer` | `portfolio-afc` → `mcp-env/…/site-packages/` | Kütüphanelerin kendi vendor'lanmış skill'leri |
+| `skill`, `trace` | `agentpanel` → `node_modules/playwright-core/` | Playwright'ın yerleşik skill'leri |
+| `verify` | `src` → `skills/bundled/` | 0 bayt, boş dosya |
+
+Bu skill'ler kütüphaneye kopyalandı ama kaynak depolarına **dokunulmadı**;
+`bagla.py` onları bağlayamaz (yerelde klon yok). O depolarda çalışırken
+kütüphanedeki sürümle ayrışabilirler.
+
+Taramayı yinelemek için:
+
+```bash
+gh repo list --limit 300 --json name,defaultBranchRef | \
+  python3 -c "import json,sys,subprocess
+for r in json.load(sys.stdin):
+    br=(r.get('defaultBranchRef') or {}).get('name')
+    if not br: continue
+    p=subprocess.run(['gh','api',f\"repos/farukciftler/{r['name']}/git/trees/{br}?recursive=1\",
+                      '-q','.tree[].path'],capture_output=True,text=True)
+    y=[x for x in p.stdout.splitlines() if x.endswith('SKILL.md')]
+    if y: print(r['name'], len(y))"
+```
+

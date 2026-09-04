@@ -2760,5 +2760,119 @@
   "mirrored": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/youtube-shorts-optimizer"
   ]
+ },
+ {
+  "name": "arayuz-denetimi",
+  "slug": "arayuz-denetimi",
+  "cat": "06-ux-urun",
+  "hash": "",
+  "variant": 0,
+  "srcs": [
+   "github:farukciftler/terapipanel → .claude/skills/arayuz-denetimi"
+  ],
+  "kinds": [
+   "github"
+  ],
+  "bytes": 0,
+  "lib": "~/skills/kutuphane/06-ux-urun/arayuz-denetimi",
+  "linked": [],
+  "mirrored": [
+   "github:farukciftler/terapipanel → .claude/skills/arayuz-denetimi"
+  ]
+ },
+ {
+  "name": "icerik-yaz",
+  "slug": "icerik-yaz",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "",
+  "variant": 0,
+  "srcs": [
+   "github:farukciftler/masifico-web → .claude/skills/icerik-yaz"
+  ],
+  "kinds": [
+   "github"
+  ],
+  "bytes": 0,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/icerik-yaz",
+  "linked": [],
+  "mirrored": [
+   "github:farukciftler/masifico-web → .claude/skills/icerik-yaz"
+  ]
+ },
+ {
+  "name": "apple-platform-architect",
+  "slug": "apple-platform-architect",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "",
+  "variant": 0,
+  "srcs": [
+   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect"
+  ],
+  "kinds": [
+   "github"
+  ],
+  "bytes": 0,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/apple-platform-architect",
+  "linked": [],
+  "mirrored": [
+   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect"
+  ]
+ },
+ {
+  "name": "appstore-market-analyst",
+  "slug": "appstore-market-analyst",
+  "cat": "05-pazarlama-buyume",
+  "hash": "",
+  "variant": 0,
+  "srcs": [
+   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst"
+  ],
+  "kinds": [
+   "github"
+  ],
+  "bytes": 0,
+  "lib": "~/skills/kutuphane/05-pazarlama-buyume/appstore-market-analyst",
+  "linked": [],
+  "mirrored": [
+   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst"
+  ]
+ },
+ {
+  "name": "jira-task-writer",
+  "slug": "jira-task-writer",
+  "cat": "06-ux-urun",
+  "hash": "",
+  "variant": 0,
+  "srcs": [
+   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer"
+  ],
+  "kinds": [
+   "github"
+  ],
+  "bytes": 0,
+  "lib": "~/skills/kutuphane/06-ux-urun/jira-task-writer",
+  "linked": [],
+  "mirrored": [
+   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer"
+  ]
+ },
+ {
+  "name": "post-forge",
+  "slug": "post-forge",
+  "cat": "09-cad-gorsel",
+  "hash": "",
+  "variant": 0,
+  "srcs": [
+   "github:farukciftler/pipsworn → .claude/skills/post-forge"
+  ],
+  "kinds": [
+   "github"
+  ],
+  "bytes": 0,
+  "lib": "~/skills/kutuphane/09-cad-gorsel/post-forge",
+  "linked": [],
+  "mirrored": [
+   "github:farukciftler/pipsworn → .claude/skills/post-forge"
+  ]
  }
 ]

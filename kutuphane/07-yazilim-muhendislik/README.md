@@ -2,7 +2,16 @@
 
 Framework ve altyapı referansları, kod grafiği araçları, çoklu bulut ve sunucu operasyonu.
 
-20 skill. Üst dizin: [../../README.md](../../README.md)
+21 skill. Üst dizin: [../../README.md](../../README.md)
+
+## `apple-platform-architect`
+
+[SKILL.md](apple-platform-architect/SKILL.md)
+
+Staff-level Apple platform engineering judgement for iOS, iPadOS, macOS, watchOS, tvOS and visionOS — choosing an app architecture, picking the right framework, designing on-device AI with Foundation Models / Core AI / MLX, building games, sizing work against real device hardware, and getting a build through App Review. Use whenever work touches Swift, SwiftUI, UIKit, SwiftData, concurrency, App Intents, Metal, RealityKit, SpriteKit, ARKit, WidgetKit, StoreKit, Xcode or App Store Connect. Trigger on Turkish phrasings — "iOS uygulaması yapacağım", "hangi mimariyi kullanayım", "SwiftData mı Core Data mı", "on-device model çalışır mı", "hangi cihazda döner", "oyun için ne kullanmalıyım", "Metal mi RealityKit mi", "App Store reddetti", "iOS 27'de ne değişti", "concurrency hatası alıyorum". Use it even when no framework is named — if the question is what to build an Apple-platform feature WITH, or whether the hardware can carry it, this applies. Verifies against live Apple sources instead of trusting stale memory.
+
+- **Ölçü:** 8.818 bayt · 7 ek dosya · referans dosyaları var
+- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/apple-platform-architect
 
 ## `docker-compose-orchestration`
 

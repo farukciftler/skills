@@ -1,0 +1,141 @@
+/* canvas.css — base stylesheet for every post-forge deliverable.
+   Override the :root block from tokens.json. Never hardcode a hex in markup. */
+
+:root{
+  /* --- tokens (override these) --- */
+  --ink:        #0B0F14;
+  --surface:    #FFFFFF;
+  --surfaceAlt: #F4F6F8;
+  --accent:     #2F6BFF;
+  --accentAlt:  #00C2A8;
+  --muted:      #6B7683;
+
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-text:    "Inter", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --gutter: 72px;
+  --unit: 8px;
+  --r-sm: 8px;
+  --r-md: 16px;
+  --r-lg: 28px;
+
+  --grain: .04;
+}
+
+*, *::before, *::after{ box-sizing: border-box; }
+html, body{ margin:0; padding:0; background:#1a1a1a; }
+body{ display:flex; flex-direction:column; align-items:center; gap:48px; padding:48px 0;
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+img{ display:block; max-width:100%; }
+
+/* ---------- the canvas ---------- */
+.slide{
+  --w: 1080px; --h: 1350px;
+  position: relative;
+  width: var(--w); height: var(--h);
+  flex: 0 0 auto;
+  overflow: hidden;                 /* clips bleeds, not layout mistakes */
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-text);
+  isolation: isolate;
+}
+.slide.dark{ background: var(--ink); color: var(--surface); }
+.slide.alt{ background: var(--surfaceAlt); }
+
+/* padded content layer on a 12-col grid */
+.pad{
+  position:absolute; inset:0; padding: var(--gutter);
+  display:grid; grid-template-columns: repeat(12, 1fr); gap: 24px;
+  align-content: start;
+}
+.pad.between{ align-content: space-between; }
+.col-full{ grid-column: 1 / -1; }
+.col-7{ grid-column: 1 / 8; }
+.col-5{ grid-column: 8 / -1; }
+.col-6{ grid-column: 1 / 7; }
+
+/* ---------- type ---------- */
+.display{
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 132px;
+  line-height: .96;
+  letter-spacing: -.03em;
+  margin: 0;
+  text-wrap: balance;
+}
+.display.xl{ font-size: 184px; }
+.display.sm{ font-size: 92px; }
+
+.metric{
+  font-family: var(--font-display);
+  font-weight: 700; font-size: 260px; line-height: .84;
+  letter-spacing: -.045em;
+  font-variant-numeric: tabular-nums;
+  margin: 0;
+}
+.metric .unit{ font-size: .42em; color: var(--accent); letter-spacing: -.02em; }
+
+.eyebrow{
+  font-family: var(--font-mono);
+  font-size: 24px; font-weight: 500;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--muted);
+}
+.slide.dark .eyebrow{ color: rgba(255,255,255,.62); }
+
+.body{ font-size: 34px; line-height: 1.42; margin:0; max-width: 22ch; }
+.body.wide{ max-width: 34ch; }
+.label{ font-family: var(--font-mono); font-size: 23px; letter-spacing:.02em; color: var(--muted); }
+.handle{ font-family: var(--font-mono); font-size: 24px; color: var(--muted); }
+
+.accent{ color: var(--accent); }
+.tabular{ font-variant-numeric: tabular-nums; }
+.rule{ height: 8px; width: 120px; background: var(--accent); border-radius: 999px; }
+.hair{ height: 1px; width: 100%; background: currentColor; opacity: .16; }
+
+/* ---------- surfaces ---------- */
+.card{
+  background: var(--surface); color: var(--ink);
+  border-radius: var(--r-lg); padding: 36px 40px;
+  box-shadow: 0 2px 6px rgba(11,15,20,.06), 0 40px 64px -26px rgba(11,15,20,.28);
+}
+.chip{
+  display:inline-flex; align-items:center; gap:10px;
+  font-family: var(--font-mono); font-size:22px;
+  padding: 10px 18px; border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  color: var(--accent);
+}
+
+/* ---------- texture & atmosphere ---------- */
+.grain{
+  position:absolute; inset:0; z-index:5; pointer-events:none;
+  opacity: var(--grain); mix-blend-mode: multiply;
+  filter: url(#grain);
+}
+.slide.dark .grain{ mix-blend-mode: screen; opacity: calc(var(--grain) * 1.4); }
+
+.glow{
+  position:absolute; z-index:0; pointer-events:none;
+  width: 900px; height: 900px; border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent) 45%, transparent), transparent 68%);
+  filter: blur(20px);
+}
+
+/* bleed helper: place a shape partially off-canvas on purpose */
+.bleed-r{ position:absolute; right: calc(var(--off, 120px) * -1); }
+.bleed-b{ position:absolute; bottom: calc(var(--off, 120px) * -1); }
+
+/* continuity slot for carousels */
+.slot{
+  position:absolute; left: var(--gutter); right: var(--gutter); bottom: var(--gutter);
+  display:flex; align-items:center; justify-content:space-between;
+}
+.progress{ position:absolute; left:0; right:0; bottom:0; height:6px; background: color-mix(in srgb, currentColor 14%, transparent); }
+.progress > i{ display:block; height:100%; background: var(--accent); }
+
+/* screen preview only — never affects the render */
+@media screen{ .slide{ box-shadow: 0 24px 60px rgba(0,0,0,.5); } }
