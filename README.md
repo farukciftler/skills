@@ -20,6 +20,7 @@ ve claude.ai'da dağınık duran **113 benzersiz skill** burada kategorize edilm
 | Bir skill'i isimden aramak | **[INDEX.md](INDEX.md)** — 131 girdilik alfabetik tablo |
 | Claude'un buradan nasıl çalışacağı | **[CLAUDE.md](CLAUDE.md)** |
 | Ne taşındı, ne taşınmadı, nasıl geri alınır | **[TASIMA.md](TASIMA.md)** |
+| Başka bir bilgisayarda kurmak | **[KURULUM.md](KURULUM.md)** |
 | Makine okunur envanter | `katalog/skills.json` · `katalog/skills.csv` |
 
 ## Kategoriler
