@@ -2,7 +2,7 @@
 
 Masif kayın oyuncak işinin uçtan uca zinciri: tasarım → üretim → kalite → mevzuat → pazar.
 
-17 skill. Üst dizin: [../../README.md](../../README.md)
+19 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `masifico-ahsap-kultur`
 
@@ -20,7 +20,7 @@ Masifico'nun ahşap kültürü ve malzeme bilgisi danışmanı. Dünya ahşap oy
 Masifico'nun farklılaşma stratejisti — her SKU ve kanal için savunulabilir, kanıtlanabilir ve para eden fark üretir; fark iddialarını kopyalanabilirlik/algılanabilirlik/ödeme istekliliği filtresinden geçirir; rakip teardown protokolü uygular; sonucu ≤15 kelimelik Fark Cümlesi + kanıt varlık planı + 4 kanala (Trendyol, Instagram, kreş, Etsy EN) çevrilmiş mesaj mimarisi olarak verir. Kullanıcı "farkımız ne", "neden bizden alsınlar", "nasıl farklılaşırım", "USP", "rakipten farkı ne", "aynısını herkes yapıyor", "konumlandırma", "öne çıkar", "rakip analizi", "bu ürünle nasıl yarışırım", "listing metni", "ürün açıklaması", "reklam metni", "kreş sunumu" dediğinde; yeni SKU tasarlanırken ürün farkı konuşulduğunda; pazar radarı "farklılaşma zayıf" verdiğinde; bir rakip ürün linki/görseli paylaşıldığında; fiyat itirazı ("pahalı bulundu") geldiğinde; veya herhangi bir satış metni yazılırken bu skill'i kullan. "Fark" kelimesi geçmese bile "bunu niye bizden alsınlar" sorusu havada asılıysa devreye gir. Jenerik iddia üretmez — kanıtsız fark yazmaz.
 
 - **Ölçü:** 8.631 bayt · 0 ek dosya
-- **Kaynak:** ~/projects/masifico/skills/masifico-farklilasma
+- **Kaynak:** ~/projects/masifico/skills/masifico-farklilasma, ~/Documents/GitHub/masifico/skills/masifico-farklilasma
 
 ## `masifico-farklilasma--cloud`
 
@@ -56,7 +56,7 @@ Masifico'nun maliyet ve fiyatlandırma motoru — SKU bazında birim maliyet hes
 Masifico'nun maliyet ve fiyatlandırma motoru — SKU bazında birim maliyet (malzeme+fire, fason CNC/torna, boya, ambalaj, zayiat, test amortismanı, mesai gölge maliyeti), dört kanalın (kreş toptan, kendi kanal, Trendyol, Etsy) güncel kesinti/komisyon/kargo/vade hesabı, mikro ihracat (ETGB + KDV iadesi) etkisi, başabaş analizi, vergi-şirket yapısı maliyetleri (Bağ-Kur, muhasebe, genç girişimci, esnaf muafiyeti) ve fiyat önerisi. Kullanıcı "kaça mal olur", "ne kadara satayım", "marjım ne", "kâr eder miyim", "toptan fiyat", "Etsy fiyatı", "komisyon", "kargo maliyeti", "başabaş", "zarar mı ederim", "fiyat zammı", "maliyet çıkar", "vergi", "Bağ-Kur", "stopaj", "KDV", "hakediş", "vade", "nakit akışı" dediğinde; yeni SKU'nun fiyatı konuşulduğunda; kanal karşılaştırması yapıldığında; kampanya/indirim planlanırken; veya bir üretim/tasarım kararının para etkisi sorulduğunda bu skill'i kullan. Fiyat/maliyet rakamı geçen her hesapta devreye gir — kullanıcı "hesapla" demese bile. Tüm hesaplar TL (Etsy USD); her sonuç kalem kalem şeffaf, oranlar tarihli, önemli kararda canlı doğrulanır.
 
 - **Ölçü:** 8.751 bayt · 0 ek dosya
-- **Kaynak:** ~/projects/masifico/skills/masifico-maliyet-fiyat
+- **Kaynak:** ~/projects/masifico/skills/masifico-maliyet-fiyat, ~/Documents/GitHub/masifico/skills/masifico-maliyet-fiyat
 
 ## `masifico-parti-uretim`
 
@@ -103,6 +103,15 @@ Masifico'nun üretim mühendisi — bir oyuncak tasarımını MacBook terminalin
 - **Ölçü:** 11.139 bayt · 2 ek dosya · script içerir · referans dosyaları var
 - **Kaynak:** ~/projects/masifico/skills/masifico-uretim-muhendisi
 
+## `masifico-uretim-muhendisi--masifico-gh`
+
+[SKILL.md](masifico-uretim-muhendisi--masifico-gh/SKILL.md)
+
+Masifico'nun üretim mühendisi — bir oyuncak tasarımını MacBook terminalinden uçtan uca üretime çevirir; parametrik 3D CAD (build123d: STEP/STL/3MF), ölçülendirilmiş profesyonel teknik çizim (ezdxf: DXF+PDF/PNG/SVG), fason zinciri için CNC DXF + toleranslı torna kartı + lazer SVG, 3D baskı prototipleme (PrusaSlicer/OrcaSlicer CLI ile dilimleme, süre/filament tahmini), f3d ile foto-kalite render/önizleme, nesting yerleşimi, BOM, montaj talimatı ve sürümleme üretir; masif kayın DFM kuralları (lif yönü, min et kalınlığı, iç köşe radyüsü, geçme toleransları, nem hareketi) ve EN 71 boyut sınırları çizime gömülüdür. Kullanıcı "DXF", "çizim", "teknik çizim", "üretim dosyası", "3D model", "STL", "STEP", "3D baskı", "prototip bas", "dilimle", "G-code", "render", "önizleme", "ölçü", "ölçülendir", "tolerans", "geçme payı", "BOM", "parça listesi", "torna kartı", "lazer dosyası", "nesting/yerleşim", "ustaya gönderilecek dosya" dediğinde; bir prototip/SKU üretime hazırlanırken; ölçü/malzeme revizyonu konuşulurken; "bunu nasıl kestiririm/bastırırım" sorusu geçtiğinde; veya tasarımın fiziksel doğrulaması gerektiğinde bu skill'i kullan. Çizimden önce ölçüleri netleştirir, üretimden sonra usta-gözü kontrol listesini uygular, her pakete görsel önizleme ekler.
+
+- **Ölçü:** 9.744 bayt · 2 ek dosya · script içerir · referans dosyaları var
+- **Kaynak:** ~/Documents/GitHub/masifico/skills/masifico-uretim-muhendisi
+
 ## `masifico-urun-gorsel`
 
 [SKILL.md](masifico-urun-gorsel/SKILL.md)
@@ -139,6 +148,15 @@ Masifico için oyuncak güvenliği ve mevzuat denetçisi — EN 71-1/2/3 tasarı
 - **Ölçü:** 20.398 bayt · 0 ek dosya
 - **Kaynak:** ~/projects/masifico/skills/oyuncak-mevzuat
 
+## `oyuncak-mevzuat--masifico-gh`
+
+[SKILL.md](oyuncak-mevzuat--masifico-gh/SKILL.md)
+
+Masifico için oyuncak güvenliği ve mevzuat denetçisi — EN 71-1/2/3 tasarım kontrolleri (küçük parça silindiri, 90 N/50 N çekme, 0,34 Nm tork, sıkışma aralıkları, düşürme, kordon), yaş sınıflandırma karar ağacı, CE/Modül A yolu, etiket zorunlulukları, teknik dosya iskeleti, AB GPSR uyumu (Sorumlu Kişi + Etsy listing alanları), yeni AB Oyuncak Tüzüğü (2025/2509) takvimi, ABD (CPSIA/ASTM F963) blokla-ya-da-uy kararı ve TR lab/test süreci planlaması. Her yeni ürün fikri, prototip, tasarım değişikliği veya SKU kararı konuşulurken bu skill'i PROAKTİF kullan — kullanıcı güvenlik sormasa bile "bu tasarım EN 71'den geçer mi" denetimini uygula. Ayrıca "CE", "EN 71", "test", "lab", "numune", "sertifika", "rapor", "yaş sınırı", "küçük parça", "etiket", "teknik dosya", "uygunluk beyanı", "yasal mı", "kreşe satabilir miyim", "0-3 yaş", "GPSR", "sorumlu kişi", "Avrupa'ya/Amerika'ya satış", "Etsy'de satmak yasal mı", "gümrük/ihracat kuralı" geçtiğinde; pim/eklem/çıkıntı/kordon/halka/mıknatıs/top gibi riskli tasarım öğeleri anıldığında; Etsy/site listing'i hazırlanırken; veya lab/test bütçesi planlanırken devreye gir. Nihai hüküm vermez — tasarım aşaması ön elemedir, kanıt akredite lab raporudur.
+
+- **Ölçü:** 13.680 bayt · 0 ek dosya
+- **Kaynak:** ~/Documents/GitHub/masifico/skills/oyuncak-mevzuat
+
 ## `oyuncak-pazar-radari`
 
 [SKILL.md](oyuncak-pazar-radari/SKILL.md)
@@ -146,7 +164,7 @@ Masifico için oyuncak güvenliği ve mevzuat denetçisi — EN 71-1/2/3 tasarı
 Masifico için oyuncak/SKU düzeyinde pazar araştırması uzmanı — Trendyol, Hepsiburada, Etsy ve Google Trends sinyallerinden talep ölçümü (yorum hızı, "son 3 günde satıldı" etiketi, stok-delta takibi), rekabet yoğunluğu ve masif/MDF ayrıştırması, fiyat bandı çıkarımı, pazar açığı tespiti, ihracat (Etsy) sinyali ve B2B/kamu (EKAP, Yuvamız İstanbul, doğrudan temin) radarı; sonucu 0-20 Fırsat Skoru ve üret/revize/vazgeç kararıyla raporlar. Kullanıcı "pazar araştırması", "talep var mı", "bu ürün satar mı", "satıyor mu", "rekabet nasıl", "pazar açığı/fırsat", "hangi SKU'yu üreteyim", "fiyatı ne olmalı", "rakipler ne yapıyor", "Etsy'de gider mi", "ihale", "kreş alımı", "trend ne", "hangi kategori" dediğinde; yeni bir oyuncak fikri/SKU adayı atıldığında; rakip ürün linki paylaşılıp görüş istendiğinde; sezon/kampanya planı yapılırken; veya seri üretim öncesi ürün seçimi konuşulduğunda bu skill'i kullan. "Araştır" kelimesi geçmese bile bir ürünün pazarına dair karar veriliyorsa devreye gir. Her analiz canlı web aramasıyla yapılır; ezbere pazar verisi asla kullanılmaz.
 
 - **Ölçü:** 10.143 bayt · 0 ek dosya
-- **Kaynak:** ~/projects/masifico/skills/oyuncak-pazar-radari
+- **Kaynak:** ~/projects/masifico/skills/oyuncak-pazar-radari, ~/Documents/GitHub/masifico/skills/oyuncak-pazar-radari
 
 ## `oyuncak-pazar-radari--cloud`
 

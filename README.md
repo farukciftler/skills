@@ -1,23 +1,23 @@
 # Skill Kütüphanesi
 
 Faruk'un tüm Claude skill'lerinin tek merkezi. Projelerde, `~/.claude/skills`
-altında, claude.ai'da ve GitHub depolarında dağınık duran **119 benzersiz skill**
+altında, claude.ai'da ve GitHub depolarında dağınık duran **127 benzersiz skill**
 burada kategorize edilmiş, ölçülmüş ve dokümante edilmiş halde duruyor.
 
 | | |
 |---|---|
-| **Kütüphane girdisi** | 137 (119 benzersiz ad + 18 ayrışmış sürüm) |
+| **Kütüphane girdisi** | 153 (127 benzersiz ad + 26 ayrışmış sürüm) |
 | **Kategori** | 14 |
-| **Toplam SKILL.md** | ~1,7 MB · 654 ek dosya |
-| **Script içeren** | 40 skill |
-| **Referans dosyası olan** | 68 skill |
-| **Kaynak dağılımı** | 54 kurulu · 48 claude.ai · 45 proje-içi · 6 yalnız GitHub |
+| **Toplam SKILL.md** | ~1,8 MB · 731 ek dosya |
+| **Script içeren** | 46 skill |
+| **Referans dosyası olan** | 80 skill |
+| **Kaynak dağılımı** | 67 kurulu · 53 proje-içi · 49 claude.ai · 6 yalnız GitHub |
 
 ## Nereden başlamalı
 
 | İhtiyaç | Dosya |
 |---|---|
-| Bir skill'i isimden aramak | **[INDEX.md](INDEX.md)** — 137 girdilik alfabetik tablo |
+| Bir skill'i isimden aramak | **[INDEX.md](INDEX.md)** — 153 girdilik alfabetik tablo |
 | Claude'un buradan nasıl çalışacağı | **[CLAUDE.md](CLAUDE.md)** |
 | Ne taşındı, ne taşınmadı, nasıl geri alınır | **[TASIMA.md](TASIMA.md)** |
 | Başka bir bilgisayarda kurmak | **[KURULUM.md](KURULUM.md)** |

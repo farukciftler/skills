@@ -11,7 +11,7 @@ Framework ve altyapı referansları, kod grafiği araçları, çoklu bulut ve su
 Staff-level Apple platform engineering judgement for iOS, iPadOS, macOS, watchOS, tvOS and visionOS — choosing an app architecture, picking the right framework, designing on-device AI with Foundation Models / Core AI / MLX, building games, sizing work against real device hardware, and getting a build through App Review. Use whenever work touches Swift, SwiftUI, UIKit, SwiftData, concurrency, App Intents, Metal, RealityKit, SpriteKit, ARKit, WidgetKit, StoreKit, Xcode or App Store Connect. Trigger on Turkish phrasings — "iOS uygulaması yapacağım", "hangi mimariyi kullanayım", "SwiftData mı Core Data mı", "on-device model çalışır mı", "hangi cihazda döner", "oyun için ne kullanmalıyım", "Metal mi RealityKit mi", "App Store reddetti", "iOS 27'de ne değişti", "concurrency hatası alıyorum". Use it even when no framework is named — if the question is what to build an Apple-platform feature WITH, or whether the hardware can carry it, this applies. Verifies against live Apple sources instead of trusting stale memory.
 
 - **Ölçü:** 8.818 bayt · 7 ek dosya · referans dosyaları var
-- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/apple-platform-architect
+- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/apple-platform-architect, ~/Documents/GitHub/pipsworn/.claude/skills/apple-platform-architect
 
 ## `docker-compose-orchestration`
 
@@ -20,7 +20,7 @@ Staff-level Apple platform engineering judgement for iOS, iPadOS, macOS, watchOS
 Container orchestration with Docker Compose for multi-container applications, networking, volumes, and production deployment
 
 - **Ölçü:** 47.466 bayt · 3 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/docker-compose-orchestration, ~/projects/mcailabs-v4.0/.claude/skills/docker-compose-orchestration
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/docker-compose-orchestration, ~/projects/mcailabs-v4.0/.claude/skills/docker-compose-orchestration, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/docker-compose-orchestration, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/docker-compose-orchestration
 
 ## `fastapi-microservices-development`
 
@@ -29,7 +29,7 @@ Container orchestration with Docker Compose for multi-container applications, ne
 Comprehensive guide for building production-ready microservices with FastAPI including REST API patterns, async operations, dependency injection, and deployment strategies
 
 - **Ölçü:** 34.502 bayt · 2 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/fastapi-microservices-development, ~/projects/mcailabs-v4.0/.claude/skills/fastapi-microservices-development
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/fastapi-microservices-development, ~/projects/mcailabs-v4.0/.claude/skills/fastapi-microservices-development, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/fastapi-microservices-development, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/fastapi-microservices-development
 
 ## `gitnexus-cli`
 
@@ -38,7 +38,7 @@ Comprehensive guide for building production-ready microservices with FastAPI inc
 Use when the user needs to run GitNexus CLI commands like analyze/index a repo, check status, clean the index, generate a wiki, or list indexed repos. Examples: \"Index this repo\", \"Reanalyze the codebase\", \"Generate a wiki\
 
 - **Ölçü:** 3.433 bayt · 0 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli
+- **Kaynak:** ~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli
 
 ## `gitnexus-cli--mcailabs-v4-0`
 
@@ -47,7 +47,7 @@ Use when the user needs to run GitNexus CLI commands like analyze/index a repo, 
 Use when the user needs to run GitNexus CLI commands like analyze/index a repo, check status, clean the index, generate a wiki, or list indexed repos. Examples: \"Index this repo\", \"Reanalyze the codebase\", \"Generate a wiki\
 
 - **Ölçü:** 3.280 bayt · 0 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli
 
 ## `gitnexus-debugging`
 
@@ -56,7 +56,7 @@ Use when the user needs to run GitNexus CLI commands like analyze/index a repo, 
 Use when the user is debugging a bug, tracing an error, or asking why something fails. Examples: \"Why is X failing?\", \"Where does this error come from?\", \"Trace this bug\
 
 - **Ölçü:** 3.120 bayt · 0 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-debugging, ~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-debugging, ~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-debugging, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging
 
 ## `gitnexus-exploring`
 
@@ -65,7 +65,7 @@ Use when the user is debugging a bug, tracing an error, or asking why something 
 Use when the user asks how code works, wants to understand architecture, trace execution flows, or explore unfamiliar parts of the codebase. Examples: \"How does X work?\", \"What calls this function?\", \"Show me the auth flow\
 
 - **Ölçü:** 2.993 bayt · 0 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-exploring, ~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-exploring, ~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-exploring, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring
 
 ## `gitnexus-guide`
 
@@ -74,7 +74,7 @@ Use when the user asks how code works, wants to understand architecture, trace e
 Use when the user asks about GitNexus itself — available tools, how to query the knowledge graph, MCP resources, graph schema, or workflow reference. Examples: \"What GitNexus tools are available?\", \"How do I use GitNexus?\
 
 - **Ölçü:** 3.468 bayt · 0 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-guide, ~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-guide, ~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-guide, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide
 
 ## `gitnexus-impact-analysis`
 
@@ -83,7 +83,7 @@ Use when the user asks about GitNexus itself — available tools, how to query t
 Use when the user wants to know what will break if they change something, or needs safety analysis before editing code. Examples: \"Is it safe to change X?\", \"What depends on this?\", \"What will break?\
 
 - **Ölçü:** 2.889 bayt · 0 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-impact-analysis, ~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-impact-analysis, ~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-impact-analysis, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis
 
 ## `gitnexus-refactoring`
 
@@ -92,7 +92,7 @@ Use when the user wants to know what will break if they change something, or nee
 Use when the user wants to rename, extract, split, move, or restructure code safely. Examples: \"Rename this function\", \"Extract this into a module\", \"Refactor this class\", \"Move this to a separate file\
 
 - **Ölçü:** 4.039 bayt · 0 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-refactoring, ~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-refactoring, ~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-refactoring, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring
 
 ## `hyperscaler-expert`
 
@@ -110,7 +110,7 @@ Staff/principal-level multi-cloud (AWS, Microsoft Azure, Google Cloud) expert �
 Comprehensive Next.js development skill covering App Router, Server Components, data fetching, routing patterns, API routes, middleware, and full-stack Next.js applications
 
 - **Ölçü:** 34.861 bayt · 2 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/nextjs-development, ~/projects/mcailabs-v4.0/.claude/skills/nextjs-development
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/nextjs-development, ~/projects/mcailabs-v4.0/.claude/skills/nextjs-development, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/nextjs-development, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/nextjs-development
 
 ## `oauth2-authentication`
 
@@ -119,7 +119,7 @@ Comprehensive Next.js development skill covering App Router, Server Components, 
 Comprehensive OAuth2 authentication skill covering authorization flows, token management, PKCE, OpenID Connect, and security best practices for modern authentication systems
 
 - **Ölçü:** 69.491 bayt · 1 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/oauth2-authentication, ~/projects/mcailabs-v4.0/.claude/skills/oauth2-authentication
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/oauth2-authentication, ~/projects/mcailabs-v4.0/.claude/skills/oauth2-authentication, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/oauth2-authentication, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/oauth2-authentication
 
 ## `postgresql`
 
@@ -128,7 +128,7 @@ Comprehensive OAuth2 authentication skill covering authorization flows, token ma
 Comprehensive PostgreSQL database administration skill for customer support tech enablement, covering database design, optimization, performance tuning, backup/recovery, and advanced query techniques
 
 - **Ölçü:** 34.955 bayt · 1 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.claude/skills/postgresql
+- **Kaynak:** ~/projects/mcailabs-v4.0/.claude/skills/postgresql, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/postgresql
 
 ## `postgresql--mcailabs-v4-0`
 
@@ -137,7 +137,7 @@ Comprehensive PostgreSQL database administration skill for customer support tech
 Comprehensive PostgreSQL database administration skill for customer support tech enablement, covering database design, optimization, performance tuning, backup/recovery, and advanced query techniques
 
 - **Ölçü:** 34.954 bayt · 1 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/postgresql
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/postgresql, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/postgresql
 
 ## `pydantic`
 
@@ -146,7 +146,7 @@ Comprehensive PostgreSQL database administration skill for customer support tech
 Comprehensive Pydantic data validation skill for customer support tech enablement - covering BaseModel, Field validation, custom validators, FastAPI integration, BaseSettings, serialization, and Pydantic V2 features
 
 - **Ölçü:** 32.906 bayt · 2 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/pydantic, ~/projects/mcailabs-v4.0/.claude/skills/pydantic
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/pydantic, ~/projects/mcailabs-v4.0/.claude/skills/pydantic, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/pydantic, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/pydantic
 
 ## `pytest`
 
@@ -155,7 +155,7 @@ Comprehensive Pydantic data validation skill for customer support tech enablemen
 Advanced Python unit testing framework for customer support tech enablement, covering FastAPI, SQLAlchemy, PostgreSQL, async operations, mocking, fixtures, parametrization, coverage, and comprehensive testing strategies for backend support systems
 
 - **Ölçü:** 65.786 bayt · 2 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.claude/skills/pytest
+- **Kaynak:** ~/projects/mcailabs-v4.0/.claude/skills/pytest, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/pytest
 
 ## `pytest--mcailabs-v4-0`
 
@@ -164,7 +164,7 @@ Advanced Python unit testing framework for customer support tech enablement, cov
 Advanced Python unit testing framework for customer support tech enablement, covering FastAPI, SQLAlchemy, PostgreSQL, async operations, mocking, fixtures, parametrization, coverage, and comprehensive testing strategies for backend support systems
 
 - **Ölçü:** 65.785 bayt · 2 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/pytest
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/pytest, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/pytest
 
 ## `react-patterns`
 
@@ -173,7 +173,7 @@ Advanced Python unit testing framework for customer support tech enablement, cov
 Modern React development with hooks, component patterns, state management, and performance optimization for building scalable applications
 
 - **Ölçü:** 37.724 bayt · 2 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/react-patterns, ~/projects/mcailabs-v4.0/.claude/skills/react-patterns
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/react-patterns, ~/projects/mcailabs-v4.0/.claude/skills/react-patterns, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/react-patterns, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/react-patterns
 
 ## `serverim-build`
 
@@ -191,5 +191,5 @@ Drive headless Claude Code runs on Faruk's Linux server through the Serverim MCP
 Utility-first CSS framework for rapid UI development with responsive design, component patterns, and production optimization. Master core utilities, dark mode, customization, and modern component composition for building beautiful, performant user interfaces.
 
 - **Ölçü:** 31.218 bayt · 2 ek dosya
-- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/tailwind-css, ~/projects/mcailabs-v4.0/.claude/skills/tailwind-css
+- **Kaynak:** ~/projects/mcailabs-v4.0/.agents/skills/tailwind-css, ~/projects/mcailabs-v4.0/.claude/skills/tailwind-css, ~/Documents/GitHub/mcailabs-v4.0/.agents/skills/tailwind-css, ~/Documents/GitHub/mcailabs-v4.0/.claude/skills/tailwind-css
 

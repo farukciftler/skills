@@ -2,7 +2,7 @@
 
 Skill yazımı ve değerlendirmesi, hafıza, zamanlama, kurulum, oturum araçları.
 
-8 skill. Üst dizin: [../../README.md](../../README.md)
+9 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `consolidate-memory`
 
@@ -65,6 +65,15 @@ Create or update a scheduled task that runs automatically. Use when the user say
 Guided setup — install role-matched plugins, connect your tools, try a skill.
 
 - **Ölçü:** 11.901 bayt · 0 ek dosya
+- **Kaynak:** claude.ai senkronu (efemer önbellek)
+
+## `setup-cowork--cloud`
+
+[SKILL.md](setup-cowork--cloud/SKILL.md)
+
+Guided Cowork setup — install a matching plugin, try a skill, connect tools.
+
+- **Ölçü:** 3.005 bayt · 0 ek dosya
 - **Kaynak:** claude.ai senkronu (efemer önbellek)
 
 ## `skill-creator`

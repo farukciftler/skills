@@ -368,14 +368,16 @@
   "referans_var": false,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/masifico/skills/masifico-farklilasma"
+   "~/projects/masifico/skills/masifico-farklilasma",
+   "~/Documents/GitHub/masifico/skills/masifico-farklilasma"
   ],
   "kaynak_tipleri": [
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
-   "~/projects/masifico/skills/masifico-farklilasma"
+   "~/projects/masifico/skills/masifico-farklilasma",
+   "~/Documents/GitHub/masifico/skills/masifico-farklilasma"
   ]
  },
  {
@@ -468,14 +470,16 @@
   "referans_var": false,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/masifico/skills/masifico-maliyet-fiyat"
+   "~/projects/masifico/skills/masifico-maliyet-fiyat",
+   "~/Documents/GitHub/masifico/skills/masifico-maliyet-fiyat"
   ],
   "kaynak_tipleri": [
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
-   "~/projects/masifico/skills/masifico-maliyet-fiyat"
+   "~/projects/masifico/skills/masifico-maliyet-fiyat",
+   "~/Documents/GitHub/masifico/skills/masifico-maliyet-fiyat"
   ]
  },
  {
@@ -604,6 +608,31 @@
   ]
  },
  {
+  "ad": "masifico-uretim-muhendisi",
+  "slug": "masifico-uretim-muhendisi--masifico-gh",
+  "kategori": "02-masifico-ahsap-oyuncak",
+  "kategori_adi": "Masifico — Ahşap Oyuncak",
+  "aciklama": "Masifico'nun üretim mühendisi — bir oyuncak tasarımını MacBook terminalinden uçtan uca üretime çevirir; parametrik 3D CAD (build123d: STEP/STL/3MF), ölçülendirilmiş profesyonel teknik çizim (ezdxf: DXF+PDF/PNG/SVG), fason zinciri için CNC DXF + toleranslı torna kartı + lazer SVG, 3D baskı prototipleme (PrusaSlicer/OrcaSlicer CLI ile dilimleme, süre/filament tahmini), f3d ile foto-kalite render/önizleme, nesting yerleşimi, BOM, montaj talimatı ve sürümleme üretir; masif kayın DFM kuralları (lif yönü, min et kalınlığı, iç köşe radyüsü, geçme toleransları, nem hareketi) ve EN 71 boyut sınırları çizime gömülüdür. Kullanıcı \"DXF\", \"çizim\", \"teknik çizim\", \"üretim dosyası\", \"3D model\", \"STL\", \"STEP\", \"3D baskı\", \"prototip bas\", \"dilimle\", \"G-code\", \"render\", \"önizleme\", \"ölçü\", \"ölçülendir\", \"tolerans\", \"geçme payı\", \"BOM\", \"parça listesi\", \"torna kartı\", \"lazer dosyası\", \"nesting/yerleşim\", \"ustaya gönderilecek dosya\" dediğinde; bir prototip/SKU üretime hazırlanırken; ölçü/malzeme revizyonu konuşulurken; \"bunu nasıl kestiririm/bastırırım\" sorusu geçtiğinde; veya tasarımın fiziksel doğrulaması gerektiğinde bu skill'i kullan. Çizimden önce ölçüleri netleştirir, üretimden sonra usta-gözü kontrol listesini uygular, her pakete görsel önizleme ekler.",
+  "ozet": "Masifico'nun üretim mühendisi — bir oyuncak tasarımını MacBook terminalinden uçtan uca üretime çevirir; parametrik 3D CAD (build123d: STEP/STL/3MF), ölçülendirilmiş…",
+  "yol": "kutuphane/02-masifico-ahsap-oyuncak/masifico-uretim-muhendisi--masifico-gh",
+  "bayt": 9744,
+  "satir": 95,
+  "ek_dosya": 2,
+  "script_var": true,
+  "referans_var": true,
+  "varyant": 1,
+  "kaynaklar": [
+   "~/Documents/GitHub/masifico/skills/masifico-uretim-muhendisi"
+  ],
+  "kaynak_tipleri": [
+   "proje-içi"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "~/Documents/GitHub/masifico/skills/masifico-uretim-muhendisi"
+  ]
+ },
+ {
   "ad": "masifico-urun-gorsel",
   "slug": "masifico-urun-gorsel",
   "kategori": "02-masifico-ahsap-oyuncak",
@@ -704,6 +733,31 @@
   ]
  },
  {
+  "ad": "oyuncak-mevzuat",
+  "slug": "oyuncak-mevzuat--masifico-gh",
+  "kategori": "02-masifico-ahsap-oyuncak",
+  "kategori_adi": "Masifico — Ahşap Oyuncak",
+  "aciklama": "Masifico için oyuncak güvenliği ve mevzuat denetçisi — EN 71-1/2/3 tasarım kontrolleri (küçük parça silindiri, 90 N/50 N çekme, 0,34 Nm tork, sıkışma aralıkları, düşürme, kordon), yaş sınıflandırma karar ağacı, CE/Modül A yolu, etiket zorunlulukları, teknik dosya iskeleti, AB GPSR uyumu (Sorumlu Kişi + Etsy listing alanları), yeni AB Oyuncak Tüzüğü (2025/2509) takvimi, ABD (CPSIA/ASTM F963) blokla-ya-da-uy kararı ve TR lab/test süreci planlaması. Her yeni ürün fikri, prototip, tasarım değişikliği veya SKU kararı konuşulurken bu skill'i PROAKTİF kullan — kullanıcı güvenlik sormasa bile \"bu tasarım EN 71'den geçer mi\" denetimini uygula. Ayrıca \"CE\", \"EN 71\", \"test\", \"lab\", \"numune\", \"sertifika\", \"rapor\", \"yaş sınırı\", \"küçük parça\", \"etiket\", \"teknik dosya\", \"uygunluk beyanı\", \"yasal mı\", \"kreşe satabilir miyim\", \"0-3 yaş\", \"GPSR\", \"sorumlu kişi\", \"Avrupa'ya/Amerika'ya satış\", \"Etsy'de satmak yasal mı\", \"gümrük/ihracat kuralı\" geçtiğinde; pim/eklem/çıkıntı/kordon/halka/mıknatıs/top gibi riskli tasarım öğeleri anıldığında; Etsy/site listing'i hazırlanırken; veya lab/test bütçesi planlanırken devreye gir. Nihai hüküm vermez — tasarım aşaması ön elemedir, kanıt akredite lab raporudur.",
+  "ozet": "Masifico için oyuncak güvenliği ve mevzuat denetçisi — EN 71-1/2/3 tasarım kontrolleri (küçük parça silindiri, 90 N/50 N çekme, 0,34 Nm tork, sıkışma aralıkları…",
+  "yol": "kutuphane/02-masifico-ahsap-oyuncak/oyuncak-mevzuat--masifico-gh",
+  "bayt": 13680,
+  "satir": 132,
+  "ek_dosya": 0,
+  "script_var": false,
+  "referans_var": false,
+  "varyant": 1,
+  "kaynaklar": [
+   "~/Documents/GitHub/masifico/skills/oyuncak-mevzuat"
+  ],
+  "kaynak_tipleri": [
+   "proje-içi"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "~/Documents/GitHub/masifico/skills/oyuncak-mevzuat"
+  ]
+ },
+ {
   "ad": "oyuncak-pazar-radari",
   "slug": "oyuncak-pazar-radari",
   "kategori": "02-masifico-ahsap-oyuncak",
@@ -718,14 +772,16 @@
   "referans_var": false,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/masifico/skills/oyuncak-pazar-radari"
+   "~/projects/masifico/skills/oyuncak-pazar-radari",
+   "~/Documents/GitHub/masifico/skills/oyuncak-pazar-radari"
   ],
   "kaynak_tipleri": [
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
-   "~/projects/masifico/skills/oyuncak-pazar-radari"
+   "~/projects/masifico/skills/oyuncak-pazar-radari",
+   "~/Documents/GitHub/masifico/skills/oyuncak-pazar-radari"
   ]
  },
  {
@@ -770,7 +826,8 @@
   "kaynaklar": [
    "~/Documents/GitHub/weftrecords/.claude/skills/ambient-video-forge",
    "~/projects/reelsindustry/.claude/skills/ambient-video-forge",
-   "~/projects/weftrecords/.claude/skills/ambient-video-forge"
+   "~/projects/weftrecords/.claude/skills/ambient-video-forge",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/ambient-video-forge"
   ],
   "kaynak_tipleri": [
    "kurulu"
@@ -778,7 +835,8 @@
   "baglanacak": [
    "~/Documents/GitHub/weftrecords/.claude/skills/ambient-video-forge",
    "~/projects/reelsindustry/.claude/skills/ambient-video-forge",
-   "~/projects/weftrecords/.claude/skills/ambient-video-forge"
+   "~/projects/weftrecords/.claude/skills/ambient-video-forge",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/ambient-video-forge"
   ],
   "ayna": []
  },
@@ -882,7 +940,8 @@
   "kaynaklar": [
    "~/Documents/GitHub/weftrecords/.claude/skills/healing-audio-youtube-seo",
    "~/projects/reelsindustry/.claude/skills/healing-audio-youtube-seo",
-   "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo"
+   "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/healing-audio-youtube-seo"
   ],
   "kaynak_tipleri": [
    "kurulu"
@@ -890,7 +949,8 @@
   "baglanacak": [
    "~/Documents/GitHub/weftrecords/.claude/skills/healing-audio-youtube-seo",
    "~/projects/reelsindustry/.claude/skills/healing-audio-youtube-seo",
-   "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo"
+   "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/healing-audio-youtube-seo"
   ],
   "ayna": []
  },
@@ -934,14 +994,16 @@
   "referans_var": true,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/instagram-reels/docs/physics-reel-forge"
+   "~/projects/instagram-reels/docs/physics-reel-forge",
+   "~/Documents/GitHub/instagram-reels/docs/physics-reel-forge"
   ],
   "kaynak_tipleri": [
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
-   "~/projects/instagram-reels/docs/physics-reel-forge"
+   "~/projects/instagram-reels/docs/physics-reel-forge",
+   "~/Documents/GitHub/instagram-reels/docs/physics-reel-forge"
   ]
  },
  {
@@ -954,17 +1016,23 @@
   "yol": "kutuphane/03-video-ses-uretim/procedural-game-audio",
   "bayt": 9646,
   "satir": 149,
-  "ek_dosya": 0,
+  "ek_dosya": 1,
   "script_var": false,
-  "referans_var": false,
+  "referans_var": true,
   "varyant": 0,
   "kaynaklar": [
-   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/procedural-game-audio"
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/procedural-game-audio",
+   "~/Documents/GitHub/pipsworn/.claude/skills/procedural-game-audio",
+   "~/Documents/GitHub/dietrying/.claude/skills/procedural-game-audio"
   ],
   "kaynak_tipleri": [
-   "claude.ai"
+   "claude.ai",
+   "kurulu"
   ],
-  "baglanacak": [],
+  "baglanacak": [
+   "~/Documents/GitHub/pipsworn/.claude/skills/procedural-game-audio",
+   "~/Documents/GitHub/dietrying/.claude/skills/procedural-game-audio"
+  ],
   "ayna": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/procedural-game-audio"
   ]
@@ -1037,14 +1105,16 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/reelsindustry/.claude/skills/stock-footage-forge",
-   "~/projects/weftrecords/.claude/skills/stock-footage-forge"
+   "~/projects/weftrecords/.claude/skills/stock-footage-forge",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/stock-footage-forge"
   ],
   "kaynak_tipleri": [
    "kurulu"
   ],
   "baglanacak": [
    "~/projects/reelsindustry/.claude/skills/stock-footage-forge",
-   "~/projects/weftrecords/.claude/skills/stock-footage-forge"
+   "~/projects/weftrecords/.claude/skills/stock-footage-forge",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/stock-footage-forge"
   ],
   "ayna": []
  },
@@ -1091,14 +1161,16 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/reelsindustry/.claude/skills/weft-channel",
-   "~/projects/weftrecords/.claude/skills/weft-channel"
+   "~/projects/weftrecords/.claude/skills/weft-channel",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/weft-channel"
   ],
   "kaynak_tipleri": [
    "kurulu"
   ],
   "baglanacak": [
    "~/projects/reelsindustry/.claude/skills/weft-channel",
-   "~/projects/weftrecords/.claude/skills/weft-channel"
+   "~/projects/weftrecords/.claude/skills/weft-channel",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/weft-channel"
   ],
   "ayna": []
  },
@@ -1296,13 +1368,15 @@
   "referans_var": false,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/reelsindustry/.claude/skills/english-narration"
+   "~/projects/reelsindustry/.claude/skills/english-narration",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/english-narration"
   ],
   "kaynak_tipleri": [
    "kurulu"
   ],
   "baglanacak": [
-   "~/projects/reelsindustry/.claude/skills/english-narration"
+   "~/projects/reelsindustry/.claude/skills/english-narration",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/english-narration"
   ],
   "ayna": []
  },
@@ -1396,13 +1470,15 @@
   "referans_var": true,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/reelsindustry/.claude/skills/insanca"
+   "~/projects/reelsindustry/.claude/skills/insanca",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/insanca"
   ],
   "kaynak_tipleri": [
    "kurulu"
   ],
   "baglanacak": [
-   "~/projects/reelsindustry/.claude/skills/insanca"
+   "~/projects/reelsindustry/.claude/skills/insanca",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/insanca"
   ],
   "ayna": []
  },
@@ -1471,13 +1547,15 @@
   "referans_var": true,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/reelsindustry/.claude/skills/turkce-anlati"
+   "~/projects/reelsindustry/.claude/skills/turkce-anlati",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/turkce-anlati"
   ],
   "kaynak_tipleri": [
    "kurulu"
   ],
   "baglanacak": [
-   "~/projects/reelsindustry/.claude/skills/turkce-anlati"
+   "~/projects/reelsindustry/.claude/skills/turkce-anlati",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/turkce-anlati"
   ],
   "ayna": []
  },
@@ -1521,12 +1599,16 @@
   "referans_var": true,
   "varyant": 0,
   "kaynaklar": [
-   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst"
+   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst",
+   "~/Documents/GitHub/pipsworn/.claude/skills/appstore-market-analyst"
   ],
   "kaynak_tipleri": [
-   "GitHub (yerelde yok)"
+   "GitHub (yerelde yok)",
+   "kurulu"
   ],
-  "baglanacak": [],
+  "baglanacak": [
+   "~/Documents/GitHub/pipsworn/.claude/skills/appstore-market-analyst"
+  ],
   "ayna": [
    "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst"
   ]
@@ -1547,16 +1629,45 @@
   "varyant": 0,
   "kaynaklar": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/aso-expert",
-   "~/projects/startup değerleme/skill/ilgili-skiller/aso-expert"
+   "~/projects/startup değerleme/skill/ilgili-skiller/aso-expert",
+   "~/Documents/GitHub/pipsworn/.claude/skills/aso-expert"
   ],
   "kaynak_tipleri": [
    "claude.ai",
+   "kurulu",
+   "proje-içi"
+  ],
+  "baglanacak": [
+   "~/Documents/GitHub/pipsworn/.claude/skills/aso-expert"
+  ],
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/aso-expert",
+   "~/projects/startup değerleme/skill/ilgili-skiller/aso-expert"
+  ]
+ },
+ {
+  "ad": "aso-optimizer",
+  "slug": "aso-optimizer",
+  "kategori": "05-pazarlama-buyume",
+  "kategori_adi": "Pazarlama & Büyüme",
+  "aciklama": "- Use this skill when auditing, writing, or optimizing mobile application store listings for Apple App Store (App Store Connect) and Google Play Store. Enforces 2026 ASO standards: exact character limits, semantic keyword placement, screenshot OCR text indexing, Custom Product Pages (CPPs), App Events, conversion rate optimization (CRO), and post-install retention signals.",
+  "ozet": "- Use this skill when auditing, writing, or optimizing mobile application store listings for Apple App Store (App Store Connect) and Google Play Store.",
+  "yol": "kutuphane/05-pazarlama-buyume/aso-optimizer",
+  "bayt": 4059,
+  "satir": 75,
+  "ek_dosya": 3,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/.gemini/config/skills/aso-optimizer"
+  ],
+  "kaynak_tipleri": [
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
-   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/aso-expert",
-   "~/projects/startup değerleme/skill/ilgili-skiller/aso-expert"
+   "~/.gemini/config/skills/aso-optimizer"
   ]
  },
  {
@@ -1610,6 +1721,31 @@
   "ayna": []
  },
  {
+  "ad": "reklam-ve-performans",
+  "slug": "reklam-ve-performans",
+  "kategori": "05-pazarlama-buyume",
+  "kategori_adi": "Pazarlama & Büyüme",
+  "aciklama": "Moonstone Residence ve konut/emlak projeleri için performans pazarlama ve reklam danışmanlığı — Google Ads ve Meta (Instagram/Facebook) kampanya kurgusu ve hesap yapısı, bütçe kademelendirme ve kanal seçimi, Türkiye emlak sektörü CPM/CPC/lead maliyeti kıyasları ve huni matematiği, reklam kreatifinin ve görselin yorumlanması/tanısı, ölçüm altyapısı (GA4, dönüşüm izleme, CRM ve offline dönüşüm, KVKK-rıza), Reklam Kurulu ve platform reklam politikaları. Şu ifadeler geçtiğinde mutlaka kullan: \"reklam verelim\", \"bütçe ne olmalı\", \"Google Ads\", \"Meta reklam\", \"Instagram reklamı\", \"kampanya kur\", \"lead maliyeti\", \"CPL\", \"CPM\", \"CPC\", \"ROAS\", \"dönüşüm oranı\", \"hedefleme\", \"kitle\", \"retargeting\", \"remarketing\", \"bu reklam neden çalışmıyor\", \"bu görsel reklamda işe yarar mı\", \"reklam metni yaz\", \"A/B test\", \"piksel kurulumu\", \"lead formu\", \"WhatsApp reklamı\", \"medya planı\", \"ajans teklifi\", \"sahibinden doping\". Bir reklam bütçesi harcanacaksa, bir kampanyanın performansı yorumlanacaksa ya da bir kreatifin reklamda işe yarayıp yaramayacağı sorulacaksa — \"reklam\" kelimesi hiç geçmese bile — devreye gir. Organik sosyal medya içeriği için `moonstone-residence` skill'i, görsel dosyası üretmek için `gorsel-uretim` skill'i.",
+  "ozet": "Moonstone Residence ve konut/emlak projeleri için performans pazarlama ve reklam danışmanlığı — Google Ads ve Meta (Instagram/Facebook) kampanya kurgusu ve hesap…",
+  "yol": "kutuphane/05-pazarlama-buyume/reklam-ve-performans",
+  "bayt": 13331,
+  "satir": 215,
+  "ek_dosya": 8,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/Documents/GitHub/moonstone/.claude/skills/reklam-ve-performans"
+  ],
+  "kaynak_tipleri": [
+   "kurulu"
+  ],
+  "baglanacak": [
+   "~/Documents/GitHub/moonstone/.claude/skills/reklam-ve-performans"
+  ],
+  "ayna": []
+ },
+ {
   "ad": "seo-expert",
   "slug": "seo-expert",
   "kategori": "05-pazarlama-buyume",
@@ -1635,6 +1771,31 @@
   "ayna": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/seo-expert",
    "~/projects/startup değerleme/skill/ilgili-skiller/seo-expert"
+  ]
+ },
+ {
+  "ad": "seo-expert",
+  "slug": "seo-expert--gemini",
+  "kategori": "05-pazarlama-buyume",
+  "kategori_adi": "Pazarlama & Büyüme",
+  "aciklama": "- Use this skill when auditing, designing, or implementing SEO (Search Engine Optimization) for web applications, static websites, dynamic SPAs, or e-commerce sites. Enforces Technical SEO, Core Web Vitals, JSON-LD Schema Markup, OpenGraph metadata, semantic HTML hierarchy, crawlability, and AI/LLM search engine visibility.",
+  "ozet": "- Use this skill when auditing, designing, or implementing SEO (Search Engine Optimization) for web applications, static websites, dynamic SPAs, or e-commerce sites.",
+  "yol": "kutuphane/05-pazarlama-buyume/seo-expert--gemini",
+  "bayt": 3521,
+  "satir": 62,
+  "ek_dosya": 3,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 1,
+  "kaynaklar": [
+   "~/.gemini/config/skills/seo-expert"
+  ],
+  "kaynak_tipleri": [
+   "proje-içi"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "~/.gemini/config/skills/seo-expert"
   ]
  },
  {
@@ -1713,6 +1874,31 @@
   ]
  },
  {
+  "ad": "arayuz-denetimi",
+  "slug": "arayuz-denetimi--kartelapsikoloji-gh",
+  "kategori": "06-ux-urun",
+  "kategori_adi": "UX & Ürün Yönetimi",
+  "aciklama": "Kartela Klinik OS arayüzünü uçtan uca denetler — üç demo rolüyle (danışman, sekreter, yönetici) her rotanın mobil / yatay tablet / masaüstü ekran görüntüsünü alır, kart-liste-tablo düzenlerini, erişilebilirliği, renk kontrastını, dokunma hedeflerini ve kullanıcı akışlarını puanlar, bulguları düzeltilebilir maddelere çevirir. Arayüz denetimi, UI/UX incelemesi, ekran görüntüsü alma, responsive kontrol, erişilebilirlik taraması, akış/user story incelemesi istendiğinde kullan.",
+  "ozet": "Kartela Klinik OS arayüzünü uçtan uca denetler — üç demo rolüyle (danışman, sekreter, yönetici) her rotanın mobil / yatay tablet / masaüstü ekran görüntüsünü alır…",
+  "yol": "kutuphane/06-ux-urun/arayuz-denetimi--kartelapsikoloji-gh",
+  "bayt": 11434,
+  "satir": 237,
+  "ek_dosya": 4,
+  "script_var": true,
+  "referans_var": true,
+  "varyant": 1,
+  "kaynaklar": [
+   "~/Documents/GitHub/kartelapsikoloji/.claude/skills/arayuz-denetimi"
+  ],
+  "kaynak_tipleri": [
+   "kurulu"
+  ],
+  "baglanacak": [
+   "~/Documents/GitHub/kartelapsikoloji/.claude/skills/arayuz-denetimi"
+  ],
+  "ayna": []
+ },
+ {
   "ad": "jira-task-writer",
   "slug": "jira-task-writer",
   "kategori": "06-ux-urun",
@@ -1727,12 +1913,16 @@
   "referans_var": false,
   "varyant": 0,
   "kaynaklar": [
-   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer"
+   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer",
+   "~/Documents/GitHub/pipsworn/.claude/skills/jira-task-writer"
   ],
   "kaynak_tipleri": [
-   "GitHub (yerelde yok)"
+   "GitHub (yerelde yok)",
+   "kurulu"
   ],
-  "baglanacak": [],
+  "baglanacak": [
+   "~/Documents/GitHub/pipsworn/.claude/skills/jira-task-writer"
+  ],
   "ayna": [
    "github:farukciftler/pipsworn → .claude/skills/jira-task-writer"
   ]
@@ -1752,15 +1942,92 @@
   "referans_var": true,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/kartelastrateji/.claude/skills/kartela-web-ux"
+   "~/projects/kartelastrateji/.claude/skills/kartela-web-ux",
+   "~/Documents/GitHub/kartelastrateji/.claude/skills/kartela-web-ux"
   ],
   "kaynak_tipleri": [
    "kurulu"
   ],
   "baglanacak": [
-   "~/projects/kartelastrateji/.claude/skills/kartela-web-ux"
+   "~/projects/kartelastrateji/.claude/skills/kartela-web-ux",
+   "~/Documents/GitHub/kartelastrateji/.claude/skills/kartela-web-ux"
   ],
   "ayna": []
+ },
+ {
+  "ad": "mobile-puzzle-game-ui-designer",
+  "slug": "mobile-puzzle-game-ui-designer",
+  "kategori": "06-ux-urun",
+  "kategori_adi": "UX & Ürün Yönetimi",
+  "aciklama": "- Use this skill when designing, styling, or engineering mobile puzzle game user interfaces (UI), visual design systems, color tokens, typography hierarchies, component libraries (Numpads, Tile Grids, Progress Bars, Toasts), spring physics animations, and 2026 visual aesthetics (Liquid Glass, Bento Grids, Tonal Surface Layers).",
+  "ozet": "- Use this skill when designing, styling, or engineering mobile puzzle game user interfaces (UI), visual design systems, color tokens, typography hierarchies…",
+  "yol": "kutuphane/06-ux-urun/mobile-puzzle-game-ui-designer",
+  "bayt": 6130,
+  "satir": 112,
+  "ek_dosya": 0,
+  "script_var": false,
+  "referans_var": false,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/.gemini/config/skills/mobile-puzzle-game-ui-designer"
+  ],
+  "kaynak_tipleri": [
+   "proje-içi"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "~/.gemini/config/skills/mobile-puzzle-game-ui-designer"
+  ]
+ },
+ {
+  "ad": "mobile-puzzle-game-ux-audit-expert",
+  "slug": "mobile-puzzle-game-ux-audit-expert",
+  "kategori": "06-ux-urun",
+  "kategori_adi": "UX & Ürün Yönetimi",
+  "aciklama": "- Use this skill when auditing, architecting, or designing mobile puzzle game user experiences (UX), mathematical & logic game loops, input/numpad ergonomics, cognitive load management, rewarding micro-interactions, onboarding & difficulty ramp, hint systems, and retention mechanics. Enforces 2026 Mobile Puzzle Game UX standards.",
+  "ozet": "- Use this skill when auditing, architecting, or designing mobile puzzle game user experiences (UX), mathematical & logic game loops, input/numpad ergonomics…",
+  "yol": "kutuphane/06-ux-urun/mobile-puzzle-game-ux-audit-expert",
+  "bayt": 6931,
+  "satir": 122,
+  "ek_dosya": 0,
+  "script_var": false,
+  "referans_var": false,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/.gemini/config/skills/mobile-puzzle-game-ux-audit-expert"
+  ],
+  "kaynak_tipleri": [
+   "proje-içi"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "~/.gemini/config/skills/mobile-puzzle-game-ux-audit-expert"
+  ]
+ },
+ {
+  "ad": "mobile-ux-architect",
+  "slug": "mobile-ux-architect",
+  "kategori": "06-ux-urun",
+  "kategori_adi": "UX & Ürün Yönetimi",
+  "aciklama": "- Use this skill when auditing, architecting, or designing mobile application user experiences (UX), user flows, navigation hierarchies, screen states, micro-interactions, touch ergonomics, and accessibility for iOS and Android platforms. Enforces 2026 Mobile UX standards: Thumb Zone ergonomics, minimum touch targets (Apple 44x44pt / Android 48x48dp / WCAG 2.5.8), skeleton loading & error recovery states, Haptic feedback, and design system tokens.",
+  "ozet": "- Use this skill when auditing, architecting, or designing mobile application user experiences (UX), user flows, navigation hierarchies, screen states…",
+  "yol": "kutuphane/06-ux-urun/mobile-ux-architect",
+  "bayt": 4105,
+  "satir": 67,
+  "ek_dosya": 3,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/.gemini/config/skills/mobile-ux-architect"
+  ],
+  "kaynak_tipleri": [
+   "proje-içi"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "~/.gemini/config/skills/mobile-ux-architect"
+  ]
  },
  {
   "ad": "mobile-ux-flow-expert",
@@ -1782,7 +2049,8 @@
    "~/.gemini/config/plugins/kirkit-skills/skills/mobile-ux-flow-expert",
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/mobile-ux-flow-expert",
    "~/projects/kirkit/data/skills/skills/mobile-ux-flow-expert",
-   "~/projects/startup değerleme/skill/ilgili-skiller/mobile-ux-flow-expert"
+   "~/projects/startup değerleme/skill/ilgili-skiller/mobile-ux-flow-expert",
+   "~/Documents/GitHub/pipsworn/.claude/skills/mobile-ux-flow-expert"
   ],
   "kaynak_tipleri": [
    "claude.ai",
@@ -1791,7 +2059,8 @@
   ],
   "baglanacak": [
    "~/.claude/skills/mobile-ux-flow-expert",
-   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/mobile-ux-flow-expert"
+   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/mobile-ux-flow-expert",
+   "~/Documents/GitHub/pipsworn/.claude/skills/mobile-ux-flow-expert"
   ],
   "ayna": [
    "~/.gemini/config/plugins/kirkit-skills/skills/mobile-ux-flow-expert",
@@ -1851,6 +2120,31 @@
   ]
  },
  {
+  "ad": "tacet-ui-ux-design",
+  "slug": "tacet-ui-ux-design",
+  "kategori": "06-ux-urun",
+  "kategori_adi": "UX & Ürün Yönetimi",
+  "aciklama": "Strict design system, UI/UX architecture, typography, palette tokens, and interaction guidelines for the Tacet iOS app. Enforces \"Night Ink\" single surface minimalism, SF Pro + New York Serif typographic dualism, Ensō mark dynamics, quiet 44pt touch targets, and 1px hairline card styling.",
+  "ozet": "Strict design system, UI/UX architecture, typography, palette tokens, and interaction guidelines for the Tacet iOS app.",
+  "yol": "kutuphane/06-ux-urun/tacet-ui-ux-design",
+  "bayt": 6572,
+  "satir": 154,
+  "ek_dosya": 0,
+  "script_var": false,
+  "referans_var": false,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/.gemini/config/skills/tacet-ui-ux-design"
+  ],
+  "kaynak_tipleri": [
+   "proje-içi"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "~/.gemini/config/skills/tacet-ui-ux-design"
+  ]
+ },
+ {
   "ad": "web-ux-flow-expert",
   "slug": "web-ux-flow-expert",
   "kategori": "06-ux-urun",
@@ -1900,12 +2194,16 @@
   "referans_var": true,
   "varyant": 0,
   "kaynaklar": [
-   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect"
+   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect",
+   "~/Documents/GitHub/pipsworn/.claude/skills/apple-platform-architect"
   ],
   "kaynak_tipleri": [
-   "GitHub (yerelde yok)"
+   "GitHub (yerelde yok)",
+   "kurulu"
   ],
-  "baglanacak": [],
+  "baglanacak": [
+   "~/Documents/GitHub/pipsworn/.claude/skills/apple-platform-architect"
+  ],
   "ayna": [
    "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect"
   ]
@@ -1926,17 +2224,21 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/mcailabs-v4.0/.agents/skills/docker-compose-orchestration",
-   "~/projects/mcailabs-v4.0/.claude/skills/docker-compose-orchestration"
+   "~/projects/mcailabs-v4.0/.claude/skills/docker-compose-orchestration",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/docker-compose-orchestration",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/docker-compose-orchestration"
   ],
   "kaynak_tipleri": [
    "kurulu",
    "proje-içi"
   ],
   "baglanacak": [
-   "~/projects/mcailabs-v4.0/.claude/skills/docker-compose-orchestration"
+   "~/projects/mcailabs-v4.0/.claude/skills/docker-compose-orchestration",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/docker-compose-orchestration"
   ],
   "ayna": [
-   "~/projects/mcailabs-v4.0/.agents/skills/docker-compose-orchestration"
+   "~/projects/mcailabs-v4.0/.agents/skills/docker-compose-orchestration",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/docker-compose-orchestration"
   ]
  },
  {
@@ -1955,17 +2257,21 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/mcailabs-v4.0/.agents/skills/fastapi-microservices-development",
-   "~/projects/mcailabs-v4.0/.claude/skills/fastapi-microservices-development"
+   "~/projects/mcailabs-v4.0/.claude/skills/fastapi-microservices-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/fastapi-microservices-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/fastapi-microservices-development"
   ],
   "kaynak_tipleri": [
    "kurulu",
    "proje-içi"
   ],
   "baglanacak": [
-   "~/projects/mcailabs-v4.0/.claude/skills/fastapi-microservices-development"
+   "~/projects/mcailabs-v4.0/.claude/skills/fastapi-microservices-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/fastapi-microservices-development"
   ],
   "ayna": [
-   "~/projects/mcailabs-v4.0/.agents/skills/fastapi-microservices-development"
+   "~/projects/mcailabs-v4.0/.agents/skills/fastapi-microservices-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/fastapi-microservices-development"
   ]
  },
  {
@@ -1983,14 +2289,16 @@
   "referans_var": false,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli"
   ],
   "kaynak_tipleri": [
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli"
   ]
  },
  {
@@ -2008,14 +2316,16 @@
   "referans_var": false,
   "varyant": 1,
   "kaynaklar": [
-   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli"
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli"
   ],
   "kaynak_tipleri": [
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
-   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli"
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli"
   ]
  },
  {
@@ -2034,7 +2344,9 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-debugging",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-debugging",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging"
   ],
   "kaynak_tipleri": [
    "proje-içi"
@@ -2042,7 +2354,9 @@
   "baglanacak": [],
   "ayna": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-debugging",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-debugging",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging"
   ]
  },
  {
@@ -2061,7 +2375,9 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-exploring",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-exploring",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring"
   ],
   "kaynak_tipleri": [
    "proje-içi"
@@ -2069,7 +2385,9 @@
   "baglanacak": [],
   "ayna": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-exploring",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-exploring",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring"
   ]
  },
  {
@@ -2088,7 +2406,9 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-guide",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-guide",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide"
   ],
   "kaynak_tipleri": [
    "proje-içi"
@@ -2096,7 +2416,9 @@
   "baglanacak": [],
   "ayna": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-guide",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-guide",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide"
   ]
  },
  {
@@ -2115,7 +2437,9 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-impact-analysis",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-impact-analysis",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis"
   ],
   "kaynak_tipleri": [
    "proje-içi"
@@ -2123,7 +2447,9 @@
   "baglanacak": [],
   "ayna": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-impact-analysis",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-impact-analysis",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis"
   ]
  },
  {
@@ -2142,7 +2468,9 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-refactoring",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-refactoring",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring"
   ],
   "kaynak_tipleri": [
    "proje-içi"
@@ -2150,7 +2478,9 @@
   "baglanacak": [],
   "ayna": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-refactoring",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-refactoring",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring"
   ]
  },
  {
@@ -2194,17 +2524,21 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/mcailabs-v4.0/.agents/skills/nextjs-development",
-   "~/projects/mcailabs-v4.0/.claude/skills/nextjs-development"
+   "~/projects/mcailabs-v4.0/.claude/skills/nextjs-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/nextjs-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/nextjs-development"
   ],
   "kaynak_tipleri": [
    "kurulu",
    "proje-içi"
   ],
   "baglanacak": [
-   "~/projects/mcailabs-v4.0/.claude/skills/nextjs-development"
+   "~/projects/mcailabs-v4.0/.claude/skills/nextjs-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/nextjs-development"
   ],
   "ayna": [
-   "~/projects/mcailabs-v4.0/.agents/skills/nextjs-development"
+   "~/projects/mcailabs-v4.0/.agents/skills/nextjs-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/nextjs-development"
   ]
  },
  {
@@ -2223,17 +2557,21 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/mcailabs-v4.0/.agents/skills/oauth2-authentication",
-   "~/projects/mcailabs-v4.0/.claude/skills/oauth2-authentication"
+   "~/projects/mcailabs-v4.0/.claude/skills/oauth2-authentication",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/oauth2-authentication",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/oauth2-authentication"
   ],
   "kaynak_tipleri": [
    "kurulu",
    "proje-içi"
   ],
   "baglanacak": [
-   "~/projects/mcailabs-v4.0/.claude/skills/oauth2-authentication"
+   "~/projects/mcailabs-v4.0/.claude/skills/oauth2-authentication",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/oauth2-authentication"
   ],
   "ayna": [
-   "~/projects/mcailabs-v4.0/.agents/skills/oauth2-authentication"
+   "~/projects/mcailabs-v4.0/.agents/skills/oauth2-authentication",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/oauth2-authentication"
   ]
  },
  {
@@ -2251,13 +2589,15 @@
   "referans_var": false,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/mcailabs-v4.0/.claude/skills/postgresql"
+   "~/projects/mcailabs-v4.0/.claude/skills/postgresql",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/postgresql"
   ],
   "kaynak_tipleri": [
    "kurulu"
   ],
   "baglanacak": [
-   "~/projects/mcailabs-v4.0/.claude/skills/postgresql"
+   "~/projects/mcailabs-v4.0/.claude/skills/postgresql",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/postgresql"
   ],
   "ayna": []
  },
@@ -2276,14 +2616,16 @@
   "referans_var": false,
   "varyant": 1,
   "kaynaklar": [
-   "~/projects/mcailabs-v4.0/.agents/skills/postgresql"
+   "~/projects/mcailabs-v4.0/.agents/skills/postgresql",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/postgresql"
   ],
   "kaynak_tipleri": [
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
-   "~/projects/mcailabs-v4.0/.agents/skills/postgresql"
+   "~/projects/mcailabs-v4.0/.agents/skills/postgresql",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/postgresql"
   ]
  },
  {
@@ -2302,17 +2644,21 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/mcailabs-v4.0/.agents/skills/pydantic",
-   "~/projects/mcailabs-v4.0/.claude/skills/pydantic"
+   "~/projects/mcailabs-v4.0/.claude/skills/pydantic",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/pydantic",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/pydantic"
   ],
   "kaynak_tipleri": [
    "kurulu",
    "proje-içi"
   ],
   "baglanacak": [
-   "~/projects/mcailabs-v4.0/.claude/skills/pydantic"
+   "~/projects/mcailabs-v4.0/.claude/skills/pydantic",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/pydantic"
   ],
   "ayna": [
-   "~/projects/mcailabs-v4.0/.agents/skills/pydantic"
+   "~/projects/mcailabs-v4.0/.agents/skills/pydantic",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/pydantic"
   ]
  },
  {
@@ -2330,13 +2676,15 @@
   "referans_var": false,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/mcailabs-v4.0/.claude/skills/pytest"
+   "~/projects/mcailabs-v4.0/.claude/skills/pytest",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/pytest"
   ],
   "kaynak_tipleri": [
    "kurulu"
   ],
   "baglanacak": [
-   "~/projects/mcailabs-v4.0/.claude/skills/pytest"
+   "~/projects/mcailabs-v4.0/.claude/skills/pytest",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/pytest"
   ],
   "ayna": []
  },
@@ -2355,14 +2703,16 @@
   "referans_var": false,
   "varyant": 1,
   "kaynaklar": [
-   "~/projects/mcailabs-v4.0/.agents/skills/pytest"
+   "~/projects/mcailabs-v4.0/.agents/skills/pytest",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/pytest"
   ],
   "kaynak_tipleri": [
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
-   "~/projects/mcailabs-v4.0/.agents/skills/pytest"
+   "~/projects/mcailabs-v4.0/.agents/skills/pytest",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/pytest"
   ]
  },
  {
@@ -2381,17 +2731,21 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/mcailabs-v4.0/.agents/skills/react-patterns",
-   "~/projects/mcailabs-v4.0/.claude/skills/react-patterns"
+   "~/projects/mcailabs-v4.0/.claude/skills/react-patterns",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/react-patterns",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/react-patterns"
   ],
   "kaynak_tipleri": [
    "kurulu",
    "proje-içi"
   ],
   "baglanacak": [
-   "~/projects/mcailabs-v4.0/.claude/skills/react-patterns"
+   "~/projects/mcailabs-v4.0/.claude/skills/react-patterns",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/react-patterns"
   ],
   "ayna": [
-   "~/projects/mcailabs-v4.0/.agents/skills/react-patterns"
+   "~/projects/mcailabs-v4.0/.agents/skills/react-patterns",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/react-patterns"
   ]
  },
  {
@@ -2435,17 +2789,21 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/mcailabs-v4.0/.agents/skills/tailwind-css",
-   "~/projects/mcailabs-v4.0/.claude/skills/tailwind-css"
+   "~/projects/mcailabs-v4.0/.claude/skills/tailwind-css",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/tailwind-css",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/tailwind-css"
   ],
   "kaynak_tipleri": [
    "kurulu",
    "proje-içi"
   ],
   "baglanacak": [
-   "~/projects/mcailabs-v4.0/.claude/skills/tailwind-css"
+   "~/projects/mcailabs-v4.0/.claude/skills/tailwind-css",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/tailwind-css"
   ],
   "ayna": [
-   "~/projects/mcailabs-v4.0/.agents/skills/tailwind-css"
+   "~/projects/mcailabs-v4.0/.agents/skills/tailwind-css",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/tailwind-css"
   ]
  },
  {
@@ -2488,14 +2846,18 @@
   "referans_var": false,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl"
+   "~/projects/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/local_test/gemma_agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl"
   ],
   "kaynak_tipleri": [
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
-   "~/projects/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl"
+   "~/projects/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/local_test/gemma_agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl"
   ]
  },
  {
@@ -2513,14 +2875,16 @@
   "referans_var": false,
   "varyant": 1,
   "kaynaklar": [
-   "~/projects/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl"
+   "~/projects/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl"
   ],
   "kaynak_tipleri": [
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
-   "~/projects/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl"
+   "~/projects/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl"
   ]
  },
  {
@@ -2538,14 +2902,16 @@
   "referans_var": false,
   "varyant": 2,
   "kaynaklar": [
-   "~/projects/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl"
+   "~/projects/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl"
   ],
   "kaynak_tipleri": [
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
-   "~/projects/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl"
+   "~/projects/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl"
   ]
  },
  {
@@ -2563,14 +2929,16 @@
   "referans_var": false,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/autonomous-agent-prediction/kaggle-kaggle-skill"
+   "~/projects/autonomous-agent-prediction/kaggle-kaggle-skill",
+   "~/Documents/GitHub/autonomous-agent-prediction/kaggle-kaggle-skill"
   ],
   "kaynak_tipleri": [
    "proje-içi"
   ],
   "baglanacak": [],
   "ayna": [
-   "~/projects/autonomous-agent-prediction/kaggle-kaggle-skill"
+   "~/projects/autonomous-agent-prediction/kaggle-kaggle-skill",
+   "~/Documents/GitHub/autonomous-agent-prediction/kaggle-kaggle-skill"
   ]
  },
  {
@@ -2682,6 +3050,31 @@
   "ayna": []
  },
  {
+  "ad": "gorsel-uretim",
+  "slug": "gorsel-uretim--moonstone-gh",
+  "kategori": "09-cad-gorsel",
+  "kategori_adi": "CAD & Görsel Üretim",
+  "aciklama": "Moonstone Residence için sosyal medya ve web görseli üretir — Instagram story/Reels karesi, feed ve carousel slaytı, OG görseli, sayı kartı, alıntı kartı, plan/veri kartı, web bölüm arka planı ve site için AVIF/WebP/JPEG varyantları. Markalı çerçeveyi, okunabilirlik katmanını, tipografiyi, altın ayracı, logoyu ve \"Temsili görseldir\" notunu doğru güvenli alan içinde yerleştirir; renk düzeltmesini Apple Silicon GPU'sunda Core Image ile yapar. Şu ifadeler geçtiğinde kullan: \"görsel hazırla\", \"post tasarla\", \"story görseli\", \"kapak yap\", \"bu fotoğrafı markaya uyarla\", \"kırp\", \"boyutlandır\", \"renk düzelt\", \"logo bas\", \"carousel slaytı\", \"web için optimize et\", \"AVIF üret\", \"güvenli alanı kontrol et\". Bir görsel dosyası üretilecek ya da var olan bir görsel Moonstone kimliğine uyarlanacaksa, araç adı hiç geçmese bile devreye gir. Görsel *bulmak* için `pexels-gorsel-bulucu`, hangi ölçü ve içeriğin gerektiği için `post-uretimi.md` / `story-uretimi.md`.",
+  "ozet": "Moonstone Residence için sosyal medya ve web görseli üretir — Instagram story/Reels karesi, feed ve carousel slaytı, OG görseli, sayı kartı, alıntı kartı, plan/veri…",
+  "yol": "kutuphane/09-cad-gorsel/gorsel-uretim--moonstone-gh",
+  "bayt": 11636,
+  "satir": 260,
+  "ek_dosya": 13,
+  "script_var": true,
+  "referans_var": true,
+  "varyant": 1,
+  "kaynaklar": [
+   "~/Documents/GitHub/moonstone/.claude/skills/gorsel-uretim"
+  ],
+  "kaynak_tipleri": [
+   "kurulu"
+  ],
+  "baglanacak": [
+   "~/Documents/GitHub/moonstone/.claude/skills/gorsel-uretim"
+  ],
+  "ayna": []
+ },
+ {
   "ad": "mobilya-cad",
   "slug": "mobilya-cad",
   "kategori": "09-cad-gorsel",
@@ -2695,6 +3088,31 @@
   "script_var": true,
   "referans_var": true,
   "varyant": 0,
+  "kaynaklar": [
+   "~/Documents/GitHub/mobilya/.claude/skills/mobilya-cad"
+  ],
+  "kaynak_tipleri": [
+   "kurulu"
+  ],
+  "baglanacak": [
+   "~/Documents/GitHub/mobilya/.claude/skills/mobilya-cad"
+  ],
+  "ayna": []
+ },
+ {
+  "ad": "mobilya-cad",
+  "slug": "mobilya-cad--mobilya-gh",
+  "kategori": "09-cad-gorsel",
+  "kategori_adi": "CAD & Görsel Üretim",
+  "aciklama": "Levha mobilya (suntalam/MDF dolap, ayakkabılık, gardırop, raf ünitesi, TV ünitesi, mutfak modülü) tasarımını uçtan uca üretim paketine çeviren mühendislik zinciri — parametrik 3B katı model (build123d → STEP/GLB/STL), ölçülendirilmiş teknik çizim (ezdxf → görünüş + kesit + antet, DXF/PDF/PNG), kesim listesi ve BOM (net/kesim ölçüsü, bant payı düşülmüş), kenar bandı metrajı, giyotin kesim optimizasyonu ve fire raporu, parça başına CNC DXF (R12), ve Blender 5.2 ile foto-gerçekçi render, PBR doku/mesh texture, USDZ/GLB çıktısı. Kullanıcı \"ayakkabılık\", \"dolap\", \"gardırop\", \"raf\", \"mobilya çiz\", \"3D model\", \"render\", \"teknik çizim\", \"kesit\", \"görünüş\", \"ölçülendir\", \"kesim listesi\", \"parça listesi\", \"BOM\", \"kaç levha çıkar\", \"fire\", \"yerleşim/nesting\", \"kenar bandı\", \"DXF\", \"CNC dosyası\", \"malzeme listesi\", \"raf sarkar mı\", \"kaç çift alır\", \"texture\", \"kaplama\", \"doku\", \"mesh\", \"görsel/sunum\" dediğinde; bir mobilya ölçülendirilirken, malzeme/donanım seçilirken, üretime gönderilecek dosya hazırlanırken veya ürün görseli istendiğinde bu skill'i kullan. 32'lik sistem, minifix/kavela/menteşe delik tabloları, EN 312 P2 sehim limitleri, EN 14749 devrilme eşiği, kenar bandı payı ve desen yönü kuralları hesaplara gömülüdür.",
+  "ozet": "Levha mobilya (suntalam/MDF dolap, ayakkabılık, gardırop, raf ünitesi, TV ünitesi, mutfak modülü) tasarımını uçtan uca üretim paketine çeviren mühendislik zinciri —…",
+  "yol": "kutuphane/09-cad-gorsel/mobilya-cad--mobilya-gh",
+  "bayt": 13453,
+  "satir": 237,
+  "ek_dosya": 12,
+  "script_var": true,
+  "referans_var": true,
+  "varyant": 1,
   "kaynaklar": [
    "~/Documents/GitHub/mobilya/.claude/skills/mobilya-cad"
   ],
@@ -2747,14 +3165,16 @@
   "varyant": 0,
   "kaynaklar": [
    "~/projects/reelsindustry/.claude/skills/pexels-media-scout",
-   "~/projects/weftrecords/.claude/skills/pexels-media-scout"
+   "~/projects/weftrecords/.claude/skills/pexels-media-scout",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/pexels-media-scout"
   ],
   "kaynak_tipleri": [
    "kurulu"
   ],
   "baglanacak": [
    "~/projects/reelsindustry/.claude/skills/pexels-media-scout",
-   "~/projects/weftrecords/.claude/skills/pexels-media-scout"
+   "~/projects/weftrecords/.claude/skills/pexels-media-scout",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/pexels-media-scout"
   ],
   "ayna": []
  },
@@ -2798,12 +3218,16 @@
   "referans_var": true,
   "varyant": 0,
   "kaynaklar": [
-   "github:farukciftler/pipsworn → .claude/skills/post-forge"
+   "github:farukciftler/pipsworn → .claude/skills/post-forge",
+   "~/Documents/GitHub/pipsworn/.claude/skills/post-forge"
   ],
   "kaynak_tipleri": [
-   "GitHub (yerelde yok)"
+   "GitHub (yerelde yok)",
+   "kurulu"
   ],
-  "baglanacak": [],
+  "baglanacak": [
+   "~/Documents/GitHub/pipsworn/.claude/skills/post-forge"
+  ],
   "ayna": [
    "github:farukciftler/pipsworn → .claude/skills/post-forge"
   ]
@@ -2934,6 +3358,31 @@
   ]
  },
  {
+  "ad": "sahibinden-arama",
+  "slug": "sahibinden-arama",
+  "kategori": "10-yasam-turkiye",
+  "kategori_adi": "Yaşam & Türkiye Hizmetleri",
+  "aciklama": "Deep expertise for searching sahibinden.com — building exact search URLs (category slug + location path + filter params), beating the ~1000-result cap with band splitting, discovering the site's `aNN` attribute-filter IDs from a saved \"Detaylı Arama\" page, parsing search results and listing detail pages into structured data, tracking price drops / new / removed listings across runs, and scoring results. Use whenever the task touches sahibinden listings, filters, or the `emlakarama` CLI in this repo. Trigger on Turkish phrasings — \"sahibinden'de ara\", \"satılık daire bul\", \"kiralık ev filtrele\", \"şu URL'yi filtreye çevir\", \"ilan takibi kur\", \"fiyatı düşenler\", \"yeni ilanları getir\", \"m2 ve oda sayısına göre filtrele\", \"arsa ilanları\", \"hangi parametre ne demek\", \"sahibinden linkini çözümle\", \"ilanları excel'e çıkar\", \"kaç sayfa var\", \"1000 ilan sınırını aş\" — and on English ones like \"search sahibinden\", \"parse this listing\", \"track price changes\". Also use when someone pastes a sahibinden.com URL or saved HTML and wants anything done with it. Does NOT bypass bot protection: fetching runs through the user's own already-authenticated browser or saved HTML.",
+  "ozet": "Deep expertise for searching sahibinden.com — building exact search URLs (category slug + location path + filter params), beating the ~1000-result cap with band…",
+  "yol": "kutuphane/10-yasam-turkiye/sahibinden-arama",
+  "bayt": 8282,
+  "satir": 152,
+  "ek_dosya": 8,
+  "script_var": true,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/Documents/GitHub/emlakarama/.claude/skills/sahibinden-arama"
+  ],
+  "kaynak_tipleri": [
+   "kurulu"
+  ],
+  "baglanacak": [
+   "~/Documents/GitHub/emlakarama/.claude/skills/sahibinden-arama"
+  ],
+  "ayna": []
+ },
+ {
   "ad": "schengen-randevu-tr",
   "slug": "schengen-randevu-tr",
   "kategori": "10-yasam-turkiye",
@@ -3007,6 +3456,31 @@
   "ayna": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/tech-etkinlik-kesif"
   ]
+ },
+ {
+  "ad": "trip-konaklama-avcisi",
+  "slug": "trip-konaklama-avcisi",
+  "kategori": "10-yasam-turkiye",
+  "kategori_adi": "Yaşam & Türkiye Hizmetleri",
+  "aciklama": "Trip.com üzerinde çok şartlı konaklama araması yapar — tarih, şehir, tesis tipi, ücretsiz iptal (ve iptal son tarihi), özel banyo/tuvalet, yıldız, puan, bütçe, ve \"şu landmark'a max N dakika yürüme mesafesi\" gibi kısıtları tek bir filtreli arama URL'ine çevirir, sonuçları canlı okur, her adayı şart şart doğrular ve sıralı kısa liste verir. Kullanıcı \"1-6 Ekim Londra'da ücretsiz iptal edilebilir, özel banyolu, British Museum'a 30 dk yürüme mesafesinde otel bul\", \"trip.com'da ara\", \"şu tarihlerde şu şehirde otel\", \"iptal edilebilir oda\", \"müzeye yakın otel\", \"bu otel iptal edilebilir mi\", \"toplam ne tutar\" gibi bir şey dediğinde kullan. Kullanıcı \"trip.com\" demese bile, istek çok şartlı bir otel/konaklama aramasıysa devreye gir. Fiyat ve iptal politikası asla uydurmaz — okur ya da \"okunamadı\" der.",
+  "ozet": "Trip.com üzerinde çok şartlı konaklama araması yapar — tarih, şehir, tesis tipi, ücretsiz iptal (ve iptal son tarihi), özel banyo/tuvalet, yıldız, puan, bütçe, ve…",
+  "yol": "kutuphane/10-yasam-turkiye/trip-konaklama-avcisi",
+  "bayt": 14508,
+  "satir": 256,
+  "ek_dosya": 9,
+  "script_var": true,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/Documents/GitHub/tripsearch/.claude/skills/trip-konaklama-avcisi"
+  ],
+  "kaynak_tipleri": [
+   "kurulu"
+  ],
+  "baglanacak": [
+   "~/Documents/GitHub/tripsearch/.claude/skills/trip-konaklama-avcisi"
+  ],
+  "ayna": []
  },
  {
   "ad": "ucuz-bilet-avcisi",
@@ -3173,13 +3647,15 @@
   "referans_var": true,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/kartelastrateji/.claude/skills/kartela-icerik"
+   "~/projects/kartelastrateji/.claude/skills/kartela-icerik",
+   "~/Documents/GitHub/kartelastrateji/.claude/skills/kartela-icerik"
   ],
   "kaynak_tipleri": [
    "kurulu"
   ],
   "baglanacak": [
-   "~/projects/kartelastrateji/.claude/skills/kartela-icerik"
+   "~/projects/kartelastrateji/.claude/skills/kartela-icerik",
+   "~/Documents/GitHub/kartelastrateji/.claude/skills/kartela-icerik"
   ],
   "ayna": []
  },
@@ -3209,6 +3685,31 @@
   "ayna": []
  },
  {
+  "ad": "moonstone-residence",
+  "slug": "moonstone-residence--moonstone-gh",
+  "kategori": "12-marka-musteri",
+  "kategori_adi": "Marka & Müşteri Projeleri",
+  "aciklama": "Moonstone Residence (Ayhanlar Mimarlık Yapı ve İnşaat) markasının dijital danışmanlık kaynağı — marka kimliği (logo, renk, tipografi, ikon), doğrulanmış proje verileri (daire tipleri, m², kat planları, sosyal alanlar, iletişim), marka dili ve tonu, web sitesi UI/UX mimarisi, teknik + yerel SEO ve sosyal medya stratejisi. Moonstone, Moonstone Residence veya Ayhanlar için herhangi bir şey üretilecekse bu skill'i mutlaka kullan: web sitesi/landing page tasarımı veya kodu, sayfa metni, başlık/meta açıklama, blog yazısı, anahtar kelime çalışması, schema.org işaretlemesi, Google Business profili, Instagram/TikTok/YouTube/LinkedIn postu veya hikâyesi, Reels senaryosu, carousel kurgusu, story dizisi, caption ve etiket seçimi, reklam metni, sahibinden/emlakjet ilanı, e-posta, katalog/broşür, kartvizit, mockup, logo kullanımı, renk kodu veya font sorusu. \"Bu proje için\", \"site için\", \"ilan yazalım\", \"post hazırla\", \"SEO'ya bak\", \"hangi renk\", \"logo nasıl kullanılır\" gibi ifadeler Moonstone bağlamında geçiyorsa da tetikle. Emlak/inşaat/konut projesi pazarlaması konuşuluyorsa ve bu depo açıksa varsayılan olarak devreye gir.",
+  "ozet": "Moonstone Residence (Ayhanlar Mimarlık Yapı ve İnşaat) markasının dijital danışmanlık kaynağı — marka kimliği (logo, renk, tipografi, ikon), doğrulanmış proje…",
+  "yol": "kutuphane/12-marka-musteri/moonstone-residence--moonstone-gh",
+  "bayt": 7923,
+  "satir": 145,
+  "ek_dosya": 11,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 1,
+  "kaynaklar": [
+   "~/Documents/GitHub/moonstone/.claude/skills/moonstone-residence"
+  ],
+  "kaynak_tipleri": [
+   "kurulu"
+  ],
+  "baglanacak": [
+   "~/Documents/GitHub/moonstone/.claude/skills/moonstone-residence"
+  ],
+  "ayna": []
+ },
+ {
   "ad": "rpdm-mevzuat",
   "slug": "rpdm-mevzuat",
   "kategori": "12-marka-musteri",
@@ -3223,13 +3724,15 @@
   "referans_var": true,
   "varyant": 0,
   "kaynaklar": [
-   "~/projects/kartelastrateji/.claude/skills/rpdm-mevzuat"
+   "~/projects/kartelastrateji/.claude/skills/rpdm-mevzuat",
+   "~/Documents/GitHub/kartelastrateji/.claude/skills/rpdm-mevzuat"
   ],
   "kaynak_tipleri": [
    "kurulu"
   ],
   "baglanacak": [
-   "~/projects/kartelastrateji/.claude/skills/rpdm-mevzuat"
+   "~/projects/kartelastrateji/.claude/skills/rpdm-mevzuat",
+   "~/Documents/GitHub/kartelastrateji/.claude/skills/rpdm-mevzuat"
   ],
   "ayna": []
  },
@@ -3503,6 +4006,31 @@
   "script_var": false,
   "referans_var": false,
   "varyant": 0,
+  "kaynaklar": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/setup-cowork"
+  ],
+  "kaynak_tipleri": [
+   "claude.ai"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/setup-cowork"
+  ]
+ },
+ {
+  "ad": "setup-cowork",
+  "slug": "setup-cowork--cloud",
+  "kategori": "14-meta-sistem",
+  "kategori_adi": "Meta & Sistem",
+  "aciklama": "Guided Cowork setup — install a matching plugin, try a skill, connect tools.",
+  "ozet": "Guided Cowork setup — install a matching plugin, try a skill, connect tools.",
+  "yol": "kutuphane/14-meta-sistem/setup-cowork--cloud",
+  "bayt": 3005,
+  "satir": 48,
+  "ek_dosya": 0,
+  "script_var": false,
+  "referans_var": false,
+  "varyant": 1,
   "kaynaklar": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/setup-cowork"
   ],

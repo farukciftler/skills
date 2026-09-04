@@ -47,6 +47,11 @@ HARIC = (
     "/Library/Application Support/Claude/local-agent-mode-sessions/",
     "/.claude/plugins/marketplaces/",
     "/skills/kutuphane/",
+    # Satıcı paketleri ve editör yerleşikleri: Faruk'un skill'i değil.
+    "/.claude/plugins/cache/",
+    "/.cursor/skills-cursor/",
+    # Tek seferlik zamanlanmış görev promptları; yeniden kullanılabilir skill değil.
+    "/.claude/scheduled-tasks/",
 )
 
 KATEGORI = {
@@ -76,13 +81,16 @@ KATEGORI = {
         "sosyal-medya-post-uret", "icerik-yaz",
     ],
     "05-pazarlama-buyume": [
-        "seo-expert", "aso-expert", "youtube-shorts-optimizer",
+        "seo-expert", "aso-expert", "aso-optimizer", "youtube-shorts-optimizer",
+        "reklam-ve-performans",
         "viral-artifact-scout", "hedef-arastirma", "klinik-lead-akisi",
         "appstore-market-analyst",
     ],
     "06-ux-urun": [
         "mobile-ux-flow-expert", "web-ux-flow-expert", "ota-mobile-tablet-ux",
         "kartela-web-ux", "pm-decision-review", "arayuz-denetimi",
+        "mobile-ux-architect", "mobile-puzzle-game-ui-designer",
+        "mobile-puzzle-game-ux-audit-expert", "tacet-ui-ux-design",
         "jira-task-writer",
     ],
     "07-yazilim-muhendislik": [
@@ -103,7 +111,7 @@ KATEGORI = {
     ],
     "10-yasam-turkiye": [
         "arac-uzmani", "urun-kesif", "konaklama-kesif", "ucuz-bilet-avcisi",
-        "vize-giris-kurallari", "schengen-randevu-tr", "kultur-sanat-radari",
+        "vize-giris-kurallari", "schengen-randevu-tr", "kultur-sanat-radari", "sahibinden-arama", "trip-konaklama-avcisi",
         "tech-etkinlik-kesif", "hak-arama-turkiye", "dijital-iz-denetcisi",
         "suriye-is-mevzuat",
     ],
@@ -193,6 +201,8 @@ def tur(rel):
 def kok_etiket(kayit):
     if kayit["tur"] == "cloud":
         return "cloud"
+    if kayit["dizin"].startswith("~/.gemini/"):
+        return "gemini"
     if kayit["proje"]:
         return re.sub(r"[^a-z0-9]+", "-", kayit["proje"].lower()).strip("-")
     if "kirkit" in kayit["dizin"]:

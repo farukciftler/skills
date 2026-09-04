@@ -20,7 +20,7 @@ Avrupa Birliği'nin ücretsiz/desteklenmiş GPU ve süperbilgisayar kaynakları 
 Benchmarked cross-validated ensemble pipeline for tabular binary classification. Reads train.csv/test.csv/sample_submission.csv, trains LightGBM, XGBoost, CatBoost, HistGradientBoosting, ExtraTrees and logistic regression with stratified K-fold CV, blends them by out-of-fold rank hill-climbing, and writes a ready-to-submit CSV. Use it as the first modelling action on any tabular prediction task.
 
 - **Ölçü:** 4.124 bayt · 1 ek dosya · script içerir
-- **Kaynak:** ~/projects/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl
+- **Kaynak:** ~/projects/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl, ~/Documents/GitHub/autonomous-agent-prediction/local_test/gemma_agent/skills/automl, ~/Documents/GitHub/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl
 
 ## `automl--autonomous-agent-prediction`
 
@@ -29,7 +29,7 @@ Benchmarked cross-validated ensemble pipeline for tabular binary classification.
 Benchmarked cross-validated ensemble pipeline for tabular binary classification. Reads train.csv/test.csv/sample_submission.csv, trains LightGBM, XGBoost, CatBoost, HistGradientBoosting, ExtraTrees and logistic regression with stratified K-fold CV, blends them by out-of-fold rank hill-climbing, and writes a ready-to-submit CSV. Use it as the first modelling action on any tabular prediction task.
 
 - **Ölçü:** 3.727 bayt · 1 ek dosya · script içerir
-- **Kaynak:** ~/projects/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl
+- **Kaynak:** ~/projects/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl, ~/Documents/GitHub/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl
 
 ## `automl--autonomous-agent-prediction-3`
 
@@ -38,7 +38,7 @@ Benchmarked cross-validated ensemble pipeline for tabular binary classification.
 Benchmarked cross-validated ensemble pipeline for tabular binary classification. Reads train.csv/test.csv/sample_submission.csv, trains LightGBM, XGBoost, CatBoost, HistGradientBoosting, ExtraTrees and logistic regression with stratified K-fold CV, blends them by out-of-fold rank hill-climbing, and writes a ready-to-submit CSV. Use it as the first modelling action on any tabular prediction task.
 
 - **Ölçü:** 3.727 bayt · 1 ek dosya · script içerir
-- **Kaynak:** ~/projects/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl
+- **Kaynak:** ~/projects/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl, ~/Documents/GitHub/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl
 
 ## `kaggle-kaggle-skill`
 
@@ -47,7 +47,7 @@ Benchmarked cross-validated ensemble pipeline for tabular binary classification.
 Guides competitors in designing, authoring, validating, evaluating, debugging, and submitting autonomous ML agents to kaggle-kaggle competitions. Make sure to use this skill whenever the user mentions kaggle-kaggle, autonomous ML agents, building an agent submission, running local evaluation, debugging agent traces, or submitting to Kaggle, even if they don't explicitly ask for the competitor guide. Don't use for building the evaluation harness itself or for non-kaggle-kaggle competitions.
 
 - **Ölçü:** 8.878 bayt · 6 ek dosya · script içerir
-- **Kaynak:** ~/projects/autonomous-agent-prediction/kaggle-kaggle-skill
+- **Kaynak:** ~/projects/autonomous-agent-prediction/kaggle-kaggle-skill, ~/Documents/GitHub/autonomous-agent-prediction/kaggle-kaggle-skill
 
 ## `llm-engineering-expert`
 

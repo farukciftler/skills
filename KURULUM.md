@@ -32,25 +32,29 @@ ne yaptığı için [INDEX.md](INDEX.md).
 ## 3 · Bu makinede fazladan skill var mı, bak
 
 Asıl mesele bu: başka bilgisayarındaki projelerde burada olmayan skill'ler
-olabilir. `topla.py` bunu tespit eder.
+olabilir. Bunun için **`ekle.py`** var — kütüphane zaten doluyken doğru araç
+odur:
 
 ```bash
-python3 scripts/topla.py
-```
-
-Çıktı, bu makinede bulunan kaynakları ve kütüphane girdilerini sayar.
-Kütüphanede karşılığı olmayan bir ad varsa `99-siniflandirilmamis` uyarısı
-verir. Kütüphaneye almak için:
-
-```bash
-python3 scripts/topla.py --uygula     # yeni bulunanları kutuphane/ altına ekler
+python3 scripts/ekle.py               # kuru çalıştırma, planı basar
+python3 scripts/ekle.py --uygula      # kopyalar ve manifest'i günceller
 python3 scripts/katalog_uret.py       # INDEX + katalog + kategori README'leri
 git add -A && git commit -m "…makinesinden N skill eklendi" && git push
 ```
 
-> `topla.py` mevcut kütüphane girdilerinin **üzerine yazmaz** — yalnız eksik
-> olanları ekler. Aynı isimli ama içeriği farklı bir skill bulursa onu
-> `--<kaynak>` ekiyle ayrı girdi olarak alır, hiçbir şey kaybolmaz.
+`ekle.py` bu makineyi tarar ve her kaynağı kütüphanedeki içerikle karşılaştırır:
+
+- içerik özeti kütüphanede zaten varsa yalnızca yolu manifest'e işler;
+- kütüphanedeki kopyanın gerçek üst kümesiyse (aynı dosyalar + fazlası) o girdiyi
+  yerinde tazeler;
+- geri kalan her ayrışmış içerik `<ad>--<etiket>` yeni girdisi olur.
+
+Hiçbir girdiyi silmez, bir makinenin kopyasını diğerinin üstüne yazmaz.
+
+> **`topla.py --uygula`'yı ikinci bir makinede çalıştırma.** O script tek
+> makinenin *tam* taramasını varsayar ve `katalog/manifest.json`'ı sıfırdan
+> yazar; başka bilgisayarda toplanmış girdiler `kutuphane/` altında kalsa da
+> katalogdan düşer. `topla.py` yalnız ilk kurulum içindir; sonrası `ekle.py`.
 
 Yeni bir skill kategori eşlemesinde yoksa iki dosyaya birden eklenmeli:
 `scripts/topla.py` içindeki `KATEGORI`, `scripts/katalog_uret.py` içindeki

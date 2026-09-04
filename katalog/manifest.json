@@ -28,9 +28,11 @@
   "srcs": [
    "~/Documents/GitHub/weftrecords/.claude/skills/ambient-video-forge",
    "~/projects/reelsindustry/.claude/skills/ambient-video-forge",
-   "~/projects/weftrecords/.claude/skills/ambient-video-forge"
+   "~/projects/weftrecords/.claude/skills/ambient-video-forge",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/ambient-video-forge"
   ],
   "kinds": [
+   "install",
    "install",
    "install",
    "install"
@@ -41,9 +43,56 @@
   "linked": [
    "~/Documents/GitHub/weftrecords/.claude/skills/ambient-video-forge",
    "~/projects/reelsindustry/.claude/skills/ambient-video-forge",
-   "~/projects/weftrecords/.claude/skills/ambient-video-forge"
+   "~/projects/weftrecords/.claude/skills/ambient-video-forge",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/ambient-video-forge"
   ],
   "mirrored": []
+ },
+ {
+  "name": "apple-platform-architect",
+  "slug": "apple-platform-architect",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "",
+  "variant": 0,
+  "srcs": [
+   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect",
+   "~/Documents/GitHub/pipsworn/.claude/skills/apple-platform-architect"
+  ],
+  "kinds": [
+   "github",
+   "install"
+  ],
+  "bytes": 0,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/apple-platform-architect",
+  "linked": [
+   "~/Documents/GitHub/pipsworn/.claude/skills/apple-platform-architect"
+  ],
+  "mirrored": [
+   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect"
+  ]
+ },
+ {
+  "name": "appstore-market-analyst",
+  "slug": "appstore-market-analyst",
+  "cat": "05-pazarlama-buyume",
+  "hash": "",
+  "variant": 0,
+  "srcs": [
+   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst",
+   "~/Documents/GitHub/pipsworn/.claude/skills/appstore-market-analyst"
+  ],
+  "kinds": [
+   "github",
+   "install"
+  ],
+  "bytes": 0,
+  "lib": "~/skills/kutuphane/05-pazarlama-buyume/appstore-market-analyst",
+  "linked": [
+   "~/Documents/GitHub/pipsworn/.claude/skills/appstore-market-analyst"
+  ],
+  "mirrored": [
+   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst"
+  ]
  },
  {
   "name": "arac-uzmani",
@@ -86,6 +135,44 @@
   ]
  },
  {
+  "name": "arayuz-denetimi",
+  "slug": "arayuz-denetimi",
+  "cat": "06-ux-urun",
+  "hash": "",
+  "variant": 0,
+  "srcs": [
+   "github:farukciftler/terapipanel → .claude/skills/arayuz-denetimi"
+  ],
+  "kinds": [
+   "github"
+  ],
+  "bytes": 0,
+  "lib": "~/skills/kutuphane/06-ux-urun/arayuz-denetimi",
+  "linked": [],
+  "mirrored": [
+   "github:farukciftler/terapipanel → .claude/skills/arayuz-denetimi"
+  ]
+ },
+ {
+  "name": "arayuz-denetimi",
+  "slug": "arayuz-denetimi--kartelapsikoloji-gh",
+  "cat": "06-ux-urun",
+  "hash": "9e7d83e54613",
+  "variant": 1,
+  "srcs": [
+   "~/Documents/GitHub/kartelapsikoloji/.claude/skills/arayuz-denetimi"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 12287,
+  "lib": "~/Documents/GitHub/skills/kutuphane/06-ux-urun/arayuz-denetimi--kartelapsikoloji-gh",
+  "linked": [
+   "~/Documents/GitHub/kartelapsikoloji/.claude/skills/arayuz-denetimi"
+  ],
+  "mirrored": []
+ },
+ {
   "name": "aso-expert",
   "slug": "aso-expert",
   "cat": "05-pazarlama-buyume",
@@ -93,19 +180,42 @@
   "variant": 0,
   "srcs": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/aso-expert",
-   "~/projects/startup değerleme/skill/ilgili-skiller/aso-expert"
+   "~/projects/startup değerleme/skill/ilgili-skiller/aso-expert",
+   "~/Documents/GitHub/pipsworn/.claude/skills/aso-expert"
   ],
   "kinds": [
    "cloud",
-   "content"
+   "content",
+   "install"
   ],
   "bytes": 14187,
   "files": 14,
   "lib": "~/skills/kutuphane/05-pazarlama-buyume/aso-expert",
-  "linked": [],
+  "linked": [
+   "~/Documents/GitHub/pipsworn/.claude/skills/aso-expert"
+  ],
   "mirrored": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/aso-expert",
    "~/projects/startup değerleme/skill/ilgili-skiller/aso-expert"
+  ]
+ },
+ {
+  "name": "aso-optimizer",
+  "slug": "aso-optimizer",
+  "cat": "05-pazarlama-buyume",
+  "hash": "cf4eed89729e",
+  "variant": 0,
+  "srcs": [
+   "~/.gemini/config/skills/aso-optimizer"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 4059,
+  "lib": "~/Documents/GitHub/skills/kutuphane/05-pazarlama-buyume/aso-optimizer",
+  "linked": [],
+  "mirrored": [
+   "~/.gemini/config/skills/aso-optimizer"
   ]
  },
  {
@@ -115,9 +225,13 @@
   "hash": "4f41d2bc0907",
   "variant": 0,
   "srcs": [
-   "~/projects/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl"
+   "~/projects/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/local_test/gemma_agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl"
   ],
   "kinds": [
+   "content",
+   "content",
    "content"
   ],
   "bytes": 4124,
@@ -125,7 +239,9 @@
   "lib": "~/skills/kutuphane/08-ai-ml/automl",
   "linked": [],
   "mirrored": [
-   "~/projects/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl"
+   "~/projects/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/local_test/gemma_agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/submissions/03_hardened/agent/skills/automl"
   ]
  },
  {
@@ -135,9 +251,11 @@
   "hash": "0308ffe979e1",
   "variant": 1,
   "srcs": [
-   "~/projects/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl"
+   "~/projects/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl"
   ],
   "kinds": [
+   "content",
    "content"
   ],
   "bytes": 3727,
@@ -145,7 +263,8 @@
   "lib": "~/skills/kutuphane/08-ai-ml/automl--autonomous-agent-prediction",
   "linked": [],
   "mirrored": [
-   "~/projects/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl"
+   "~/projects/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/submissions/01_baseline/agent/skills/automl"
   ]
  },
  {
@@ -155,9 +274,11 @@
   "hash": "fc2bc50f1789",
   "variant": 2,
   "srcs": [
-   "~/projects/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl"
+   "~/projects/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl"
   ],
   "kinds": [
+   "content",
    "content"
   ],
   "bytes": 3727,
@@ -165,7 +286,8 @@
   "lib": "~/skills/kutuphane/08-ai-ml/automl--autonomous-agent-prediction-3",
   "linked": [],
   "mirrored": [
-   "~/projects/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl"
+   "~/projects/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl",
+   "~/Documents/GitHub/autonomous-agent-prediction/submissions/02_gemini_fallback/agent/skills/automl"
   ]
  },
  {
@@ -339,9 +461,13 @@
   "variant": 0,
   "srcs": [
    "~/projects/mcailabs-v4.0/.agents/skills/docker-compose-orchestration",
-   "~/projects/mcailabs-v4.0/.claude/skills/docker-compose-orchestration"
+   "~/projects/mcailabs-v4.0/.claude/skills/docker-compose-orchestration",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/docker-compose-orchestration",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/docker-compose-orchestration"
   ],
   "kinds": [
+   "content",
+   "install",
    "content",
    "install"
   ],
@@ -349,10 +475,12 @@
   "files": 4,
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/docker-compose-orchestration",
   "linked": [
-   "~/projects/mcailabs-v4.0/.claude/skills/docker-compose-orchestration"
+   "~/projects/mcailabs-v4.0/.claude/skills/docker-compose-orchestration",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/docker-compose-orchestration"
   ],
   "mirrored": [
-   "~/projects/mcailabs-v4.0/.agents/skills/docker-compose-orchestration"
+   "~/projects/mcailabs-v4.0/.agents/skills/docker-compose-orchestration",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/docker-compose-orchestration"
   ]
  },
  {
@@ -402,16 +530,19 @@
   "hash": "21da8bddf5fd",
   "variant": 0,
   "srcs": [
-   "~/projects/reelsindustry/.claude/skills/english-narration"
+   "~/projects/reelsindustry/.claude/skills/english-narration",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/english-narration"
   ],
   "kinds": [
+   "install",
    "install"
   ],
   "bytes": 5828,
   "files": 1,
   "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/english-narration",
   "linked": [
-   "~/projects/reelsindustry/.claude/skills/english-narration"
+   "~/projects/reelsindustry/.claude/skills/english-narration",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/english-narration"
   ],
   "mirrored": []
  },
@@ -463,9 +594,13 @@
   "variant": 0,
   "srcs": [
    "~/projects/mcailabs-v4.0/.agents/skills/fastapi-microservices-development",
-   "~/projects/mcailabs-v4.0/.claude/skills/fastapi-microservices-development"
+   "~/projects/mcailabs-v4.0/.claude/skills/fastapi-microservices-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/fastapi-microservices-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/fastapi-microservices-development"
   ],
   "kinds": [
+   "content",
+   "install",
    "content",
    "install"
   ],
@@ -473,10 +608,12 @@
   "files": 3,
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/fastapi-microservices-development",
   "linked": [
-   "~/projects/mcailabs-v4.0/.claude/skills/fastapi-microservices-development"
+   "~/projects/mcailabs-v4.0/.claude/skills/fastapi-microservices-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/fastapi-microservices-development"
   ],
   "mirrored": [
-   "~/projects/mcailabs-v4.0/.agents/skills/fastapi-microservices-development"
+   "~/projects/mcailabs-v4.0/.agents/skills/fastapi-microservices-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/fastapi-microservices-development"
   ]
  },
  {
@@ -506,9 +643,11 @@
   "hash": "448fdf0948e5",
   "variant": 0,
   "srcs": [
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli"
   ],
   "kinds": [
+   "content",
    "content"
   ],
   "bytes": 3433,
@@ -516,7 +655,8 @@
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/gitnexus-cli",
   "linked": [],
   "mirrored": [
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-cli"
   ]
  },
  {
@@ -526,9 +666,11 @@
   "hash": "bf1a21b57d6d",
   "variant": 1,
   "srcs": [
-   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli"
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli"
   ],
   "kinds": [
+   "content",
    "content"
   ],
   "bytes": 3280,
@@ -536,7 +678,8 @@
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/gitnexus-cli--mcailabs-v4-0",
   "linked": [],
   "mirrored": [
-   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli"
+   "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-cli"
   ]
  },
  {
@@ -547,9 +690,13 @@
   "variant": 0,
   "srcs": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-debugging",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-debugging",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging"
   ],
   "kinds": [
+   "content",
+   "content",
    "content",
    "content"
   ],
@@ -559,7 +706,9 @@
   "linked": [],
   "mirrored": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-debugging",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-debugging",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-debugging"
   ]
  },
  {
@@ -570,9 +719,13 @@
   "variant": 0,
   "srcs": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-exploring",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-exploring",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring"
   ],
   "kinds": [
+   "content",
+   "content",
    "content",
    "content"
   ],
@@ -582,7 +735,9 @@
   "linked": [],
   "mirrored": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-exploring",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-exploring",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-exploring"
   ]
  },
  {
@@ -593,9 +748,13 @@
   "variant": 0,
   "srcs": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-guide",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-guide",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide"
   ],
   "kinds": [
+   "content",
+   "content",
    "content",
    "content"
   ],
@@ -605,7 +764,9 @@
   "linked": [],
   "mirrored": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-guide",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-guide",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-guide"
   ]
  },
  {
@@ -616,9 +777,13 @@
   "variant": 0,
   "srcs": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-impact-analysis",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-impact-analysis",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis"
   ],
   "kinds": [
+   "content",
+   "content",
    "content",
    "content"
   ],
@@ -628,7 +793,9 @@
   "linked": [],
   "mirrored": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-impact-analysis",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-impact-analysis",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-impact-analysis"
   ]
  },
  {
@@ -639,9 +806,13 @@
   "variant": 0,
   "srcs": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-refactoring",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-refactoring",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring"
   ],
   "kinds": [
+   "content",
+   "content",
    "content",
    "content"
   ],
@@ -651,7 +822,9 @@
   "linked": [],
   "mirrored": [
    "~/projects/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-refactoring",
-   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring"
+   "~/projects/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/gitnexus/gitnexus-refactoring",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/gitnexus/gitnexus-refactoring"
   ]
  },
  {
@@ -669,6 +842,25 @@
   "bytes": 9418,
   "files": 7,
   "lib": "~/skills/kutuphane/09-cad-gorsel/gorsel-uretim",
+  "linked": [
+   "~/Documents/GitHub/moonstone/.claude/skills/gorsel-uretim"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "gorsel-uretim",
+  "slug": "gorsel-uretim--moonstone-gh",
+  "cat": "09-cad-gorsel",
+  "hash": "a15b466ab0b8",
+  "variant": 1,
+  "srcs": [
+   "~/Documents/GitHub/moonstone/.claude/skills/gorsel-uretim"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 12390,
+  "lib": "~/Documents/GitHub/skills/kutuphane/09-cad-gorsel/gorsel-uretim--moonstone-gh",
   "linked": [
    "~/Documents/GitHub/moonstone/.claude/skills/gorsel-uretim"
   ],
@@ -773,9 +965,11 @@
   "srcs": [
    "~/Documents/GitHub/weftrecords/.claude/skills/healing-audio-youtube-seo",
    "~/projects/reelsindustry/.claude/skills/healing-audio-youtube-seo",
-   "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo"
+   "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/healing-audio-youtube-seo"
   ],
   "kinds": [
+   "install",
    "install",
    "install",
    "install"
@@ -786,7 +980,8 @@
   "linked": [
    "~/Documents/GitHub/weftrecords/.claude/skills/healing-audio-youtube-seo",
    "~/projects/reelsindustry/.claude/skills/healing-audio-youtube-seo",
-   "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo"
+   "~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/healing-audio-youtube-seo"
   ],
   "mirrored": []
  },
@@ -911,6 +1106,25 @@
   "mirrored": []
  },
  {
+  "name": "icerik-yaz",
+  "slug": "icerik-yaz",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "",
+  "variant": 0,
+  "srcs": [
+   "github:farukciftler/masifico-web → .claude/skills/icerik-yaz"
+  ],
+  "kinds": [
+   "github"
+  ],
+  "bytes": 0,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/icerik-yaz",
+  "linked": [],
+  "mirrored": [
+   "github:farukciftler/masifico-web → .claude/skills/icerik-yaz"
+  ]
+ },
+ {
   "name": "import-memory",
   "slug": "import-memory",
   "cat": "14-meta-sistem",
@@ -957,18 +1171,44 @@
   "hash": "e208ed84b976",
   "variant": 0,
   "srcs": [
-   "~/projects/reelsindustry/.claude/skills/insanca"
+   "~/projects/reelsindustry/.claude/skills/insanca",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/insanca"
   ],
   "kinds": [
+   "install",
    "install"
   ],
   "bytes": 76126,
   "files": 5,
   "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/insanca",
   "linked": [
-   "~/projects/reelsindustry/.claude/skills/insanca"
+   "~/projects/reelsindustry/.claude/skills/insanca",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/insanca"
   ],
   "mirrored": []
+ },
+ {
+  "name": "jira-task-writer",
+  "slug": "jira-task-writer",
+  "cat": "06-ux-urun",
+  "hash": "",
+  "variant": 0,
+  "srcs": [
+   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer",
+   "~/Documents/GitHub/pipsworn/.claude/skills/jira-task-writer"
+  ],
+  "kinds": [
+   "github",
+   "install"
+  ],
+  "bytes": 0,
+  "lib": "~/skills/kutuphane/06-ux-urun/jira-task-writer",
+  "linked": [
+   "~/Documents/GitHub/pipsworn/.claude/skills/jira-task-writer"
+  ],
+  "mirrored": [
+   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer"
+  ]
  },
  {
   "name": "kaggle-kaggle-skill",
@@ -977,9 +1217,11 @@
   "hash": "1f03a63f0c8b",
   "variant": 0,
   "srcs": [
-   "~/projects/autonomous-agent-prediction/kaggle-kaggle-skill"
+   "~/projects/autonomous-agent-prediction/kaggle-kaggle-skill",
+   "~/Documents/GitHub/autonomous-agent-prediction/kaggle-kaggle-skill"
   ],
   "kinds": [
+   "content",
    "content"
   ],
   "bytes": 8878,
@@ -987,7 +1229,8 @@
   "lib": "~/skills/kutuphane/08-ai-ml/kaggle-kaggle-skill",
   "linked": [],
   "mirrored": [
-   "~/projects/autonomous-agent-prediction/kaggle-kaggle-skill"
+   "~/projects/autonomous-agent-prediction/kaggle-kaggle-skill",
+   "~/Documents/GitHub/autonomous-agent-prediction/kaggle-kaggle-skill"
   ]
  },
  {
@@ -997,16 +1240,19 @@
   "hash": "40946db5bc21",
   "variant": 0,
   "srcs": [
-   "~/projects/kartelastrateji/.claude/skills/kartela-icerik"
+   "~/projects/kartelastrateji/.claude/skills/kartela-icerik",
+   "~/Documents/GitHub/kartelastrateji/.claude/skills/kartela-icerik"
   ],
   "kinds": [
+   "install",
    "install"
   ],
   "bytes": 7182,
   "files": 20,
   "lib": "~/skills/kutuphane/12-marka-musteri/kartela-icerik",
   "linked": [
-   "~/projects/kartelastrateji/.claude/skills/kartela-icerik"
+   "~/projects/kartelastrateji/.claude/skills/kartela-icerik",
+   "~/Documents/GitHub/kartelastrateji/.claude/skills/kartela-icerik"
   ],
   "mirrored": []
  },
@@ -1017,16 +1263,19 @@
   "hash": "013a27aab27f",
   "variant": 0,
   "srcs": [
-   "~/projects/kartelastrateji/.claude/skills/kartela-web-ux"
+   "~/projects/kartelastrateji/.claude/skills/kartela-web-ux",
+   "~/Documents/GitHub/kartelastrateji/.claude/skills/kartela-web-ux"
   ],
   "kinds": [
+   "install",
    "install"
   ],
   "bytes": 5058,
   "files": 5,
   "lib": "~/skills/kutuphane/06-ux-urun/kartela-web-ux",
   "linked": [
-   "~/projects/kartelastrateji/.claude/skills/kartela-web-ux"
+   "~/projects/kartelastrateji/.claude/skills/kartela-web-ux",
+   "~/Documents/GitHub/kartelastrateji/.claude/skills/kartela-web-ux"
   ],
   "mirrored": []
  },
@@ -1204,9 +1453,11 @@
   "hash": "f8badc47ae58",
   "variant": 0,
   "srcs": [
-   "~/projects/masifico/skills/masifico-farklilasma"
+   "~/projects/masifico/skills/masifico-farklilasma",
+   "~/Documents/GitHub/masifico/skills/masifico-farklilasma"
   ],
   "kinds": [
+   "content",
    "content"
   ],
   "bytes": 8631,
@@ -1214,7 +1465,8 @@
   "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-farklilasma",
   "linked": [],
   "mirrored": [
-   "~/projects/masifico/skills/masifico-farklilasma"
+   "~/projects/masifico/skills/masifico-farklilasma",
+   "~/Documents/GitHub/masifico/skills/masifico-farklilasma"
   ]
  },
  {
@@ -1259,26 +1511,6 @@
  },
  {
   "name": "masifico-maliyet-fiyat",
-  "slug": "masifico-maliyet-fiyat--masifico",
-  "cat": "02-masifico-ahsap-oyuncak",
-  "hash": "a8c38620a52d",
-  "variant": 0,
-  "srcs": [
-   "~/projects/masifico/skills/masifico-maliyet-fiyat"
-  ],
-  "kinds": [
-   "content"
-  ],
-  "bytes": 8751,
-  "files": 1,
-  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-maliyet-fiyat--masifico",
-  "linked": [],
-  "mirrored": [
-   "~/projects/masifico/skills/masifico-maliyet-fiyat"
-  ]
- },
- {
-  "name": "masifico-maliyet-fiyat",
   "slug": "masifico-maliyet-fiyat--cloud",
   "cat": "02-masifico-ahsap-oyuncak",
   "hash": "5714073bb6cb",
@@ -1295,6 +1527,29 @@
   "linked": [],
   "mirrored": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/masifico-maliyet-fiyat"
+  ]
+ },
+ {
+  "name": "masifico-maliyet-fiyat",
+  "slug": "masifico-maliyet-fiyat--masifico",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "a8c38620a52d",
+  "variant": 0,
+  "srcs": [
+   "~/projects/masifico/skills/masifico-maliyet-fiyat",
+   "~/Documents/GitHub/masifico/skills/masifico-maliyet-fiyat"
+  ],
+  "kinds": [
+   "content",
+   "content"
+  ],
+  "bytes": 8751,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-maliyet-fiyat--masifico",
+  "linked": [],
+  "mirrored": [
+   "~/projects/masifico/skills/masifico-maliyet-fiyat",
+   "~/Documents/GitHub/masifico/skills/masifico-maliyet-fiyat"
   ]
  },
  {
@@ -1359,6 +1614,26 @@
  },
  {
   "name": "masifico-uretim-muhendisi",
+  "slug": "masifico-uretim-muhendisi--cloud",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "3feb7266de98",
+  "variant": 1,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/masifico-uretim-muhendisi"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 5472,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-uretim-muhendisi--cloud",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/masifico-uretim-muhendisi"
+  ]
+ },
+ {
+  "name": "masifico-uretim-muhendisi",
   "slug": "masifico-uretim-muhendisi--masifico",
   "cat": "02-masifico-ahsap-oyuncak",
   "hash": "e03f4f91f1aa",
@@ -1379,22 +1654,21 @@
  },
  {
   "name": "masifico-uretim-muhendisi",
-  "slug": "masifico-uretim-muhendisi--cloud",
+  "slug": "masifico-uretim-muhendisi--masifico-gh",
   "cat": "02-masifico-ahsap-oyuncak",
-  "hash": "3feb7266de98",
+  "hash": "1d7c59f8893c",
   "variant": 1,
   "srcs": [
-   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/masifico-uretim-muhendisi"
+   "~/Documents/GitHub/masifico/skills/masifico-uretim-muhendisi"
   ],
   "kinds": [
-   "cloud"
+   "content"
   ],
-  "bytes": 5472,
-  "files": 1,
-  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-uretim-muhendisi--cloud",
+  "bytes": 10480,
+  "lib": "~/Documents/GitHub/skills/kutuphane/02-masifico-ahsap-oyuncak/masifico-uretim-muhendisi--masifico-gh",
   "linked": [],
   "mirrored": [
-   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/masifico-uretim-muhendisi"
+   "~/Documents/GitHub/masifico/skills/masifico-uretim-muhendisi"
   ]
  },
  {
@@ -1468,6 +1742,63 @@
   ]
  },
  {
+  "name": "mobile-puzzle-game-ui-designer",
+  "slug": "mobile-puzzle-game-ui-designer",
+  "cat": "06-ux-urun",
+  "hash": "2f21bbf556da",
+  "variant": 0,
+  "srcs": [
+   "~/.gemini/config/skills/mobile-puzzle-game-ui-designer"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 6134,
+  "lib": "~/Documents/GitHub/skills/kutuphane/06-ux-urun/mobile-puzzle-game-ui-designer",
+  "linked": [],
+  "mirrored": [
+   "~/.gemini/config/skills/mobile-puzzle-game-ui-designer"
+  ]
+ },
+ {
+  "name": "mobile-puzzle-game-ux-audit-expert",
+  "slug": "mobile-puzzle-game-ux-audit-expert",
+  "cat": "06-ux-urun",
+  "hash": "6b61571968b1",
+  "variant": 0,
+  "srcs": [
+   "~/.gemini/config/skills/mobile-puzzle-game-ux-audit-expert"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 6973,
+  "lib": "~/Documents/GitHub/skills/kutuphane/06-ux-urun/mobile-puzzle-game-ux-audit-expert",
+  "linked": [],
+  "mirrored": [
+   "~/.gemini/config/skills/mobile-puzzle-game-ux-audit-expert"
+  ]
+ },
+ {
+  "name": "mobile-ux-architect",
+  "slug": "mobile-ux-architect",
+  "cat": "06-ux-urun",
+  "hash": "9fe2d56122e6",
+  "variant": 0,
+  "srcs": [
+   "~/.gemini/config/skills/mobile-ux-architect"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 4107,
+  "lib": "~/Documents/GitHub/skills/kutuphane/06-ux-urun/mobile-ux-architect",
+  "linked": [],
+  "mirrored": [
+   "~/.gemini/config/skills/mobile-ux-architect"
+  ]
+ },
+ {
   "name": "mobile-ux-flow-expert",
   "slug": "mobile-ux-flow-expert",
   "cat": "06-ux-urun",
@@ -1479,7 +1810,8 @@
    "~/.gemini/config/plugins/kirkit-skills/skills/mobile-ux-flow-expert",
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/mobile-ux-flow-expert",
    "~/projects/kirkit/data/skills/skills/mobile-ux-flow-expert",
-   "~/projects/startup değerleme/skill/ilgili-skiller/mobile-ux-flow-expert"
+   "~/projects/startup değerleme/skill/ilgili-skiller/mobile-ux-flow-expert",
+   "~/Documents/GitHub/pipsworn/.claude/skills/mobile-ux-flow-expert"
   ],
   "kinds": [
    "install",
@@ -1487,14 +1819,16 @@
    "content",
    "cloud",
    "content",
-   "content"
+   "content",
+   "install"
   ],
   "bytes": 13851,
   "files": 8,
   "lib": "~/skills/kutuphane/06-ux-urun/mobile-ux-flow-expert",
   "linked": [
    "~/.claude/skills/mobile-ux-flow-expert",
-   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/mobile-ux-flow-expert"
+   "~/.gemini/config/plugins/kirkit-skills/.claude/skills/mobile-ux-flow-expert",
+   "~/Documents/GitHub/pipsworn/.claude/skills/mobile-ux-flow-expert"
   ],
   "mirrored": [
    "~/.gemini/config/plugins/kirkit-skills/skills/mobile-ux-flow-expert",
@@ -1524,6 +1858,25 @@
   "mirrored": []
  },
  {
+  "name": "mobilya-cad",
+  "slug": "mobilya-cad--mobilya-gh",
+  "cat": "09-cad-gorsel",
+  "hash": "bad79270f56b",
+  "variant": 1,
+  "srcs": [
+   "~/Documents/GitHub/mobilya/.claude/skills/mobilya-cad"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 14618,
+  "lib": "~/Documents/GitHub/skills/kutuphane/09-cad-gorsel/mobilya-cad--mobilya-gh",
+  "linked": [
+   "~/Documents/GitHub/mobilya/.claude/skills/mobilya-cad"
+  ],
+  "mirrored": []
+ },
+ {
   "name": "moonstone-residence",
   "slug": "moonstone-residence",
   "cat": "12-marka-musteri",
@@ -1538,6 +1891,25 @@
   "bytes": 7918,
   "files": 12,
   "lib": "~/skills/kutuphane/12-marka-musteri/moonstone-residence",
+  "linked": [
+   "~/Documents/GitHub/moonstone/.claude/skills/moonstone-residence"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "moonstone-residence",
+  "slug": "moonstone-residence--moonstone-gh",
+  "cat": "12-marka-musteri",
+  "hash": "371391a90f8d",
+  "variant": 1,
+  "srcs": [
+   "~/Documents/GitHub/moonstone/.claude/skills/moonstone-residence"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 8413,
+  "lib": "~/Documents/GitHub/skills/kutuphane/12-marka-musteri/moonstone-residence--moonstone-gh",
   "linked": [
    "~/Documents/GitHub/moonstone/.claude/skills/moonstone-residence"
   ],
@@ -1571,9 +1943,13 @@
   "variant": 0,
   "srcs": [
    "~/projects/mcailabs-v4.0/.agents/skills/nextjs-development",
-   "~/projects/mcailabs-v4.0/.claude/skills/nextjs-development"
+   "~/projects/mcailabs-v4.0/.claude/skills/nextjs-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/nextjs-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/nextjs-development"
   ],
   "kinds": [
+   "content",
+   "install",
    "content",
    "install"
   ],
@@ -1581,10 +1957,12 @@
   "files": 3,
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/nextjs-development",
   "linked": [
-   "~/projects/mcailabs-v4.0/.claude/skills/nextjs-development"
+   "~/projects/mcailabs-v4.0/.claude/skills/nextjs-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/nextjs-development"
   ],
   "mirrored": [
-   "~/projects/mcailabs-v4.0/.agents/skills/nextjs-development"
+   "~/projects/mcailabs-v4.0/.agents/skills/nextjs-development",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/nextjs-development"
   ]
  },
  {
@@ -1595,9 +1973,13 @@
   "variant": 0,
   "srcs": [
    "~/projects/mcailabs-v4.0/.agents/skills/oauth2-authentication",
-   "~/projects/mcailabs-v4.0/.claude/skills/oauth2-authentication"
+   "~/projects/mcailabs-v4.0/.claude/skills/oauth2-authentication",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/oauth2-authentication",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/oauth2-authentication"
   ],
   "kinds": [
+   "content",
+   "install",
    "content",
    "install"
   ],
@@ -1605,10 +1987,12 @@
   "files": 2,
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/oauth2-authentication",
   "linked": [
-   "~/projects/mcailabs-v4.0/.claude/skills/oauth2-authentication"
+   "~/projects/mcailabs-v4.0/.claude/skills/oauth2-authentication",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/oauth2-authentication"
   ],
   "mirrored": [
-   "~/projects/mcailabs-v4.0/.agents/skills/oauth2-authentication"
+   "~/projects/mcailabs-v4.0/.agents/skills/oauth2-authentication",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/oauth2-authentication"
   ]
  },
  {
@@ -1633,6 +2017,26 @@
  },
  {
   "name": "oyuncak-mevzuat",
+  "slug": "oyuncak-mevzuat--cloud",
+  "cat": "02-masifico-ahsap-oyuncak",
+  "hash": "f1ddba98ac12",
+  "variant": 1,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/oyuncak-mevzuat"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 7720,
+  "files": 1,
+  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/oyuncak-mevzuat--cloud",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/oyuncak-mevzuat"
+  ]
+ },
+ {
+  "name": "oyuncak-mevzuat",
   "slug": "oyuncak-mevzuat--masifico",
   "cat": "02-masifico-ahsap-oyuncak",
   "hash": "b1cdb30a3e68",
@@ -1653,22 +2057,21 @@
  },
  {
   "name": "oyuncak-mevzuat",
-  "slug": "oyuncak-mevzuat--cloud",
+  "slug": "oyuncak-mevzuat--masifico-gh",
   "cat": "02-masifico-ahsap-oyuncak",
-  "hash": "f1ddba98ac12",
+  "hash": "478f017b6f8e",
   "variant": 1,
   "srcs": [
-   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/oyuncak-mevzuat"
+   "~/Documents/GitHub/masifico/skills/oyuncak-mevzuat"
   ],
   "kinds": [
-   "cloud"
+   "content"
   ],
-  "bytes": 7720,
-  "files": 1,
-  "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/oyuncak-mevzuat--cloud",
+  "bytes": 14860,
+  "lib": "~/Documents/GitHub/skills/kutuphane/02-masifico-ahsap-oyuncak/oyuncak-mevzuat--masifico-gh",
   "linked": [],
   "mirrored": [
-   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/oyuncak-mevzuat"
+   "~/Documents/GitHub/masifico/skills/oyuncak-mevzuat"
   ]
  },
  {
@@ -1678,9 +2081,11 @@
   "hash": "75b275b49974",
   "variant": 0,
   "srcs": [
-   "~/projects/masifico/skills/oyuncak-pazar-radari"
+   "~/projects/masifico/skills/oyuncak-pazar-radari",
+   "~/Documents/GitHub/masifico/skills/oyuncak-pazar-radari"
   ],
   "kinds": [
+   "content",
    "content"
   ],
   "bytes": 10143,
@@ -1688,7 +2093,8 @@
   "lib": "~/skills/kutuphane/02-masifico-ahsap-oyuncak/oyuncak-pazar-radari",
   "linked": [],
   "mirrored": [
-   "~/projects/masifico/skills/oyuncak-pazar-radari"
+   "~/projects/masifico/skills/oyuncak-pazar-radari",
+   "~/Documents/GitHub/masifico/skills/oyuncak-pazar-radari"
   ]
  },
  {
@@ -1759,9 +2165,11 @@
   "variant": 0,
   "srcs": [
    "~/projects/reelsindustry/.claude/skills/pexels-media-scout",
-   "~/projects/weftrecords/.claude/skills/pexels-media-scout"
+   "~/projects/weftrecords/.claude/skills/pexels-media-scout",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/pexels-media-scout"
   ],
   "kinds": [
+   "install",
    "install",
    "install"
   ],
@@ -1770,7 +2178,8 @@
   "lib": "~/skills/kutuphane/09-cad-gorsel/pexels-media-scout",
   "linked": [
    "~/projects/reelsindustry/.claude/skills/pexels-media-scout",
-   "~/projects/weftrecords/.claude/skills/pexels-media-scout"
+   "~/projects/weftrecords/.claude/skills/pexels-media-scout",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/pexels-media-scout"
   ],
   "mirrored": []
  },
@@ -1801,9 +2210,11 @@
   "hash": "6a09effd5a39",
   "variant": 0,
   "srcs": [
-   "~/projects/instagram-reels/docs/physics-reel-forge"
+   "~/projects/instagram-reels/docs/physics-reel-forge",
+   "~/Documents/GitHub/instagram-reels/docs/physics-reel-forge"
   ],
   "kinds": [
+   "content",
    "content"
   ],
   "bytes": 11460,
@@ -1811,7 +2222,8 @@
   "lib": "~/skills/kutuphane/03-video-ses-uretim/physics-reel-forge",
   "linked": [],
   "mirrored": [
-   "~/projects/instagram-reels/docs/physics-reel-forge"
+   "~/projects/instagram-reels/docs/physics-reel-forge",
+   "~/Documents/GitHub/instagram-reels/docs/physics-reel-forge"
   ]
  },
  {
@@ -1856,26 +2268,6 @@
  },
  {
   "name": "portfoy-tahmin",
-  "slug": "portfoy-tahmin--portfoy-butce",
-  "cat": "01-finans-yatirim",
-  "hash": "285c4f7fbeed",
-  "variant": 1,
-  "srcs": [
-   "~/projects/portfoy-butce/.claude/skills/portfoy-tahmin"
-  ],
-  "kinds": [
-   "install"
-  ],
-  "bytes": 16585,
-  "files": 7,
-  "lib": "~/skills/kutuphane/01-finans-yatirim/portfoy-tahmin--portfoy-butce",
-  "linked": [
-   "~/projects/portfoy-butce/.claude/skills/portfoy-tahmin"
-  ],
-  "mirrored": []
- },
- {
-  "name": "portfoy-tahmin",
   "slug": "portfoy-tahmin--cloud",
   "cat": "01-finans-yatirim",
   "hash": "85c6303ed3dd",
@@ -1895,22 +2287,68 @@
   ]
  },
  {
+  "name": "portfoy-tahmin",
+  "slug": "portfoy-tahmin--portfoy-butce",
+  "cat": "01-finans-yatirim",
+  "hash": "285c4f7fbeed",
+  "variant": 1,
+  "srcs": [
+   "~/projects/portfoy-butce/.claude/skills/portfoy-tahmin"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 16585,
+  "files": 7,
+  "lib": "~/skills/kutuphane/01-finans-yatirim/portfoy-tahmin--portfoy-butce",
+  "linked": [
+   "~/projects/portfoy-butce/.claude/skills/portfoy-tahmin"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "post-forge",
+  "slug": "post-forge",
+  "cat": "09-cad-gorsel",
+  "hash": "",
+  "variant": 0,
+  "srcs": [
+   "github:farukciftler/pipsworn → .claude/skills/post-forge",
+   "~/Documents/GitHub/pipsworn/.claude/skills/post-forge"
+  ],
+  "kinds": [
+   "github",
+   "install"
+  ],
+  "bytes": 0,
+  "lib": "~/skills/kutuphane/09-cad-gorsel/post-forge",
+  "linked": [
+   "~/Documents/GitHub/pipsworn/.claude/skills/post-forge"
+  ],
+  "mirrored": [
+   "github:farukciftler/pipsworn → .claude/skills/post-forge"
+  ]
+ },
+ {
   "name": "postgresql",
   "slug": "postgresql",
   "cat": "07-yazilim-muhendislik",
   "hash": "a61b656b2417",
   "variant": 0,
   "srcs": [
-   "~/projects/mcailabs-v4.0/.claude/skills/postgresql"
+   "~/projects/mcailabs-v4.0/.claude/skills/postgresql",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/postgresql"
   ],
   "kinds": [
+   "install",
    "install"
   ],
   "bytes": 34955,
   "files": 2,
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/postgresql",
   "linked": [
-   "~/projects/mcailabs-v4.0/.claude/skills/postgresql"
+   "~/projects/mcailabs-v4.0/.claude/skills/postgresql",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/postgresql"
   ],
   "mirrored": []
  },
@@ -1921,9 +2359,11 @@
   "hash": "df22ac31d561",
   "variant": 1,
   "srcs": [
-   "~/projects/mcailabs-v4.0/.agents/skills/postgresql"
+   "~/projects/mcailabs-v4.0/.agents/skills/postgresql",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/postgresql"
   ],
   "kinds": [
+   "content",
    "content"
   ],
   "bytes": 34954,
@@ -1931,7 +2371,8 @@
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/postgresql--mcailabs-v4-0",
   "linked": [],
   "mirrored": [
-   "~/projects/mcailabs-v4.0/.agents/skills/postgresql"
+   "~/projects/mcailabs-v4.0/.agents/skills/postgresql",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/postgresql"
   ]
  },
  {
@@ -1958,18 +2399,25 @@
   "name": "procedural-game-audio",
   "slug": "procedural-game-audio",
   "cat": "03-video-ses-uretim",
-  "hash": "85cf165d00d4",
+  "hash": "ae2983327938",
   "variant": 0,
   "srcs": [
-   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/procedural-game-audio"
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/procedural-game-audio",
+   "~/Documents/GitHub/pipsworn/.claude/skills/procedural-game-audio",
+   "~/Documents/GitHub/dietrying/.claude/skills/procedural-game-audio"
   ],
   "kinds": [
-   "cloud"
+   "cloud",
+   "install",
+   "install"
   ],
-  "bytes": 9646,
+  "bytes": 9733,
   "files": 1,
   "lib": "~/skills/kutuphane/03-video-ses-uretim/procedural-game-audio",
-  "linked": [],
+  "linked": [
+   "~/Documents/GitHub/pipsworn/.claude/skills/procedural-game-audio",
+   "~/Documents/GitHub/dietrying/.claude/skills/procedural-game-audio"
+  ],
   "mirrored": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/procedural-game-audio"
   ]
@@ -1982,9 +2430,13 @@
   "variant": 0,
   "srcs": [
    "~/projects/mcailabs-v4.0/.agents/skills/pydantic",
-   "~/projects/mcailabs-v4.0/.claude/skills/pydantic"
+   "~/projects/mcailabs-v4.0/.claude/skills/pydantic",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/pydantic",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/pydantic"
   ],
   "kinds": [
+   "content",
+   "install",
    "content",
    "install"
   ],
@@ -1992,10 +2444,12 @@
   "files": 3,
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/pydantic",
   "linked": [
-   "~/projects/mcailabs-v4.0/.claude/skills/pydantic"
+   "~/projects/mcailabs-v4.0/.claude/skills/pydantic",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/pydantic"
   ],
   "mirrored": [
-   "~/projects/mcailabs-v4.0/.agents/skills/pydantic"
+   "~/projects/mcailabs-v4.0/.agents/skills/pydantic",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/pydantic"
   ]
  },
  {
@@ -2005,16 +2459,19 @@
   "hash": "0af0e478343c",
   "variant": 0,
   "srcs": [
-   "~/projects/mcailabs-v4.0/.claude/skills/pytest"
+   "~/projects/mcailabs-v4.0/.claude/skills/pytest",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/pytest"
   ],
   "kinds": [
+   "install",
    "install"
   ],
   "bytes": 65786,
   "files": 3,
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/pytest",
   "linked": [
-   "~/projects/mcailabs-v4.0/.claude/skills/pytest"
+   "~/projects/mcailabs-v4.0/.claude/skills/pytest",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/pytest"
   ],
   "mirrored": []
  },
@@ -2025,9 +2482,11 @@
   "hash": "f311d3a3a532",
   "variant": 1,
   "srcs": [
-   "~/projects/mcailabs-v4.0/.agents/skills/pytest"
+   "~/projects/mcailabs-v4.0/.agents/skills/pytest",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/pytest"
   ],
   "kinds": [
+   "content",
    "content"
   ],
   "bytes": 65785,
@@ -2035,7 +2494,8 @@
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/pytest--mcailabs-v4-0",
   "linked": [],
   "mirrored": [
-   "~/projects/mcailabs-v4.0/.agents/skills/pytest"
+   "~/projects/mcailabs-v4.0/.agents/skills/pytest",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/pytest"
   ]
  },
  {
@@ -2046,9 +2506,13 @@
   "variant": 0,
   "srcs": [
    "~/projects/mcailabs-v4.0/.agents/skills/react-patterns",
-   "~/projects/mcailabs-v4.0/.claude/skills/react-patterns"
+   "~/projects/mcailabs-v4.0/.claude/skills/react-patterns",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/react-patterns",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/react-patterns"
   ],
   "kinds": [
+   "content",
+   "install",
    "content",
    "install"
   ],
@@ -2056,11 +2520,32 @@
   "files": 3,
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/react-patterns",
   "linked": [
-   "~/projects/mcailabs-v4.0/.claude/skills/react-patterns"
+   "~/projects/mcailabs-v4.0/.claude/skills/react-patterns",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/react-patterns"
   ],
   "mirrored": [
-   "~/projects/mcailabs-v4.0/.agents/skills/react-patterns"
+   "~/projects/mcailabs-v4.0/.agents/skills/react-patterns",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/react-patterns"
   ]
+ },
+ {
+  "name": "reklam-ve-performans",
+  "slug": "reklam-ve-performans",
+  "cat": "05-pazarlama-buyume",
+  "hash": "ef376563416a",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/moonstone/.claude/skills/reklam-ve-performans"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 14367,
+  "lib": "~/Documents/GitHub/skills/kutuphane/05-pazarlama-buyume/reklam-ve-performans",
+  "linked": [
+   "~/Documents/GitHub/moonstone/.claude/skills/reklam-ve-performans"
+  ],
+  "mirrored": []
  },
  {
   "name": "retro-record-label",
@@ -2092,16 +2577,38 @@
   "hash": "0e172ecec26a",
   "variant": 0,
   "srcs": [
-   "~/projects/kartelastrateji/.claude/skills/rpdm-mevzuat"
+   "~/projects/kartelastrateji/.claude/skills/rpdm-mevzuat",
+   "~/Documents/GitHub/kartelastrateji/.claude/skills/rpdm-mevzuat"
   ],
   "kinds": [
+   "install",
    "install"
   ],
   "bytes": 5540,
   "files": 6,
   "lib": "~/skills/kutuphane/12-marka-musteri/rpdm-mevzuat",
   "linked": [
-   "~/projects/kartelastrateji/.claude/skills/rpdm-mevzuat"
+   "~/projects/kartelastrateji/.claude/skills/rpdm-mevzuat",
+   "~/Documents/GitHub/kartelastrateji/.claude/skills/rpdm-mevzuat"
+  ],
+  "mirrored": []
+ },
+ {
+  "name": "sahibinden-arama",
+  "slug": "sahibinden-arama",
+  "cat": "10-yasam-turkiye",
+  "hash": "8f8569a05996",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/emlakarama/.claude/skills/sahibinden-arama"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 8805,
+  "lib": "~/Documents/GitHub/skills/kutuphane/10-yasam-turkiye/sahibinden-arama",
+  "linked": [
+   "~/Documents/GitHub/emlakarama/.claude/skills/sahibinden-arama"
   ],
   "mirrored": []
  },
@@ -2189,6 +2696,25 @@
   ]
  },
  {
+  "name": "seo-expert",
+  "slug": "seo-expert--gemini",
+  "cat": "05-pazarlama-buyume",
+  "hash": "425c35515496",
+  "variant": 1,
+  "srcs": [
+   "~/.gemini/config/skills/seo-expert"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 3521,
+  "lib": "~/Documents/GitHub/skills/kutuphane/05-pazarlama-buyume/seo-expert--gemini",
+  "linked": [],
+  "mirrored": [
+   "~/.gemini/config/skills/seo-expert"
+  ]
+ },
+ {
   "name": "serverim-build",
   "slug": "serverim-build",
   "cat": "07-yazilim-muhendislik",
@@ -2223,6 +2749,25 @@
   "bytes": 11901,
   "files": 1,
   "lib": "~/skills/kutuphane/14-meta-sistem/setup-cowork",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/setup-cowork"
+  ]
+ },
+ {
+  "name": "setup-cowork",
+  "slug": "setup-cowork--cloud",
+  "cat": "14-meta-sistem",
+  "hash": "c8c94cdef569",
+  "variant": 1,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/setup-cowork"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 3039,
+  "lib": "~/Documents/GitHub/skills/kutuphane/14-meta-sistem/setup-cowork--cloud",
   "linked": [],
   "mirrored": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/setup-cowork"
@@ -2360,9 +2905,11 @@
   "variant": 0,
   "srcs": [
    "~/projects/reelsindustry/.claude/skills/stock-footage-forge",
-   "~/projects/weftrecords/.claude/skills/stock-footage-forge"
+   "~/projects/weftrecords/.claude/skills/stock-footage-forge",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/stock-footage-forge"
   ],
   "kinds": [
+   "install",
    "install",
    "install"
   ],
@@ -2371,7 +2918,8 @@
   "lib": "~/skills/kutuphane/03-video-ses-uretim/stock-footage-forge",
   "linked": [
    "~/projects/reelsindustry/.claude/skills/stock-footage-forge",
-   "~/projects/weftrecords/.claude/skills/stock-footage-forge"
+   "~/projects/weftrecords/.claude/skills/stock-footage-forge",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/stock-footage-forge"
   ],
   "mirrored": []
  },
@@ -2419,6 +2967,25 @@
   ]
  },
  {
+  "name": "tacet-ui-ux-design",
+  "slug": "tacet-ui-ux-design",
+  "cat": "06-ux-urun",
+  "hash": "ce0e21b86169",
+  "variant": 0,
+  "srcs": [
+   "~/.gemini/config/skills/tacet-ui-ux-design"
+  ],
+  "kinds": [
+   "content"
+  ],
+  "bytes": 6601,
+  "lib": "~/Documents/GitHub/skills/kutuphane/06-ux-urun/tacet-ui-ux-design",
+  "linked": [],
+  "mirrored": [
+   "~/.gemini/config/skills/tacet-ui-ux-design"
+  ]
+ },
+ {
   "name": "tahmin-savcisi",
   "slug": "tahmin-savcisi",
   "cat": "01-finans-yatirim",
@@ -2446,9 +3013,13 @@
   "variant": 0,
   "srcs": [
    "~/projects/mcailabs-v4.0/.agents/skills/tailwind-css",
-   "~/projects/mcailabs-v4.0/.claude/skills/tailwind-css"
+   "~/projects/mcailabs-v4.0/.claude/skills/tailwind-css",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/tailwind-css",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/tailwind-css"
   ],
   "kinds": [
+   "content",
+   "install",
    "content",
    "install"
   ],
@@ -2456,10 +3027,12 @@
   "files": 3,
   "lib": "~/skills/kutuphane/07-yazilim-muhendislik/tailwind-css",
   "linked": [
-   "~/projects/mcailabs-v4.0/.claude/skills/tailwind-css"
+   "~/projects/mcailabs-v4.0/.claude/skills/tailwind-css",
+   "~/Documents/GitHub/mcailabs-v4.0/.claude/skills/tailwind-css"
   ],
   "mirrored": [
-   "~/projects/mcailabs-v4.0/.agents/skills/tailwind-css"
+   "~/projects/mcailabs-v4.0/.agents/skills/tailwind-css",
+   "~/Documents/GitHub/mcailabs-v4.0/.agents/skills/tailwind-css"
   ]
  },
  {
@@ -2483,22 +3056,44 @@
   ]
  },
  {
+  "name": "trip-konaklama-avcisi",
+  "slug": "trip-konaklama-avcisi",
+  "cat": "10-yasam-turkiye",
+  "hash": "f0921a290b54",
+  "variant": 0,
+  "srcs": [
+   "~/Documents/GitHub/tripsearch/.claude/skills/trip-konaklama-avcisi"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 15549,
+  "lib": "~/Documents/GitHub/skills/kutuphane/10-yasam-turkiye/trip-konaklama-avcisi",
+  "linked": [
+   "~/Documents/GitHub/tripsearch/.claude/skills/trip-konaklama-avcisi"
+  ],
+  "mirrored": []
+ },
+ {
   "name": "turkce-anlati",
   "slug": "turkce-anlati",
   "cat": "04-icerik-yazim-ceviri",
   "hash": "a55ea2aeedb4",
   "variant": 0,
   "srcs": [
-   "~/projects/reelsindustry/.claude/skills/turkce-anlati"
+   "~/projects/reelsindustry/.claude/skills/turkce-anlati",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/turkce-anlati"
   ],
   "kinds": [
+   "install",
    "install"
   ],
   "bytes": 6938,
   "files": 2,
   "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/turkce-anlati",
   "linked": [
-   "~/projects/reelsindustry/.claude/skills/turkce-anlati"
+   "~/projects/reelsindustry/.claude/skills/turkce-anlati",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/turkce-anlati"
   ],
   "mirrored": []
  },
@@ -2643,9 +3238,11 @@
   "variant": 0,
   "srcs": [
    "~/projects/reelsindustry/.claude/skills/weft-channel",
-   "~/projects/weftrecords/.claude/skills/weft-channel"
+   "~/projects/weftrecords/.claude/skills/weft-channel",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/weft-channel"
   ],
   "kinds": [
+   "install",
    "install",
    "install"
   ],
@@ -2654,7 +3251,8 @@
   "lib": "~/skills/kutuphane/03-video-ses-uretim/weft-channel",
   "linked": [
    "~/projects/reelsindustry/.claude/skills/weft-channel",
-   "~/projects/weftrecords/.claude/skills/weft-channel"
+   "~/projects/weftrecords/.claude/skills/weft-channel",
+   "~/Documents/GitHub/reelsindustry/.claude/skills/weft-channel"
   ],
   "mirrored": []
  },
@@ -2759,120 +3357,6 @@
   "linked": [],
   "mirrored": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/youtube-shorts-optimizer"
-  ]
- },
- {
-  "name": "arayuz-denetimi",
-  "slug": "arayuz-denetimi",
-  "cat": "06-ux-urun",
-  "hash": "",
-  "variant": 0,
-  "srcs": [
-   "github:farukciftler/terapipanel → .claude/skills/arayuz-denetimi"
-  ],
-  "kinds": [
-   "github"
-  ],
-  "bytes": 0,
-  "lib": "~/skills/kutuphane/06-ux-urun/arayuz-denetimi",
-  "linked": [],
-  "mirrored": [
-   "github:farukciftler/terapipanel → .claude/skills/arayuz-denetimi"
-  ]
- },
- {
-  "name": "icerik-yaz",
-  "slug": "icerik-yaz",
-  "cat": "04-icerik-yazim-ceviri",
-  "hash": "",
-  "variant": 0,
-  "srcs": [
-   "github:farukciftler/masifico-web → .claude/skills/icerik-yaz"
-  ],
-  "kinds": [
-   "github"
-  ],
-  "bytes": 0,
-  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/icerik-yaz",
-  "linked": [],
-  "mirrored": [
-   "github:farukciftler/masifico-web → .claude/skills/icerik-yaz"
-  ]
- },
- {
-  "name": "apple-platform-architect",
-  "slug": "apple-platform-architect",
-  "cat": "07-yazilim-muhendislik",
-  "hash": "",
-  "variant": 0,
-  "srcs": [
-   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect"
-  ],
-  "kinds": [
-   "github"
-  ],
-  "bytes": 0,
-  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/apple-platform-architect",
-  "linked": [],
-  "mirrored": [
-   "github:farukciftler/pipsworn → .claude/skills/apple-platform-architect"
-  ]
- },
- {
-  "name": "appstore-market-analyst",
-  "slug": "appstore-market-analyst",
-  "cat": "05-pazarlama-buyume",
-  "hash": "",
-  "variant": 0,
-  "srcs": [
-   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst"
-  ],
-  "kinds": [
-   "github"
-  ],
-  "bytes": 0,
-  "lib": "~/skills/kutuphane/05-pazarlama-buyume/appstore-market-analyst",
-  "linked": [],
-  "mirrored": [
-   "github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst"
-  ]
- },
- {
-  "name": "jira-task-writer",
-  "slug": "jira-task-writer",
-  "cat": "06-ux-urun",
-  "hash": "",
-  "variant": 0,
-  "srcs": [
-   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer"
-  ],
-  "kinds": [
-   "github"
-  ],
-  "bytes": 0,
-  "lib": "~/skills/kutuphane/06-ux-urun/jira-task-writer",
-  "linked": [],
-  "mirrored": [
-   "github:farukciftler/pipsworn → .claude/skills/jira-task-writer"
-  ]
- },
- {
-  "name": "post-forge",
-  "slug": "post-forge",
-  "cat": "09-cad-gorsel",
-  "hash": "",
-  "variant": 0,
-  "srcs": [
-   "github:farukciftler/pipsworn → .claude/skills/post-forge"
-  ],
-  "kinds": [
-   "github"
-  ],
-  "bytes": 0,
-  "lib": "~/skills/kutuphane/09-cad-gorsel/post-forge",
-  "linked": [],
-  "mirrored": [
-   "github:farukciftler/pipsworn → .claude/skills/post-forge"
   ]
  }
 ]

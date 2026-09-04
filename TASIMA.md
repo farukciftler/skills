@@ -15,7 +15,9 @@ indirildi (18 ayrışmış sürüm ayrı girdi olarak korundu) ve 14 kategoriye
 dağıtıldı.
 
 Ardından 175 GitHub deposu tarandı ve yalnız orada duran 6 skill eklendi
-(§ GitHub taraması). **Güncel toplam: 119 benzersiz skill, 137 girdi.**
+(§ GitHub taraması). Son olarak ikinci bir bilgisayar tarandı ve oradan 16 girdi
+geldi (§ İkinci makine taraması). **Güncel toplam: 127 benzersiz skill,
+153 girdi.**
 
 Tam yedek: `~/skills-yedek-20260904-135254.tar.gz` (2,6 MB).
 
@@ -197,3 +199,54 @@ for r in json.load(sys.stdin):
     if y: print(r['name'], len(y))"
 ```
 
+## İkinci makine taraması
+
+İlk iki tur tek bir bilgisayarda yapılmıştı; orada depolar `~/projects/` altında
+duruyordu. İkinci makinede aynı depolar `~/Documents/GitHub/` altında ve
+`~/projects/` başka, ilgisiz bir dizin — yani manifest'teki `~/projects/…`
+yolları o makinede **yok**. Bu yüzden tarama `topla.py` ile değil, kütüphaneyi
+bozmayan `ekle.py` ile yapıldı (bkz. KURULUM.md § 3).
+
+133 kaynak bulundu; 115'i kütüphanede zaten aynen vardı. Kalan 18'den 16'sı
+girdi oldu, 1'i mevcut girdiyi tazeledi, 1'i atlandı.
+
+**Yeni ad olarak gelen 8 skill**
+
+| Skill | Nereden |
+|---|---|
+| `aso-optimizer`, `mobile-ux-architect`, `mobile-puzzle-game-ui-designer`, `mobile-puzzle-game-ux-audit-expert`, `tacet-ui-ux-design` | `~/.gemini/config/skills/` |
+| `reklam-ve-performans` | `moonstone` |
+| `sahibinden-arama` | `emlakarama` |
+| `trip-konaklama-avcisi` | `tripsearch` |
+
+**Ayrışmış sürüm olarak gelen 8 girdi**
+
+`seo-expert--gemini`, `arayuz-denetimi--kartelapsikoloji-gh`,
+`masifico-uretim-muhendisi--masifico-gh`, `oyuncak-mevzuat--masifico-gh`,
+`mobilya-cad--mobilya-gh`, `gorsel-uretim--moonstone-gh`,
+`moonstone-residence--moonstone-gh`, `setup-cowork--cloud`.
+
+> Bu sekizinde **hangi sürümün daha yeni olduğu belirlenemedi:** kütüphanedeki
+> kopyaların dosya zamanları toplama gününe (4 Eylül 2026) eşitlenmiş durumda,
+> dolayısıyla mtime karşılaştırması anlamsız. Düz addaki girdi "daha yenidir"
+> kuralı bu girdiler için **geçerli değil** — iki sürümü de tut, kullanmadan önce
+> ikisini karşılaştır. `mobilya-cad`, `gorsel-uretim` ve `moonstone-residence`'ta
+> iki makinenin kopyaları karşılıklı olarak birbirinde olmayan referans/script
+> dosyaları taşıyor; birleştirilmeleri gerekebilir.
+
+**Tazelenen 1 girdi.** `procedural-game-audio` — `dietrying` deposundaki kopya,
+kütüphanedeki claude.ai kopyasının gerçek üst kümesiydi (aynı SKILL.md +
+`references/theme-design.md`), yerinde tazelendi.
+
+**Atlanan 1 kaynak.** `pipsworn` → `chibi-character-factory`: yalnızca
+frontmatter sarımı ve son satır sonu farklıydı, içerikçe özdeş
+(`scripts/ekle.py` içindeki `ATLA` kümesi).
+
+**Taramaya girmeyen kaynaklar.** Bu makinede duran ama Faruk'un yazdığı skill
+olmayan üç öbek `topla.py`'nin `HARIC` listesine eklendi:
+
+| Konum | Adet | Ne |
+|---|---|---|
+| `~/.claude/plugins/cache/` | 70 | Resmî Vercel eklentisi (iki sürümü birden) ve `skill-creator` önbelleği |
+| `~/.cursor/skills-cursor/` | 19 | Cursor'ın yerleşik skill'leri (`onboard`, `review`, `statusline`…) |
+| `~/.claude/scheduled-tasks/` | 8 | Tek seferlik zamanlanmış görev promptları, yeniden kullanılabilir skill değil |

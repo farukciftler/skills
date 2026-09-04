@@ -56,7 +56,7 @@ ComeSyria içeriğini Türkçe, küresel İngilizce ve Suriye Arapçası arasın
 | Writes and audits English narration for vertical short video (Shorts, Reels, TikTok). The text is SPOKEN by TTS and READ as burned-in captions, so written prose rules do not apply. Use when writing a brief's `metin` field for an English channel, rewriting narration that sounds machine-written, or checking a script before synthesis. Triggers: "write the script", "voiceover copy", "narration", "hook", "shorts script", "make it sound human", "this reads like AI", "fact video script".
 
 - **Ölçü:** 5.828 bayt · 0 ek dosya
-- **Kaynak:** ~/projects/reelsindustry/.claude/skills/english-narration
+- **Kaynak:** ~/projects/reelsindustry/.claude/skills/english-narration, ~/Documents/GitHub/reelsindustry/.claude/skills/english-narration
 
 ## `icerik-strateji`
 
@@ -92,7 +92,7 @@ Türkçe ve İngilizce uzun form içerik yazar. Metin elle yazılmış gibi okun
 | Türkçe metinlerdeki yapay zeka yazım izlerini tespit edip doğal, akıcı, insan elinden çıkmış gibi okunan Türkçeye çevirir. Türkçe bir metni "doğallaştır", "insanileştir", "insanca yaz", "yapay zeka kokusunu gider", "akıcı Türkçe yap" istendiğinde veya Türkçe içerik yazım/redaksiyon işlerinde KULLAN. Tespit ettiği kalıplar: -maktadır monotonluğu, metronomik cümle ritmi, "mesele X değil Y" kalıbı, üçleme kuralı, çeviri kokusu, kesik cümle yığını, bürokratik dolgu, boş doğrular, uydurma örnekler, terapist tonu, jenerik girizgah ve kapanışlar, uzun tire, yağcılık, belirsiz kaynak gösterme, sahte şiirsellik ve "belki de" vecizesi.
 
 - **Ölçü:** 76.126 bayt · 4 ek dosya · referans dosyaları var
-- **Kaynak:** ~/projects/reelsindustry/.claude/skills/insanca
+- **Kaynak:** ~/projects/reelsindustry/.claude/skills/insanca, ~/Documents/GitHub/reelsindustry/.claude/skills/insanca
 
 ## `sosyal-medya-post-uret`
 
@@ -119,7 +119,7 @@ ComeSyria için görsel odaklı, marka kimliğine tam uyumlu, üç dilli (TR/EN/
 | Dikey kısa video (Reels · Shorts · TikTok) için Türkçe anlatı metni yazar ve denetler. Metin KONUŞULMAK ve altyazı olarak OKUNMAK üzere yazılır; yazılı makale kuralları burada geçmez. Bir brifin `metin` alanını yazarken, mevcut bir metni doğallaştırırken, seslendirme öncesi denetlerken KULLAN. Tetikleyiciler, "anlatı metni yaz", "senaryo yaz", "voiceover metni", "seslendirme metni", "metni doğallaştır", "çeviri kokuyor", "Türkçesi kötü", "kültüre uygun yaz", "reels metni", "shorts senaryosu", "hook yaz". Yapay zekâ yazım kalıpları için `insanca` skill'i AYRICA geçerlidir; bu skill onun üstüne konuşulan dilin ve Türkiye kültürünün kısıtlarını ekler.
 
 - **Ölçü:** 6.938 bayt · 1 ek dosya · referans dosyaları var
-- **Kaynak:** ~/projects/reelsindustry/.claude/skills/turkce-anlati
+- **Kaynak:** ~/projects/reelsindustry/.claude/skills/turkce-anlati, ~/Documents/GitHub/reelsindustry/.claude/skills/turkce-anlati
 
 ## `yeme-icme`
 

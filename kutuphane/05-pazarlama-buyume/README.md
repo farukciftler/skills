@@ -2,7 +2,7 @@
 
 SEO/ASO denetimi, Shorts optimizasyonu, viral ürün avı, lead üretimi.
 
-7 skill. Üst dizin: [../../README.md](../../README.md)
+10 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `appstore-market-analyst`
 
@@ -11,7 +11,7 @@ SEO/ASO denetimi, Shorts optimizasyonu, viral ürün avı, lead üretimi.
 App Store market analyst for the global and Türkiye markets — category size, what people actually pay for, what price to set, whether paid-upfront / freemium / subscription fits, what an app realistically earns, which categories are saturated, what the most expensive apps charge and why, and how Turkish pricing, taxes and purchasing power change the answer. Use when deciding what app to build, what to charge, whether an idea can make money, how a category monetizes, what competitors charge, or how an app compares to benchmarks. Trigger on Turkish phrasings — "hangi uygulama para kazandırır", "kaç dolara satmalıyım", "abonelik mi tek seferlik mi", "Türkiye'de ne kadar kazanılır", "bu kategori doymuş mu", "rakipler ne kadar alıyor", "fiyatlandırma stratejisi", "en pahalı uygulamalar", "ücretli uygulama satar mı". Use it even when someone only describes an app idea and asks whether it is worth building — that is a market question. Always pulls live figures rather than quoting stale numbers as current.
 
 - **Ölçü:** 6.596 bayt · 5 ek dosya · referans dosyaları var
-- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst
+- **Kaynak:** github:farukciftler/pipsworn → .claude/skills/appstore-market-analyst, ~/Documents/GitHub/pipsworn/.claude/skills/appstore-market-analyst
 
 ## `aso-expert`
 
@@ -20,7 +20,16 @@ App Store market analyst for the global and Türkiye markets — category size, 
 Senior App Store Optimization consultant for iOS App Store and Google Play: keyword research and the 100-char iOS keyword field, title/subtitle/description metadata, screenshot and icon conversion strategy, A/B tests (Apple PPO, Play Store Listing Experiments), Custom Product Pages and Store Listings, ratings and reviews, localization, ASO measurement, and AI-driven app discovery (App Store Tags, Ask Play, ChatGPT/Gemini). Use it whenever an app's store presence is in play — someone shares an App Store or Play link, or asks "why isn't my app ranking", "how do I get more downloads", "review my store listing", "which keywords should I target", "write my app title and subtitle", "install conversion dropped", "should I localize", "plan a screenshot test", or wants an ASO audit, keyword gap analysis, or launch metadata. Trigger even when they never say "ASO", and on Turkish phrasings like "uygulamam indirilmiyor", "app store sıralaması", "anahtar kelime araştırması", "ASO analizi yap", "indirme sayısını artır".
 
 - **Ölçü:** 14.187 bayt · 13 ek dosya · script içerir · referans dosyaları var
-- **Kaynak:** claude.ai senkronu (efemer önbellek), ~/projects/startup değerleme/skill/ilgili-skiller/aso-expert
+- **Kaynak:** claude.ai senkronu (efemer önbellek), ~/projects/startup değerleme/skill/ilgili-skiller/aso-expert, ~/Documents/GitHub/pipsworn/.claude/skills/aso-expert
+
+## `aso-optimizer`
+
+[SKILL.md](aso-optimizer/SKILL.md)
+
+- Use this skill when auditing, writing, or optimizing mobile application store listings for Apple App Store (App Store Connect) and Google Play Store. Enforces 2026 ASO standards: exact character limits, semantic keyword placement, screenshot OCR text indexing, Custom Product Pages (CPPs), App Events, conversion rate optimization (CRO), and post-install retention signals.
+
+- **Ölçü:** 4.059 bayt · 3 ek dosya · referans dosyaları var
+- **Kaynak:** ~/.gemini/config/skills/aso-optimizer
 
 ## `hedef-arastirma`
 
@@ -40,6 +49,15 @@ Terapi Panel için psikoloji kliniği adayı bulma, Attio CRM'e ekleme, uygunluk
 - **Ölçü:** 13.019 bayt · 1 ek dosya
 - **Kaynak:** ~/projects/terapipanel/.claude/skills/klinik-lead-akisi
 
+## `reklam-ve-performans`
+
+[SKILL.md](reklam-ve-performans/SKILL.md)
+
+Moonstone Residence ve konut/emlak projeleri için performans pazarlama ve reklam danışmanlığı — Google Ads ve Meta (Instagram/Facebook) kampanya kurgusu ve hesap yapısı, bütçe kademelendirme ve kanal seçimi, Türkiye emlak sektörü CPM/CPC/lead maliyeti kıyasları ve huni matematiği, reklam kreatifinin ve görselin yorumlanması/tanısı, ölçüm altyapısı (GA4, dönüşüm izleme, CRM ve offline dönüşüm, KVKK-rıza), Reklam Kurulu ve platform reklam politikaları. Şu ifadeler geçtiğinde mutlaka kullan: "reklam verelim", "bütçe ne olmalı", "Google Ads", "Meta reklam", "Instagram reklamı", "kampanya kur", "lead maliyeti", "CPL", "CPM", "CPC", "ROAS", "dönüşüm oranı", "hedefleme", "kitle", "retargeting", "remarketing", "bu reklam neden çalışmıyor", "bu görsel reklamda işe yarar mı", "reklam metni yaz", "A/B test", "piksel kurulumu", "lead formu", "WhatsApp reklamı", "medya planı", "ajans teklifi", "sahibinden doping". Bir reklam bütçesi harcanacaksa, bir kampanyanın performansı yorumlanacaksa ya da bir kreatifin reklamda işe yarayıp yaramayacağı sorulacaksa — "reklam" kelimesi hiç geçmese bile — devreye gir. Organik sosyal medya içeriği için `moonstone-residence` skill'i, görsel dosyası üretmek için `gorsel-uretim` skill'i.
+
+- **Ölçü:** 13.331 bayt · 8 ek dosya · referans dosyaları var
+- **Kaynak:** ~/Documents/GitHub/moonstone/.claude/skills/reklam-ve-performans
+
 ## `seo-expert`
 
 [SKILL.md](seo-expert/SKILL.md)
@@ -48,6 +66,15 @@ Runs a deep, evidence-based SEO and AI-search (GEO/AEO) audit of a real website 
 
 - **Ölçü:** 10.710 bayt · 5 ek dosya · referans dosyaları var
 - **Kaynak:** claude.ai senkronu (efemer önbellek), ~/projects/startup değerleme/skill/ilgili-skiller/seo-expert
+
+## `seo-expert--gemini`
+
+[SKILL.md](seo-expert--gemini/SKILL.md)
+
+- Use this skill when auditing, designing, or implementing SEO (Search Engine Optimization) for web applications, static websites, dynamic SPAs, or e-commerce sites. Enforces Technical SEO, Core Web Vitals, JSON-LD Schema Markup, OpenGraph metadata, semantic HTML hierarchy, crawlability, and AI/LLM search engine visibility.
+
+- **Ölçü:** 3.521 bayt · 3 ek dosya · referans dosyaları var
+- **Kaynak:** ~/.gemini/config/skills/seo-expert
 
 ## `viral-artifact-scout`
 

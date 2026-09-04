@@ -2,7 +2,7 @@
 
 Satın alma, seyahat, vize, hak arama, dijital mahremiyet, etkinlik ve bölgesel mevzuat.
 
-11 skill. Üst dizin: [../../README.md](../../README.md)
+13 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `arac-uzmani`
 
@@ -49,6 +49,15 @@ Belirli bir tarih aralığında ve şehirde (İstanbul başta olmak üzere Türk
 - **Ölçü:** 5.007 bayt · 1 ek dosya · referans dosyaları var
 - **Kaynak:** claude.ai senkronu (efemer önbellek)
 
+## `sahibinden-arama`
+
+[SKILL.md](sahibinden-arama/SKILL.md)
+
+Deep expertise for searching sahibinden.com — building exact search URLs (category slug + location path + filter params), beating the ~1000-result cap with band splitting, discovering the site's `aNN` attribute-filter IDs from a saved "Detaylı Arama" page, parsing search results and listing detail pages into structured data, tracking price drops / new / removed listings across runs, and scoring results. Use whenever the task touches sahibinden listings, filters, or the `emlakarama` CLI in this repo. Trigger on Turkish phrasings — "sahibinden'de ara", "satılık daire bul", "kiralık ev filtrele", "şu URL'yi filtreye çevir", "ilan takibi kur", "fiyatı düşenler", "yeni ilanları getir", "m2 ve oda sayısına göre filtrele", "arsa ilanları", "hangi parametre ne demek", "sahibinden linkini çözümle", "ilanları excel'e çıkar", "kaç sayfa var", "1000 ilan sınırını aş" — and on English ones like "search sahibinden", "parse this listing", "track price changes". Also use when someone pastes a sahibinden.com URL or saved HTML and wants anything done with it. Does NOT bypass bot protection: fetching runs through the user's own already-authenticated browser or saved HTML.
+
+- **Ölçü:** 8.282 bayt · 8 ek dosya · script içerir · referans dosyaları var
+- **Kaynak:** ~/Documents/GitHub/emlakarama/.claude/skills/sahibinden-arama
+
 ## `schengen-randevu-tr`
 
 [SKILL.md](schengen-randevu-tr/SKILL.md)
@@ -75,6 +84,15 @@ Belirli bir tarih/tarih aralığında, belirli bir ülke veya şehirdeki yerel I
 
 - **Ölçü:** 7.918 bayt · 1 ek dosya · referans dosyaları var
 - **Kaynak:** claude.ai senkronu (efemer önbellek)
+
+## `trip-konaklama-avcisi`
+
+[SKILL.md](trip-konaklama-avcisi/SKILL.md)
+
+Trip.com üzerinde çok şartlı konaklama araması yapar — tarih, şehir, tesis tipi, ücretsiz iptal (ve iptal son tarihi), özel banyo/tuvalet, yıldız, puan, bütçe, ve "şu landmark'a max N dakika yürüme mesafesi" gibi kısıtları tek bir filtreli arama URL'ine çevirir, sonuçları canlı okur, her adayı şart şart doğrular ve sıralı kısa liste verir. Kullanıcı "1-6 Ekim Londra'da ücretsiz iptal edilebilir, özel banyolu, British Museum'a 30 dk yürüme mesafesinde otel bul", "trip.com'da ara", "şu tarihlerde şu şehirde otel", "iptal edilebilir oda", "müzeye yakın otel", "bu otel iptal edilebilir mi", "toplam ne tutar" gibi bir şey dediğinde kullan. Kullanıcı "trip.com" demese bile, istek çok şartlı bir otel/konaklama aramasıysa devreye gir. Fiyat ve iptal politikası asla uydurmaz — okur ya da "okunamadı" der.
+
+- **Ölçü:** 14.508 bayt · 9 ek dosya · script içerir · referans dosyaları var
+- **Kaynak:** ~/Documents/GitHub/tripsearch/.claude/skills/trip-konaklama-avcisi
 
 ## `ucuz-bilet-avcisi`
 

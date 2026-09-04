@@ -21,7 +21,7 @@ Bu yüzden buradaki bir dosyayı düzenlemek, o skill'in davranışını **deği
 
 ## Bir skill ararken
 
-1. **[INDEX.md](INDEX.md)** — 131 girdilik alfabetik tablo, tek satırlık özetlerle.
+1. **[INDEX.md](INDEX.md)** — 153 girdilik alfabetik tablo, tek satırlık özetlerle.
 2. **`katalog/skills.json`** — programatik arama için. Her kayıtta `ad`, `ozet`,
    `aciklama` (tam frontmatter), `kategori`, `yol`, `kaynaklar`, `script_var`.
 3. Kategori sayfaları — `kutuphane/<kategori>/README.md`, o alandaki her skill'in
@@ -44,6 +44,9 @@ python3 -c "import json;[print(f\"{x['ad']:34} {x['ozet'][:70]}\") for x in json
   **gerçekten farklı iki skill**. İkisi de eklenti alır; birini diğeri sanma.
 - `--cloud` ekli olanlar claude.ai'daki kopyadır ve genelde **daha eskidir**
   (bkz. `TASIMA.md` § Bayat cloud kopyaları).
+- İkinci makine taramasından gelen 8 girdide **"düz ad daha yenidir" kuralı
+  geçerli değil** — hangisinin yeni olduğu belirlenemedi. Listesi ve gerekçesi:
+  `TASIMA.md` § İkinci makine taraması.
 
 Bir skill üzerinde çalışırken hangi sürümün doğru olduğundan emin değilsen
 `katalog/manifest.json`'daki `srcs` alanına bak — her sürümün geldiği gerçek yol
@@ -59,7 +62,7 @@ Korpusu okurken tekrar eden ve **korunması gereken** desenler:
 - **Referanslar talep üzerine okunur.** `references/` dosyaları kasıtlı olarak
   SKILL.md'nin dışında; hepsini birden okumak bütçe israfıdır. SKILL.md'deki
   yönlendirme tablosuna uy.
-- **Script varsa aritmetiği elle yapma.** 37 skill'de `scripts/` var (ör.
+- **Script varsa aritmetiği elle yapma.** 46 skill'de `scripts/` var (ör.
   `aso_calc.py`, `helal_hesap.py`, `ev_analiz.py`, `pt.py`). Hesap çıktıya
   gidiyorsa script'i çalıştır.
 - **Sınırlar açıkça yazılı.** Skill'ler "ne yapmaz"ını söylüyor (fetva vermez,
@@ -77,8 +80,11 @@ Korpusu okurken tekrar eden ve **korunması gereken** desenler:
    ```bash
    python3 scripts/katalog_uret.py
    ```
-3. Yeni bir skill kaynak konumdan kütüphaneye alınacaksa `scripts/topla.py`
-   çalıştır (yeniden tarar, kopyalar, manifest'i günceller).
+3. Yeni bir skill kaynak konumdan kütüphaneye alınacaksa `scripts/ekle.py`
+   çalıştır (tarar, yalnız eksik/ayrışmış içeriği kopyalar, manifest'e ekler).
+   `scripts/topla.py --uygula` yalnız ilk kurulum içindir — manifest'i sıfırdan
+   yazdığı için ikinci bir makinede çalıştırılırsa öteki makinenin girdilerini
+   katalogdan düşürür.
 
 Kategori ekleme/değiştirme: `scripts/katalog_uret.py` içindeki
 `KATEGORI_BASLIK` sözlüğü ile `scripts/topla.py` içindeki `KATEGORI` eşlemesi

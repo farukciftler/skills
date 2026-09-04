@@ -11,7 +11,7 @@ Fizik ve ambient video hatları, müzik besteleme, plak etiketi, kanal yönetimi
 Turns a still cover image plus an audio track into a long-form healing/ambient music video with layered procedural effects (rising smoke and incense plumes, drifting fog, dust motes, god rays, bokeh, starfields, water caustics, liquid warping of the artwork, bloom, grain, colour grading) in pure ffmpeg, no stock footage. Renders a short seamless loop and stream-copies it under the full track, so a 60-minute video costs minutes of CPU. Use whenever a video must be made from an album cover or still image, for a music track on YouTube, or with per-track variation across an album — "kapağı videoya çevir", "healing müzik videosu yap", "duman efekti ekle", "youtube için 1 saatlik video", "her parçaya farklı efekt", "ffmpeg ile duman/toz/ışık efekti", "lo-fi görsel yap", "sleep music videosu", "loop video hazırla", "spotify canvas". Trigger even when ffmpeg is never mentioned, if the deliverable is a video whose only footage is a still image plus effects. Pairs with retro-record-label and suno-composer.
 
 - **Ölçü:** 9.829 bayt · 8 ek dosya · script içerir · referans dosyaları var
-- **Kaynak:** ~/Documents/GitHub/weftrecords/.claude/skills/ambient-video-forge, ~/projects/reelsindustry/.claude/skills/ambient-video-forge, ~/projects/weftrecords/.claude/skills/ambient-video-forge
+- **Kaynak:** ~/Documents/GitHub/weftrecords/.claude/skills/ambient-video-forge, ~/projects/reelsindustry/.claude/skills/ambient-video-forge, ~/projects/weftrecords/.claude/skills/ambient-video-forge, ~/Documents/GitHub/reelsindustry/.claude/skills/ambient-video-forge
 
 ## `chibi-character-factory`
 
@@ -47,7 +47,7 @@ Mass-produces 9:16 vertical physics Reels/Shorts/TikToks with no window, no edit
 Names and optimises functional-audio releases for YouTube — healing music, 432 Hz / 528 Hz / solfeggio, binaural and delta beds, sleep, meditation, study, spa, reiki, lo-fi, ambient — covering the track name, the search title, description, chapters, tags, hashtags, playlist and series architecture, plus the claim and duplication gates that keep a Suno-fed catalogue monetisable. Use whenever a track or long-form upload needs a title or rename, a batch needs a naming system, or titles need auditing for truncation, health-claim risk, false duration or templated repetition. Trigger on "şarkı ismi ne olsun", "youtube başlığı yaz", "432 hz videosuna isim", "healing music kanalı", "başlık optimizasyonu", "hangi keyword'ü hedefleyelim", "bu isim aratılır mı", "AI diye demonetize olur muyum", "seri isimlendirmesi", "playlist ismi", "uzun format başlığı". Use it even when someone only says "isim bul" or "başlık" about a music upload — on YouTube the name IS the distribution.
 
 - **Ölçü:** 10.730 bayt · 7 ek dosya · script içerir · referans dosyaları var
-- **Kaynak:** ~/Documents/GitHub/weftrecords/.claude/skills/healing-audio-youtube-seo, ~/projects/reelsindustry/.claude/skills/healing-audio-youtube-seo, ~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo
+- **Kaynak:** ~/Documents/GitHub/weftrecords/.claude/skills/healing-audio-youtube-seo, ~/projects/reelsindustry/.claude/skills/healing-audio-youtube-seo, ~/projects/weftrecords/.claude/skills/healing-audio-youtube-seo, ~/Documents/GitHub/reelsindustry/.claude/skills/healing-audio-youtube-seo
 
 ## `kling-video-uretim`
 
@@ -65,7 +65,7 @@ Moonstone Residence için bir render ya da fotoğraftan fal.ai üzerinde Kling i
 Builds and runs a rigid-body physics pipeline that mass-produces 9:16 vertical "satisfying physics" Reels/Shorts/TikToks on Apple Silicon — falling cubes, jointed chains whipping over a pivot, dominoes, ball-pit fills, tower collapses — via Godot+Jolt on Metal, deterministic Movie Maker capture, impulse-driven impact audio and VideoToolbox encoding. Use whenever the deliverable is a physics-driven short-form video or its machinery — scene recipes, chain tuning, seed sweeps, batch rendering, render speed, safe-zone framing, seamless loops, impact sound, export settings. Trigger on "fizik motoruyla video üret", "düşen küpler videosu", "zincir simülasyonu", "satisfying physics reels", "toplu video üret", "seed varyasyonu", "render çok yavaş", "9:16 dikey render", "çarpışma sesi ekle", "Godot ile video çıkar", "loop olacak video" — even when the user only says "viral video üretmek istiyorum" but the mechanism is a simulation, or asks whether to use Godot, Blender, Rapier or a custom Metal engine for this genre.
 
 - **Ölçü:** 11.460 bayt · 10 ek dosya · referans dosyaları var
-- **Kaynak:** ~/projects/instagram-reels/docs/physics-reel-forge
+- **Kaynak:** ~/projects/instagram-reels/docs/physics-reel-forge, ~/Documents/GitHub/instagram-reels/docs/physics-reel-forge
 
 ## `procedural-game-audio`
 
@@ -73,8 +73,8 @@ Builds and runs a rigid-body physics pipeline that mass-produces 9:16 vertical "
 
 Build procedural (rule-generated, zero-asset) music and SFX engines for Apple-ecosystem apps — iOS/macOS/visionOS games and apps — using pure AVFoundation (AVAudioSourceNode), with a real-time-safe three-layer architecture (synth → sample-accurate clock → composer), adaptive intensity-driven themes, non-overlapping SFX, ducking, and crossfades. Use this skill whenever the user mentions procedural music, adaptive/dynamic game music, "prosedürel müzik", synthesizing audio without asset files, AVAudioSourceNode, AVAudioEngine render callbacks, chiptune/ambient generation in Swift, an AudioKit-vs-native decision, background music for a game, sound effects that "shouldn't overlap", or is debugging audio crackle, clicks, AudioConverter -302 errors, or "IOWorkLoop skipping cycle due to overload" — even if they don't say "procedural". Also use it when reviewing or extending an existing AVAudioSourceNode-based engine for real-time safety.
 
-- **Ölçü:** 9.646 bayt · 0 ek dosya
-- **Kaynak:** claude.ai senkronu (efemer önbellek)
+- **Ölçü:** 9.646 bayt · 1 ek dosya · referans dosyaları var
+- **Kaynak:** claude.ai senkronu (efemer önbellek), ~/Documents/GitHub/pipsworn/.claude/skills/procedural-game-audio, ~/Documents/GitHub/dietrying/.claude/skills/procedural-game-audio
 
 ## `retro-record-label`
 
@@ -101,7 +101,7 @@ Format seçimi ve yayın temposu kuralları — yeni bir video/seri fikri değer
 Builds YouTube Shorts (9:16, 1080x1920) and full music videos (16:9) by cutting royalty-free Pexels STOCK VIDEO clips to an existing music track — center-crop/fps normalization, xfade assembly, bar-aligned audio segment with two-pass -14 LUFS loudnorm, safe-area title card, fast h264_videotoolbox render. Use whenever a music release needs a vertical Short, a Reel/TikTok, a promo clip cut from stock footage, or a music video whose footage is real video (not a still cover with effects — that is ambient-video-forge). Trigger on "shorts yap", "shorts üret", "dikey video", "reels", "tiktok videosu", "stok videodan klip", "pexels videolarından video", "müzik videosu kur", "tanıtım klibi", "9:16", and whenever a track needs promotion on the Shorts feed. Pairs with pexels-media-scout (finds the clips) and healing-audio-youtube-seo (titles the upload).
 
 - **Ölçü:** 6.085 bayt · 5 ek dosya · script içerir · referans dosyaları var
-- **Kaynak:** ~/projects/reelsindustry/.claude/skills/stock-footage-forge, ~/projects/weftrecords/.claude/skills/stock-footage-forge
+- **Kaynak:** ~/projects/reelsindustry/.claude/skills/stock-footage-forge, ~/projects/weftrecords/.claude/skills/stock-footage-forge, ~/Documents/GitHub/reelsindustry/.claude/skills/stock-footage-forge
 
 ## `suno-composer`
 
@@ -119,7 +119,7 @@ Composes a song as a trained musician would — key/mode, tempo, meter, harmonic
 Weft Records YouTube kanalını yükleme SONRASINDA yönetir — Studio analitiklerini okumak, sayıları kataloğa yazmak, topluluk (Community) duyurusu geçmek, oynatma listesi/bitiş ekranı/sabitlenmiş yorum kurmak, yorumları yanıtlamak, kanal açıklaması ve anahtar kelimelerini güncellemek, düşük performansta başlık/thumbnail müdahalesine karar vermek. Kanal işleri Chrome eklentisiyle studio.youtube.com üzerinden sürülür. Tetikleyiciler: "kanala bak", "analitik", "youtube studio", "kaç görüntüleme", "views ölç", "CTR", "duyuru geç", "community post", "topluluk gönderisi", "oynatma listesi", "playlist", "bitiş ekranı", "sabitlenmiş yorum", "yorumlara bak", "abone", "kanal açıklaması", "başlığı değiştir", "thumbnail değiştir", "video yayınlandı sonra ne yapacağız", "+30 gün ölçümü". Bir video YouTube'a yüklendikten sonraki HER iş bu skill'e aittir.
 
 - **Ölçü:** 8.107 bayt · 8 ek dosya · script içerir · referans dosyaları var
-- **Kaynak:** ~/projects/reelsindustry/.claude/skills/weft-channel, ~/projects/weftrecords/.claude/skills/weft-channel
+- **Kaynak:** ~/projects/reelsindustry/.claude/skills/weft-channel, ~/projects/weftrecords/.claude/skills/weft-channel, ~/Documents/GitHub/reelsindustry/.claude/skills/weft-channel
 
 ## `weft-channel--weftrecords-gh`
 
