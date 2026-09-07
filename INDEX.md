@@ -1,6 +1,6 @@
 # Alfabetik Skill Dizini
 
-154 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
+157 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
 
 | Skill | Kategori | Ne yapar | Kaynak |
 |---|---|---|---|
@@ -51,6 +51,7 @@
 | [`hedef-arastirma`](kutuphane/05-pazarlama-buyume/hedef-arastirma/SKILL.md) | Pazarlama & Büyüme | Danışmanlığı satabileceğimiz firmaları bulur, eler, puanlar ve Attio'ya yazar. "Kime satalım", "hedef listesi çıkar", "şu sektörde firma bul", "şu listeyi CRM'e… | kurulu |
 | [`helal-portfoy-uzmanlari`](kutuphane/01-finans-yatirim/helal-portfoy-uzmanlari/SKILL.md) | Finans & Yatırım | Beş farklı karakterde helal/katılım finansı yatırımcı personası, Faruk'un gerçek portföy defterini (data/ ve data-es/) okuyup her biri kendi bakış açısından… | kurulu |
 | [`helal-yatirim-uzmani`](kutuphane/01-finans-yatirim/helal-yatirim-uzmani/SKILL.md) ⚙️ | Finans & Yatırım | Türkiye'deki yatırımcı için tam kapsamlı yatırım/finans uzmanlığı — tek kısıt, her enstrüman ve önerinin helal/katılım süzgecinden geçmesi. | claude.ai |
+| [`hypercasual-lab`](kutuphane/05-pazarlama-buyume/hypercasual-lab/SKILL.md) | Pazarlama & Büyüme | Ship and test hyper-casual / hybrid-casual iOS games on a small budget — live trend scanning for mechanics worth building, ad-creative-first validation, the Unity… |  |
 | [`hyperscaler-expert`](kutuphane/07-yazilim-muhendislik/hyperscaler-expert/SKILL.md) | Yazılım Mühendisliği | Staff/principal-level multi-cloud (AWS, Microsoft Azure, Google Cloud) expert — service equivalence across the three hyperscalers, current pricing and discount… | kurulu |
 | [`icerik-strateji`](kutuphane/04-icerik-yazim-ceviri/icerik-strateji/SKILL.md) ⚙️ | İçerik, Yazım & Çeviri | ComeSyria'da sıradaki içeriğin ne olacağına karar verir — envanteri tarayıp ölü hub, eksik alan ve zayıf kümeleri sıralar, GA4 verisinden üretim listesi çıkarır… | kurulu |
 | [`icerik-uret`](kutuphane/04-icerik-yazim-ceviri/icerik-uret/SKILL.md) ⚙️ | İçerik, Yazım & Çeviri | ComeSyria için üç dilde (TR/EN/AR) SEO uyumlu şehir, mekan ve rota içeriği üretir — anahtar kelimeyi dil dil araştırır, metni yazar, ticari kullanıma açık… | kurulu |
@@ -105,7 +106,7 @@
 | [`pexels-gorsel-bulucu`](kutuphane/09-cad-gorsel/pexels-gorsel-bulucu/SKILL.md) ⚙️ | CAD & Görsel Üretim | Moonstone Residence için telifsiz Pexels fotoğrafı ve videosu bulur, puanlar, hak/izin riskini denetler ve künyesiyle birlikte indirir. | kurulu |
 | [`pexels-media-scout`](kutuphane/09-cad-gorsel/pexels-media-scout/SKILL.md) ⚙️ | CAD & Görsel Üretim | Finds, scores, clearance-checks and downloads royalty-free Pexels photos and video for music deliverables — album covers, YouTube thumbnails and long-form… | kurulu |
 | [`pexels-media-scout--weftrecords-gh`](kutuphane/09-cad-gorsel/pexels-media-scout--weftrecords-gh/SKILL.md) ⚙️ | CAD & Görsel Üretim | Finds, scores, clearance-checks and downloads royalty-free Pexels photos and video for music deliverables — album covers, YouTube thumbnails and long-form… | kurulu |
-| [`physics-reel-forge`](kutuphane/03-video-ses-uretim/physics-reel-forge/SKILL.md) | Video & Ses Üretimi | Builds and runs a rigid-body physics pipeline that mass-produces 9:16 vertical "satisfying physics" Reels/Shorts/TikToks on Apple Silicon — falling cubes, jointed… | proje-içi |
+| [`physics-reel-forge`](kutuphane/03-video-ses-uretim/physics-reel-forge/SKILL.md) ⚙️ | Video & Ses Üretimi | Builds and runs a rigid-body physics pipeline that mass-produces 9:16 vertical "satisfying physics" Reels/Shorts/TikToks on Apple Silicon — falling cubes, jointed… | proje-içi |
 | [`pm-decision-review`](kutuphane/06-ux-urun/pm-decision-review/SKILL.md) | UX & Ürün Yönetimi | Product manager gözüyle otomatik netleştirme soruları sorar, alternatifler ve kazanç/maliyet analizi üretir, karar kaydı çıkarır. | claude.ai |
 | [`portfoy-tahmin`](kutuphane/01-finans-yatirim/portfoy-tahmin/SKILL.md) ⚙️ | Finans & Yatırım | Kişisel yatırım portföyü için disiplinli tahmin günlüğü ve kalibrasyon sistemi - portföy tanımlama, günlük fiyat/piyasa snapshot'ı, web araştırmasına dayalı 1 gün /… | kurulu |
 | [`portfoy-tahmin--cloud`](kutuphane/01-finans-yatirim/portfoy-tahmin--cloud/SKILL.md) ⚙️ | Finans & Yatırım | Kişisel yatırım portföyü için disiplinli tahmin günlüğü ve kalibrasyon sistemi - portföy tanımlama, günlük fiyat/piyasa snapshot'ı, web araştırmasına dayalı 1 gün /… | claude.ai |
@@ -115,6 +116,7 @@
 | [`postgresql--mcailabs-v4-0`](kutuphane/07-yazilim-muhendislik/postgresql--mcailabs-v4-0/SKILL.md) | Yazılım Mühendisliği | Comprehensive PostgreSQL database administration skill for customer support tech enablement, covering database design, optimization, performance tuning… | proje-içi |
 | [`pptx`](kutuphane/13-ofis-belge/pptx/SKILL.md) ⚙️ | Ofis & Belge | Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. | claude.ai |
 | [`procedural-game-audio`](kutuphane/03-video-ses-uretim/procedural-game-audio/SKILL.md) | Video & Ses Üretimi | Build procedural (rule-generated, zero-asset) music and SFX engines for Apple-ecosystem apps — iOS/macOS/visionOS games and apps — using pure AVFoundation… | claude.ai, kurulu |
+| [`product-self-knowledge`](kutuphane/14-meta-sistem/product-self-knowledge/SKILL.md) | Meta & Sistem | Stop and consult this skill whenever your response would include specific facts about Anthropic's products. |  |
 | [`pydantic`](kutuphane/07-yazilim-muhendislik/pydantic/SKILL.md) | Yazılım Mühendisliği | Comprehensive Pydantic data validation skill for customer support tech enablement - covering BaseModel, Field validation, custom validators, FastAPI integration… | kurulu, proje-içi |
 | [`pytest`](kutuphane/07-yazilim-muhendislik/pytest/SKILL.md) | Yazılım Mühendisliği | Advanced Python unit testing framework for customer support tech enablement, covering FastAPI, SQLAlchemy, PostgreSQL, async operations, mocking, fixtures… | kurulu |
 | [`pytest--mcailabs-v4-0`](kutuphane/07-yazilim-muhendislik/pytest--mcailabs-v4-0/SKILL.md) | Yazılım Mühendisliği | Advanced Python unit testing framework for customer support tech enablement, covering FastAPI, SQLAlchemy, PostgreSQL, async operations, mocking, fixtures… | proje-içi |
@@ -144,6 +146,7 @@
 | [`tahmin-savcisi`](kutuphane/01-finans-yatirim/tahmin-savcisi/SKILL.md) | Finans & Yatırım | Bir günün tahmin ve kanıt kayıtlarını, commit edilmeden önce ADVERSARYAL olarak denetler - kaynaksız/tarihsiz sayı, eşiği dolmamış bir kuralın uygulanması, sonucu… | kurulu |
 | [`tailwind-css`](kutuphane/07-yazilim-muhendislik/tailwind-css/SKILL.md) | Yazılım Mühendisliği | Utility-first CSS framework for rapid UI development with responsive design, component patterns, and production optimization. | kurulu, proje-içi |
 | [`tech-etkinlik-kesif`](kutuphane/10-yasam-turkiye/tech-etkinlik-kesif/SKILL.md) | Yaşam & Türkiye Hizmetleri | Belirli bir tarih/tarih aralığında, belirli bir ülke veya şehirdeki yerel IT, yazılım, startup ve girişimcilik etkinliklerini (meetup, konferans, hackathon, demo… | claude.ai |
+| [`tesvik-avcisi`](kutuphane/01-finans-yatirim/tesvik-avcisi/SKILL.md) | Finans & Yatırım | Türkiye merkezli yazılım, SaaS, oyun ve yapay zekâ şirketleri için devlet desteklerini, hibeleri, vergi istisnalarını ve uluslararası fonları tarar; profile göre… |  |
 | [`trip-konaklama-avcisi`](kutuphane/10-yasam-turkiye/trip-konaklama-avcisi/SKILL.md) ⚙️ | Yaşam & Türkiye Hizmetleri | Trip.com üzerinde çok şartlı konaklama araması yapar — tarih, şehir, tesis tipi, ücretsiz iptal (ve iptal son tarihi), özel banyo/tuvalet, yıldız, puan, bütçe, ve… | kurulu |
 | [`turkce-anlati`](kutuphane/04-icerik-yazim-ceviri/turkce-anlati/SKILL.md) | İçerik, Yazım & Çeviri | | Dikey kısa video (Reels · Shorts · TikTok) için Türkçe anlatı metni yazar ve denetler. | kurulu |
 | [`ucuz-bilet-avcisi`](kutuphane/10-yasam-turkiye/ucuz-bilet-avcisi/SKILL.md) ⚙️ | Yaşam & Türkiye Hizmetleri | Hunts underpriced flights out of Istanbul and turns a vague travel wish into a ranked, evidence-backed shortlist with ready-to-click search links. | kurulu |
@@ -161,4 +164,4 @@
 
 ⚙️ = çalıştırılabilir script içerir.
 
-_Üretim: `scripts/katalog_uret.py` · 2026-09-04_
+_Üretim: `scripts/katalog_uret.py` · 2026-09-07_

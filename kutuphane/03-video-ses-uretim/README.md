@@ -64,7 +64,7 @@ Moonstone Residence için bir render ya da fotoğraftan fal.ai üzerinde Kling i
 
 Builds and runs a rigid-body physics pipeline that mass-produces 9:16 vertical "satisfying physics" Reels/Shorts/TikToks on Apple Silicon — falling cubes, jointed chains whipping over a pivot, dominoes, ball-pit fills, tower collapses — via Godot+Jolt on Metal, deterministic Movie Maker capture, impulse-driven impact audio and VideoToolbox encoding. Use whenever the deliverable is a physics-driven short-form video or its machinery — scene recipes, chain tuning, seed sweeps, batch rendering, render speed, safe-zone framing, seamless loops, impact sound, export settings. Trigger on "fizik motoruyla video üret", "düşen küpler videosu", "zincir simülasyonu", "satisfying physics reels", "toplu video üret", "seed varyasyonu", "render çok yavaş", "9:16 dikey render", "çarpışma sesi ekle", "Godot ile video çıkar", "loop olacak video" — even when the user only says "viral video üretmek istiyorum" but the mechanism is a simulation, or asks whether to use Godot, Blender, Rapier or a custom Metal engine for this genre.
 
-- **Ölçü:** 11.460 bayt · 10 ek dosya · referans dosyaları var
+- **Ölçü:** 11.460 bayt · 14 ek dosya · script içerir · referans dosyaları var
 - **Kaynak:** ~/projects/instagram-reels/docs/physics-reel-forge, ~/Documents/GitHub/instagram-reels/docs/physics-reel-forge
 
 ## `procedural-game-audio`

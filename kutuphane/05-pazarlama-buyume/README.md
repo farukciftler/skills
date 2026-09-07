@@ -2,7 +2,7 @@
 
 SEO/ASO denetimi, Shorts optimizasyonu, viral ürün avı, lead üretimi.
 
-10 skill. Üst dizin: [../../README.md](../../README.md)
+11 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `appstore-market-analyst`
 
@@ -39,6 +39,15 @@ Danışmanlığı satabileceğimiz firmaları bulur, eler, puanlar ve Attio'ya y
 
 - **Ölçü:** 6.794 bayt · 5 ek dosya
 - **Kaynak:** ~/Documents/GitHub/abdullahfarukcom/claudedanismanlik/.claude/skills/hedef-arastirma
+
+## `hypercasual-lab`
+
+[SKILL.md](hypercasual-lab/SKILL.md)
+
+Ship and test hyper-casual / hybrid-casual iOS games on a small budget — live trend scanning for mechanics worth building, ad-creative-first validation, the Unity vs native SpriteKit decision, ad mediation and monetization wiring (AppLovin MAX, Unity LevelPlay, ATT, interstitial and rewarded cadence), and a gated CPI + retention test protocol with explicit kill criteria. Use whenever the work is a small mobile game meant to earn from ads — what to build, whether a concept is worth building, how to structure the app, how to wire ad SDKs, how much to spend testing, self-publish vs pitching Voodoo/Homa/Supersonic, or reading test results. Trigger on "hypercasual", "hyperscaler oyun", "hiper kazüel", "basit oyun yapıp para kazanmak", "reklam gelirli oyun", "CPI testi", "oyun trendi araştır", "bunu klonlasam olur mu", "publisher'a göndereyim mi", "günlük X TL bütçeyle oyun test etmek", "D1 retention kaç olmalı". Use it even when they only say they want a quick game that makes money.
+
+- **Ölçü:** 11.916 bayt · 4 ek dosya · referans dosyaları var
+- **Kaynak:** 
 
 ## `klinik-lead-akisi`
 

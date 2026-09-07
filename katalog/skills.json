@@ -304,6 +304,25 @@
   "ayna": []
  },
  {
+  "ad": "tesvik-avcisi",
+  "slug": "tesvik-avcisi",
+  "kategori": "01-finans-yatirim",
+  "kategori_adi": "Finans & Yatırım",
+  "aciklama": "Türkiye merkezli yazılım, SaaS, oyun ve yapay zekâ şirketleri için devlet desteklerini, hibeleri, vergi istisnalarını ve uluslararası fonları tarar; profile göre uygunluk elemesi yapar, harcamayı doğru programla eşleştirir, çağrı takvimini birincil kaynaktan doğrular, 90 günlük başvuru planı çıkarır. Kapsamda TÜBİTAK (1501, 1507, 1711, 1707, Eurostars, BiGG), KOSGEB, Ticaret Bakanlığı Atılım Programı ve E-TURQUALITY, teknokent 4691, Ar-Ge merkezi 5746, Teknogirişim Rozeti, HIT-30, kalkınma ajansları, Ufuk Avrupa, EIC ve bulut kredileri var. Şunlarda devreye gir - hibe var mı, devlet desteği alabilir miyim, TÜBİTAK'a başvuralım mı, KOSGEB desteği, teknokente girelim mi, Ar-Ge merkezi kuralım mı, e-Turquality başvurusu, yazılımcı maaşını devlet karşılıyor mu, sunucu faturasına destek, yurt dışı reklama hibe, yapay zekâ kredisi, AB fonu, bu destek geçerli mi. Kullanıcı hibe demese de soru bu maliyeti kim finanse eder anlamına geliyorsa geçerlidir. Ezberden rakam vermez, kaynaktan doğrular.",
+  "ozet": "Türkiye merkezli yazılım, SaaS, oyun ve yapay zekâ şirketleri için devlet desteklerini, hibeleri, vergi istisnalarını ve uluslararası fonları tarar; profile göre…",
+  "yol": "kutuphane/01-finans-yatirim/tesvik-avcisi",
+  "bayt": 12838,
+  "satir": 157,
+  "ek_dosya": 6,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [],
+  "kaynak_tipleri": [],
+  "baglanacak": [],
+  "ayna": []
+ },
+ {
   "ad": "vakif-katilim-yatirim",
   "slug": "vakif-katilim-yatirim",
   "kategori": "01-finans-yatirim",
@@ -989,8 +1008,8 @@
   "yol": "kutuphane/03-video-ses-uretim/physics-reel-forge",
   "bayt": 11460,
   "satir": 109,
-  "ek_dosya": 10,
-  "script_var": false,
+  "ek_dosya": 14,
+  "script_var": true,
   "referans_var": true,
   "varyant": 0,
   "kaynaklar": [
@@ -1693,6 +1712,25 @@
   "baglanacak": [
    "~/Documents/GitHub/abdullahfarukcom/claudedanismanlik/.claude/skills/hedef-arastirma"
   ],
+  "ayna": []
+ },
+ {
+  "ad": "hypercasual-lab",
+  "slug": "hypercasual-lab",
+  "kategori": "05-pazarlama-buyume",
+  "kategori_adi": "Pazarlama & Büyüme",
+  "aciklama": "Ship and test hyper-casual / hybrid-casual iOS games on a small budget — live trend scanning for mechanics worth building, ad-creative-first validation, the Unity vs native SpriteKit decision, ad mediation and monetization wiring (AppLovin MAX, Unity LevelPlay, ATT, interstitial and rewarded cadence), and a gated CPI + retention test protocol with explicit kill criteria. Use whenever the work is a small mobile game meant to earn from ads — what to build, whether a concept is worth building, how to structure the app, how to wire ad SDKs, how much to spend testing, self-publish vs pitching Voodoo/Homa/Supersonic, or reading test results. Trigger on \"hypercasual\", \"hyperscaler oyun\", \"hiper kazüel\", \"basit oyun yapıp para kazanmak\", \"reklam gelirli oyun\", \"CPI testi\", \"oyun trendi araştır\", \"bunu klonlasam olur mu\", \"publisher'a göndereyim mi\", \"günlük X TL bütçeyle oyun test etmek\", \"D1 retention kaç olmalı\". Use it even when they only say they want a quick game that makes money.",
+  "ozet": "Ship and test hyper-casual / hybrid-casual iOS games on a small budget — live trend scanning for mechanics worth building, ad-creative-first validation, the Unity…",
+  "yol": "kutuphane/05-pazarlama-buyume/hypercasual-lab",
+  "bayt": 11916,
+  "satir": 149,
+  "ek_dosya": 4,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [],
+  "kaynak_tipleri": [],
+  "baglanacak": [],
   "ayna": []
  },
  {
@@ -3991,6 +4029,25 @@
   "ayna": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/morning"
   ]
+ },
+ {
+  "ad": "product-self-knowledge",
+  "slug": "product-self-knowledge",
+  "kategori": "14-meta-sistem",
+  "kategori_adi": "Meta & Sistem",
+  "aciklama": "Stop and consult this skill whenever your response would include specific facts about Anthropic's products. Covers: Claude Code (how to install, Node.js requirements, platform/OS support, MCP server integration, configuration), Claude API (function calling/tool use, batch processing, SDK usage, rate limits, pricing, models, streaming), and Claude.ai (Pro vs Team vs Enterprise plans, feature limits). Trigger this even for coding tasks that use the Anthropic SDK, content creation mentioning Claude capabilities or pricing, or LLM provider comparisons. Any time you would otherwise rely on memory for Anthropic product details, verify here instead — your training data may be outdated or wrong.",
+  "ozet": "Stop and consult this skill whenever your response would include specific facts about Anthropic's products.",
+  "yol": "kutuphane/14-meta-sistem/product-self-knowledge",
+  "bayt": 2599,
+  "satir": 66,
+  "ek_dosya": 0,
+  "script_var": false,
+  "referans_var": false,
+  "varyant": 0,
+  "kaynaklar": [],
+  "kaynak_tipleri": [],
+  "baglanacak": [],
+  "ayna": []
  },
  {
   "ad": "schedule",
