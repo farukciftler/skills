@@ -1,5 +1,6 @@
 .DS_Store
 __pycache__/
 
-# Bağlama kaydı makineye özgüdür — symlink'ler senkronlanmaz.
+# Bağlama/kurulum kayıtları makineye özgüdür — symlink'ler senkronlanmaz.
 katalog/baglanti-kaydi.json
+katalog/kurulum-kaydi.json

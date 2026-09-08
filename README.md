@@ -21,6 +21,7 @@ burada kategorize edilmiş, ölçülmüş ve dokümante edilmiş halde duruyor.
 | Claude'un buradan nasıl çalışacağı | **[CLAUDE.md](CLAUDE.md)** |
 | Ne taşındı, ne taşınmadı, nasıl geri alınır | **[TASIMA.md](TASIMA.md)** |
 | Başka bir bilgisayarda kurmak | **[KURULUM.md](KURULUM.md)** |
+| Kütüphaneyi terminale kurmak / geri almak | `scripts/kur.py` — bkz. [TASIMA.md](TASIMA.md) § Terminale kurma |
 | Makine okunur envanter | `katalog/skills.json` · `katalog/skills.csv` |
 
 ## Kategoriler

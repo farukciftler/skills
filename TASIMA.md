@@ -195,6 +195,59 @@ python3 scripts/coz.py --proje weftrecords --uygula
 Symlink silinir, yerine kütüphanedeki içeriğin gerçek kopyası konur. Tam geri
 dönüş için yedek: `~/skills-yedek-20260904-135254.tar.gz`.
 
+## Terminale kurma (8 Eylül 2026 — yapıldı)
+
+`bagla.py` kurulum noktalarını kütüphaneye bağlar; `kur.py` tersini yapar —
+kütüphanedeki her girdiyi `~/.claude/skills/<ad>` altına symlink'leyerek her
+projedeki `claude` oturumunda yüklenir hale getirir.
+
+```bash
+python3 scripts/kur.py               # ne olacağını göster
+python3 scripts/kur.py --uygula      # kur
+python3 scripts/kur.py --coz --uygula  # tümünü geri al
+```
+
+Sonuç: **133 skill kuruldu** — 128 yeni symlink, 5 mevcut gerçek dizin
+(`headless-reel-forge`, `ml-expert`, `mobile-ux-flow-expert`,
+`startup-degerleme`, `web-ux-flow-expert`) içerikçe birebir aynı doğrulanıp
+symlink'e dönüştürüldü. Kayıt: `katalog/kurulum-kaydi.json` (git dışı).
+
+### Ad çakışması — kurulmayan 27 sürüm
+
+`~/.claude/skills/<ad>` tek dizindir; aynı adın ayrışmış sürümleri aynı anda
+kurulamaz. Ad başına tek kazanan seçilir:
+
+1. slug'ı adın kendisi olan (düz ad) — CLAUDE.md'ye göre daha yeni;
+2. yoksa `--cloud` ekli **olmayan** (bayat bulut kopyası elenir);
+3. yoksa en büyük içerik.
+
+Bu kural `masifico-*` ve `oyuncak-mevzuat`'ta doğru sonucu veriyor: proje
+sürümü kazanıyor, § Bayat claude.ai kopyaları tablosuyla uyumlu. `ceviri`'de
+ise § Aynı isim, farklı skill vakası devrede — `--comesyriacontent` kuruldu,
+`--abdullahfarukcom-gh` **terminalde erişilemez**; ikisi farklı iş olduğu için
+bu bir kayıptır, ihtiyaç olursa ayrı bir adla kurulmalı.
+
+Elenen sürümlerin tam listesi için `python3 scripts/kur.py` (kuru çalıştırma).
+
+### Kurulum dizini adı, frontmatter'a göre seçilir
+
+Claude Code dizin adıyla SKILL.md frontmatter'ındaki `name` alanının uyuşmasını
+bekler, o yüzden `kur.py` geçerli bir slug ise frontmatter adını kullanır:
+
+| Kütüphane slug'ı | Kurulan ad | Not |
+|---|---|---|
+| `kaggle-kaggle-skill` | `kaggle-kaggle-competitor` | frontmatter adı esas alındı |
+| `backlog` | — | frontmatter'ı `backlog-arastir` diyor, gerçek `backlog-arastir` girdisine yenildi (doğru sonuç: `backlog`, `comesyriacontent/backlog` veri dizini) |
+| `postgresql` | `postgresql` | frontmatter `name: PostgreSQL Database Administration` — slug değil, manifest adına düşüldü. **Düzeltilmeli.** |
+
+### Kurulmayan kalıntı
+
+`~/.claude/skills/_backup-164414/headless-reel-forge` — üst düzeyinde SKILL.md
+olmadığı için skill olarak yüklenmiyor, ama kütüphanedeki **iki** sürümde de
+olmayan içerik taşıyor: `assets/materials.json` ve bir `recipes/` dizini
+(`references/procedural-audio.md` de farklı). Silinmedi; üçüncü bir ayrışmış
+sürüm olarak kütüphaneye alınıp alınmayacağı karara bağlı.
+
 ## Yeniden tarama
 
 ```bash

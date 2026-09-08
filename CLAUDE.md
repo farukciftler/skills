@@ -4,20 +4,29 @@ Bu dizin Faruk'un tüm Claude skill'lerinin **kataloğu ve arşividir**. Burası
 kod deposu değil; her alt dizin başka bir yerde çalışan (ya da çalışması gereken)
 bir skill'in kopyasıdır.
 
-## Önce bunu bil: buradaki kopya çalışan skill değil
+## Önce bunu bil: terminalde kütüphane canlıdır, başka yerde değil
 
-`kutuphane/` altındaki dosyalar Claude tarafından **otomatik yüklenmez**. Bir
-skill'in gerçekten tetiklenmesi için kurulu olduğu yerde durması gerekir:
+8 Eylül 2026'da `scripts/kur.py` çalıştırıldı: **133 girdi**
+`~/.claude/skills/<ad>` altına symlink olarak kuruldu. Yani terminaldeki
+`claude` oturumlarında `kutuphane/` **canlı kaynaktır** — buradaki bir dosyayı
+düzenlemek skill'in davranışını anında değiştirir.
 
-| Konum | Ne yükler |
-|---|---|
-| `~/.claude/skills/<ad>/` | Her oturumda, her projede |
-| `<proje>/.claude/skills/<ad>/` | Yalnız o proje açıkken |
-| claude.ai senkronu | Desktop/web oturumlarında, `anthropic-skills:` ön ekiyle |
+| Konum | Ne yükler | Kütüphaneyle ilişkisi |
+|---|---|---|
+| `~/.claude/skills/<ad>/` | Her oturumda, her projede | **symlink → `kutuphane/`** (canlı) |
+| `<proje>/.claude/skills/<ad>/` | Yalnız o proje açıkken | gerçek dizin — kopya, ayrışabilir |
+| claude.ai senkronu | Desktop/web oturumlarında, `anthropic-skills:` ön ekiyle | ayrı kopya — ayrışabilir |
 
-Bu yüzden buradaki bir dosyayı düzenlemek, o skill'in davranışını **değiştirmez**
-— kaynak konumu da güncellenmeli. Kalıcı çözüm için `TASIMA.md`'deki bağlama
-(symlink) adımına bak; bağlandıktan sonra kütüphane gerçek tek kaynak olur.
+Dikkat: proje-içi kurulumlar (66 kaynak) ve claude.ai kopyaları **hâlâ bağımsız
+kopyalardır**. Kütüphanede yaptığın düzenleme oralara geçmez; o kaynakları da
+kütüphaneye bağlamak için `scripts/bagla.py`, claude.ai için elle yükleme
+gerekir. Aynı adlı bir skill hem projede hem global kuruluysa proje sürümü
+öne geçer — yani ayrışmış bir proje kopyası, kütüphanedeki güncel sürümü o
+projede gölgeler.
+
+Ad çakışması nedeniyle 27 ayrışmış sürüm kurulmadı (`<ad>` tek dizindir);
+listesi için `python3 scripts/kur.py`. Tüm kurulumu geri almak için
+`python3 scripts/kur.py --coz --uygula`.
 
 ## Bir skill ararken
 
