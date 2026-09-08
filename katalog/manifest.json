@@ -376,6 +376,25 @@
   ]
  },
  {
+  "name": "bilimsel-makale-yazimi",
+  "slug": "bilimsel-makale-yazimi",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "32b7812002d4",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/bilimsel-makale-yazimi"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 13902,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/bilimsel-makale-yazimi",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/bilimsel-makale-yazimi"
+  ]
+ },
+ {
   "name": "ceviri",
   "slug": "ceviri--abdullahfarukcom-gh",
   "cat": "04-icerik-yazim-ceviri",

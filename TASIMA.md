@@ -207,7 +207,7 @@ python3 scripts/kur.py --uygula      # kur
 python3 scripts/kur.py --coz --uygula  # tümünü geri al
 ```
 
-Sonuç: **134 skill kuruldu** — 129 yeni symlink, 5 mevcut gerçek dizin
+Sonuç: **135 skill kuruldu** — 130 yeni symlink, 5 mevcut gerçek dizin
 (`headless-reel-forge`, `ml-expert`, `mobile-ux-flow-expert`,
 `startup-degerleme`, `web-ux-flow-expert`) içerikçe birebir aynı doğrulanıp
 symlink'e dönüştürüldü. Kayıt: `katalog/kurulum-kaydi.json` (git dışı).

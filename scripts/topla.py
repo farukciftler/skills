@@ -76,7 +76,8 @@ KATEGORI = {
         "chibi-character-factory",
     ],
     "04-icerik-yazim-ceviri": [
-        "insanca", "humanly", "turkce-anlati", "english-narration", "ceviri",
+        "insanca", "humanly", "bilimsel-makale-yazimi", "turkce-anlati",
+        "english-narration", "ceviri",
         "icerik-strateji",
         "icerik-uret", "yeme-icme", "backlog-arastir", "backlog",
         "sosyal-medya-post-uret", "icerik-yaz", "trend-setter",

@@ -6,7 +6,7 @@ bir skill'in kopyasıdır.
 
 ## Önce bunu bil: terminalde kütüphane canlıdır, başka yerde değil
 
-8 Eylül 2026'da `scripts/kur.py` çalıştırıldı: **134 girdi**
+8 Eylül 2026'da `scripts/kur.py` çalıştırıldı: **135 girdi**
 `~/.claude/skills/<ad>` altına symlink olarak kuruldu. Yani terminaldeki
 `claude` oturumlarında `kutuphane/` **canlı kaynaktır** — buradaki bir dosyayı
 düzenlemek skill'in davranışını anında değiştirir.
@@ -30,7 +30,7 @@ listesi için `python3 scripts/kur.py`. Tüm kurulumu geri almak için
 
 ## Bir skill ararken
 
-1. **[INDEX.md](INDEX.md)** — 161 girdilik alfabetik tablo, tek satırlık özetlerle.
+1. **[INDEX.md](INDEX.md)** — 162 girdilik alfabetik tablo, tek satırlık özetlerle.
 2. **`katalog/skills.json`** — programatik arama için. Her kayıtta `ad`, `ozet`,
    `aciklama` (tam frontmatter), `kategori`, `yol`, `kaynaklar`, `script_var`.
 3. Kategori sayfaları — `kutuphane/<kategori>/README.md`, o alandaki her skill'in

@@ -1,6 +1,6 @@
 # Alfabetik Skill Dizini
 
-161 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
+162 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
 
 | Skill | Kategori | Ne yapar | Kaynak |
 |---|---|---|---|
@@ -21,6 +21,7 @@
 | [`backlog`](kutuphane/04-icerik-yazim-ceviri/backlog/SKILL.md) ⚙️ | İçerik, Yazım & Çeviri | ComeSyria için internette alkolsüz, kültürel mirasa ve site kategorilerine (şehir, mekan, rota, yeme-içme) uyan içerik adaylarını araştırır, sitedeki mevcut… | proje-içi |
 | [`backlog-arastir`](kutuphane/04-icerik-yazim-ceviri/backlog-arastir/SKILL.md) | İçerik, Yazım & Çeviri | ComeSyria için internette alkolsüz, kültürel mirasa ve site kategorilerine (şehir, mekan, rota, yeme-içme) uyan içerik adaylarını araştırır, sitedeki mevcut… | kurulu |
 | [`backlog-arastir--kirkit`](kutuphane/04-icerik-yazim-ceviri/backlog-arastir--kirkit/SKILL.md) | İçerik, Yazım & Çeviri | ComeSyria için internette alkolsüz, kültürel mirasa ve site kategorilerine (şehir, mekan, rota, yeme-içme) uyan içerik adaylarını araştırır, sitedeki mevcut… | proje-içi |
+| [`bilimsel-makale-yazimi`](kutuphane/04-icerik-yazim-ceviri/bilimsel-makale-yazimi/SKILL.md) | İçerik, Yazım & Çeviri | Bilimsel makale yazımı, denetimi ve yayına hazırlama uzmanı — araştırma sorusundan IMRaD taslağına, raporlama kılavuzu uyumundan… | claude.ai |
 | [`ceviri--abdullahfarukcom-gh`](kutuphane/04-icerik-yazim-ceviri/ceviri--abdullahfarukcom-gh/SKILL.md) | İçerik, Yazım & Çeviri | Bir yazıyı Türkçe ile İngilizce arasında çevirir. | kurulu |
 | [`ceviri--comesyriacontent`](kutuphane/04-icerik-yazim-ceviri/ceviri--comesyriacontent/SKILL.md) ⚙️ | İçerik, Yazım & Çeviri | ComeSyria içeriğini Türkçe, küresel İngilizce ve Suriye Arapçası arasında çevirir — makine kokmayan, o dilin okuru için baştan yazılmış metinler üretir; ad/sayı… | kurulu |
 | [`chibi-character-factory`](kutuphane/03-video-ses-uretim/chibi-character-factory/SKILL.md) | Video & Ses Üretimi | Production pipeline for building low-poly chibi game characters using Claude + Blender MCP only (no third-party generators), from parametric base mesh to a rigged… | claude.ai |

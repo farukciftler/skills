@@ -1342,6 +1342,31 @@
   ]
  },
  {
+  "ad": "bilimsel-makale-yazimi",
+  "slug": "bilimsel-makale-yazimi",
+  "kategori": "04-icerik-yazim-ceviri",
+  "kategori_adi": "İçerik, Yazım & Çeviri",
+  "aciklama": "Bilimsel makale yazımı, denetimi ve yayına hazırlama uzmanı — araştırma sorusundan IMRaD taslağına, raporlama kılavuzu uyumundan (CONSORT/PRISMA/STROBE/ARRIVE/TRIPOD) istatistik raporlamasına, dergi/konferans seçimi ve yağmacı dergi denetiminden kapak mektubu, hakem yanıtı ve revizyona kadar; etik kurul, yazarlık (ICMJE/CRediT), çıkar çatışması ve yapay zekâ kullanım beyanı dahil. Kullanıcı \"makale yaz\", \"paper\", \"bildiri\", \"öz/abstract yaz\", \"giriş bölümü\", \"yöntem bölümü\", \"hangi dergiye göndereyim\", \"dergi öner\", \"cover letter\", \"hakem yorumlarına cevap\", \"rebuttal\", \"revizyon\", \"reddedildim\", \"benzerlik/intihal\", \"etik kurul\", \"yazar sıralaması\", \"TR Dizin\", \"doçentlik yayını\", \"IEEE/NeurIPS/ACL formatı\" dediğinde kullan. Elinde veri veya sonuç olup \"bunu nasıl yayınlarım\" diyorsa, bir taslak/hakem raporu/dergi kararı paylaşıyorsa — \"makale\" kelimesi hiç geçmese bile — devreye gir. Dergi metriği, indeks durumu, APC ve tarihleri ASLA ezberden verme; canlı doğrula. Uydurma atıf ve uydurma veri üretmez.",
+  "ozet": "Bilimsel makale yazımı, denetimi ve yayına hazırlama uzmanı — araştırma sorusundan IMRaD taslağına, raporlama kılavuzu uyumundan…",
+  "yol": "kutuphane/04-icerik-yazim-ceviri/bilimsel-makale-yazimi",
+  "bayt": 12741,
+  "satir": 148,
+  "ek_dosya": 12,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/bilimsel-makale-yazimi"
+  ],
+  "kaynak_tipleri": [
+   "claude.ai"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/bilimsel-makale-yazimi"
+  ]
+ },
+ {
   "ad": "ceviri",
   "slug": "ceviri--abdullahfarukcom-gh",
   "kategori": "04-icerik-yazim-ceviri",

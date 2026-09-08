@@ -2,7 +2,7 @@
 
 Doğal Türkçe/İngilizce metin, dikey video anlatısı, çok dilli çeviri, içerik stratejisi ve üretimi.
 
-16 skill. Üst dizin: [../../README.md](../../README.md)
+17 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `backlog`
 
@@ -30,6 +30,15 @@ ComeSyria için internette alkolsüz, kültürel mirasa ve site kategorilerine (
 
 - **Ölçü:** 2.836 bayt · 0 ek dosya
 - **Kaynak:** ~/projects/kirkit/data/skills/skills/backlog-arastir
+
+## `bilimsel-makale-yazimi`
+
+[SKILL.md](bilimsel-makale-yazimi/SKILL.md)
+
+Bilimsel makale yazımı, denetimi ve yayına hazırlama uzmanı — araştırma sorusundan IMRaD taslağına, raporlama kılavuzu uyumundan (CONSORT/PRISMA/STROBE/ARRIVE/TRIPOD) istatistik raporlamasına, dergi/konferans seçimi ve yağmacı dergi denetiminden kapak mektubu, hakem yanıtı ve revizyona kadar; etik kurul, yazarlık (ICMJE/CRediT), çıkar çatışması ve yapay zekâ kullanım beyanı dahil. Kullanıcı "makale yaz", "paper", "bildiri", "öz/abstract yaz", "giriş bölümü", "yöntem bölümü", "hangi dergiye göndereyim", "dergi öner", "cover letter", "hakem yorumlarına cevap", "rebuttal", "revizyon", "reddedildim", "benzerlik/intihal", "etik kurul", "yazar sıralaması", "TR Dizin", "doçentlik yayını", "IEEE/NeurIPS/ACL formatı" dediğinde kullan. Elinde veri veya sonuç olup "bunu nasıl yayınlarım" diyorsa, bir taslak/hakem raporu/dergi kararı paylaşıyorsa — "makale" kelimesi hiç geçmese bile — devreye gir. Dergi metriği, indeks durumu, APC ve tarihleri ASLA ezberden verme; canlı doğrula. Uydurma atıf ve uydurma veri üretmez.
+
+- **Ölçü:** 12.741 bayt · 12 ek dosya · referans dosyaları var
+- **Kaynak:** claude.ai senkronu (efemer önbellek)
 
 ## `ceviri--abdullahfarukcom-gh`
 
