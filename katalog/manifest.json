@@ -179,6 +179,25 @@
   "mirrored": []
  },
  {
+  "name": "arxiv-api-uzmani",
+  "slug": "arxiv-api-uzmani",
+  "cat": "08-ai-ml",
+  "hash": "69d51b5b34e2",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/arxiv-api-uzmani"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 10814,
+  "lib": "~/skills/kutuphane/08-ai-ml/arxiv-api-uzmani",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/arxiv-api-uzmani"
+  ]
+ },
+ {
   "name": "aso-expert",
   "slug": "aso-expert",
   "cat": "05-pazarlama-buyume",

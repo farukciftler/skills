@@ -21,7 +21,7 @@ Bu yüzden buradaki bir dosyayı düzenlemek, o skill'in davranışını **deği
 
 ## Bir skill ararken
 
-1. **[INDEX.md](INDEX.md)** — 159 girdilik alfabetik tablo, tek satırlık özetlerle.
+1. **[INDEX.md](INDEX.md)** — 160 girdilik alfabetik tablo, tek satırlık özetlerle.
 2. **`katalog/skills.json`** — programatik arama için. Her kayıtta `ad`, `ozet`,
    `aciklama` (tam frontmatter), `kategori`, `yol`, `kaynaklar`, `script_var`.
 3. Kategori sayfaları — `kutuphane/<kategori>/README.md`, o alandaki her skill'in

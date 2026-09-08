@@ -1,0 +1,25 @@
+{
+  "_not": "Her konu icin isimli bir search_query. 2-5 konu ideal; her konu bir API cagrisi ve aralarinda 3 sn bekleme demektir. 'max' ve 'since' konu bazinda opsiyoneldir.",
+  "topics": [
+    {
+      "name": "On-device / kucuk modeller",
+      "query": "(cat:cs.LG OR cat:cs.CL) AND (abs:\"on-device\" OR abs:\"small language model\" OR abs:\"edge inference\")",
+      "max": 40
+    },
+    {
+      "name": "Quantization & verimli cikarim",
+      "query": "(cat:cs.LG OR cat:cs.AR) AND (abs:quantization OR abs:\"KV cache\" OR abs:\"speculative decoding\")",
+      "max": 40
+    },
+    {
+      "name": "MoE ve seyrek mimariler",
+      "query": "cat:cs.LG AND (abs:\"mixture of experts\" OR abs:\"sparse attention\")",
+      "max": 30
+    },
+    {
+      "name": "LLM maliyet & FinOps",
+      "query": "(cat:cs.DC OR cat:cs.LG) AND (abs:\"inference cost\" OR abs:\"serving cost\" OR abs:\"GPU scheduling\")",
+      "max": 30
+    }
+  ]
+}

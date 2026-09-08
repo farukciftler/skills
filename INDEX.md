@@ -1,6 +1,6 @@
 # Alfabetik Skill Dizini
 
-159 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
+160 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
 
 | Skill | Kategori | Ne yapar | Kaynak |
 |---|---|---|---|
@@ -12,6 +12,7 @@
 | [`arapca-ogretmeni`](kutuphane/11-ogrenme/arapca-ogretmeni/SKILL.md) | Öğrenme & Dil | Türklere Arapça öğreten uzman hoca — Türkçedeki binlerce Arapça kökenli kelimeyi köprü yapan, yalancı eşdeğerleri işaretleyen, Türklere özgü hataları (h/ḥ/ḫ… | claude.ai |
 | [`arayuz-denetimi`](kutuphane/06-ux-urun/arayuz-denetimi/SKILL.md) ⚙️ | UX & Ürün Yönetimi | Kartela Klinik OS arayüzünü uçtan uca denetler — üç demo rolüyle (danışman, sekreter, yönetici) her rotanın mobil / yatay tablet / masaüstü ekran görüntüsünü alır… | GitHub (yerelde yok) |
 | [`arayuz-denetimi--kartelapsikoloji-gh`](kutuphane/06-ux-urun/arayuz-denetimi--kartelapsikoloji-gh/SKILL.md) ⚙️ | UX & Ürün Yönetimi | Kartela Klinik OS arayüzünü uçtan uca denetler — üç demo rolüyle (danışman, sekreter, yönetici) her rotanın mobil / yatay tablet / masaüstü ekran görüntüsünü alır… | kurulu |
+| [`arxiv-api-uzmani`](kutuphane/08-ai-ml/arxiv-api-uzmani/SKILL.md) ⚙️ | AI & Makine Öğrenmesi | arXiv API ve OAI-PMH uzmanı — makale arama/keşif, günlük radar takibi, search_query kurulumu ve hata ayıklama, Atom yanıtı ayrıştırma, sayfalama ve rate-limit… | claude.ai |
 | [`aso-expert`](kutuphane/05-pazarlama-buyume/aso-expert/SKILL.md) ⚙️ | Pazarlama & Büyüme | Senior App Store Optimization consultant for iOS App Store and Google Play: keyword research and the 100-char iOS keyword field, title/subtitle/description… | claude.ai, kurulu, proje-içi |
 | [`aso-optimizer`](kutuphane/05-pazarlama-buyume/aso-optimizer/SKILL.md) | Pazarlama & Büyüme | - Use this skill when auditing, writing, or optimizing mobile application store listings for Apple App Store (App Store Connect) and Google Play Store. | proje-içi |
 | [`automl`](kutuphane/08-ai-ml/automl/SKILL.md) ⚙️ | AI & Makine Öğrenmesi | Benchmarked cross-validated ensemble pipeline for tabular binary classification. | proje-içi |

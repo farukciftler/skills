@@ -103,7 +103,7 @@ KATEGORI = {
     ],
     "08-ai-ml": [
         "ml-expert", "automl", "kaggle-kaggle-skill", "llm-engineering-expert",
-        "slm-architecture-lead", "ab-gpu-hibe-uzmani",
+        "slm-architecture-lead", "ab-gpu-hibe-uzmani", "arxiv-api-uzmani",
     ],
     "09-cad-gorsel": [
         "mobilya-cad", "gorsel-uretim", "pexels-gorsel-bulucu", "pexels-media-scout",

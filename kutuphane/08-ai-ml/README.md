@@ -2,7 +2,7 @@
 
 Kaggle/ML iş akışı, AutoML, LLM ve SLM mimarisi, GPU kaynak hibeleri.
 
-8 skill. Üst dizin: [../../README.md](../../README.md)
+9 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `ab-gpu-hibe-uzmani`
 
@@ -11,6 +11,15 @@ Kaggle/ML iş akışı, AutoML, LLM ve SLM mimarisi, GPU kaynak hibeleri.
 Avrupa Birliği'nin ücretsiz/desteklenmiş GPU ve süperbilgisayar kaynakları uzmanı — EuroHPC JU erişim çağrıları (Benchmark, Development, Regular, Extreme Scale, AI for Science), AI Factories (Playground/Fast Lane/Large Scale), AI Gigafactories, Grand Challenge yarışmaları, Horizon Europe/Digital Europe/EIC para hibeleri ve Türkiye uygunluğu (TÜBİTAK, TRUBA). Rota seçimi, GPU saati boyutlandırma, başvuru/proposal yazımı, cut-off takvimi, değerlendirme kriterleri, ret sonrası strateji ve üçüncü taraflara danışmanlık desteği verir. Kullanıcı "GPU hibesi", "ücretsiz GPU", "EuroHPC", "AI Factory", "LUMI/Leonardo/MareNostrum/JUPITER", "süperbilgisayar erişimi", "GPU saati", "compute grant", "AB'den kaynak" dediğinde; bir model eğitimi/fine-tune/inference için hesaplama kaynağı arandığında; ya da bir müşteriye bu konuda danışmanlık verilecekse bu skill'i kullan. Çağrı tarihlerini, kota ve kuralları ASLA ezberden verme — her seferinde canlı doğrula ve tarih damgası koy.
 
 - **Ölçü:** 8.152 bayt · 4 ek dosya · referans dosyaları var
+- **Kaynak:** claude.ai senkronu (efemer önbellek)
+
+## `arxiv-api-uzmani`
+
+[SKILL.md](arxiv-api-uzmani/SKILL.md)
+
+arXiv API ve OAI-PMH uzmanı — makale arama/keşif, günlük radar takibi, search_query kurulumu ve hata ayıklama, Atom yanıtı ayrıştırma, sayfalama ve rate-limit güvenli istemci/pipeline kodu, OAI-PMH ile toplu metadata hasadı ve artımlı senkronizasyon, RSS/ATOM beslemeleri ve S3 bulk veri seçimi. Kullanıcı "arxiv", "makale ara/bul", "paper", "preprint", "literatür taraması", "şu konuda yeni ne çıkmış", "arxiv API", "export.arxiv.org", "OAI-PMH", "harvest", "makale takip radarı", "arxiv scraper", "429/503 alıyorum", "sayfalama tıkandı" dediğinde; bir konuda güncel akademik literatür istendiğinde; arXiv verisi çeken bir uygulama, bot veya pipeline tasarlanırken bu skill'i kullan — "API" kelimesi hiç geçmese bile. Sorgu sözdizimini, limitleri ve uç noktaları ASLA ezberden verme; buradaki ve references/ altındaki doğrulanmış değerleri kullan.
+
+- **Ölçü:** 10.173 bayt · 7 ek dosya · script içerir · referans dosyaları var
 - **Kaynak:** claude.ai senkronu (efemer önbellek)
 
 ## `automl`

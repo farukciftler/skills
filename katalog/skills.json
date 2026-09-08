@@ -2956,6 +2956,31 @@
   ]
  },
  {
+  "ad": "arxiv-api-uzmani",
+  "slug": "arxiv-api-uzmani",
+  "kategori": "08-ai-ml",
+  "kategori_adi": "AI & Makine Öğrenmesi",
+  "aciklama": "arXiv API ve OAI-PMH uzmanı — makale arama/keşif, günlük radar takibi, search_query kurulumu ve hata ayıklama, Atom yanıtı ayrıştırma, sayfalama ve rate-limit güvenli istemci/pipeline kodu, OAI-PMH ile toplu metadata hasadı ve artımlı senkronizasyon, RSS/ATOM beslemeleri ve S3 bulk veri seçimi. Kullanıcı \"arxiv\", \"makale ara/bul\", \"paper\", \"preprint\", \"literatür taraması\", \"şu konuda yeni ne çıkmış\", \"arxiv API\", \"export.arxiv.org\", \"OAI-PMH\", \"harvest\", \"makale takip radarı\", \"arxiv scraper\", \"429/503 alıyorum\", \"sayfalama tıkandı\" dediğinde; bir konuda güncel akademik literatür istendiğinde; arXiv verisi çeken bir uygulama, bot veya pipeline tasarlanırken bu skill'i kullan — \"API\" kelimesi hiç geçmese bile. Sorgu sözdizimini, limitleri ve uç noktaları ASLA ezberden verme; buradaki ve references/ altındaki doğrulanmış değerleri kullan.",
+  "ozet": "arXiv API ve OAI-PMH uzmanı — makale arama/keşif, günlük radar takibi, search_query kurulumu ve hata ayıklama, Atom yanıtı ayrıştırma, sayfalama ve rate-limit…",
+  "yol": "kutuphane/08-ai-ml/arxiv-api-uzmani",
+  "bayt": 10173,
+  "satir": 222,
+  "ek_dosya": 7,
+  "script_var": true,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/arxiv-api-uzmani"
+  ],
+  "kaynak_tipleri": [
+   "claude.ai"
+  ],
+  "baglanacak": [],
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/arxiv-api-uzmani"
+  ]
+ },
+ {
   "ad": "automl",
   "slug": "automl",
   "kategori": "08-ai-ml",
