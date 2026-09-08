@@ -1421,6 +1421,31 @@
   "ayna": []
  },
  {
+  "ad": "humanly",
+  "slug": "humanly",
+  "kategori": "04-icerik-yazim-ceviri",
+  "kategori_adi": "İçerik, Yazım & Çeviri",
+  "aciklama": "| Finds the fingerprints of AI writing in English prose and rewrites it so it reads like a person wrote it. USE when asked to \"make this sound human\", \"humanize\", \"de-slop\", \"remove the AI voice\", \"edit this so it doesn't read like ChatGPT\", \"make it less robotic\", or for any English drafting and line-editing work. Patterns it catches: participle tails, metronomic cadence, \"not just X, it's Y\", the rule of three, copula avoidance (\"serves as\"), nominalization, staccato pileups, corporate filler, empty truths, invented examples and statistics, therapist voice, sycophancy, generic openers and closers, em dashes, vague attribution, faux profundity, and the speculative \"perhaps\" aphorism.",
+  "ozet": "| Finds the fingerprints of AI writing in English prose and rewrites it so it reads like a person wrote it.",
+  "yol": "kutuphane/04-icerik-yazim-ceviri/humanly",
+  "bayt": 76314,
+  "satir": 914,
+  "ek_dosya": 4,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/.claude/skills/humanly"
+  ],
+  "kaynak_tipleri": [
+   "kurulu"
+  ],
+  "baglanacak": [
+   "~/.claude/skills/humanly"
+  ],
+  "ayna": []
+ },
+ {
   "ad": "icerik-strateji",
   "slug": "icerik-strateji",
   "kategori": "04-icerik-yazim-ceviri",

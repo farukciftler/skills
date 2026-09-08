@@ -1,6 +1,6 @@
 # Alfabetik Skill Dizini
 
-160 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
+161 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
 
 | Skill | Kategori | Ne yapar | Kaynak |
 |---|---|---|---|
@@ -53,6 +53,7 @@
 | [`hedef-arastirma`](kutuphane/05-pazarlama-buyume/hedef-arastirma/SKILL.md) | Pazarlama & Büyüme | Danışmanlığı satabileceğimiz firmaları bulur, eler, puanlar ve Attio'ya yazar. "Kime satalım", "hedef listesi çıkar", "şu sektörde firma bul", "şu listeyi CRM'e… | kurulu |
 | [`helal-portfoy-uzmanlari`](kutuphane/01-finans-yatirim/helal-portfoy-uzmanlari/SKILL.md) | Finans & Yatırım | Beş farklı karakterde helal/katılım finansı yatırımcı personası, Faruk'un gerçek portföy defterini (data/ ve data-es/) okuyup her biri kendi bakış açısından… | kurulu |
 | [`helal-yatirim-uzmani`](kutuphane/01-finans-yatirim/helal-yatirim-uzmani/SKILL.md) ⚙️ | Finans & Yatırım | Türkiye'deki yatırımcı için tam kapsamlı yatırım/finans uzmanlığı — tek kısıt, her enstrüman ve önerinin helal/katılım süzgecinden geçmesi. | claude.ai |
+| [`humanly`](kutuphane/04-icerik-yazim-ceviri/humanly/SKILL.md) | İçerik, Yazım & Çeviri | | Finds the fingerprints of AI writing in English prose and rewrites it so it reads like a person wrote it. | kurulu |
 | [`hypercasual-lab`](kutuphane/05-pazarlama-buyume/hypercasual-lab/SKILL.md) | Pazarlama & Büyüme | Ship and test hyper-casual / hybrid-casual iOS games on a small budget — live trend scanning for mechanics worth building, ad-creative-first validation, the Unity… | claude.ai |
 | [`hyperscaler-expert`](kutuphane/07-yazilim-muhendislik/hyperscaler-expert/SKILL.md) | Yazılım Mühendisliği | Staff/principal-level multi-cloud (AWS, Microsoft Azure, Google Cloud) expert — service equivalence across the three hyperscalers, current pricing and discount… | kurulu |
 | [`icerik-strateji`](kutuphane/04-icerik-yazim-ceviri/icerik-strateji/SKILL.md) ⚙️ | İçerik, Yazım & Çeviri | ComeSyria'da sıradaki içeriğin ne olacağına karar verir — envanteri tarayıp ölü hub, eksik alan ve zayıf kümeleri sıralar, GA4 verisinden üretim listesi çıkarır… | kurulu |

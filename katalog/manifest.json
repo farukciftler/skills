@@ -1113,6 +1113,25 @@
   ]
  },
  {
+  "name": "humanly",
+  "slug": "humanly",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "43aca0688fcd",
+  "variant": 0,
+  "srcs": [
+   "~/.claude/skills/humanly"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 76434,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/humanly",
+  "linked": [
+   "~/.claude/skills/humanly"
+  ],
+  "mirrored": []
+ },
+ {
   "name": "hypercasual-lab",
   "slug": "hypercasual-lab",
   "cat": "05-pazarlama-buyume",

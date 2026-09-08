@@ -2,7 +2,7 @@
 
 Doğal Türkçe/İngilizce metin, dikey video anlatısı, çok dilli çeviri, içerik stratejisi ve üretimi.
 
-15 skill. Üst dizin: [../../README.md](../../README.md)
+16 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `backlog`
 
@@ -57,6 +57,15 @@ ComeSyria içeriğini Türkçe, küresel İngilizce ve Suriye Arapçası arasın
 
 - **Ölçü:** 5.828 bayt · 0 ek dosya
 - **Kaynak:** ~/projects/reelsindustry/.claude/skills/english-narration, ~/Documents/GitHub/reelsindustry/.claude/skills/english-narration
+
+## `humanly`
+
+[SKILL.md](humanly/SKILL.md)
+
+| Finds the fingerprints of AI writing in English prose and rewrites it so it reads like a person wrote it. USE when asked to "make this sound human", "humanize", "de-slop", "remove the AI voice", "edit this so it doesn't read like ChatGPT", "make it less robotic", or for any English drafting and line-editing work. Patterns it catches: participle tails, metronomic cadence, "not just X, it's Y", the rule of three, copula avoidance ("serves as"), nominalization, staccato pileups, corporate filler, empty truths, invented examples and statistics, therapist voice, sycophancy, generic openers and closers, em dashes, vague attribution, faux profundity, and the speculative "perhaps" aphorism.
+
+- **Ölçü:** 76.314 bayt · 4 ek dosya · referans dosyaları var
+- **Kaynak:** ~/.claude/skills/humanly
 
 ## `icerik-strateji`
 
