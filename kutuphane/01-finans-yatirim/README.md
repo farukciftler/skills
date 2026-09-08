@@ -64,8 +64,8 @@ Türkiye'deki yatırımcı için tam kapsamlı yatırım/finans uzmanlığı —
 
 Kişisel yatırım portföyü için disiplinli tahmin günlüğü ve kalibrasyon sistemi - portföy tanımlama, günlük fiyat/piyasa snapshot'ı, web araştırmasına dayalı 1 gün / 1 hafta / 1 ay yön tahminleri, tahminlerin gerçekleşenle otomatik eşleştirilmesi, ve tahmin isabetinin naif baseline'a karşı ölçülmesi. Kullanıcı portföyünü paylaştığında, "portföyümü takip et", "sabah raporu", "bugünkü tahmin", "portföy tahmini", "dünkü tahmin tuttu mu", "geçen ayki tahminim", "fon/altın ne olur", "yeni fon ekle", "kalibrasyon", "tahmin geçmişim" dediğinde; ya da gram altın, TEFAS fonları (KTJ, KIK, KUT vb.), katılma hesabı, hisse, kripto gibi varlıkların değer takibi/senaryo analizi istendiğinde bu skill'i kullan. Kullanıcı "tahmin" kelimesini hiç kullanmasa bile, elindeki varlıkların yarın/haftaya/aya ne olacağını konuşuyorsa devreye gir. Yatırım tavsiyesi vermez; tahmin kaydeder, ölçer ve isabetsizliği açıkça raporlar.
 
-- **Ölçü:** 17.407 bayt · 6 ek dosya · script içerir · referans dosyaları var
-- **Kaynak:** ~/Documents/GitHub/portfoy-butce/.claude/skills/portfoy-tahmin
+- **Ölçü:** 17.859 bayt · 6 ek dosya · script içerir · referans dosyaları var
+- **Kaynak:** ~/Documents/GitHub/portfoy-butce/.claude/skills/portfoy-tahmin, ~/projects/portfoy-butce/.claude/skills/portfoy-tahmin
 
 ## `portfoy-tahmin--cloud`
 
@@ -109,8 +109,8 @@ Bir startup hakkında sıfırdan derin araştırma yapıp (web, ticaret sicili, 
 
 Bir günün tahmin ve kanıt kayıtlarını, commit edilmeden önce ADVERSARYAL olarak denetler - kaynaksız/tarihsiz sayı, eşiği dolmamış bir kuralın uygulanması, sonucu görüp lehte yapılmış düzeltme (H9), artık görüldükten sonra genişletilmiş bant, yanlış day_type, model_id eksikliği, ön kayıt ihlali. Kullanıcı "savcı", "denetle", "bugünkü tahmini kontrol et", "commit öncesi bak", "ön kayda uygun mu", "kendimi kandırıyor muyum" dediğinde ya da günlük akışın 7. adımında commit'ten önce çalıştır. SALT OKUNUR - hiçbir dosyayı değiştirmez, tahmin üretmez, yalnızca bulgu listeler.
 
-- **Ölçü:** 3.486 bayt · 1 ek dosya · referans dosyaları var
-- **Kaynak:** ~/Documents/GitHub/portfoy-butce/.claude/skills/tahmin-savcisi
+- **Ölçü:** 3.571 bayt · 1 ek dosya · referans dosyaları var
+- **Kaynak:** ~/Documents/GitHub/portfoy-butce/.claude/skills/tahmin-savcisi, ~/projects/portfoy-butce/.claude/skills/tahmin-savcisi
 
 ## `tesvik-avcisi`
 

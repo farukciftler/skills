@@ -272,3 +272,67 @@ alış/satış farkı, gecikmeli veri veya farklı enstrümandır.
 
 Her snapshot'ta fiyatın **hangi ana** ait olduğuna dikkat et ve saati
 `--notes`'a yaz.
+
+---
+
+## Fon içeriği (look-through) — nereye kadar gidilebiliyor (07.09.2026)
+
+**TEFAS fon-içinde-fon kırılımını YAYINLAMIYOR.** 14 uç denendi, hepsi 404:
+`BindHistoryAllocation` · `fonPortfoyDagilimGetir` · `fonPortfoyBilgiGetir` ·
+`fonVarlikDagilimGetir` · `fonPortfoyDagilimBilgiGetir` ·
+`fonVarlikDagilimBilgiGetir` · `fonDagilimBilgiGetir` ·
+`fonPortfoyDagilimiGetir` · `fonPortfoyDetayGetir` · `fonKarsilastirmaGetir` ·
+`fonGetiriBilgiGetir` · `fonIstatistikGetir` · `fonPortfoyGetiriGetir` ·
+`fonPortfoyGetir`. (`fonDetayGetir` 200 döner ama `resultList` boş — altı
+parametre şekli denendi.)
+
+**Bu bir sınırdır, geçici bir arıza değil — TEFAS tarafında tekrar aranmasın.**
+
+### ✅ YENİ ÇALIŞAN UÇ — fon künyesi
+
+```bash
+curl -s https://www.tefas.gov.tr/api/funds/fonBilgiGetir \
+  -H 'Content-Type: application/json' -H 'Origin: https://www.tefas.gov.tr' \
+  -H 'User-Agent: Mozilla/5.0' -d '{"fonKodu":"KTJ"}'
+```
+
+Döner: `fonUnvan · sonFiyat · gunlukGetiri · payAdet · portBuyukluk ·
+fonKategori · kategoriDerece · kategoriFonSay · yatirimciSayi · pazarPayi`.
+Anahtarsız. Fon büyüklüğü ve yatırımcı sayısı başka hiçbir makine-okunur
+kaynakta yok.
+
+### KAP zinciri — çalışıyor, tek halka eksik
+
+```
+kap.org.tr/tr/Bildirim/{sayısal_id}      ← ham HTML'de veri VAR (sunucu-render)
+   └─ /tr/api/file/download/{32-hex}      ← ek dosya; PDF adı {KOD}_{YYYY}.{MM}.pdf
+```
+
+Doğrulandı: `1497636 → TMG_2025.09.pdf`, `1496769 → KTT_2025.09.pdf`.
+
+**Tıkanan halka:** `(fon, ay) → bildirim id`. Listeleme sayfaları
+(`/tr/fon-bildirimleri/{slug}`, `/tr/fon-finansal-bilgileri/{slug}`)
+**Next.js ile JS-render**; ham fetch 0 satır. Besleyen API için 23 aday
+denendi, hepsi 404. `/tr/api/memberDisclosureQuery` **var ama yanıt vermiyor**
+(POST ve GET, 25 sn timeout — sessiz bot duvarı, 404 değil).
+
+**Çözüm:** bildirim id'si elle bir kez alınır (KAP fon sayfası → adres
+çubuğu), gerisi otomatik. Ya da tarayıcı otomasyonu.
+
+**Rapor gecikmesi ~1 ay** (Temmuz 2026 raporu 10.08'de yayımlandı) —
+açık iş #15'teki "157 gün" **bayat bilgidir**.
+
+### Denenip elenen üçüncü taraf kaynaklar (fon içeriği için)
+
+| Kaynak | Sonuç |
+|---|---|
+| `fintables.com/fonlar/<KOD>/portfoy` | ❌ 403 |
+| `fundflux.io/fund/<kod>` | ❌ boş sayfa |
+| `kuveytturkportfoy.com.tr` fon sayfası | ❌ yalnız kurumsal PDF'ler, aylık rapor JS arkasında |
+| `fvt.com.tr/fonlar/yatirim-fonlari/<KOD>` | ⚠️ tekil hisseleri VERİR, **ama tarihi çekim tarihidir, rapor tarihi değil** — K18 tuzağı, `positions_as_of` doldurulamaz |
+
+**`fvt.com.tr` kullanılacaksa:** verdiği listeyi kabul etmeden önce hangi
+KAP raporuna dayandığı **ayrıca** doğrulanmalı. Site "bugün itibarıyla" diyor
+ama KAP raporları aylık ve gecikmeli; aynı sitenin başka sayfaları "8 Temmuz"
+ve "8 Haziran" raporlarına atıf yapıyor.
+

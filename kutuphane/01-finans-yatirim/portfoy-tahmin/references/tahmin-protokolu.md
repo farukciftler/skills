@@ -316,3 +316,32 @@ Dosya şeması:
 - Gerekçeyi tek cümlede ver, paragraf yazma.
 - `invalidator`'ı mutlaka göster — kullanıcının tahmini ne zaman çöpe atacağını bilmesi, tahminin kendisinden değerli.
 - Alım/satım önerisi yok. Kullanıcı doğrudan sorarsa: kararı etkileyecek olguları listele, kararı verme, lisanslı danışman olmadığını bir kez belirt.
+
+---
+
+## Sapma ne zaman anomalidir — yüzdelik kuralı (K43, 16.08.2026)
+
+**Bir sapma anomali sayılmadan önce, aynı varlığın tarihsel sapma
+dağılımındaki yüzdeliği hesaplanır. Üst %10'un dışındaysa kayıt AÇILMAZ.**
+
+Sebep bir vakadır: 14.08'de KIK'in KTJ'den "keskin ayrıştığı" kaydedildi ve
+**iki gün boyunca** tahmin gerekçesi olarak kullanıldı (KIK güveni `dusuk`,
+bant geniş). Sonradan ölçüldüğünde:
+
+| | |
+|---|---|
+| artık | −0,455 pp |
+| z | −0,84 |
+| sıra | 246 günün **87.**'si → **üst %35** |
+
+Yani ortalama **her üç günde bir** görülen bir sapma. Kesin kanıt: bir
+**önceki** gün daha büyük bir artık üretilmişti (+0,74 pp) ve
+işaretlenmemişti — işaretleten şey sinyal değil **sapmanın yönüydü**.
+
+**Pratikte:** artığı hesapla → o varlığın artık std'sine böl → yüzdeliği yaz.
+Üst %10 dışındaysa kanıt kaydı açma, gerekçeye geçirme, bandı genişletme.
+Kanıt yazıyorsan **yüzdelik metne girer** — savcının 2b başlığı bunu denetler.
+
+Uygulama örneği (07.09): KTJ artığı 0,61σ → **kayıt açılmadı**; ZPE artığı
+1,67σ = üst %5 → **kayıt açıldı** ve mekanizması yazıldı.
+

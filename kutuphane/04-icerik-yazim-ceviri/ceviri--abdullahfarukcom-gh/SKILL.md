@@ -83,6 +83,8 @@ Konu eşleşmesi:
 | Yazılım | Software |
 | DevOps | DevOps |
 | Görüntü İşleme | Computer Vision |
+| FinOps | FinOps |
+| Karar Verme | Decision Making |
 
 Listede olmayan bir konu çıkarsa hem çevirisini yap hem de bu tabloya ekle.
 

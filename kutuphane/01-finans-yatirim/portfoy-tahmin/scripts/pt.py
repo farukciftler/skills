@@ -346,6 +346,36 @@ def write_json(path, data):
     tmp.replace(p)
 
 
+def write_jsonl(path, rows):
+    """JSONL dosyasini ATOMIK yeniden yaz (tmp + replace).
+
+    `write_json` bastan beri atomikti ama JSONL yeniden yazmalari duz
+    `open(..., "w")` kullaniyordu. Bu, deponun EN DEGERLI dosyasini
+    (`resolutions.jsonl`, 425 muhurlenmis gozlem) her `resolve`/`baselines`
+    /`model-stamp` cagrisinda risk altina sokuyordu: yazma sirasinda kesinti
+    (Ctrl-C, disk dolmasi, surec olumu) dosyayi YARIM birakir.
+
+    `resolve` cogunu yeniden uretebilir ama `resolved_at` damgalari ve
+    append-only garantisi geri gelmez - ve garanti bu deponun temel iddiasi.
+    07.09.2026'da bulundu (teknik denetim).
+    """
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    tmp = p.with_suffix(p.suffix + ".tmp")
+    with tmp.open("w", encoding="utf-8") as f:
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    tmp.replace(p)
+
+
+def append_jsonl(path, row):
+    """Tek satir ekle. Ekleme zaten atomik sayilir (kucuk, tek write)."""
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with p.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+
 def out(obj):
     print(json.dumps(obj, ensure_ascii=False, indent=2))
 
@@ -365,6 +395,9 @@ class Store:
         self.reviews = self.root / "reviews"
         self.holdings = self.root / "holdings"
         self.resolutions = self.root / "resolutions.jsonl"
+        # K92 (07.09.2026): karar defteri. Tahminler olculuyordu, KARARLAR
+        # olculmuyordu - oysa para kararla hareket ediyor.
+        self.decisions = self.root / "decisions.jsonl"
 
     def ensure(self):
         for d in (self.snapshots, self.forecasts, self.evidence, self.reviews,
@@ -438,6 +471,12 @@ class Store:
 
     def all_forecast_files(self):
         return sorted(self.forecasts.glob("*.json"))
+
+    def all_decisions(self):
+        if not self.decisions.exists():
+            return []
+        return [json.loads(l) for l in
+                self.decisions.read_text(encoding="utf-8").splitlines() if l.strip()]
 
     def all_resolutions(self):
         if not self.resolutions.exists():
@@ -686,6 +725,22 @@ def cmd_snapshot(args):
 
     if dirty_portfolio:
         st.save_portfolio(p)
+
+    # K84: `accrual` bir varliga akis yazilip AYNI snapshot'ta bakiyesi
+    # verilmezse, motor onceki degeri oldugu gibi tasir -> portfoy degeri
+    # cekilen/yatirilan parayi hic gormez, ustelik delta_flow_adj_pct akisi
+    # bir kez daha duselterek getiriyi TERS YONDE duzeltir. `_flow_fields`
+    # yalnizca kaydeder, deger hesabina dokunmaz (tasarim); bu yuzden eksigi
+    # motorun SOYLEMESI gerekir.
+    for aid, amt in (flows or {}).items():
+        a = p["assets"].get(aid) or {}
+        if a.get("class") == "accrual" and aid not in prices:
+            warnings.append(
+                f"{aid}: akis yazildi ({amt:+,.2f}) ama ayni snapshot'ta bakiye VERILMEDI. "
+                f"`accrual` varlikta akis bakiyeyi otomatik dusurmez/artirmaz - "
+                f"deger onceki gunden tasindi ve portfoy toplami akisi GORMUYOR. "
+                f"Gercek bakiyeyi --prices ile de gir (K84)."
+            )
 
     total = round(sum(v for v in values.values() if v), 2)
     prev_total = (prev or {}).get("total")
@@ -969,6 +1024,20 @@ def cmd_forecast(args):
                   f"({'/'.join(DAY_TYPES)})")
     if eksik_ms:
         uy.append(f"market_state eksik: {', '.join(eksik_ms)} - geriye donuk doldurulamaz")
+    # --- GOLGE BANT UYARISI (acik is #30 -> K91, 07.09.2026) ---
+    # #30 "motor tarafi degismez, gunluk.sh'a girsin" diyordu. Ikisi de yapildi
+    # ve sebebi su: gunluk.sh SONRADAN bakar, motor YAZARKEN yakalar. Alternatif
+    # bandin o gunku degeri geriye donuk uretilemez, yani gecikme = kayip.
+    # `model_id` da skorlanmiyor ama zorunlu - "skorlanmayan alan" uyarmamak
+    # icin gerekce degil. Burada HATA degil UYARI: golge bant deneysel bir
+    # olcumdur, tahminin gecerliligi ona bagli degil.
+    _1g_eksik = [f["asset"] for f in existing.get("forecasts", [])
+                 if f.get("horizon") == "1d" and not f.get("band_shadow")]
+    if _1g_eksik:
+        uy.append(f"band_shadow eksik ({len(_1g_eksik)} adet 1g): "
+                  f"{', '.join(_1g_eksik[:6])}{' ...' if len(_1g_eksik) > 6 else ''} - "
+                  f"H14'un havuzu; geriye donuk doldurulamaz "
+                  f"(scripts/vol_uncond.py --json)")
     # --- DUSEN ALAN UYARISI (K80, 03.09.2026) ---
     # K49/K53 gun ICINDEKI ezmeyi cozdu. Gorunmeyen sey GUNLER ARASI kayipti:
     # market_state her gun sifirdan kuruluyor ve bir oturumun elle ekledigi
@@ -992,6 +1061,23 @@ def cmd_forecast(args):
                       f"{', '.join(_dusen[:12])}{' ...' if len(_dusen) > 12 else ''} - "
                       f"yavas degisen alan taşınacaksa `_asof` damgasina 'tasindi' yaz; "
                       f"gercekten gerekmiyorsa yoksay")
+
+    # --- ENDEKS SICRAMASI (acik is #19 -> K93) ---
+    # Bir onceki GUNUN dosyasindaki degerle karsilastirir. Hatali kotasyon
+    # ya da yanlis endeks, gunluk esigi asan bir sicrama olarak gorunur.
+    if _onceki_rec:
+        _onc_ms = _onceki_rec.get("market_state") or {}
+        for _k, _esik in MARKET_STATE_SICRAMA.items():
+            _a, _b = _onc_ms.get(_k), _ms_var.get(_k)
+            try:
+                if _a and _b and abs(100 * (float(_b) / float(_a) - 1)) > _esik:
+                    uy.append(
+                        f"{_k} bir gunde %{100 * (float(_b) / float(_a) - 1):+.2f} "
+                        f"({_a} -> {_b}, esik %{_esik}) - K19: hatali kotasyon ya da "
+                        f"YANLIS ENDEKS olabilir, ikinci kaynakla dogrula")
+            except (TypeError, ValueError, ZeroDivisionError):
+                pass
+
     if existing.get("forecasts") and not existing.get("kontroller") \
             and as_of.isoformat() >= H8_PAYDA_BASLANGIC:
         uy.append("kontroller yok - H8 paydasi bu gun icin eksik kalir. Bugun hangi "
@@ -1005,6 +1091,237 @@ def cmd_forecast(args):
          "protokol_surumu": existing["protocol_version"], "day_type": dt,
          "model_ids": sorted({f.get("model_id") or "kayitsiz" for f in existing["forecasts"]}),
          "uyarilar": uy, "dosya": str(path)})
+
+
+# --- KARAR DEFTERI (K92, 07.09.2026) --------------------------------------
+# Defter 1 GUNLUK FIYAT TAHMINLERINI titizlikle puanliyordu ve kendi olcumune
+# gore o tahminlerin becerisi YOK (uc baseline birden p=1,00). Ama paranin
+# gercekten hareket ettigi yer tahmin degil KARAR: "20.000 nereye?" sorusu.
+# 07.09'da bes farkli tahsis onerisi uretildi, biri secildi, digerleri
+# HICBIR YERDE KAYITLI DEGILDI - bir ay sonra "ben zaten altin diyordum"
+# demek serbest olacakti. Deponun tum varlik sebebi bu cumleyi imkansiz
+# kilmak.
+#
+# ISTATISTIK IDDIASI DEGILDIR: yilda ~12 karar olur, hicbir sey "anlamli"
+# cikmaz. Amac guc degil KAYIT - geriye donuk revizyonu engellemek.
+#
+# Skorlama mekanigi: her alternatif {varlik_id: TL} sozlugudur. Karar gunundeki
+# fiyattan adet turetilir, hedef gundeki fiyatla degerlenir. Fiyati olmayan
+# (accrual) kalemler icin snapshot degeri kullanilir. Ifade edilemeyen
+# alternatifler (or. "dort aya yay") `skorlanmaz` + gerekce ile kaydedilir -
+# kaydedilir ama puanlanmaz, cunku kaydetmemek onu yok saymaktir.
+DECISION_HORIZONS = {"1m": 30, "3m": 91, "6m": 182}
+# Karar skorlamasinda bir fiyat en fazla bu kadar eski olabilir. Uzun tatil
+# (9 gunu asan) haric her donemde bir snapshot bulunur; asilirsa fiyat
+# uydurmak yerine `eksik` yazilir.
+FIYAT_BAYATLIK_GUN = 10
+
+# ENDEKS SICRAMA ESIGI (acik is #19, 03.08 -> K93 07.09.2026).
+# 03.08'de BIST 100 "14.085" diye kaydedildi, gercegi 13.410,54 idi - 675 puan,
+# %5,0. Ders 04.08'de YAZILDI ("endeks degerleri bir onceki kapanisla capraz
+# kontrol edilmeli") ama MEKANIZMASI KURULMADI, yani 13 ay boyunca yine
+# hatirlamaya bagliydi (K53 kalibi). Artik motor bakiyor.
+# Esik varlik sinifina gore: endeksler icin %5 bir gunde nadirdir; kur icin
+# %3; oynak olanlarda (altin vadeli, VIX ailesi) kontrol EDILMEZ - orada
+# %5'lik gun gercekten olur ve yanlis alarm, alarmı oldururdu (K40).
+MARKET_STATE_SICRAMA = {
+    "nasdaq": 5.0, "sp500": 5.0, "bist100": 5.0, "ndx": 5.0,
+    "usdtry": 3.0, "usdtry_spot": 3.0, "dxy": 3.0,
+}
+
+
+def _fiyat_veya_deger(st, asset, d, ref=None):
+    """Karar skorlamasi icin fiyat. accrual'da fiyat yoktur -> snapshot degeri.
+
+    FIYAT REFERANSI IKI DEFTERDE ORTAKTIR (CLAUDE.md "iki defter kurali").
+    Bir karsi-olgusal alternatif, o defterde SAHIP OLUNMAYAN bir varliga
+    isaret edebilir - panel esin 20.000'i icin "hepsi gram altina" dedi ama
+    es defterinde gram_altin yok. Bu bir sahiplik iddiasi degil FIYAT SORUSU:
+    "o gun alsaydi bugun ne ederdi". Bu yuzden varlik bu defterde yoksa
+    `ref` kokune (varsayilan `data`) dusulur. Sahiplik yine kokle belirlenir;
+    buradan hicbir varlik es defterine EKLENMEZ.
+
+    Donus: (deger, tur) - tur "fiyat" | "deger" | None.
+    """
+    # GERCEK fiyata kadar geri yurunur. `values`a DUSULMEZ - ilk yazimda
+    # oyleydi ve mekanik testi (07.09) yakaladi: hedef gun Pazar oldugunda
+    # fonun `prices` alani None, `values` ise TUTULAN pozisyonun tasinan TL
+    # degeri. Karsi-olgusal bir ALIM icin bu tamamen alakasiz sayidir ve
+    # sessizce "getiri = %0" uretiyordu (uc alternatif de tam 10.000,00
+    # donmustu). Fiyati olan varlikta yalniz FIYAT kullanilir.
+    # BAYATLIK KORUMASI: `latest_snapshot(on_or_before=...)` istenen gunde
+    # snapshot yoksa SESSIZCE cok daha eskisini dondurur. Karar skorlamasinda
+    # bu, aylik bir fiyati "hedef gunun fiyati" sanmak demektir ve fark
+    # hesabini sessizce bozar. En fazla FIYAT_BAYATLIK_GUN geri gidilir;
+    # asilirsa fiyat YOK sayilir ve `eksik`e yazilir (yarim hesap, hic
+    # hesaptan kotudur - K18 ailesi).
+    for kaynak in (st, ref):
+        if kaynak is None:
+            continue
+        probe = d
+        for _ in range(FIYAT_BAYATLIK_GUN + 1):
+            pd_, snap = kaynak.latest_snapshot(on_or_before=probe)
+            if snap is None or (d - pd_).days > FIYAT_BAYATLIK_GUN:
+                break
+            px = (snap.get("prices") or {}).get(asset)
+            if px is not None and float(px) > 0:
+                return float(px), "fiyat"
+            probe = pd_ - timedelta(days=1)
+    return None, None
+
+
+def _dagilim_degeri(st, dagilim, karar_gun, hedef_gun, ref=None):
+    """Bir {varlik: TL} dagiliminin hedef gundeki TL degeri.
+
+    Eksik fiyat SESSIZCE ATLANMAZ - `eksik` listesine yazilir ve toplam
+    `kismi` isaretlenir. Yarim hesaplanmis bir karsilastirma, hic
+    hesaplanmamistan kotudur (K18 ailesi).
+    """
+    gun = (hedef_gun - karar_gun).days
+    varliklar = {}
+    for kaynak in (ref, st):
+        if kaynak is not None:
+            varliklar.update(kaynak.portfolio().get("assets", {}))
+    toplam, eksik = 0.0, []
+    for aid, tl in dagilim.items():
+        meta = varliklar.get(aid) or {}
+        if meta.get("class") == "accrual":
+            # Fiyati yok; karsi-olgusal "bu hesaba koysaydi" birikim oraniyla
+            # BILESIKLENIR. `values` kullanilamaz - o, GERCEK bakiyedir ve
+            # nakit akislarini icerir, karsi-olgusalla ilgisi yoktur.
+            apr = float(meta.get("accrual_apr") or 0.0)
+            toplam += float(tl) * (1 + apr / 100.0) ** (gun / 365.0)
+            continue
+        p0, _ = _fiyat_veya_deger(st, aid, karar_gun, ref)
+        p1, _ = _fiyat_veya_deger(st, aid, hedef_gun, ref)
+        if not p0 or p1 is None:
+            eksik.append(aid)
+            continue
+        toplam += float(tl) * (p1 / p0)
+    return round(toplam, 2), eksik
+
+
+def cmd_decision(args):
+    """Karar kaydet. Alternatifler SONUC GORULMEDEN yazilir - sart budur."""
+    st = Store(args.root)
+    st.ensure()
+    payload = read_json(args.file) if args.file else json.loads(sys.stdin.read())
+    d = parse_date(payload.get("date") or args.date)
+    ref = Store(args.price_root) if args.price_root and Path(args.price_root) != Path(args.root) else None
+    p_assets = dict(st.portfolio().get("assets", {}))
+    if ref is not None:
+        # karsi-olgusal alternatif bu defterde sahip olunmayan varliga isaret
+        # edebilir; gecerlilik FIYATIN varligina bakar, sahiplige degil
+        p_assets.update({k: v for k, v in ref.portfolio().get("assets", {}).items()
+                         if k not in p_assets})
+
+    problems = []
+    secilen = payload.get("secilen") or {}
+    if not secilen:
+        problems.append("`secilen` bos - hangi dagilim uygulandi?")
+    alts = payload.get("alternatifler") or []
+    if not alts:
+        problems.append("`alternatifler` bos - karsilastirmasiz karar puanlanamaz")
+    for ad, dag in [("secilen", secilen)] + [(a.get("kaynak", "?"), a.get("dagilim") or {})
+                                             for a in alts if not a.get("skorlanmaz")]:
+        for aid in dag:
+            if aid not in p_assets:
+                problems.append(f"{ad}: bilinmeyen varlik '{aid}'")
+    for a in alts:
+        if a.get("skorlanmaz") and not a.get("skorlanmaz_gerekce"):
+            problems.append(f"{a.get('kaynak')}: skorlanmaz var ama gerekce YOK")
+    if not payload.get("gerekce"):
+        problems.append("`gerekce` yok - karar sonucu gorulmeden yazilmali")
+    if problems and not args.force:
+        die("karar dosyasi gecersiz:\n  - " + "\n  - ".join(problems))
+
+    rec = {
+        "id": payload.get("id") or f"{d.isoformat()}-{len(st.all_decisions()) + 1}",
+        "date": d.isoformat(),
+        "defter": payload.get("defter") or Path(args.root).name,
+        "tutar": payload.get("tutar"),
+        "secilen": secilen,
+        "alternatifler": alts,
+        "gerekce": payload.get("gerekce"),
+        "kaynak": payload.get("kaynak"),
+        "ufuklar": payload.get("ufuklar") or list(DECISION_HORIZONS),
+        "model_id": payload.get("model_id") or getattr(args, "model_id", None),
+        "created_at": now_iso(),
+        "skorlar": {},
+    }
+    append_jsonl(st.decisions, rec)
+    out({"ok": True, "id": rec["id"], "alternatif_sayisi": len(alts),
+         "skorlanacak": sum(1 for a in alts if not a.get("skorlanmaz")),
+         "ufuklar": rec["ufuklar"], "dosya": str(st.decisions),
+         "not": "Alternatifler SONUC GORULMEDEN kaydedildi. Puanlama: pt.py decisions"})
+
+
+def cmd_decisions(args):
+    """Kararlari listele ve vadesi gelenleri puanla (idempotent).
+
+    GELECEK TARIHLE PUANLAMA YASAK (K95, 07.09.2026). Olgunluk kontrolu
+    (`hedef > today`) GECIRILEN tarihe bakiyor; `--date 2026-12-07` verilince
+    henuz olusmamis ufuklar "vadesi gelmis" sayiliyor ve MEVCUT (bayat)
+    fiyatlarla puanlaniyordu. Bulunma sekli ogretici: bu komutu bir
+    PERFORMANS OLCUMU icin gelecek tarihle calistirdim ve karar defterine
+    sahte skorlar yazdi - test komutu olcum defterini kirletti.
+    Diger komutlarda `--date` gecmise gitmek icin mesrudur; burada degil,
+    cunku puanlama GELECEGE bakar.
+    """
+    st = Store(args.root)
+    ref = Store(args.price_root) if args.price_root and Path(args.price_root) != Path(args.root) else None
+    today = parse_date(args.date)
+    if today > date.today() and not args.force:
+        die(f"--date {today} GELECEKTE (bugun {date.today()}). Karar puanlamasi "
+            f"gelecege bakar; olgunlasmamis ufuklar bayat fiyatlarla puanlanir "
+            f"ve defter kirlenir (K95). Gercekten gerekiyorsa --force.")
+    rows = st.all_decisions()
+    guncellenen = 0
+    for r in rows:
+        kd = date.fromisoformat(r["date"])
+        for h in r.get("ufuklar", []):
+            if h in (r.get("skorlar") or {}) and not args.force:
+                continue
+            hedef = kd + timedelta(days=DECISION_HORIZONS[h])
+            if hedef > today:
+                continue
+            sec_v, sec_eksik = _dagilim_degeri(st, r["secilen"], kd, hedef, ref)
+            alt_sk = []
+            for a in r.get("alternatifler", []):
+                if a.get("skorlanmaz"):
+                    alt_sk.append({"kaynak": a.get("kaynak"), "skorlanmaz": True,
+                                   "gerekce": a.get("skorlanmaz_gerekce")})
+                    continue
+                v, eksik = _dagilim_degeri(st, a.get("dagilim") or {}, kd, hedef, ref)
+                alt_sk.append({"kaynak": a.get("kaynak"), "deger_try": v,
+                               "fark_try": round(v - sec_v, 2),
+                               "fark_pct": round(100 * (v / sec_v - 1), 3) if sec_v else None,
+                               "eksik_fiyat": eksik})
+            puanli = [a for a in alt_sk if not a.get("skorlanmaz")]
+            yenen = sum(1 for a in puanli if a["deger_try"] < sec_v)
+            r.setdefault("skorlar", {})[h] = {
+                "hedef_tarih": hedef.isoformat(),
+                "secilen_deger_try": sec_v, "secilen_eksik_fiyat": sec_eksik,
+                "alternatifler": alt_sk,
+                "secilen_kacini_yendi": f"{yenen}/{len(puanli)}",
+                "puanlandi_at": now_iso(),
+            }
+            guncellenen += 1
+    if guncellenen:
+        write_jsonl(st.decisions, rows)
+    bekleyen = []
+    for r in rows:
+        for h in r.get("ufuklar", []):
+            if h not in (r.get("skorlar") or {}):
+                bekleyen.append({"id": r["id"], "ufuk": h,
+                                 "hedef": (date.fromisoformat(r["date"])
+                                           + timedelta(days=DECISION_HORIZONS[h])).isoformat()})
+    out({"ok": True, "karar_sayisi": len(rows), "puanlanan": guncellenen,
+         "bekleyen": bekleyen,
+         "kararlar": [{"id": r["id"], "date": r["date"], "defter": r.get("defter"),
+                       "tutar": r.get("tutar"), "skorlar": r.get("skorlar")} for r in rows],
+         "not": "n kucuk (yilda ~12 karar) - bu bir ISTATISTIK degil KAYITTIR. "
+                "Amac geriye donuk 'ben sunu demistim'i imkansiz kilmak."})
 
 
 def acik_kanitlar(st, today, hepsi=False):
@@ -1131,6 +1448,14 @@ def alt_baselines(st, asset, as_of, target, actual_pct, point_pct, cls=None):
         "baseline_adim": adim,
         "baseline_drift_lookback": None,
     }
+    # DEFTERIN ILK GUNLERINDE drift/momentum HESAPLANAMAZ ve bu dogru
+    # davranistir: gecmis fiyat degisimi yoksa "son 5 degisimin ortalamasi"
+    # diye bir sey de yoktur. 07.09 denetimi: 383 cozumlemenin 31'inde
+    # `baseline_drift_pct is None` ve HEPSI 01-05.08 arasindan (defterin ilk
+    # bes gunu; 01.08 ayrica Cumartesi, yani spot varliklarda gozlem 0).
+    # `tum_baselineler_yenildi` bu satirlarda None doner ve baseline ailesi
+    # istatistiklerinden DISLANIR - uydurulmus bir drift'le doldurmak
+    # baseline'i yapay olarak kolaylastirirdi.
     if len(gecmis) >= 2 and adim >= 1:
         degisimler = [100.0 * (gecmis[i][1] - gecmis[i - 1][1]) / gecmis[i - 1][1]
                       for i in range(1, len(gecmis))]
@@ -1177,9 +1502,7 @@ def cmd_baselines(args):
                             r["actual_pct"], r["point_pct"], cls)
         r.update(alt)
         guncellenen += 1
-    with open(st.resolutions, "w", encoding="utf-8") as f:
-        for r in rows:
-            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    write_jsonl(st.resolutions, rows)
     out({"ok": True, "guncellenen": guncellenen, "toplam": len(rows),
          "not": "Tahminler ve gerceklesenler DEGISMEDI; yalnizca baseline alanlari eklendi."})
 
@@ -1225,9 +1548,7 @@ def cmd_model_stamp(args):
             r["model_id"] = mid
             res_yazilan += 1
     if res_yazilan:
-        with open(st.resolutions, "w", encoding="utf-8") as fh:
-            for r in rows:
-                fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+        write_jsonl(st.resolutions, rows)
     out({"ok": True, "model_id": mid, "through": through.isoformat() if through else None,
          "tahmin_kalemi": fc_yazilan, "tahmin_dosyasi": fc_dosya,
          "cozumleme_satiri": res_yazilan,
@@ -1651,6 +1972,30 @@ def cmd_calibrate(args):
     kapali = [r for r in rows if _kapali_gun_hedefi(r)]
     rows = [r for r in rows if not _kapali_gun_hedefi(r)]
 
+    # --- MUKERRER GOZLEM (K86, 07.09.2026) ---
+    # K17 hedef tarihini duzeltti: kapali gune tahmin yazilmiyor artik. Kalan
+    # sorun HEDEFTE degil KAYNAKTA: Cuma/Cmt/Paz gunlerinde uretilen fon
+    # tahminlerinin UCU DE ayni Pazartesi NAV'ini, ayni baz fiyattan hedefler
+    # (TEFAS hafta sonu fiyat vermez, motor onceki degeri tasir). Ucu de ayni
+    # gerceklesmeyle cozulur -> tek bir piyasa hareketi havuza UC KEZ girer.
+    # 07.09'da olculdu: 383 cozumlemenin 45'i (%11,7) boyle; 1g'de 31, 1h'de 14.
+    # Rastgele DEGIL - yalniz fund_tefas'a ve yalniz hafta sonu cevresine vurur.
+    # SATIR SILINMEZ (append-only) ve tekil skorlari degismez; yalnizca
+    # `mukerrer_arindirilmis` blogu ayrica hesaplanir.
+    # Hangi satir tutulur: EN ERKEN as_of. Sebep tasarim degil olcum: sonraki
+    # gunun tahmini ayni sonucu daha COK bilgiyle yapiyor (Cuma ABD kapanisi
+    # Pazar sabahi bellidir), yani ic ice gecmis bilgi kumeleri. En erkeni
+    # tutmak muhafazakar olandir - defterin lehine olan satiri secmez.
+    _grup = {}
+    for r in rows:
+        _grup.setdefault((r["asset"], r["horizon"], r["target_date"],
+                          r.get("base_price")), []).append(r)
+    tekil_rows, mukerrer_n = [], 0
+    for _k, _v in _grup.items():
+        _v = sorted(_v, key=lambda x: x["as_of"])
+        tekil_rows.append(_v[0])
+        mukerrer_n += len(_v) - 1
+
     if args.asset:
         rows = [r for r in rows if r["asset"] == args.asset]
 
@@ -1688,6 +2033,17 @@ def cmd_calibrate(args):
         "gun_tipi_bazli": {k: _calib(v) for k, v in sorted(by_daytype.items())},
         "kanaat_bazli": {k: _calib(v) for k, v in sorted(by_conf.items())},
         "surum_bazli": {k: _calib(v) for k, v in sorted(by_version.items())},
+        # K86: ayni (varlik, ufuk, hedef, baz) uzerindeki fazladan satirlar
+        # atilarak. BIRINCIL degil TESHIS - hangi metrigin bagimli gozlemden
+        # ne kadar etkilendigini gosterir.
+        "mukerrer_arindirilmis": {
+            "n": len(tekil_rows), "atilan_satir": mukerrer_n,
+            "atilan_oran": round(mukerrer_n / len(rows), 4) if rows else None,
+            "tutulan": "en erken as_of",
+            "metrikler": _calib(tekil_rows),
+            "not": "Cuma/Cmt/Paz'da uretilen fon tahminleri ayni Pazartesi NAV'ini "
+                   "ayni bazdan hedefler; tek hareket havuza birkac kez girer. "
+                   "Satirlar SILINMEDI, tekil skorlari degismedi."},
         # K78: farkli LLM'ler ayni havuzda toplanmaz - protocol_version'in model karsiligi
         "model_bazli": {k: _calib(v) for k, v in sorted(by_model.items())},
         "yorum_kilavuzu": {
@@ -2093,6 +2449,22 @@ def main():
     s = sub.add_parser("report", help="sabah raporu baglam paketi")
     s.add_argument("--date")
     s.set_defaults(func=cmd_report)
+
+    s = sub.add_parser("decision", help="karar kaydet (alternatifleriyle, sonuc gorulmeden)")
+    s.add_argument("--file")
+    s.add_argument("--date")
+    s.add_argument("--model-id")
+    s.add_argument("--price-root", default="data",
+                   help="fiyat referansi olarak kullanilacak kok (iki defter kurali: "
+                        "fiyatlar ortaktir). Sahiplik DEGISMEZ.")
+    s.add_argument("--force", action="store_true")
+    s.set_defaults(func=cmd_decision)
+
+    s = sub.add_parser("decisions", help="kararlari listele ve vadesi gelenleri puanla")
+    s.add_argument("--date")
+    s.add_argument("--price-root", default="data")
+    s.add_argument("--force", action="store_true", help="puanlanmis ufuklari da yeniden hesapla")
+    s.set_defaults(func=cmd_decisions)
 
     s = sub.add_parser("evidence-acik",
                        help="consensus yazilmis ama actual girilmemis takvimli kanitlar (H4 paydasi)")

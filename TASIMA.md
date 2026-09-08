@@ -248,6 +248,63 @@ olmayan içerik taşıyor: `assets/materials.json` ve bir `recipes/` dizini
 (`references/procedural-audio.md` de farklı). Silinmedi; üçüncü bir ayrışmış
 sürüm olarak kütüphaneye alınıp alınmayacağı karara bağlı.
 
+## Sürüklenme taraması (8 Eylül 2026)
+
+Ev dizinindeki 2.363 `SKILL.md`'nin tamamı sınıflandırıldı. **Kütüphanede
+bulunmayan tek bir skill çıkmadı**; `topla.py`'nin görmediği 1.952 konumun
+hepsi üçüncü taraf: `.claude/remote/plugins/` (1.674), worktree kopyaları
+(150), `rpm/plugin_*/skills/` altındaki Anthropic eklenti paketleri (64,
+`plugin.json`'da `"author": "Anthropic"`), marketplace (31), IDE eklentileri
+(27) ve Playwright paketi içinden çıkan 4 dosya. `~/Downloads`'taki 13
+`.skill` paketinin 13'ü de kütüphanede.
+
+Çıkan şey eksik skill değil, **kütüphanenin geride kalması**. Proje
+kopyaları kütüphaneden bağımsız olduğu için ilerlemeye devam ediyor:
+
+| Girdi | Yeni kaynak | Fark | Yapılan |
+|---|---|---|---|
+| `portfoy-tahmin` | `~/projects/portfoy-butce` (7 Eyl) | kaynakta +482 satır, kütüphanede +6 | tazelendi |
+| `tahmin-savcisi` | `~/projects/portfoy-butce` (7 Eyl) | kaynakta +31, kütüphanede +1 | tazelendi |
+| `ceviri--abdullahfarukcom-gh` | `~/projects/abdullahfarukcom` (7 Eyl) | kaynakta +2 sözlük satırı | tazelendi |
+| `finops-expert` | `~/projects/Cloud4Next` (7 Eyl) | karşılıklı: kütüphanede `ai-finops.md`, kaynakta `cloud4next-platform.md` + 3 referans | `--cloud4next` yeni girdi |
+
+Üzerine yazılan satırlar denetlendi: `portfoy-tahmin`'deki 6 satır `pt.py`
+içinde iki kez yazılmış aynı bloktu (yeni sürüm temizlemiş),
+`tahmin-savcisi`'ndeki 1 satır yeniden yazılmış bir cümleydi. Kayıp yok.
+
+`finops-expert--cloud4next` ad çakışmasında düz ada yeniliyor, yani
+terminalde kurulu değil; yalnız `~/projects/Cloud4Next` içinde yükleniyor.
+Bu doğru davranış: kütüphanedeki sürüm genel FinOps skill'i, Cloud4Next
+sürümü o platforma özgü.
+
+### Gölgeleme somutlaştı
+
+`kur.py` sonrası uyarılan risk gerçekleşmişti: `portfoy-tahmin` global
+symlink'ten kütüphanenin 3 Eylül sürümünü yüklüyordu ve proje kopyası
+yalnız `~/projects/portfoy-butce` içinde onu gölgeliyordu. Yani o projenin
+dışındaki her oturum 482 satır eski sürümle çalışıyordu. Tazeleme bunu
+kapattı, ama **yapısal olarak tekrar açılacak**: proje kurulumları
+kütüphaneye `bagla.py` ile bağlanmadıkça her düzenleme aynı boşluğu yeniden
+üretir.
+
+### Kalan: klonlar hizasız
+
+Tazeleme sonrası `ekle.py` üç aday bırakıyor, üçü de aynı depoların
+`Documents/GitHub/` klonundan:
+
+```
+ceviri--abdullahfarukcom-gh-2   <- ~/Documents/GitHub/abdullahfarukcom/.claude/skills/ceviri
+portfoy-tahmin--portfoy-butce-gh <- ~/Documents/GitHub/portfoy-butce/.claude/skills/portfoy-tahmin
+tahmin-savcisi--portfoy-butce-gh <- ~/Documents/GitHub/portfoy-butce/.claude/skills/tahmin-savcisi
+```
+
+Bunlar **kasıtlı olarak eklenmedi**; varyant açmak `portfoy-tahmin`'in
+dördüncü kopyasını üretir ve hangisinin canlı olduğunu bulanıklaştırır. Bu
+bir kütüphane sorunu değil, git klonu hizasızlığı: `projects/` ve
+`Documents/GitHub/` aynı depoların ayrı klonları ve `projects/` iki gün
+önde. § Ayrışmış sürümler'in zaten şart koştuğu klon hizalaması yapılmadan
+bu üçü kapanmaz.
+
 ## Yeniden tarama
 
 ```bash

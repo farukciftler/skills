@@ -2,7 +2,7 @@
 
 Framework ve altyapı referansları, kod grafiği araçları, çoklu bulut ve sunucu operasyonu.
 
-22 skill. Üst dizin: [../../README.md](../../README.md)
+23 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `apple-platform-architect`
 
@@ -39,6 +39,15 @@ Senior FinOps practitioner expertise grounded in FinOps Framework 2026, FOCUS 1.
 
 - **Ölçü:** 10.336 bayt · 5 ek dosya · referans dosyaları var
 - **Kaynak:** claude.ai senkronu (efemer önbellek)
+
+## `finops-expert--cloud4next`
+
+[SKILL.md](finops-expert--cloud4next/SKILL.md)
+
+Practitioner-level FinOps expert — the discipline and measurement side of cloud financial management: FinOps Framework (domains, capabilities, Crawl/Walk/Run, Inform/Optimize/Operate), FOCUS cross-cloud billing normalization, cost allocation (tagging, showback/chargeback, shared and unallocated cost), unit economics and KPI design, budgets and forecasting discipline, cost anomaly detection practice, commitment portfolio management (coverage vs utilization, laddering, break-even), rightsizing methodology (percentiles not averages), idle/orphan resource hygiene, Kubernetes cost allocation (OpenCost), and how to answer all of this against the Cloud4Next FinOps Intelligence platform's own ClickHouse/Postgres data model. Use for "maliyet nasıl dağıtılır", "showback/chargeback", "unallocated cost", "tag policy", "bütçe kur", "anomali nasıl tespit edilir", "forecast ne kadar güvenilir", "RI/SP/CUD portföyü", "coverage mı utilization mı", "rightsizing nasıl yapılır", "unit economics", "FinOps KPI", "FOCUS", "CUR", "cost allocation", "birim maliyet", "hangi tabloda", or any question about running a FinOps practice or building FinOps product features. For which-cloud-is-cheaper, service equivalence, or raw price lookups use hyperscaler-expert instead — this skill assumes those answers and focuses on measurement, allocation and process.
+
+- **Ölçü:** 5.511 bayt · 5 ek dosya · referans dosyaları var
+- **Kaynak:** ~/projects/Cloud4Next/.claude/skills/finops-expert
 
 ## `gitnexus-cli`
 

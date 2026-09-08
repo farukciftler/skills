@@ -24,13 +24,13 @@ gerekir. Aynı adlı bir skill hem projede hem global kuruluysa proje sürümü
 öne geçer — yani ayrışmış bir proje kopyası, kütüphanedeki güncel sürümü o
 projede gölgeler.
 
-Ad çakışması nedeniyle 27 ayrışmış sürüm kurulmadı (`<ad>` tek dizindir);
+Ad çakışması nedeniyle 28 ayrışmış sürüm kurulmadı (`<ad>` tek dizindir);
 listesi için `python3 scripts/kur.py`. Tüm kurulumu geri almak için
 `python3 scripts/kur.py --coz --uygula`.
 
 ## Bir skill ararken
 
-1. **[INDEX.md](INDEX.md)** — 162 girdilik alfabetik tablo, tek satırlık özetlerle.
+1. **[INDEX.md](INDEX.md)** — 163 girdilik alfabetik tablo, tek satırlık özetlerle.
 2. **`katalog/skills.json`** — programatik arama için. Her kayıtta `ad`, `ozet`,
    `aciklama` (tam frontmatter), `kategori`, `yol`, `kaynaklar`, `script_var`.
 3. Kategori sayfaları — `kutuphane/<kategori>/README.md`, o alandaki her skill'in

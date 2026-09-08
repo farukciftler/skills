@@ -46,7 +46,7 @@ Bilimsel makale yazımı, denetimi ve yayına hazırlama uzmanı — araştırma
 
 Bir yazıyı Türkçe ile İngilizce arasında çevirir. Yazı eklendiğinde, mevcut bir yazının karşı dildeki sürümü eksik olduğunda ya da kullanıcı "bunu çevir", "İngilizcesini de yap", "iki dile de koy" dediğinde kullan. Çeviri, makine çevirisi gibi değil; aynı kültürel kodu taşıyan, B2 seviyesinde bir insanın yazdığı gibi olmalı.
 
-- **Ölçü:** 5.690 bayt · 0 ek dosya
+- **Ölçü:** 5.744 bayt · 0 ek dosya
 - **Kaynak:** ~/Documents/GitHub/abdullahfarukcom/.claude/skills/ceviri, ~/projects/abdullahfarukcom/.claude/skills/ceviri
 
 ## `ceviri--comesyriacontent`

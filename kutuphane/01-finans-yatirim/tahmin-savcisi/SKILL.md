@@ -45,12 +45,13 @@ hafızada değil. Son ayın K kayıtları: `data/reviews/YYYY-MM.md`.
 
 ## Denetim listesi
 
-`references/kontrol-listesi.md` tam hâli. Sekiz başlık:
+`references/kontrol-listesi.md` tam hâli. Dokuz başlık:
 
 | # | Ne aranır | Neden |
 |---|---|---|
 | 1 | **Kaynaksız/tarihsiz sayı** | K11/K18/K19 ailesi; bu deponun en verimli hata kaynağı |
 | 2 | **Eşiği dolmamış kural** | K73 n≥12, H14-b n≥100+rejim, H17 n≥200, H18 n≥20 |
+| 2b | **Anomali ilan edildi, yüzdeliği yok** | K43: üst %10 dışındaysa gürültüdür |
 | 3 | **Lehte düzeltme (H9)** | Anlamlı sonuç KÖTÜ haberdir |
 | 4 | **Sonradan genişletilmiş bant** | Artık görüldükten sonra bant oynatmak kapsamayı sahte iyileştirir |
 | 5 | **`day_type` gerçekten takvimli mi** | Sonradan çıkan haber `veri` yapmaz |

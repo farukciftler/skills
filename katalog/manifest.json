@@ -398,7 +398,7 @@
   "name": "ceviri",
   "slug": "ceviri--abdullahfarukcom-gh",
   "cat": "04-icerik-yazim-ceviri",
-  "hash": "9daaa1007c58",
+  "hash": "521bf6e9cfc5",
   "variant": 0,
   "srcs": [
    "~/Documents/GitHub/abdullahfarukcom/.claude/skills/ceviri",
@@ -408,7 +408,7 @@
    "install",
    "install"
   ],
-  "bytes": 5690,
+  "bytes": 6137,
   "files": 1,
   "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/ceviri--abdullahfarukcom-gh",
   "linked": [
@@ -697,6 +697,26 @@
   "mirrored": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/finops-expert"
   ]
+ },
+ {
+  "name": "finops-expert",
+  "slug": "finops-expert--cloud4next",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "0a7fcfe975ef",
+  "variant": 1,
+  "srcs": [
+   "~/projects/Cloud4Next/.claude/skills/finops-expert"
+  ],
+  "kinds": [
+   "install"
+  ],
+  "bytes": 5545,
+  "files": 6,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/finops-expert--cloud4next",
+  "linked": [
+   "~/projects/Cloud4Next/.claude/skills/finops-expert"
+  ],
+  "mirrored": []
  },
  {
   "name": "fiyatlandirma-uzmani",
@@ -2384,19 +2404,22 @@
   "name": "portfoy-tahmin",
   "slug": "portfoy-tahmin",
   "cat": "01-finans-yatirim",
-  "hash": "f06a9e104d6f",
+  "hash": "d4e887525406",
   "variant": 0,
   "srcs": [
-   "~/Documents/GitHub/portfoy-butce/.claude/skills/portfoy-tahmin"
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/portfoy-tahmin",
+   "~/projects/portfoy-butce/.claude/skills/portfoy-tahmin"
   ],
   "kinds": [
+   "install",
    "install"
   ],
-  "bytes": 17407,
+  "bytes": 19258,
   "files": 7,
   "lib": "~/skills/kutuphane/01-finans-yatirim/portfoy-tahmin",
   "linked": [
-   "~/Documents/GitHub/portfoy-butce/.claude/skills/portfoy-tahmin"
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/portfoy-tahmin",
+   "~/projects/portfoy-butce/.claude/skills/portfoy-tahmin"
   ],
   "mirrored": []
  },
@@ -3153,19 +3176,22 @@
   "name": "tahmin-savcisi",
   "slug": "tahmin-savcisi",
   "cat": "01-finans-yatirim",
-  "hash": "6d2725abf53b",
+  "hash": "819297db3981",
   "variant": 0,
   "srcs": [
-   "~/Documents/GitHub/portfoy-butce/.claude/skills/tahmin-savcisi"
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/tahmin-savcisi",
+   "~/projects/portfoy-butce/.claude/skills/tahmin-savcisi"
   ],
   "kinds": [
+   "install",
    "install"
   ],
-  "bytes": 3486,
+  "bytes": 3861,
   "files": 2,
   "lib": "~/skills/kutuphane/01-finans-yatirim/tahmin-savcisi",
   "linked": [
-   "~/Documents/GitHub/portfoy-butce/.claude/skills/tahmin-savcisi"
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/tahmin-savcisi",
+   "~/projects/portfoy-butce/.claude/skills/tahmin-savcisi"
   ],
   "mirrored": []
  },

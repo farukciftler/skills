@@ -8,6 +8,16 @@ Sırayla geç. Her başlıkta ya bulgu yaz ya "temiz" işaretle; **atlama**.
 - `claim` içinde sayı var ama `source`/`url` yok → **ağır**
 - `source` var ama sayının **hangi güne ait olduğu** yazmıyor → **ağır**
 - `market_state` alanı var ama `<alan>_asof` damgası yok → **ağır**
+  - **Damga GRUP düzeyinde olabilir** — yanlış alarm vermeden önce bunu kontrol et:
+    `gram_altin_alis`/`gram_altin_satis` için damga `gram_altin_asof`,
+    `usdtry_tcmb_alis`/`_satis`/`_mid` için `usdtry_tcmb_asof`,
+    `usdtry_serbest_alis`/`_satis` için `usdtry_serbest_asof`.
+    Doğru kontrol: alan adından son eki (`_alis`/`_satis`/`_mid`) atıp
+    `<grup>_asof`'a da bak; ikisi de yoksa bulgu. (05.09.2026'da naif kontrol
+    yedi alan için yanlış alarm verdi; yanlış alarma alışan denetim gerçek
+    alarmı da görmezden gelir — K40.)
+  - `_asof` değeri `KASTEN NULL - <gerekçe>` biçimindeyse **bulgu değildir**;
+    boşluğun adıyla kaydedilmesi K80'in istediği davranıştır.
 - Üçüncü taraf bir site TEFAS/FRED/TCMB ile çelişirken tercih edilmiş → **ağır**
 
 > Kanıt: 03.09'da arama motorunun verdiği AA linki **2024** tarihliydi ve
@@ -30,6 +40,25 @@ Sırayla geç. Her başlıkta ya bulgu yaz ya "temiz" işaretle; **atlama**.
 
 Eşik dolmadan uygulanmışsa **ağır**. Eşik dolmadığı **yazılıysa** ve
 uygulanmamışsa temiz — bu doğru davranış.
+
+## 2b. Anomali ilan edilmiş ama yüzdeliği hesaplanmamış (K43)
+
+Bugünün kanıtlarında/gerekçelerinde bir sapma "keskin ayrışma", "anomali",
+"açıklanamıyor", "olağandışı" diye geçiyor mu? Geçiyorsa **yüzdeliği yazılı
+mı?**
+
+- Yüzdelik yok → **ağır**. Kural: sapma anomali sayılmadan önce aynı varlığın
+  **tarihsel sapma dağılımındaki yüzdeliği** hesaplanır; **üst %10'un
+  dışındaysa kayıt açılmaz.**
+- Yüzdelik var ve üst %10 dışında ama yine de kayıt açılmış → **ağır**.
+- Sapma tahmin gerekçesine (bant genişletme, güven düşürme) geçirilmiş ama
+  yüzdelik yok → **ağır**, çünkü gürültü tahmine sızmış olur.
+
+> Kanıt: 14.08'de KIK'in KTJ'den "keskin ayrıştığı" kaydedildi ve **iki gün**
+> tahmin gerekçesi olarak kullanıldı. Ölçüldüğünde z=−0,84, **246 günün
+> 87.'si = üst %35** — ortalama her üç günde bir görülen bir sapma. Kesin
+> kanıt: bir **önceki** gün daha büyük artık üretmişti (+0,74 pp) ve
+> işaretlenmemişti. İşaretleten şey sinyal değil **sapmanın yönüydü**.
 
 ## 3. Lehte düzeltme (H9)
 

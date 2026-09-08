@@ -206,6 +206,17 @@ Her `market_state` değişkenine **`<değişken>_asof` damgası** koy. Taşınan
 python scripts/pt.py forecast --root <yol> --file tahmin.json
 ```
 
+### Adım 5b — gölge bant (her 1g tahmininde, K91)
+
+`band_shadow` + `band_shadow_rule` **her 1g satırına** yazılır. Motor eksikse
+**uyarır**, `gunluk.sh` sayısını basar — kural 20.08'de kondu ama 28.08–01.09
+arası tamamen unutuldu (**6/6 eksik, üç gün**) ve H14'ün havuzu o günleri
+**kalıcı** kaybetti: alternatif bandın o günkü değeri geriye dönük üretilemez.
+
+```bash
+python3 scripts/vol_uncond.py --json   # ampirik p10/p90, nokta üzerine oturt
+```
+
 ### Adım 5c — açık `actual`'ları kapat (H4 paydası, K79)
 
 ```bash

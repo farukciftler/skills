@@ -157,20 +157,22 @@
   "aciklama": "Kişisel yatırım portföyü için disiplinli tahmin günlüğü ve kalibrasyon sistemi - portföy tanımlama, günlük fiyat/piyasa snapshot'ı, web araştırmasına dayalı 1 gün / 1 hafta / 1 ay yön tahminleri, tahminlerin gerçekleşenle otomatik eşleştirilmesi, ve tahmin isabetinin naif baseline'a karşı ölçülmesi. Kullanıcı portföyünü paylaştığında, \"portföyümü takip et\", \"sabah raporu\", \"bugünkü tahmin\", \"portföy tahmini\", \"dünkü tahmin tuttu mu\", \"geçen ayki tahminim\", \"fon/altın ne olur\", \"yeni fon ekle\", \"kalibrasyon\", \"tahmin geçmişim\" dediğinde; ya da gram altın, TEFAS fonları (KTJ, KIK, KUT vb.), katılma hesabı, hisse, kripto gibi varlıkların değer takibi/senaryo analizi istendiğinde bu skill'i kullan. Kullanıcı \"tahmin\" kelimesini hiç kullanmasa bile, elindeki varlıkların yarın/haftaya/aya ne olacağını konuşuyorsa devreye gir. Yatırım tavsiyesi vermez; tahmin kaydeder, ölçer ve isabetsizliği açıkça raporlar.",
   "ozet": "Kişisel yatırım portföyü için disiplinli tahmin günlüğü ve kalibrasyon sistemi - portföy tanımlama, günlük fiyat/piyasa snapshot'ı, web araştırmasına dayalı 1 gün /…",
   "yol": "kutuphane/01-finans-yatirim/portfoy-tahmin",
-  "bayt": 17407,
-  "satir": 298,
+  "bayt": 17859,
+  "satir": 309,
   "ek_dosya": 6,
   "script_var": true,
   "referans_var": true,
   "varyant": 0,
   "kaynaklar": [
-   "~/Documents/GitHub/portfoy-butce/.claude/skills/portfoy-tahmin"
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/portfoy-tahmin",
+   "~/projects/portfoy-butce/.claude/skills/portfoy-tahmin"
   ],
   "kaynak_tipleri": [
    "kurulu"
   ],
   "baglanacak": [
-   "~/Documents/GitHub/portfoy-butce/.claude/skills/portfoy-tahmin"
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/portfoy-tahmin",
+   "~/projects/portfoy-butce/.claude/skills/portfoy-tahmin"
   ],
   "ayna": []
  },
@@ -286,20 +288,22 @@
   "aciklama": "Bir günün tahmin ve kanıt kayıtlarını, commit edilmeden önce ADVERSARYAL olarak denetler - kaynaksız/tarihsiz sayı, eşiği dolmamış bir kuralın uygulanması, sonucu görüp lehte yapılmış düzeltme (H9), artık görüldükten sonra genişletilmiş bant, yanlış day_type, model_id eksikliği, ön kayıt ihlali. Kullanıcı \"savcı\", \"denetle\", \"bugünkü tahmini kontrol et\", \"commit öncesi bak\", \"ön kayda uygun mu\", \"kendimi kandırıyor muyum\" dediğinde ya da günlük akışın 7. adımında commit'ten önce çalıştır. SALT OKUNUR - hiçbir dosyayı değiştirmez, tahmin üretmez, yalnızca bulgu listeler.",
   "ozet": "Bir günün tahmin ve kanıt kayıtlarını, commit edilmeden önce ADVERSARYAL olarak denetler - kaynaksız/tarihsiz sayı, eşiği dolmamış bir kuralın uygulanması, sonucu…",
   "yol": "kutuphane/01-finans-yatirim/tahmin-savcisi",
-  "bayt": 3486,
-  "satir": 84,
+  "bayt": 3571,
+  "satir": 85,
   "ek_dosya": 1,
   "script_var": false,
   "referans_var": true,
   "varyant": 0,
   "kaynaklar": [
-   "~/Documents/GitHub/portfoy-butce/.claude/skills/tahmin-savcisi"
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/tahmin-savcisi",
+   "~/projects/portfoy-butce/.claude/skills/tahmin-savcisi"
   ],
   "kaynak_tipleri": [
    "kurulu"
   ],
   "baglanacak": [
-   "~/Documents/GitHub/portfoy-butce/.claude/skills/tahmin-savcisi"
+   "~/Documents/GitHub/portfoy-butce/.claude/skills/tahmin-savcisi",
+   "~/projects/portfoy-butce/.claude/skills/tahmin-savcisi"
   ],
   "ayna": []
  },
@@ -1374,8 +1378,8 @@
   "aciklama": "Bir yazıyı Türkçe ile İngilizce arasında çevirir. Yazı eklendiğinde, mevcut bir yazının karşı dildeki sürümü eksik olduğunda ya da kullanıcı \"bunu çevir\", \"İngilizcesini de yap\", \"iki dile de koy\" dediğinde kullan. Çeviri, makine çevirisi gibi değil; aynı kültürel kodu taşıyan, B2 seviyesinde bir insanın yazdığı gibi olmalı.",
   "ozet": "Bir yazıyı Türkçe ile İngilizce arasında çevirir.",
   "yol": "kutuphane/04-icerik-yazim-ceviri/ceviri--abdullahfarukcom-gh",
-  "bayt": 5690,
-  "satir": 140,
+  "bayt": 5744,
+  "satir": 142,
   "ek_dosya": 0,
   "script_var": false,
   "referans_var": false,
@@ -2447,6 +2451,31 @@
   "ayna": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/finops-expert"
   ]
+ },
+ {
+  "ad": "finops-expert",
+  "slug": "finops-expert--cloud4next",
+  "kategori": "07-yazilim-muhendislik",
+  "kategori_adi": "Yazılım Mühendisliği",
+  "aciklama": "Practitioner-level FinOps expert — the discipline and measurement side of cloud financial management: FinOps Framework (domains, capabilities, Crawl/Walk/Run, Inform/Optimize/Operate), FOCUS cross-cloud billing normalization, cost allocation (tagging, showback/chargeback, shared and unallocated cost), unit economics and KPI design, budgets and forecasting discipline, cost anomaly detection practice, commitment portfolio management (coverage vs utilization, laddering, break-even), rightsizing methodology (percentiles not averages), idle/orphan resource hygiene, Kubernetes cost allocation (OpenCost), and how to answer all of this against the Cloud4Next FinOps Intelligence platform's own ClickHouse/Postgres data model. Use for \"maliyet nasıl dağıtılır\", \"showback/chargeback\", \"unallocated cost\", \"tag policy\", \"bütçe kur\", \"anomali nasıl tespit edilir\", \"forecast ne kadar güvenilir\", \"RI/SP/CUD portföyü\", \"coverage mı utilization mı\", \"rightsizing nasıl yapılır\", \"unit economics\", \"FinOps KPI\", \"FOCUS\", \"CUR\", \"cost allocation\", \"birim maliyet\", \"hangi tabloda\", or any question about running a FinOps practice or building FinOps product features. For which-cloud-is-cheaper, service equivalence, or raw price lookups use hyperscaler-expert instead — this skill assumes those answers and focuses on measurement, allocation and process.",
+  "ozet": "Practitioner-level FinOps expert — the discipline and measurement side of cloud financial management: FinOps Framework (domains, capabilities, Crawl/Walk/Run…",
+  "yol": "kutuphane/07-yazilim-muhendislik/finops-expert--cloud4next",
+  "bayt": 5511,
+  "satir": 56,
+  "ek_dosya": 5,
+  "script_var": false,
+  "referans_var": true,
+  "varyant": 1,
+  "kaynaklar": [
+   "~/projects/Cloud4Next/.claude/skills/finops-expert"
+  ],
+  "kaynak_tipleri": [
+   "kurulu"
+  ],
+  "baglanacak": [
+   "~/projects/Cloud4Next/.claude/skills/finops-expert"
+  ],
+  "ayna": []
  },
  {
   "ad": "gitnexus-cli",

@@ -1,6 +1,6 @@
 # Alfabetik Skill Dizini
 
-162 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
+163 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
 
 | Skill | Kategori | Ne yapar | Kaynak |
 |---|---|---|---|
@@ -36,6 +36,7 @@
 | [`explain-usage`](kutuphane/14-meta-sistem/explain-usage/SKILL.md) | Meta & Sistem | Explain where this session's tokens went, with one simple chart in plain language. | claude.ai |
 | [`fastapi-microservices-development`](kutuphane/07-yazilim-muhendislik/fastapi-microservices-development/SKILL.md) | Yazılım Mühendisliği | Comprehensive guide for building production-ready microservices with FastAPI including REST API patterns, async operations, dependency injection, and deployment… | kurulu, proje-içi |
 | [`finops-expert`](kutuphane/07-yazilim-muhendislik/finops-expert/SKILL.md) | Yazılım Mühendisliği | Senior FinOps practitioner expertise grounded in FinOps Framework 2026, FOCUS 1.4, and State of FinOps 2026. | claude.ai |
+| [`finops-expert--cloud4next`](kutuphane/07-yazilim-muhendislik/finops-expert--cloud4next/SKILL.md) | Yazılım Mühendisliği | Practitioner-level FinOps expert — the discipline and measurement side of cloud financial management: FinOps Framework (domains, capabilities, Crawl/Walk/Run… | kurulu |
 | [`fiyatlandirma-uzmani`](kutuphane/01-finans-yatirim/fiyatlandirma-uzmani/SKILL.md) ⚙️ | Finans & Yatırım | Dijital danışmanlık/hizmet (AI, yazılım, ürün, strateji danışmanlığı, workshop, fractional rol, retainer) ve dijital ürün (SaaS, mobil uygulama, API, üyelik… | claude.ai |
 | [`gitnexus-cli`](kutuphane/07-yazilim-muhendislik/gitnexus-cli/SKILL.md) | Yazılım Mühendisliği | Use when the user needs to run GitNexus CLI commands like analyze/index a repo, check status, clean the index, generate a wiki, or list indexed repos. | proje-içi |
 | [`gitnexus-cli--mcailabs-v4-0`](kutuphane/07-yazilim-muhendislik/gitnexus-cli--mcailabs-v4-0/SKILL.md) | Yazılım Mühendisliği | Use when the user needs to run GitNexus CLI commands like analyze/index a repo, check status, clean the index, generate a wiki, or list indexed repos. | proje-içi |
