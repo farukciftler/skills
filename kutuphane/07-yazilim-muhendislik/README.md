@@ -2,7 +2,7 @@
 
 Framework ve altyapı referansları, kod grafiği araçları, çoklu bulut ve sunucu operasyonu.
 
-23 skill. Üst dizin: [../../README.md](../../README.md)
+24 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `apple-platform-architect`
 
@@ -120,6 +120,15 @@ Staff/principal-level multi-cloud (AWS, Microsoft Azure, Google Cloud) expert �
 
 - **Ölçü:** 7.163 bayt · 8 ek dosya · referans dosyaları var
 - **Kaynak:** ~/projects/hyperscalerexpert/.claude/skills/hyperscaler-expert
+
+## `iot-cihaz-muhendisi`
+
+[SKILL.md](iot-cihaz-muhendisi/SKILL.md)
+
+IoT/bağlantılı cihaz ürün mühendisi — fikirden sahaya çıkmış donanıma kadar tüm zincir — MCU/modül seçimi, bağlantı kararı (Wi-Fi/BLE/Thread/Matter/LoRaWAN/NB-IoT), pil ve güç bütçesi hesabı, şematik ve PCB tasarımı, RF/anten yerleşimi, kart üretimi ve dizgi DFM (JLCPCB/PCBWay), firmware mimarisi, OTA + secure boot + provisioning, 3D baskı muhafaza/kap tasarımı ve seri üretime geçiş ekonomisi, bring-up, EMC ön-uyum, üretim test jig'i, CE/RED, EN 18031, CRA, FCC, BTK, RoHS/WEEE yol haritası ve maliyet modeli. Kullanıcı "IoT cihazı", "sensör yapacağım", "ESP32/STM32/nRF", "PCB çizdireceğim", "anten", "pil kaç yıl gider", "kutu/muhafaza 3D bassam", "OTA", "CE/FCC alacağım", "EMC testi", "sertifikasyon", "seri üretime nasıl geçerim" dediğinde kullan. "IoT" kelimesi geçmese bile bağlantılı bir fiziksel cihaz tasarlanıyor, üretiliyor ya da belgelendiriliyorsa devreye gir. Regülasyon tarihi, ücreti ve limitini ASLA ezberden verme — canlı doğrula, tarih damgası koy.
+
+- **Ölçü:** 9.442 bayt · 7 ek dosya · referans dosyaları var
+- **Kaynak:** claude.ai senkronu (efemer önbellek)
 
 ## `nextjs-development`
 

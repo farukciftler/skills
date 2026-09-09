@@ -1,0 +1,86 @@
+# Master CV veri dosyasi — tek dogruluk kaynagi.
+# Buraya HER SEY girer (fotograf, dogum tarihi, askerlik, tum bulletlar dahil);
+# hedef ulkeye gore cikarma islemini build_cv.py --locale yapar.
+#
+#   python3 scripts/build_cv.py cv-verisi.yaml --locale intl --lang en
+#   python3 scripts/build_cv.py cv-verisi.yaml --locale tr   --lang tr
+#
+# Kural: buradaki hicbir rakam tahmin olamaz. Bilinmeyen deger [ ] ile birakilir.
+
+kisi:
+  ad: Ad Soyad
+  unvan: Senior Product Manager            # hedefe gore degisir, master'da en genel hali dursun
+  email: ad@ornek.com
+  telefon: "+90 5XX XXX XX XX"
+  konum: İstanbul, Türkiye                 # tam adres yazma
+  linkedin: linkedin.com/in/kullanici
+  site: ornek.com                          # opsiyonel
+  github: github.com/kullanici            # opsiyonel
+  # --- asagidakiler yalnizca ilgili locale'de ciktiya girer ---
+  dogum_tarihi: "1994"                     # tr / de / gulf
+  uyruk: T.C.                              # de / gulf
+  medeni_hal: ""                           # gulf
+  askerlik: "Yapıldı (2024)"               # tr
+  fotograf: ""                             # tr / de / gulf — dosya yolu
+
+ozet: >
+  [Seviye + rol] + [alan] + [en guclu kanit] + [hedefle bag].
+  3-4 satiri gecmesin. Her basvuruda ilk cumleyi hedefe gore yeniden yaz.
+
+deneyim:
+  - unvan: Product Manager
+    sirket: Şirket A.Ş.
+    sirket_aciklama: çoklu bulut maliyet yönetimi SaaS'ı, ~40 kişi   # taninmayan sirkette sart
+    konum: İstanbul
+    baslangic: Tem 2024
+    bitis:                                  # bos birak = "Devam" / "Present"
+    bulletlar:
+      - "[Fiil] + [ne/kim için] + [nasıl] + [ölçülebilir sonuç]. En fazla iki satır."
+      - "Rakam yoksa kapsam ver: 12 kişilik ekip, 3 ülke, 40+ müşteri."
+      - "Doğrulanmamış rakamı [%X] olarak bırak, uydurma."
+
+  - unvan: Önceki Rol
+    sirket: Şirket B
+    konum: İstanbul
+    baslangic: Oca 2022
+    bitis: Haz 2024
+    bulletlar:
+      - "Eski rollerde 2-3 madde yeter."
+
+projeler:                                   # yan projeler, acik kaynak, girisim
+  - ad: Proje adı
+    link: proje.com
+    aciklama: Tek cümlelik ne olduğu.
+    bulletlar:
+      - "Senin yaptığın kısım + sonuç."
+
+egitim:
+  - derece: Elektrik-Elektronik Mühendisliği, Lisans
+    kurum: Üniversite Adı
+    konum: İstanbul
+    baslangic: 2013
+    bitis: 2018
+    not: ""                                 # yalnizca gucluyse ve pazarda bekleniyorsa
+
+beceriler:
+  - grup: Ürün
+    ogeler: [Roadmap, Keşif görüşmeleri, A/B testi, OKR]
+  - grup: Teknik
+    ogeler: [Python, TypeScript, SQL]
+  - grup: Araçlar
+    ogeler: [Jira, Amplitude, Figma]
+# Kural: yalnizca mulakatta savunabildiklerin. Yumusak beceri listeleme.
+
+sertifikalar:
+  - ad: Sertifika Adı
+    kurum: Veren Kurum
+    yil: 2025
+
+diller:
+  - "Türkçe — ana dil"
+  - "İngilizce — C1"
+
+ek_bolumler:                                # yayin, konusma, gonullu, odul
+  - baslik: Yayınlar
+    maddeler:
+      - "Yazar(lar), Başlık, Yer, Yıl."

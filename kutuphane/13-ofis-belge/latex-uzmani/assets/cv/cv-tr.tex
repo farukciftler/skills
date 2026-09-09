@@ -1,0 +1,52 @@
+% !TEX program = xelatex
+% Türkçe CV — XeLaTeX ile derlenir:  python3 scripts/build.py cv-tr.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage{polyglossia}
+\setmainlanguage{turkish}
+\usepackage{cvstil}
+
+\begin{document}
+
+\cvbaslik{Ad Soyad}{Kıdemli Ürün Yöneticisi}{%
+  İstanbul, Türkiye \ \textbar\ \ \cvbag{mailto:ad@ornek.com}{ad@ornek.com} \ \textbar\ \ +90 5xx xxx xx xx \ \textbar\ \
+  \cvbag{https://linkedin.com/in/kullanici}{linkedin.com/in/kullanici} \ \textbar\ \
+  \cvbag{https://github.com/kullanici}{github.com/kullanici}}
+
+\section{Özet}
+İki cümle. Ne yaptığın, hangi alanda, hangi ölçekte. Sıfat değil, kapsam ve sonuç yaz.
+Örnek: Çok bulutlu SaaS ürünlerinde ürün stratejisi ve teknik ürün yönetimi; sıfırdan
+ürüne geçen üç ürün, yıllık \%40 maliyet düşüşü sağlayan FinOps modülü.
+
+\section{Deneyim}
+
+\cvgirdi{Kıdemli Ürün Yöneticisi}{Şirket Adı}{İstanbul}{Tem 2026 -- Halen}
+\begin{cvmadde}
+  \item Fiil + iş + ölçülebilir sonuç kalıbında yaz: X yaparak Y metriğini \%Z iyileştirdim.
+  \item Ölçüm yoksa kapsam yaz: 8 kişilik ekip, 12 bin aktif kullanıcı, 3 pazar.
+  \item En güçlü maddeyi en üste koy; okuyucu ilk iki maddeden sonra kayar.
+\end{cvmadde}
+
+\cvgirdi{Ürün Yöneticisi}{Önceki Şirket}{İstanbul}{Haz 2025 -- Tem 2026}
+\begin{cvmadde}
+  \item Eski rollerde madde sayısını azalt; son rol en ayrıntılı olan olsun.
+  \item Aynı işi iki rolde tekrar etme.
+\end{cvmadde}
+
+\section{Eğitim}
+\cvgirdi{Elektrik--Elektronik Mühendisliği, Lisans}{Üniversite Adı}{İstanbul}{2018 -- 2023}
+
+\section{Yetkinlikler}
+\cvetiket{Ürün}{Yol haritası, keşif görüşmeleri, A/B testi, metrik tasarımı}
+\cvetiket{Teknik}{Python, TypeScript, SQL, Docker, AWS/GCP maliyet yönetimi}
+\cvetiket{Diller}{Türkçe (ana dil), İngilizce (C1), Arapça (B1)}
+
+\section{Projeler}
+\cvgirdi{Proje Adı}{Kısa tanım --- ne yapıyor, kim kullanıyor}{}{2026}
+\begin{cvmadde}
+  \item Teknoloji yığını ve senin rolün. Link varsa düz metin olarak da yaz: ornek.com
+\end{cvmadde}
+
+\section{Sertifikalar}
+FinOps Certified Practitioner (2026) \ \textbar\ \ AWS Solutions Architect Associate (2025)
+
+\end{document}

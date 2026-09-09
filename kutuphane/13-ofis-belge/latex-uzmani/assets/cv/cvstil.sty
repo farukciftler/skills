@@ -1,0 +1,73 @@
+% cvstil.sty — ATS dostu, tek sütun, Türkçe güvenli CV stili (XeLaTeX/LuaLaTeX)
+% Kullanım: \usepackage{cvstil}
+% Font değiştirilecekse ana dosyada \setmainfont ile ez; Türkçe glif testini yap.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cvstil}[2026/09/08 ATS dostu CV stili]
+
+\RequirePackage{fontspec}
+\RequirePackage[a4paper,top=1.6cm,bottom=1.6cm,left=1.8cm,right=1.8cm]{geometry}
+\RequirePackage{titlesec}
+\RequirePackage{enumitem}
+\RequirePackage{xcolor}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{microtype}
+
+% --- Renk: tek vurgu rengi, baskıda da okunur
+\definecolor{cvkoyu}{HTML}{1A1A1A}
+\definecolor{cvvurgu}{HTML}{2C5F7C}
+\definecolor{cvgri}{HTML}{555555}
+
+% --- Fontlar (Türkçe gliflerini tam kapsar)
+\setmainfont{DejaVu Serif}[
+  Scale=0.86,
+  BoldFont={DejaVu Serif Bold},
+  ItalicFont={DejaVu Serif Italic}]
+\newfontfamily\cvsans{DejaVu Sans}[Scale=0.86]
+
+\color{cvkoyu}
+\setlength{\parindent}{0pt}
+\linespread{1.05}
+\pagestyle{empty}
+
+% --- Başlık bloğu: \cvbaslik{Ad Soyad}{Unvan}{iletişim satırı}
+\newcommand{\cvbaslik}[3]{%
+  {\cvsans\bfseries\fontsize{20}{24}\selectfont #1\par}%
+  \vspace{2pt}%
+  {\cvsans\color{cvvurgu}\fontsize{10.5}{13}\selectfont #2\par}%
+  \vspace{4pt}%
+  {\small\color{cvgri} #3\par}%
+  \vspace{2pt}%
+  {\color{cvvurgu}\rule{\linewidth}{0.8pt}}%
+  \vspace{4pt}%
+}
+
+% --- Bölüm başlığı: ATS'in tanıdığı düz metin, otomatik BÜYÜTME YOK (Türkçe İ sorunu)
+\titleformat{\section}
+  {\cvsans\bfseries\fontsize{11}{13}\selectfont\color{cvvurgu}}
+  {}{0pt}{}[\vspace{-5pt}{\color{cvvurgu!40}\rule{\linewidth}{0.5pt}}]
+\titlespacing*{\section}{0pt}{9pt}{5pt}
+
+% --- Deneyim/eğitim girdisi: \cvgirdi{Rol}{Kurum}{Yer}{Tarih}
+\newcommand{\cvgirdi}[4]{%
+  \vspace{2pt}%
+  \begin{minipage}[t]{0.72\linewidth}\raggedright
+    \textbf{#1}\ifx\relax#2\relax\else\ {\color{cvgri}—}\ #2\fi
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.27\linewidth}\raggedleft
+    {\small\color{cvgri}#4\ifx\relax#3\relax\else\\#3\fi}
+  \end{minipage}\par
+  \vspace{1pt}%
+}
+
+% --- Madde listesi: sade, ATS'in okuyabildiği tek seviye
+\newenvironment{cvmadde}
+  {\begin{itemize}[leftmargin=1.1em,topsep=2pt,itemsep=1pt,parsep=0pt,label=\textbullet]}
+  {\end{itemize}\vspace{2pt}}
+
+% --- Etiketli satır (yetkinlikler): \cvetiket{Diller}{Python, Go, Swift}
+\newcommand{\cvetiket}[2]{\textbf{#1:} #2\par\vspace{1pt}}
+
+% --- İletişimde ikon yerine düz metin: ATS ikonu okuyamaz
+\newcommand{\cvbag}[2]{\href{#1}{#2}}
+
+\endinput

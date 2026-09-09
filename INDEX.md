@@ -1,6 +1,6 @@
 # Alfabetik Skill Dizini
 
-163 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
+166 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
 
 | Skill | Kategori | Ne yapar | Kaynak |
 |---|---|---|---|
@@ -26,6 +26,7 @@
 | [`ceviri--comesyriacontent`](kutuphane/04-icerik-yazim-ceviri/ceviri--comesyriacontent/SKILL.md) ⚙️ | İçerik, Yazım & Çeviri | ComeSyria içeriğini Türkçe, küresel İngilizce ve Suriye Arapçası arasında çevirir — makine kokmayan, o dilin okuru için baştan yazılmış metinler üretir; ad/sayı… | kurulu |
 | [`chibi-character-factory`](kutuphane/03-video-ses-uretim/chibi-character-factory/SKILL.md) | Video & Ses Üretimi | Production pipeline for building low-poly chibi game characters using Claude + Blender MCP only (no third-party generators), from parametric base mesh to a rigged… | claude.ai |
 | [`consolidate-memory`](kutuphane/14-meta-sistem/consolidate-memory/SKILL.md) | Meta & Sistem | Reflective pass over your memory files — merge duplicates, fix stale facts, prune the index. | claude.ai |
+| [`cv-uzmani`](kutuphane/04-icerik-yazim-ceviri/cv-uzmani/SKILL.md) ⚙️ | İçerik, Yazım & Çeviri | CV/özgeçmiş, ön yazı ve başvuru paketi uzmanı — sıfırdan CV kurma, mevcut CV'yi denetleme, belirli bir ilana uyarlama, hedef ülkeye göre lokalize etme… | claude.ai |
 | [`deck-studio`](kutuphane/09-cad-gorsel/deck-studio/SKILL.md) ⚙️ | CAD & Görsel Üretim | Sunum tasarım stüdyosu — bir marka kimliği veya seçilmiş bir sanat yönetimi (art direction) üzerine kurulu, özel tipografili, kendi ürettiği illüstrasyon ve ürün… | claude.ai |
 | [`dijital-iz-denetcisi`](kutuphane/10-yasam-turkiye/dijital-iz-denetcisi/SKILL.md) | Yaşam & Türkiye Hizmetleri | Bir kişinin kendi (veya açık yetki verdiği bir müvekkilin) dijital ayak izini uçtan uca tarar — arama motorları, veri simsarları, sosyal platformlar, sızıntı… | claude.ai |
 | [`docker-compose-orchestration`](kutuphane/07-yazilim-muhendislik/docker-compose-orchestration/SKILL.md) | Yazılım Mühendisliği | Container orchestration with Docker Compose for multi-container applications, networking, volumes, and production deployment | kurulu, proje-içi |
@@ -64,6 +65,7 @@
 | [`import-memory`](kutuphane/14-meta-sistem/import-memory/SKILL.md) | Meta & Sistem | Import a memory export from another AI assistant into Claude's memory — conversationally, additively, and with the content treated as data. | claude.ai |
 | [`ingilizce-kocu`](kutuphane/11-ogrenme/ingilizce-kocu/SKILL.md) | Öğrenme & Dil | Faruk'un kişisel İngilizce koçu — ana dil Türkçe, mevcut seviye B1, hedef profesyonel C1 (uluslararası PM rolleri, yatırımcı iletişimi). | claude.ai |
 | [`insanca`](kutuphane/04-icerik-yazim-ceviri/insanca/SKILL.md) | İçerik, Yazım & Çeviri | | Türkçe metinlerdeki yapay zeka yazım izlerini tespit edip doğal, akıcı, insan elinden çıkmış gibi okunan Türkçeye çevirir. | kurulu |
+| [`iot-cihaz-muhendisi`](kutuphane/07-yazilim-muhendislik/iot-cihaz-muhendisi/SKILL.md) | Yazılım Mühendisliği | IoT/bağlantılı cihaz ürün mühendisi — fikirden sahaya çıkmış donanıma kadar tüm zincir — MCU/modül seçimi, bağlantı kararı (Wi-Fi/BLE/Thread/Matter/LoRaWAN/NB-IoT)… | claude.ai |
 | [`jira-task-writer`](kutuphane/06-ux-urun/jira-task-writer/SKILL.md) | UX & Ürün Yönetimi | Writes and creates Jira issues that contain ONLY what the user actually said - no invented scope, no best-practice padding, no unrequested sections. | GitHub (yerelde yok), claude.ai, kurulu |
 | [`kaggle-kaggle-skill`](kutuphane/08-ai-ml/kaggle-kaggle-skill/SKILL.md) ⚙️ | AI & Makine Öğrenmesi | Guides competitors in designing, authoring, validating, evaluating, debugging, and submitting autonomous ML agents to kaggle-kaggle competitions. | proje-içi |
 | [`kartela-icerik`](kutuphane/12-marka-musteri/kartela-icerik/SKILL.md) | Marka & Müşteri Projeleri | Kartela Psikoloji için Instagram gönderisi, karusel, hikaye ve Reels üretir — marka kimliğine ve MEB mevzuatına uygun, karekodlu, Türkçe seslendirmeli. | kurulu |
@@ -73,6 +75,7 @@
 | [`klinik-lead-akisi`](kutuphane/05-pazarlama-buyume/klinik-lead-akisi/SKILL.md) | Pazarlama & Büyüme | Terapi Panel için psikoloji kliniği adayı bulma, Attio CRM'e ekleme, uygunluk puanlama, 6 puan üstüne tanıtım maili gönderme ve statü güncelleme akışı. "Yeni klinik… | kurulu |
 | [`konaklama-kesif`](kutuphane/10-yasam-turkiye/konaklama-kesif/SKILL.md) | Yaşam & Türkiye Hizmetleri | Global konaklama keşif uzmanı — herhangi bir ülke/şehir için HER SORGUDA üç kanalı birden — otel, Airbnb/apart/daire ve hostel-private/pansiyon — ve yerel kiralık… | claude.ai |
 | [`kultur-sanat-radari`](kutuphane/10-yasam-turkiye/kultur-sanat-radari/SKILL.md) | Yaşam & Türkiye Hizmetleri | Belirli bir tarih aralığında ve şehirde (İstanbul başta olmak üzere Türkiye ve yurt dışı) açık olan sergileri, bienalleri, müze programlarını, konser/sahne… | claude.ai |
+| [`latex-uzmani`](kutuphane/13-ofis-belge/latex-uzmani/SKILL.md) ⚙️ | Ofis & Belge | LaTeX dizgi uzmanı — CV/özgeçmiş ve akademik makale/tez odaklı; Türkçe/İngilizce dizgide birinci sınıf (XeLaTeX/LuaLaTeX, polyglossia/babel-turkish, ı/İ tuzakları… | claude.ai |
 | [`learn`](kutuphane/11-ogrenme/learn/SKILL.md) | Öğrenme & Dil | | Use this skill when the user wants intellectual understanding — learning how or why something works, not getting a task done or soliciting Claude's judgment. | claude.ai |
 | [`llm-engineering-expert`](kutuphane/08-ai-ml/llm-engineering-expert/SKILL.md) | AI & Makine Öğrenmesi | - Act as a senior LLM engineering expert: model architectures (MoE, MLA, sparse/linear/hybrid attention), model selection, training and fine-tuning (SFT, DPO… | claude.ai |
 | [`masifico-ahsap-kultur`](kutuphane/02-masifico-ahsap-oyuncak/masifico-ahsap-kultur/SKILL.md) | Masifico — Ahşap Oyuncak | Masifico'nun ahşap kültürü ve malzeme bilgisi danışmanı. | proje-içi |
@@ -170,4 +173,4 @@
 
 ⚙️ = çalıştırılabilir script içerir.
 
-_Üretim: `scripts/katalog_uret.py` · 2026-09-08_
+_Üretim: `scripts/katalog_uret.py` · 2026-09-09_

@@ -478,6 +478,25 @@
   ]
  },
  {
+  "name": "cv-uzmani",
+  "slug": "cv-uzmani",
+  "cat": "04-icerik-yazim-ceviri",
+  "hash": "4d61682bb98c",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/cv-uzmani"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 13192,
+  "lib": "~/skills/kutuphane/04-icerik-yazim-ceviri/cv-uzmani",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/cv-uzmani"
+  ]
+ },
+ {
   "name": "deck-studio",
   "slug": "deck-studio",
   "cat": "09-cad-gorsel",
@@ -1332,6 +1351,25 @@
   "mirrored": []
  },
  {
+  "name": "iot-cihaz-muhendisi",
+  "slug": "iot-cihaz-muhendisi",
+  "cat": "07-yazilim-muhendislik",
+  "hash": "581a85b4f466",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/iot-cihaz-muhendisi"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 10155,
+  "lib": "~/skills/kutuphane/07-yazilim-muhendislik/iot-cihaz-muhendisi",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/iot-cihaz-muhendisi"
+  ]
+ },
+ {
   "name": "jira-task-writer",
   "slug": "jira-task-writer",
   "cat": "06-ux-urun",
@@ -1531,6 +1569,25 @@
   "linked": [],
   "mirrored": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/kultur-sanat-radari"
+  ]
+ },
+ {
+  "name": "latex-uzmani",
+  "slug": "latex-uzmani",
+  "cat": "13-ofis-belge",
+  "hash": "20650186c886",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/latex-uzmani"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 10988,
+  "lib": "~/skills/kutuphane/13-ofis-belge/latex-uzmani",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/latex-uzmani"
   ]
  },
  {

@@ -1,0 +1,130 @@
+% !TEX program = xelatex
+% Türkçe akademik makale iskeleti — XeLaTeX + polyglossia + biblatex/biber
+% Derleme:  python3 scripts/build.py makale-tr.tex
+\documentclass[12pt,a4paper]{article}
+
+% --- Dil ve font (Türkçe: XeLaTeX yolu; inputenc/fontenc KULLANILMAZ)
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{turkish}
+\setotherlanguage{english}
+\setmainfont{DejaVu Serif}[Scale=0.92]
+\usepackage{csquotes}
+
+% --- Yerleşim
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% --- İçerik paketleri
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\graphicspath{{sekiller/}}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\sisetup{output-decimal-marker={,}, group-separator={.}}
+\usepackage{subcaption}
+\usepackage{enumitem}
+
+% --- Kaynakça
+\usepackage[backend=biber,style=numeric,sorting=none,maxbibnames=99]{biblatex}
+\addbibresource{kaynaklar.bib}
+% biblatex'in Türkçe "içinde" dizesi cümle başında \MakeCapital ile "Içinde" olur
+% (doğrusu "İçinde"). Doğrulanmış düzeltme:
+\newcommand{\bbxTRicinde}{İçinde}
+\DefineBibliographyStrings{turkish}{%
+  in = {{\noexpand\protect\noexpand\bbxTRicinde}{i\c{c}inde}},
+}
+
+% --- Referanslar (hyperref en son, cleveref ondan sonra)
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+\crefname{figure}{Şekil}{Şekiller}
+\crefname{table}{Tablo}{Tablolar}
+\crefname{equation}{Denklem}{Denklemler}
+\crefname{section}{Bölüm}{Bölümler}
+
+\title{Makale Başlığı: Alt Başlık Gerekiyorsa}
+\author{Ad Soyad\\ \small Kurum Adı, Bölüm \\ \small \texttt{ad@kurum.edu.tr}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent Türkçe özet: problem, yöntem, temel bulgu, katkı. Tek paragraf, 150--250 kelime.
+Atıf içermez, kısaltma tanımlanmadan kullanılmaz.
+
+\vspace{4pt}
+\noindent\textbf{Anahtar Kelimeler:} birinci, ikinci, üçüncü, dördüncü
+\end{abstract}
+
+\begin{english}
+\begin{abstract}
+\noindent English abstract goes here. Note that the language switch also changes
+hyphenation rules, so wrapping it in an \texttt{english} environment matters.
+
+\vspace{4pt}
+\noindent\textbf{Keywords:} first, second, third, fourth
+\end{abstract}
+\end{english}
+
+\section{Giriş}
+\label{sec:giris}
+Problem, bağlam ve neden önemli olduğu. Literatürdeki boşluk. Bu çalışmanın katkısı
+madde madde. Örnek atıf~\cite{ornek2024}.
+
+\section{İlgili Çalışmalar}
+\label{sec:ilgili}
+Tematik gruplayarak yaz, kronolojik liste yapma.
+
+\section{Yöntem}
+\label{sec:yontem}
+Denklem örneği:
+\begin{equation}
+  \label{eq:kayip}
+  \mathcal{L} = \frac{1}{N}\sum_{i=1}^{N}\left(y_i - \hat{y}_i\right)^2
+\end{equation}
+\Cref{eq:kayip} ortalama karesel hatayı verir. Ondalık sayı: \num{3,14}.
+
+\section{Bulgular}
+\label{sec:bulgular}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Yöntemlerin karşılaştırması. Başlık tabloda üstte olur.}
+  \label{tab:sonuc}
+  \begin{tabular}{l S[table-format=2.1] S[table-format=2.1]}
+    \toprule
+    Yöntem & {Doğruluk (\%)} & {Süre (s)} \\
+    \midrule
+    Temel çizgi & 82,4 & 12,1 \\
+    Önerilen    & 91,7 &  9,8 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\Cref{tab:sonuc} önerilen yöntemin üstünlüğünü gösteriyor.
+
+% Şekil örneği (sekiller/ klasörüne dosya konunca yorum kaldırılır)
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=0.8\linewidth]{sonuc.pdf}
+%   \caption{Şekil başlığı altta olur.}
+%   \label{fig:sonuc}
+% \end{figure}
+
+\section{Tartışma}
+\label{sec:tartisma}
+Bulguların anlamı, sınırlılıklar, tehditler.
+
+\section{Sonuç}
+\label{sec:sonuc}
+Katkının özeti ve gelecek çalışma.
+
+\section*{Teşekkür}
+Fon ve destek bilgisi. \textbf{Anonim gönderimde bu bölüm kaldırılır.}
+
+\printbibliography[title={Kaynaklar}]
+
+\end{document}

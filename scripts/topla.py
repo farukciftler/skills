@@ -76,7 +76,8 @@ KATEGORI = {
         "chibi-character-factory",
     ],
     "04-icerik-yazim-ceviri": [
-        "insanca", "humanly", "bilimsel-makale-yazimi", "turkce-anlati",
+        "insanca", "humanly", "bilimsel-makale-yazimi", "cv-uzmani",
+        "turkce-anlati",
         "english-narration", "ceviri",
         "icerik-strateji",
         "icerik-uret", "yeme-icme", "backlog-arastir", "backlog",
@@ -96,6 +97,7 @@ KATEGORI = {
         "jira-task-writer",
     ],
     "07-yazilim-muhendislik": [
+        "iot-cihaz-muhendisi",
         "nextjs-development", "react-patterns", "tailwind-css",
         "fastapi-microservices-development", "pydantic", "pytest", "postgresql",
         "docker-compose-orchestration", "oauth2-authentication", "gitnexus-guide",
@@ -119,7 +121,7 @@ KATEGORI = {
     ],
     "11-ogrenme": ["arapca-ogretmeni", "ingilizce-kocu", "learn"],
     "12-marka-musteri": ["moonstone-residence", "kartela-icerik", "rpdm-mevzuat"],
-    "13-ofis-belge": ["docx", "pptx", "xlsx", "pdf"],
+    "13-ofis-belge": ["docx", "pptx", "xlsx", "pdf", "latex-uzmani"],
     "14-meta-sistem": [
         "skill-creator", "kirkit-skill-author", "consolidate-memory",
         "import-memory", "morning", "schedule", "setup-cowork", "explain-usage", "product-self-knowledge",

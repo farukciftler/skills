@@ -2,7 +2,7 @@
 
 Word/PowerPoint/Excel/PDF üretimi ve düzenlemesi (Anthropic yerleşik).
 
-4 skill. Üst dizin: [../../README.md](../../README.md)
+5 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `docx`
 
@@ -11,6 +11,15 @@ Word/PowerPoint/Excel/PDF üretimi ve düzenlemesi (Anthropic yerleşik).
 Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx) or Word templates (.dotx). Triggers include: any mention of 'Word doc', 'word document', '.docx', '.dotx', or requests to produce professional documents with formatting like tables of contents, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx or .dotx files, inserting or replacing images in documents, find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file (to download, email or print), use this skill. However, if they ask for a document, page, report, memo, or notes WITHOUT naming a file format and the session offers a dedicated document or page skill or connector, use that instead. Do NOT use for PDFs, spreadsheets, Google Docs, or coding unrelated to document generation.
 
 - **Ölçü:** 7.036 bayt · 60 ek dosya · script içerir
+- **Kaynak:** claude.ai senkronu (efemer önbellek)
+
+## `latex-uzmani`
+
+[SKILL.md](latex-uzmani/SKILL.md)
+
+LaTeX dizgi uzmanı — CV/özgeçmiş ve akademik makale/tez odaklı; Türkçe/İngilizce dizgide birinci sınıf (XeLaTeX/LuaLaTeX, polyglossia/babel-turkish, ı/İ tuzakları, hece bölme, TR tırnak ve sayı biçimi), dergi/konferans sınıflarını (IEEEtran, acmart, elsarticle, LNCS, tez şablonları) kurar, BibTeX/biblatex kaynakçasını temizler, gerçekten derleyip PDF üretir ve log'u okuyup hatayı teşhis eder. Kullanıcı "LaTeX", "tex", "Overleaf", "xelatex/pdflatex", "derlenmiyor", "Undefined control sequence", "kaynakça çıkmıyor", "?? çıkıyor", "bibtex/biber", "IEEE formatı", "çift sütun", "tablo taşıyor", "şekil yanlış yere gidiyor", "CV/özgeçmiş hazırla", "akademik CV", "tez şablonu", "Türkçe karakter sorunu" dediğinde kullan. Bir .tex/.bib/.cls dosyası ya da LaTeX log çıktısı paylaşıldığında; bir CV, makale veya tez PDF olarak istendiğinde — kullanıcı "LaTeX" demese bile — devreye gir. Makalenin İÇERİK ve yayın stratejisi `bilimsel-makale-yazimi` skill'ine aittir; bu skill dizgi/mühendislik katmanıdır.
+
+- **Ölçü:** 10.230 bayt · 15 ek dosya · script içerir · referans dosyaları var
 - **Kaynak:** claude.ai senkronu (efemer önbellek)
 
 ## `pdf`

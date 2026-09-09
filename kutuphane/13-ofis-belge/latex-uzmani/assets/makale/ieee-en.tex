@@ -1,0 +1,84 @@
+% !TEX program = pdflatex
+% IEEE conference paper skeleton — pdfLaTeX + BibTeX (IEEE submission expects .bbl)
+% Build:  python3 scripts/build.py ieee-en.tex
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage[T1]{fontenc}
+\usepackage{cite}                 % IEEE uses BibTeX, not biblatex
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+
+\begin{document}
+
+\title{Paper Title: Concise and Specific}
+
+\author{\IEEEauthorblockN{First Author}
+\IEEEauthorblockA{\textit{Department} \\
+\textit{University}\\
+City, Country \\
+email@example.com}
+\and
+\IEEEauthorblockN{Second Author}
+\IEEEauthorblockA{\textit{Department} \\
+\textit{University}\\
+City, Country \\
+email@example.com}}
+
+\maketitle
+
+\begin{abstract}
+Problem, method, key result, contribution. 150--250 words, no citations,
+no undefined abbreviations.
+\end{abstract}
+
+\begin{IEEEkeywords}
+first, second, third, fourth
+\end{IEEEkeywords}
+
+\section{Introduction}
+\label{sec:intro}
+Context, gap, contributions as a bulleted list. Example citation~\cite{smith2023}.
+
+\section{Related Work}
+\label{sec:related}
+
+\section{Method}
+\label{sec:method}
+\begin{equation}
+  \label{eq:loss}
+  \mathcal{L} = \frac{1}{N}\sum_{i=1}^{N}\left(y_i - \hat{y}_i\right)^2
+\end{equation}
+\Cref{eq:loss} defines the objective.
+
+\section{Results}
+\label{sec:results}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Comparison of methods.}
+  \label{tab:results}
+  \begin{tabular}{lrr}
+    \toprule
+    Method & Accuracy (\%) & Time (s) \\
+    \midrule
+    Baseline & 82.4 & 12.1 \\
+    Proposed & 91.7 & 9.8 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% Full-width float in two-column layout: figure* / table* (top of page only)
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+\section*{Acknowledgment}
+Remove this section for double-blind submission.
+
+\bibliographystyle{IEEEtran}
+\bibliography{kaynaklar-en}
+\end{document}

@@ -1,0 +1,48 @@
+% !TEX program = xelatex
+% English CV — same style file as cv-tr.tex, different language load and content.
+\documentclass[11pt,a4paper]{article}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\usepackage{cvstil}
+
+\begin{document}
+
+\cvbaslik{Name Surname}{Senior Product Manager}{%
+  Istanbul, Türkiye \ \textbar\ \ \cvbag{mailto:name@example.com}{name@example.com} \ \textbar\ \ +90 5xx xxx xx xx \ \textbar\ \
+  \cvbag{https://linkedin.com/in/username}{linkedin.com/in/username} \ \textbar\ \
+  \cvbag{https://github.com/username}{github.com/username}}
+
+\section{Summary}
+Two sentences: what you do, in what domain, at what scale. Scope and outcome, not adjectives.
+
+\section{Experience}
+
+\cvgirdi{Senior Product Manager}{Company Name}{Istanbul}{Jul 2026 -- Present}
+\begin{cvmadde}
+  \item Verb + work + measurable outcome. Led X, improving Y by Z\%.
+  \item If no metric exists, give scope: team of 8, 12k monthly active users, 3 markets.
+\end{cvmadde}
+
+\cvgirdi{Product Manager}{Previous Company}{Istanbul}{Jun 2025 -- Jul 2026}
+\begin{cvmadde}
+  \item Fewer bullets for older roles; the most recent role carries the detail.
+\end{cvmadde}
+
+\section{Education}
+\cvgirdi{BSc, Electrical \& Electronics Engineering}{University Name}{Istanbul}{2018 -- 2023}
+
+\section{Skills}
+\cvetiket{Product}{Roadmapping, discovery interviews, A/B testing, metric design}
+\cvetiket{Technical}{Python, TypeScript, SQL, Docker, AWS/GCP cost management}
+\cvetiket{Languages}{Turkish (native), English (C1), Arabic (B1)}
+
+\section{Projects}
+\cvgirdi{Project Name}{Short description --- what it does, who uses it}{}{2026}
+\begin{cvmadde}
+  \item Stack and your role. Write links as plain text too: example.com
+\end{cvmadde}
+
+\section{Certifications}
+FinOps Certified Practitioner (2026) \ \textbar\ \ AWS Solutions Architect Associate (2025)
+
+\end{document}

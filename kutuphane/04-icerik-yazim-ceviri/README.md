@@ -2,7 +2,7 @@
 
 Doğal Türkçe/İngilizce metin, dikey video anlatısı, çok dilli çeviri, içerik stratejisi ve üretimi.
 
-17 skill. Üst dizin: [../../README.md](../../README.md)
+18 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `backlog`
 
@@ -57,6 +57,15 @@ ComeSyria içeriğini Türkçe, küresel İngilizce ve Suriye Arapçası arasın
 
 - **Ölçü:** 9.734 bayt · 6 ek dosya · script içerir · referans dosyaları var
 - **Kaynak:** ~/projects/comesyriacontent/.claude/skills/ceviri
+
+## `cv-uzmani`
+
+[SKILL.md](cv-uzmani/SKILL.md)
+
+CV/özgeçmiş, ön yazı ve başvuru paketi uzmanı — sıfırdan CV kurma, mevcut CV'yi denetleme, belirli bir ilana uyarlama, hedef ülkeye göre lokalize etme (fotoğraf/doğum tarihi/uzunluk/GDPR kaydı), ATS ve AI ön eleme gerçeklerine göre parse-güvenli dosya üretme, ön yazı ve LinkedIn tutarlılığı. Kullanıcı "CV hazırla", "özgeçmişimi düzelt", "şu ilana göre uyarla", "ATS'e uygun mu", "İngilizce CV", "resume", "ön yazı", "cover letter", "LinkedIn profilim", "CV'me bir bak" dediğinde; bir iş ilanı metni/linki paylaşıp başvuru konuştuğunda; mevcut CV dosyasını yükleyip görüş istediğinde kullan. "CV" kelimesi geçmese bile bir işe, bursa, hibeye veya vizeye başvuru için kişisel geçmiş belgesi üretilecekse devreye gir. Deneyim ve rakam UYDURMAZ — kanıtı kullanıcıdan çıkarır, doğrulanmayanı köşeli parantezle işaretler.
+
+- **Ölçü:** 12.162 bayt · 8 ek dosya · script içerir · referans dosyaları var
+- **Kaynak:** claude.ai senkronu (efemer önbellek)
 
 ## `english-narration`
 
