@@ -126,6 +126,10 @@ KATEGORI = {
         "skill-creator", "kirkit-skill-author", "consolidate-memory",
         "import-memory", "morning", "schedule", "setup-cowork", "explain-usage", "product-self-knowledge",
     ],
+    "15-oyun-gelistirme": [
+        "pixel-platformer-animator", "blender-unity-character-pipeline",
+        "narrative-platformer-design", "oyun-asset-kesif",
+    ],
 }
 KATEGORI_ESLEME = {ad: kat for kat, adlar in KATEGORI.items() for ad in adlar}
 DIGER = "99-siniflandirilmamis"

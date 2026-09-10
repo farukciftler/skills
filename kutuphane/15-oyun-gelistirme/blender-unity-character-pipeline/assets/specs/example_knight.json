@@ -1,0 +1,206 @@
+{
+  "name": "Knight",
+  "rig_type": "humanoid",
+  "height": 1.8,
+  "preset": "realistic",
+  "fps": 30,
+  "skin": "rigid",
+  "palette": {
+    "skin": "#C99A7A",
+    "cloth": "#3E5C76",
+    "accent": "#8A5A2B"
+  },
+  "sockets": [
+    {
+      "name": "SKT_Hand_R",
+      "parent": "RightHand"
+    },
+    {
+      "name": "SKT_Back",
+      "parent": "UpperChest",
+      "offset": [
+        0,
+        0.12,
+        -0.1
+      ]
+    }
+  ],
+  "export_dir": "exports",
+  "unity_folder": "Assets/Characters/Knight",
+  "clips": [
+    {
+      "name": "Idle",
+      "type": "idle",
+      "frames": 90,
+      "loop": true,
+      "breaths": 2
+    },
+    {
+      "name": "Walk",
+      "type": "walk",
+      "frames": 32,
+      "loop": true,
+      "root_motion": false
+    },
+    {
+      "name": "Run",
+      "type": "run",
+      "frames": 22,
+      "loop": true,
+      "root_motion": true
+    },
+    {
+      "name": "Attack",
+      "type": "keyposes",
+      "frames": 28,
+      "loop": false,
+      "keys": [
+        {
+          "frame": 0,
+          "pose": {}
+        },
+        {
+          "frame": 9,
+          "pose": {
+            "RightUpperArm": [
+              [
+                "X",
+                -150
+              ]
+            ],
+            "RightLowerArm": [
+              [
+                "X",
+                -40
+              ]
+            ],
+            "Spine": [
+              [
+                "Z",
+                -18
+              ]
+            ],
+            "Chest": [
+              [
+                "Z",
+                -10
+              ],
+              [
+                "X",
+                -6
+              ]
+            ]
+          },
+          "hips": [
+            0,
+            0.02,
+            -0.03
+          ]
+        },
+        {
+          "frame": 14,
+          "event": "Hit",
+          "pose": {
+            "RightUpperArm": [
+              [
+                "X",
+                -35
+              ]
+            ],
+            "RightLowerArm": [
+              [
+                "X",
+                -10
+              ]
+            ],
+            "Spine": [
+              [
+                "Z",
+                16
+              ],
+              [
+                "X",
+                8
+              ]
+            ],
+            "Chest": [
+              [
+                "Z",
+                10
+              ],
+              [
+                "X",
+                6
+              ]
+            ]
+          },
+          "hips": [
+            0,
+            -0.04,
+            -0.06
+          ]
+        },
+        {
+          "frame": 28,
+          "pose": {}
+        }
+      ]
+    },
+    {
+      "name": "Hit",
+      "type": "keyposes",
+      "frames": 18,
+      "loop": false,
+      "keys": [
+        {
+          "frame": 0,
+          "pose": {}
+        },
+        {
+          "frame": 4,
+          "pose": {
+            "Spine": [
+              [
+                "X",
+                -12
+              ]
+            ],
+            "Chest": [
+              [
+                "X",
+                -8
+              ]
+            ],
+            "Head": [
+              [
+                "X",
+                -14
+              ]
+            ],
+            "LeftUpperArm": [
+              [
+                "X",
+                20
+              ]
+            ],
+            "RightUpperArm": [
+              [
+                "X",
+                20
+              ]
+            ]
+          },
+          "hips": [
+            0,
+            0.05,
+            -0.04
+          ]
+        },
+        {
+          "frame": 18,
+          "pose": {}
+        }
+      ]
+    }
+  ]
+}

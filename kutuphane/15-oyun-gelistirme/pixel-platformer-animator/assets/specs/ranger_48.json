@@ -1,0 +1,15 @@
+{
+  "name": "ranger",
+  "frame": [48, 48],
+  "height": 34,
+  "ppu": 16,
+  "outline": "selout",
+  "hair_style": "hood",
+  "sleeves": "long",
+  "weapon": "sword",
+  "palette": {
+    "skin": "#c98a62", "hair": "#2b1d16", "tunic": "#3f7a3a", "pants": "#5a4a3a",
+    "boots": "#3a2a22", "accent": "#b8743a", "steel": "#d8dde8", "line": "#141018", "fx": "#e8fff0"
+  },
+  "animations": ["idle", "run", "jump", "fall", "land", "attack", "hurt", "death"]
+}

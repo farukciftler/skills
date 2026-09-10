@@ -1,0 +1,8 @@
+id,chapter,location,kishotenketsu,mechanic,new_mechanic,intensity,story_tension,story_beat,delivery,control_loss_sec,checkpoint,est_minutes,music,notes
+1-01,1,Trailhead,ki,run+jump,yes,1,3,Arrival; inner voice doubts,bubble,0,yes,1,wind only,opening line over first steps
+1-02,1,Old fence,sho,jump,no,3,3,,none,0,yes,2,wind,
+1-03,1,Gap field,sho,jump,no,5,3,,none,0,yes,3,theme A low,
+1-04,1,Crumbling ridge,ten,crumble blocks,yes,3,4,,environment,0,yes,2,theme A,safe intro of crumble blocks
+1-05,1,Ridge run,ten,crumble blocks,no,7,5,,bark,0,yes,3,theme A full,
+1-06,1,Campfire,ketsu,none,no,2,6,Meet TEO; he laughs at the plan,dialogue,40,yes,2,campfire loop,breather + story valley
+1-07,1,Cliff exit,ketsu,jump+crumble,no,6,6,Chapter question: why is she really here?,environment,0,yes,3,theme A rise,ends on camera hold on summit

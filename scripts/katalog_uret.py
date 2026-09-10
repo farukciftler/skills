@@ -85,6 +85,10 @@ KATEGORI_BASLIK = {
         "Meta & Sistem",
         "Skill yazımı ve değerlendirmesi, hafıza, zamanlama, kurulum, oturum araçları.",
     ),
+    "15-oyun-gelistirme": (
+        "Oyun Geliştirme",
+        "2D/3D oyun üretimi: pixel ve Blender karakter animasyonu, Unity aktarımı, anlatı tasarımı, ücretsiz asset keşfi ve lisans denetimi.",
+    ),
 }
 
 KAYNAK_ETIKET = {

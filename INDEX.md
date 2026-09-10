@@ -1,6 +1,6 @@
 # Alfabetik Skill Dizini
 
-166 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
+170 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
 
 | Skill | Kategori | Ne yapar | Kaynak |
 |---|---|---|---|
@@ -22,6 +22,7 @@
 | [`backlog-arastir`](kutuphane/04-icerik-yazim-ceviri/backlog-arastir/SKILL.md) | İçerik, Yazım & Çeviri | ComeSyria için internette alkolsüz, kültürel mirasa ve site kategorilerine (şehir, mekan, rota, yeme-içme) uyan içerik adaylarını araştırır, sitedeki mevcut… | kurulu |
 | [`backlog-arastir--kirkit`](kutuphane/04-icerik-yazim-ceviri/backlog-arastir--kirkit/SKILL.md) | İçerik, Yazım & Çeviri | ComeSyria için internette alkolsüz, kültürel mirasa ve site kategorilerine (şehir, mekan, rota, yeme-içme) uyan içerik adaylarını araştırır, sitedeki mevcut… | proje-içi |
 | [`bilimsel-makale-yazimi`](kutuphane/04-icerik-yazim-ceviri/bilimsel-makale-yazimi/SKILL.md) | İçerik, Yazım & Çeviri | Bilimsel makale yazımı, denetimi ve yayına hazırlama uzmanı — araştırma sorusundan IMRaD taslağına, raporlama kılavuzu uyumundan… | claude.ai |
+| [`blender-unity-character-pipeline`](kutuphane/15-oyun-gelistirme/blender-unity-character-pipeline/SKILL.md) ⚙️ | Oyun Geliştirme | Build game-ready 3D characters and their animations in Blender (driven via Blender MCP or headless bpy) and land them in Unity through the official Unity plugin/CLI… | claude.ai |
 | [`ceviri--abdullahfarukcom-gh`](kutuphane/04-icerik-yazim-ceviri/ceviri--abdullahfarukcom-gh/SKILL.md) | İçerik, Yazım & Çeviri | Bir yazıyı Türkçe ile İngilizce arasında çevirir. | kurulu |
 | [`ceviri--comesyriacontent`](kutuphane/04-icerik-yazim-ceviri/ceviri--comesyriacontent/SKILL.md) ⚙️ | İçerik, Yazım & Çeviri | ComeSyria içeriğini Türkçe, küresel İngilizce ve Suriye Arapçası arasında çevirir — makine kokmayan, o dilin okuru için baştan yazılmış metinler üretir; ad/sayı… | kurulu |
 | [`chibi-character-factory`](kutuphane/03-video-ses-uretim/chibi-character-factory/SKILL.md) | Video & Ses Üretimi | Production pipeline for building low-poly chibi game characters using Claude + Blender MCP only (no third-party generators), from parametric base mesh to a rigged… | claude.ai |
@@ -102,9 +103,11 @@
 | [`moonstone-residence`](kutuphane/12-marka-musteri/moonstone-residence/SKILL.md) | Marka & Müşteri Projeleri | Moonstone Residence (Ayhanlar Mimarlık Yapı ve İnşaat) markasının dijital danışmanlık kaynağı — marka kimliği (logo, renk, tipografi, ikon), doğrulanmış proje… | kurulu |
 | [`moonstone-residence--moonstone-gh`](kutuphane/12-marka-musteri/moonstone-residence--moonstone-gh/SKILL.md) | Marka & Müşteri Projeleri | Moonstone Residence (Ayhanlar Mimarlık Yapı ve İnşaat) markasının dijital danışmanlık kaynağı — marka kimliği (logo, renk, tipografi, ikon), doğrulanmış proje… | kurulu |
 | [`morning`](kutuphane/14-meta-sistem/morning/SKILL.md) | Meta & Sistem | Render the user's morning brief as a styled HTML artifact, or set it up as a recurring weekday task. | claude.ai |
+| [`narrative-platformer-design`](kutuphane/15-oyun-gelistirme/narrative-platformer-design/SKILL.md) ⚙️ | Oyun Geliştirme | Narrative designer + game writer for story-driven 2D platformers (Celeste / Inside / Gris / Hollow Knight / Ori tier). | claude.ai |
 | [`nextjs-development`](kutuphane/07-yazilim-muhendislik/nextjs-development/SKILL.md) | Yazılım Mühendisliği | Comprehensive Next.js development skill covering App Router, Server Components, data fetching, routing patterns, API routes, middleware, and full-stack Next.js… | kurulu, proje-içi |
 | [`oauth2-authentication`](kutuphane/07-yazilim-muhendislik/oauth2-authentication/SKILL.md) | Yazılım Mühendisliği | Comprehensive OAuth2 authentication skill covering authorization flows, token management, PKCE, OpenID Connect, and security best practices for modern… | kurulu, proje-içi |
 | [`ota-mobile-tablet-ux`](kutuphane/06-ux-urun/ota-mobile-tablet-ux/SKILL.md) | UX & Ürün Yönetimi | Design and audit ComeSyria's phone and tablet experience — the booking funnel (search, results, hotel detail, room selection, checkout, confirmation) and the… | kurulu |
+| [`oyun-asset-kesif`](kutuphane/15-oyun-gelistirme/oyun-asset-kesif/SKILL.md) ⚙️ | Oyun Geliştirme | Ücretsiz oyun asset'i (3D model, PBR texture/materyal, HDRI, 2D sprite, SFX, müzik, animasyon) bulan, lisansını ticari kullanım ve App Store açısından denetleyen… | claude.ai |
 | [`oyuncak-mevzuat--cloud`](kutuphane/02-masifico-ahsap-oyuncak/oyuncak-mevzuat--cloud/SKILL.md) | Masifico — Ahşap Oyuncak | Masifico için oyuncak güvenliği ve mevzuat denetçisi — EN 71-1/2/3 tasarım kontrolleri (küçük parça silindiri, çekme/tork eşikleri, sıkışma aralıkları), yaş… | claude.ai |
 | [`oyuncak-mevzuat--masifico`](kutuphane/02-masifico-ahsap-oyuncak/oyuncak-mevzuat--masifico/SKILL.md) | Masifico — Ahşap Oyuncak | Masifico için oyuncak güvenliği ve mevzuat denetçisi — EN 71-1/2/3 tasarım kontrolleri (küçük parça silindiri, 90 N/50 N çekme, 0,34 Nm tork, sıkışma aralıkları… | proje-içi |
 | [`oyuncak-mevzuat--masifico-gh`](kutuphane/02-masifico-ahsap-oyuncak/oyuncak-mevzuat--masifico-gh/SKILL.md) | Masifico — Ahşap Oyuncak | Masifico için oyuncak güvenliği ve mevzuat denetçisi — EN 71-1/2/3 tasarım kontrolleri (küçük parça silindiri, 90 N/50 N çekme, 0,34 Nm tork, sıkışma aralıkları… | proje-içi |
@@ -115,6 +118,7 @@
 | [`pexels-media-scout`](kutuphane/09-cad-gorsel/pexels-media-scout/SKILL.md) ⚙️ | CAD & Görsel Üretim | Finds, scores, clearance-checks and downloads royalty-free Pexels photos and video for music deliverables — album covers, YouTube thumbnails and long-form… | kurulu |
 | [`pexels-media-scout--weftrecords-gh`](kutuphane/09-cad-gorsel/pexels-media-scout--weftrecords-gh/SKILL.md) ⚙️ | CAD & Görsel Üretim | Finds, scores, clearance-checks and downloads royalty-free Pexels photos and video for music deliverables — album covers, YouTube thumbnails and long-form… | claude.ai, kurulu |
 | [`physics-reel-forge`](kutuphane/03-video-ses-uretim/physics-reel-forge/SKILL.md) ⚙️ | Video & Ses Üretimi | Builds and runs a rigid-body physics pipeline that mass-produces 9:16 vertical "satisfying physics" Reels/Shorts/TikToks on Apple Silicon — falling cubes, jointed… | claude.ai, proje-içi |
+| [`pixel-platformer-animator`](kutuphane/15-oyun-gelistirme/pixel-platformer-animator/SKILL.md) ⚙️ | Oyun Geliştirme | Creates pixel-art character sprite animations for 2D platformer games and wires them into Unity 6 — generates a full side-view animation set (idle, run, jump, apex… | claude.ai |
 | [`pm-decision-review`](kutuphane/06-ux-urun/pm-decision-review/SKILL.md) | UX & Ürün Yönetimi | Product manager gözüyle otomatik netleştirme soruları sorar, alternatifler ve kazanç/maliyet analizi üretir, karar kaydı çıkarır. | claude.ai |
 | [`portfoy-tahmin`](kutuphane/01-finans-yatirim/portfoy-tahmin/SKILL.md) ⚙️ | Finans & Yatırım | Kişisel yatırım portföyü için disiplinli tahmin günlüğü ve kalibrasyon sistemi - portföy tanımlama, günlük fiyat/piyasa snapshot'ı, web araştırmasına dayalı 1 gün /… | kurulu |
 | [`portfoy-tahmin--cloud`](kutuphane/01-finans-yatirim/portfoy-tahmin--cloud/SKILL.md) ⚙️ | Finans & Yatırım | Kişisel yatırım portföyü için disiplinli tahmin günlüğü ve kalibrasyon sistemi - portföy tanımlama, günlük fiyat/piyasa snapshot'ı, web araştırmasına dayalı 1 gün /… | claude.ai |
@@ -173,4 +177,4 @@
 
 ⚙️ = çalıştırılabilir script içerir.
 
-_Üretim: `scripts/katalog_uret.py` · 2026-09-09_
+_Üretim: `scripts/katalog_uret.py` · 2026-09-10_

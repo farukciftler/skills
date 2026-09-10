@@ -1,0 +1,14 @@
+{
+  "name": "CharacterPipeline.Runtime",
+  "rootNamespace": "CharacterPipeline",
+  "references": [],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

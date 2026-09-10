@@ -395,6 +395,25 @@
   ]
  },
  {
+  "name": "blender-unity-character-pipeline",
+  "slug": "blender-unity-character-pipeline",
+  "cat": "15-oyun-gelistirme",
+  "hash": "f189e3b8e964",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/blender-unity-character-pipeline"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 11417,
+  "lib": "~/skills/kutuphane/15-oyun-gelistirme/blender-unity-character-pipeline",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/blender-unity-character-pipeline"
+  ]
+ },
+ {
   "name": "ceviri",
   "slug": "ceviri--abdullahfarukcom-gh",
   "cat": "04-icerik-yazim-ceviri",
@@ -2140,6 +2159,25 @@
   ]
  },
  {
+  "name": "narrative-platformer-design",
+  "slug": "narrative-platformer-design",
+  "cat": "15-oyun-gelistirme",
+  "hash": "d38bdb26177a",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/narrative-platformer-design"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 13357,
+  "lib": "~/skills/kutuphane/15-oyun-gelistirme/narrative-platformer-design",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/narrative-platformer-design"
+  ]
+ },
+ {
   "name": "nextjs-development",
   "slug": "nextjs-development",
   "cat": "07-yazilim-muhendislik",
@@ -2218,6 +2256,25 @@
    "~/projects/comesyriaweb/.claude/skills/ota-mobile-tablet-ux"
   ],
   "mirrored": []
+ },
+ {
+  "name": "oyun-asset-kesif",
+  "slug": "oyun-asset-kesif",
+  "cat": "15-oyun-gelistirme",
+  "hash": "f678fd262945",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/oyun-asset-kesif"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 8423,
+  "lib": "~/skills/kutuphane/15-oyun-gelistirme/oyun-asset-kesif",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/oyun-asset-kesif"
+  ]
  },
  {
   "name": "oyuncak-mevzuat",
@@ -2435,6 +2492,25 @@
    "~/projects/instagram-reels/docs/physics-reel-forge",
    "~/Documents/GitHub/instagram-reels/docs/physics-reel-forge",
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/2fee50bc-c9a6-43ff-972a-052c82ab1426/f181d07d-d5e3-4bcf-8416-620881ba96e8/skills/physics-reel-forge"
+  ]
+ },
+ {
+  "name": "pixel-platformer-animator",
+  "slug": "pixel-platformer-animator",
+  "cat": "15-oyun-gelistirme",
+  "hash": "67be783edd1f",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/pixel-platformer-animator"
+  ],
+  "kinds": [
+   "cloud"
+  ],
+  "bytes": 7506,
+  "lib": "~/skills/kutuphane/15-oyun-gelistirme/pixel-platformer-animator",
+  "linked": [],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/pixel-platformer-animator"
   ]
  },
  {

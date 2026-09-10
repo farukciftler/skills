@@ -18,8 +18,9 @@ Ardından 175 GitHub deposu tarandı ve yalnız orada duran 6 skill eklendi
 (§ GitHub taraması). Son olarak ikinci bir bilgisayar tarandı ve oradan 16 girdi
 geldi (§ İkinci makine taraması). Son olarak claude.ai önbelleğinin eski
 oturum anlık görüntüleri tarandı ve yalnız orada kalan 5 skill eklendi
-(§ Eski bulut anlık görüntüsü). **Güncel toplam: 132 benzersiz skill,
-159 girdi.**
+(§ Eski bulut anlık görüntüsü). **Güncel toplam: 143 benzersiz skill, 170 girdi, 15 kategori.**
+(Yukarıdaki 14 kategori ilk taşımanın hâlidir; 15'incisi 10 Eylül'de açıldı,
+bkz. § Oyun geliştirme kategorisi.)
 
 Tam yedek: `~/skills-yedek-20260904-135254.tar.gz` (2,6 MB).
 
@@ -207,7 +208,7 @@ python3 scripts/kur.py --uygula      # kur
 python3 scripts/kur.py --coz --uygula  # tümünü geri al
 ```
 
-Sonuç: **138 skill kuruldu** — 133 yeni symlink, 5 mevcut gerçek dizin
+Sonuç: **142 skill kuruldu** — 137 yeni symlink, 5 mevcut gerçek dizin
 (`headless-reel-forge`, `ml-expert`, `mobile-ux-flow-expert`,
 `startup-degerleme`, `web-ux-flow-expert`) içerikçe birebir aynı doğrulanıp
 symlink'e dönüştürüldü. Kayıt: `katalog/kurulum-kaydi.json` (git dışı).
@@ -304,6 +305,43 @@ bir kütüphane sorunu değil, git klonu hizasızlığı: `projects/` ve
 `Documents/GitHub/` aynı depoların ayrı klonları ve `projects/` iki gün
 önde. § Ayrışmış sürümler'in zaten şart koştuğu klon hizalaması yapılmadan
 bu üçü kapanmaz.
+
+## Oyun geliştirme kategorisi (10 Eylül 2026)
+
+Downloads'tan dört oyun geliştirme skill'i geldi; dördü de claude.ai anlık
+görüntüsündeki kopyayla bit bit aynı çıktı ve normal tarama yoluyla alındı:
+
+| Skill | Dosya | Ne yapar |
+|---|---|---|
+| `pixel-platformer-animator` | 12 | Pixel karakter sprite seti üretir, Unity 6'ya Animator + prefab olarak sokar |
+| `blender-unity-character-pipeline` | 18 | Blender'da humanoid rig/skin/animasyon, FBX ile Unity avatar ve blend tree |
+| `narrative-platformer-design` | 15 | 2D platformer anlatısı, beat chart, diyalog; AI-tell lint araçlarıyla |
+| `oyun-asset-kesif` | 7 | Ücretsiz asset arama (API + web), lisans denetimi, CREDITS kaydı |
+
+**Yeni kategori açıldı: `15-oyun-gelistirme`.** Dördünü mevcut kategorilere
+dağıtmak (Blender karakteri 09'a, anlatı 04'e, asset keşfi 10'a) tek bir işin
+parçalarını böler; ikisi doğrudan birbirine bağlanıyor
+(`oyun-asset-kesif` → `blender-unity-character-pipeline`, ikisi de Unity'ye
+aynı yoldan giriyor). CLAUDE.md'nin şart koştuğu gibi `topla.py`'deki
+`KATEGORI` ile `katalog_uret.py`'deki `KATEGORI_BASLIK` birlikte güncellendi.
+
+### Açık kalan: mevcut oyun skill'leri hâlâ dağınık
+
+Kütüphanede beş oyun skill'i daha var ve hepsi başka kategoride duruyor:
+
+| Skill | Şu anki kategori |
+|---|---|
+| `chibi-character-factory` | 03-video-ses-uretim |
+| `procedural-game-audio` | 03-video-ses-uretim |
+| `hypercasual-lab` | 05-pazarlama-buyume |
+| `mobile-puzzle-game-ui-designer` | 06-ux-urun |
+| `mobile-puzzle-game-ux-audit-expert` | 06-ux-urun |
+
+Bunlar **taşınmadı**. Bir kütüphane girdisini kategoriler arası taşımak yolunu
+değiştirir, yani `~/.claude/skills/<ad>` symlink'i kırılır ve `kur.py` bunu
+"başka bir symlink" diye atlar; taşıma ayrı bir işlem olarak, symlink'leri
+yeniden kurarak yapılmalı. Konsolide edilirse `15-oyun-gelistirme` dokuz
+girdiye çıkar ve `03`, `05`, `06` sırasıyla iki, bir ve iki girdi kaybeder.
 
 ## Yeniden tarama
 
