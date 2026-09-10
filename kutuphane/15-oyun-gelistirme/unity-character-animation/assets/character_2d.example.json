@@ -1,0 +1,10 @@
+{
+  "name": "Ranger",
+  "frame": {"auto": true, "baseline": 2},
+  "ppu": 16,
+  "outline": "full",
+  "body": {"height": 24, "head": 1.0, "build": 1.0, "hair": "short", "weapon": "sword", "scarf": true},
+  "palette": {"cloth": "#3b5dc9", "cloth_shade": "#29366f", "accent": "#ef7d57", "hair": "#5d275d", "hair_shade": "#3b1a3b"},
+  "animations": {"walk": false},
+  "stateHints": {"runSpeed": 3.5, "apexBand": 1.2}
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Hero",
+  "height": 1.8,
+  "headRatio": 6.5,
+  "build": 1.0,
+  "style": "mannequin",
+  "palette": {"skin": "#e0ac8a", "shirt": "#3b5dc9", "pants": "#333c57", "shoes": "#5a3a28",
+              "hair": "#3b2a20", "accent": "#ef7d57", "joint": "#29366f"},
+  "clips": ["Idle", "Walk", "Run", "Jump_Start", "Jump_Air", "Jump_Land", "Attack", "Hurt", "Death"],
+  "locomotion": {"walkSpeed": 1.6, "runSpeed": 4.5},
+  "export": {"preset": "bake_axis"}
+}

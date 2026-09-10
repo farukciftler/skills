@@ -6,18 +6,18 @@ burada kategorize edilmiş, ölçülmüş ve dokümante edilmiş halde duruyor.
 
 | | |
 |---|---|
-| **Kütüphane girdisi** | 170 (143 benzersiz ad + 27 ayrışmış sürüm) |
+| **Kütüphane girdisi** | 172 (145 benzersiz ad + 27 ayrışmış sürüm) |
 | **Kategori** | 15 |
 | **Toplam SKILL.md** | ~1,8 MB · 780 ek dosya |
-| **Script içeren** | 55 skill |
-| **Referans dosyası olan** | 96 skill |
-| **Kaynak dağılımı** | 69 kurulu · 53 proje-içi · 73 claude.ai · 6 yalnız GitHub |
+| **Script içeren** | 57 skill |
+| **Referans dosyası olan** | 98 skill |
+| **Kaynak dağılımı** | 71 kurulu · 53 proje-içi · 75 claude.ai · 6 yalnız GitHub |
 
 ## Nereden başlamalı
 
 | İhtiyaç | Dosya |
 |---|---|
-| Bir skill'i isimden aramak | **[INDEX.md](INDEX.md)** — 170 girdilik alfabetik tablo |
+| Bir skill'i isimden aramak | **[INDEX.md](INDEX.md)** — 172 girdilik alfabetik tablo |
 | Claude'un buradan nasıl çalışacağı | **[CLAUDE.md](CLAUDE.md)** |
 | Ne taşındı, ne taşınmadı, nasıl geri alınır | **[TASIMA.md](TASIMA.md)** |
 | Başka bir bilgisayarda kurmak | **[KURULUM.md](KURULUM.md)** |

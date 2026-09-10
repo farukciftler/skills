@@ -1,0 +1,16 @@
+{
+    "name": "PlatformerGen.Editor.Pipeline",
+    "rootNamespace": "PlatformerGen.EditorTools",
+    "references": ["PlatformerGen.Core", "PlatformerGen.Integration", "PlatformerGen.Editor", "Unity.Pipeline"],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": ["PLATFORMERGEN_PIPELINE"],
+    "versionDefines": [
+        { "name": "com.unity.pipeline", "expression": "0.0.1", "define": "PLATFORMERGEN_PIPELINE" }
+    ],
+    "noEngineReferences": false
+}

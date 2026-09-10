@@ -2514,6 +2514,29 @@
   ]
  },
  {
+  "name": "platformer-tilemap-gen",
+  "slug": "platformer-tilemap-gen",
+  "cat": "15-oyun-gelistirme",
+  "hash": "54ae72f95730",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/platformer-tilemap-gen",
+   "~/GameStudio/.claude/skills/platformer-tilemap-gen"
+  ],
+  "kinds": [
+   "cloud",
+   "install"
+  ],
+  "bytes": 10258,
+  "lib": "~/skills/kutuphane/15-oyun-gelistirme/platformer-tilemap-gen",
+  "linked": [
+   "~/GameStudio/.claude/skills/platformer-tilemap-gen"
+  ],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/platformer-tilemap-gen"
+  ]
+ },
+ {
   "name": "pm-decision-review",
   "slug": "pm-decision-review",
   "cat": "06-ux-urun",
@@ -3477,6 +3500,29 @@
    "~/projects/ucakbileti/.claude/skills/ucuz-bilet-avcisi"
   ],
   "mirrored": []
+ },
+ {
+  "name": "unity-character-animation",
+  "slug": "unity-character-animation",
+  "cat": "15-oyun-gelistirme",
+  "hash": "83eaa64ccd84",
+  "variant": 0,
+  "srcs": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/unity-character-animation",
+   "~/GameStudio/.claude/skills/unity-character-animation"
+  ],
+  "kinds": [
+   "cloud",
+   "install"
+  ],
+  "bytes": 7632,
+  "lib": "~/skills/kutuphane/15-oyun-gelistirme/unity-character-animation",
+  "linked": [
+   "~/GameStudio/.claude/skills/unity-character-animation"
+  ],
+  "mirrored": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/unity-character-animation"
+  ]
  },
  {
   "name": "urun-kesif",

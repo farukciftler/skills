@@ -129,6 +129,7 @@ KATEGORI = {
     "15-oyun-gelistirme": [
         "pixel-platformer-animator", "blender-unity-character-pipeline",
         "narrative-platformer-design", "oyun-asset-kesif",
+        "platformer-tilemap-gen", "unity-character-animation",
     ],
 }
 KATEGORI_ESLEME = {ad: kat for kat, adlar in KATEGORI.items() for ad in adlar}

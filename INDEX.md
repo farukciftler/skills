@@ -1,6 +1,6 @@
 # Alfabetik Skill Dizini
 
-170 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
+172 kütüphane girdisi. Kategori sayfaları için [README.md](README.md), Claude'un çalışma kuralları için [CLAUDE.md](CLAUDE.md).
 
 | Skill | Kategori | Ne yapar | Kaynak |
 |---|---|---|---|
@@ -119,6 +119,7 @@
 | [`pexels-media-scout--weftrecords-gh`](kutuphane/09-cad-gorsel/pexels-media-scout--weftrecords-gh/SKILL.md) ⚙️ | CAD & Görsel Üretim | Finds, scores, clearance-checks and downloads royalty-free Pexels photos and video for music deliverables — album covers, YouTube thumbnails and long-form… | claude.ai, kurulu |
 | [`physics-reel-forge`](kutuphane/03-video-ses-uretim/physics-reel-forge/SKILL.md) ⚙️ | Video & Ses Üretimi | Builds and runs a rigid-body physics pipeline that mass-produces 9:16 vertical "satisfying physics" Reels/Shorts/TikToks on Apple Silicon — falling cubes, jointed… | claude.ai, proje-içi |
 | [`pixel-platformer-animator`](kutuphane/15-oyun-gelistirme/pixel-platformer-animator/SKILL.md) ⚙️ | Oyun Geliştirme | Creates pixel-art character sprite animations for 2D platformer games and wires them into Unity 6 — generates a full side-view animation set (idle, run, jump, apex… | claude.ai |
+| [`platformer-tilemap-gen`](kutuphane/15-oyun-gelistirme/platformer-tilemap-gen/SKILL.md) ⚙️ | Oyun Geliştirme | Procedural AND hand-authored tilemap levels for 2D platformers in Unity 6, driven by Claude through the Unity plugin / Unity CLI (unity command, com.unity.pipeline). | claude.ai, kurulu |
 | [`pm-decision-review`](kutuphane/06-ux-urun/pm-decision-review/SKILL.md) | UX & Ürün Yönetimi | Product manager gözüyle otomatik netleştirme soruları sorar, alternatifler ve kazanç/maliyet analizi üretir, karar kaydı çıkarır. | claude.ai |
 | [`portfoy-tahmin`](kutuphane/01-finans-yatirim/portfoy-tahmin/SKILL.md) ⚙️ | Finans & Yatırım | Kişisel yatırım portföyü için disiplinli tahmin günlüğü ve kalibrasyon sistemi - portföy tanımlama, günlük fiyat/piyasa snapshot'ı, web araştırmasına dayalı 1 gün /… | kurulu |
 | [`portfoy-tahmin--cloud`](kutuphane/01-finans-yatirim/portfoy-tahmin--cloud/SKILL.md) ⚙️ | Finans & Yatırım | Kişisel yatırım portföyü için disiplinli tahmin günlüğü ve kalibrasyon sistemi - portföy tanımlama, günlük fiyat/piyasa snapshot'ı, web araştırmasına dayalı 1 gün /… | claude.ai |
@@ -163,6 +164,7 @@
 | [`trip-konaklama-avcisi`](kutuphane/10-yasam-turkiye/trip-konaklama-avcisi/SKILL.md) ⚙️ | Yaşam & Türkiye Hizmetleri | Trip.com üzerinde çok şartlı konaklama araması yapar — tarih, şehir, tesis tipi, ücretsiz iptal (ve iptal son tarihi), özel banyo/tuvalet, yıldız, puan, bütçe, ve… | kurulu |
 | [`turkce-anlati`](kutuphane/04-icerik-yazim-ceviri/turkce-anlati/SKILL.md) | İçerik, Yazım & Çeviri | | Dikey kısa video (Reels · Shorts · TikTok) için Türkçe anlatı metni yazar ve denetler. | kurulu |
 | [`ucuz-bilet-avcisi`](kutuphane/10-yasam-turkiye/ucuz-bilet-avcisi/SKILL.md) ⚙️ | Yaşam & Türkiye Hizmetleri | Hunts underpriced flights out of Istanbul and turns a vague travel wish into a ranked, evidence-backed shortlist with ready-to-click search links. | kurulu |
+| [`unity-character-animation`](kutuphane/15-oyun-gelistirme/unity-character-animation/SKILL.md) ⚙️ | Oyun Geliştirme | Unity 6 karakter + animasyon hattı; Unity'nin resmî Claude Code eklentisini tamamlar (eklentide karakter/animasyon skill'i yok). 2D platformer piksel karakter… | claude.ai, kurulu |
 | [`urun-kesif`](kutuphane/10-yasam-turkiye/urun-kesif/SKILL.md) | Yaşam & Türkiye Hizmetleri | E-ticaret ürün araştırmacısı — belirli bir ürünün en uygun fiyatla nereden alınacağını bulur VEYA bir ürün tarifi/ihtiyaç tanımından yola çıkıp "en uygun ama… | claude.ai |
 | [`vakif-katilim-yatirim`](kutuphane/01-finans-yatirim/vakif-katilim-yatirim/SKILL.md) | Finans & Yatırım | Vakıf Katılım'ın mobil uygulaması ve internet şubesi üzerinden erişilebilen tüm yatırım kalemlerinin kanal uzmanı — hangi ürün var, uygulamada hangi menüden alınır… | claude.ai |
 | [`viral-artifact-scout`](kutuphane/05-pazarlama-buyume/viral-artifact-scout/SKILL.md) ⚙️ | Pazarlama & Büyüme | Finds, feasibility-gates and scores "shareable artifact" app opportunities — the Receiptify / Instafest / Wrapped-clone / roast-generator genre where the real… | claude.ai |

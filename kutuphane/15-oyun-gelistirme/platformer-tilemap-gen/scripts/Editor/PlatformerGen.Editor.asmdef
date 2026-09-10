@@ -1,0 +1,14 @@
+{
+    "name": "PlatformerGen.Editor",
+    "rootNamespace": "PlatformerGen.EditorTools",
+    "references": ["PlatformerGen.Core", "PlatformerGen.Integration"],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

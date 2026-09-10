@@ -18,7 +18,7 @@ Ardından 175 GitHub deposu tarandı ve yalnız orada duran 6 skill eklendi
 (§ GitHub taraması). Son olarak ikinci bir bilgisayar tarandı ve oradan 16 girdi
 geldi (§ İkinci makine taraması). Son olarak claude.ai önbelleğinin eski
 oturum anlık görüntüleri tarandı ve yalnız orada kalan 5 skill eklendi
-(§ Eski bulut anlık görüntüsü). **Güncel toplam: 143 benzersiz skill, 170 girdi, 15 kategori.**
+(§ Eski bulut anlık görüntüsü). **Güncel toplam: 145 benzersiz skill, 172 girdi, 15 kategori.**
 (Yukarıdaki 14 kategori ilk taşımanın hâlidir; 15'incisi 10 Eylül'de açıldı,
 bkz. § Oyun geliştirme kategorisi.)
 
@@ -208,7 +208,7 @@ python3 scripts/kur.py --uygula      # kur
 python3 scripts/kur.py --coz --uygula  # tümünü geri al
 ```
 
-Sonuç: **142 skill kuruldu** — 137 yeni symlink, 5 mevcut gerçek dizin
+Sonuç: **144 skill kuruldu** — 139 yeni symlink, 5 mevcut gerçek dizin
 (`headless-reel-forge`, `ml-expert`, `mobile-ux-flow-expert`,
 `startup-degerleme`, `web-ux-flow-expert`) içerikçe birebir aynı doğrulanıp
 symlink'e dönüştürüldü. Kayıt: `katalog/kurulum-kaydi.json` (git dışı).
@@ -317,6 +317,8 @@ görüntüsündeki kopyayla bit bit aynı çıktı ve normal tarama yoluyla alı
 | `blender-unity-character-pipeline` | 18 | Blender'da humanoid rig/skin/animasyon, FBX ile Unity avatar ve blend tree |
 | `narrative-platformer-design` | 15 | 2D platformer anlatısı, beat chart, diyalog; AI-tell lint araçlarıyla |
 | `oyun-asset-kesif` | 7 | Ücretsiz asset arama (API + web), lisans denetimi, CREDITS kaydı |
+| `platformer-tilemap-gen` | 35 | Prosedürel + elle yazılmış tilemap seviyeleri, fizik tabanlı erişilebilirlik doğrulayıcı |
+| `unity-character-animation` | 23 | 2D piksel ve 3D Blender karakter hattı, tek `unity command` ile Unity'ye |
 
 **Yeni kategori açıldı: `15-oyun-gelistirme`.** Dördünü mevcut kategorilere
 dağıtmak (Blender karakteri 09'a, anlatı 04'e, asset keşfi 10'a) tek bir işin
@@ -324,6 +326,25 @@ parçalarını böler; ikisi doğrudan birbirine bağlanıyor
 (`oyun-asset-kesif` → `blender-unity-character-pipeline`, ikisi de Unity'ye
 aynı yoldan giriyor). CLAUDE.md'nin şart koştuğu gibi `topla.py`'deki
 `KATEGORI` ile `katalog_uret.py`'deki `KATEGORI_BASLIK` birlikte güncellendi.
+
+### Açık kalan: karakter hattında üç skill aynı tetikleyicide yarışıyor
+
+10 Eylül'de gelen `unity-character-animation`, bir gün önce eklenen iki
+skill'in işini birden yapıyor: 2D piksel karakter (`pixel-platformer-animator`)
+ve Blender 3D karakter (`blender-unity-character-pipeline`). Üçünün de
+açıklaması "pixel karakter", "sprite animasyonu", "Blender'dan Unity'ye aktar"
+gibi aynı ifadelerle tetikleniyor.
+
+Bunun temiz bir devralma **olmadığı** doğrulandı:
+
+- Üçü de claude.ai'da duruyor; eski ikisi silinmemiş.
+- `unity-character-animation` eski ikisine hiç atıf yapmıyor (oysa kütüphanedeki
+  diğer skill'ler devrettiklerini adıyla söylüyor).
+- Ortak `PixelCharacterImporter.cs` farklı ve **eski skill'inki daha büyük**
+  (27.342 vs 21.976 bayt), yani yeni skill eskisinin üst kümesi değil.
+
+Üçü de kuruldu; hangisinin kalacağı içerik kararıdır ve kütüphane tarafından
+verilemez. Karar verilene kadar tetikleyici yarışması sürer.
 
 ### Açık kalan: mevcut oyun skill'leri hâlâ dağınık
 

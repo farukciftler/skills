@@ -4526,5 +4526,63 @@
   "ayna": [
    "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/pixel-platformer-animator"
   ]
+ },
+ {
+  "ad": "platformer-tilemap-gen",
+  "slug": "platformer-tilemap-gen",
+  "kategori": "15-oyun-gelistirme",
+  "kategori_adi": "Oyun Geliştirme",
+  "aciklama": "Procedural AND hand-authored tilemap levels for 2D platformers in Unity 6, driven by Claude through the Unity plugin / Unity CLI (unity command, com.unity.pipeline). Tested engine-free C# core with Spelunky-style room grids, chunk+rhythm-beat linear/endless levels, constrained heightmaps, CA caves, ASCII levels, plus a physics-based reachability validator proving each level is finishable with the player's real jump; batched Tilemap writer with correct Unity 6 colliders (composite, one-way, hazards, ladders), reader for painted levels, Editor menu and pgen_* CLI commands. Use whenever the user wants to generate, author, import, validate or debug platformer levels, tilemaps, rooms, chunks or seeds, fix unreachable jumps, build an endless runner, or turn ASCII/LDtk/painted maps into playable Unity levels, including Turkish asks like \"prosedürel seviye\", \"tilemap üret\", \"bölüm tasarımı\", \"oda şablonu\", \"seviye oynanabilir mi\", \"zıplanamıyor\".",
+  "ozet": "Procedural AND hand-authored tilemap levels for 2D platformers in Unity 6, driven by Claude through the Unity plugin / Unity CLI (unity command, com.unity.pipeline).",
+  "yol": "kutuphane/15-oyun-gelistirme/platformer-tilemap-gen",
+  "bayt": 10099,
+  "satir": 115,
+  "ek_dosya": 34,
+  "script_var": true,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/platformer-tilemap-gen",
+   "~/GameStudio/.claude/skills/platformer-tilemap-gen"
+  ],
+  "kaynak_tipleri": [
+   "claude.ai",
+   "kurulu"
+  ],
+  "baglanacak": [
+   "~/GameStudio/.claude/skills/platformer-tilemap-gen"
+  ],
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/platformer-tilemap-gen"
+  ]
+ },
+ {
+  "ad": "unity-character-animation",
+  "slug": "unity-character-animation",
+  "kategori": "15-oyun-gelistirme",
+  "kategori_adi": "Oyun Geliştirme",
+  "aciklama": "Unity 6 karakter + animasyon hattı; Unity'nin resmî Claude Code eklentisini tamamlar (eklentide karakter/animasyon skill'i yok). 2D platformer piksel karakter (prosedürel sprite sheet, PixelLab/AI çıktısı temizleme, Aseprite, 3D→piksel) ve Blender'da üretilip rig'lenen, animasyonlanan, doğrulanan 3D karakter (resmî Blender MCP veya headless) → Humanoid FBX. Her iki yol sayısal QA kapısından geçer, sonra tek unity command ile sprite/klip/event, Animator Controller ve prefab kurulur. Kullanıcı sprite sheet, koşma/zıplama/saldırı animasyonu, piksel karakter, platformer karakteri, Animator kurulumu, Blender'da karakter/rig/animasyon, FBX'i Unity'ye aktarma, humanoid avatar hatası, karakter kayıyor/titriyor/bulanık dediğinde kullan (TR tetikleyiciler \"pixel karakter\", \"sprite animasyonu\", \"platform oyunu karakteri\", \"Blender'da karakter yap\", \"rigle\", \"Unity'ye aktar\"). \"Animasyon\" demese bile oyun karakteri üretimi veya Unity'ye taşınması konuşuluyorsa devreye gir.",
+  "ozet": "Unity 6 karakter + animasyon hattı; Unity'nin resmî Claude Code eklentisini tamamlar (eklentide karakter/animasyon skill'i yok). 2D platformer piksel karakter…",
+  "yol": "kutuphane/15-oyun-gelistirme/unity-character-animation",
+  "bayt": 7267,
+  "satir": 80,
+  "ek_dosya": 22,
+  "script_var": true,
+  "referans_var": true,
+  "varyant": 0,
+  "kaynaklar": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/unity-character-animation",
+   "~/GameStudio/.claude/skills/unity-character-animation"
+  ],
+  "kaynak_tipleri": [
+   "claude.ai",
+   "kurulu"
+  ],
+  "baglanacak": [
+   "~/GameStudio/.claude/skills/unity-character-animation"
+  ],
+  "ayna": [
+   "~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/19b5885a-6d15-4527-b8ca-40223df991cd/15af82d8-d5ea-4aa2-a26c-69f8b7997ef2/skills/unity-character-animation"
+  ]
  }
 ]

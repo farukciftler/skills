@@ -2,7 +2,7 @@
 
 2D/3D oyun üretimi: pixel ve Blender karakter animasyonu, Unity aktarımı, anlatı tasarımı, ücretsiz asset keşfi ve lisans denetimi.
 
-4 skill. Üst dizin: [../../README.md](../../README.md)
+6 skill. Üst dizin: [../../README.md](../../README.md)
 
 ## `blender-unity-character-pipeline`
 
@@ -39,4 +39,22 @@ Creates pixel-art character sprite animations for 2D platformer games and wires 
 
 - **Ölçü:** 7.423 bayt · 11 ek dosya · script içerir · referans dosyaları var
 - **Kaynak:** claude.ai senkronu (efemer önbellek)
+
+## `platformer-tilemap-gen`
+
+[SKILL.md](platformer-tilemap-gen/SKILL.md)
+
+Procedural AND hand-authored tilemap levels for 2D platformers in Unity 6, driven by Claude through the Unity plugin / Unity CLI (unity command, com.unity.pipeline). Tested engine-free C# core with Spelunky-style room grids, chunk+rhythm-beat linear/endless levels, constrained heightmaps, CA caves, ASCII levels, plus a physics-based reachability validator proving each level is finishable with the player's real jump; batched Tilemap writer with correct Unity 6 colliders (composite, one-way, hazards, ladders), reader for painted levels, Editor menu and pgen_* CLI commands. Use whenever the user wants to generate, author, import, validate or debug platformer levels, tilemaps, rooms, chunks or seeds, fix unreachable jumps, build an endless runner, or turn ASCII/LDtk/painted maps into playable Unity levels, including Turkish asks like "prosedürel seviye", "tilemap üret", "bölüm tasarımı", "oda şablonu", "seviye oynanabilir mi", "zıplanamıyor".
+
+- **Ölçü:** 10.099 bayt · 34 ek dosya · script içerir · referans dosyaları var
+- **Kaynak:** claude.ai senkronu (efemer önbellek), ~/GameStudio/.claude/skills/platformer-tilemap-gen
+
+## `unity-character-animation`
+
+[SKILL.md](unity-character-animation/SKILL.md)
+
+Unity 6 karakter + animasyon hattı; Unity'nin resmî Claude Code eklentisini tamamlar (eklentide karakter/animasyon skill'i yok). 2D platformer piksel karakter (prosedürel sprite sheet, PixelLab/AI çıktısı temizleme, Aseprite, 3D→piksel) ve Blender'da üretilip rig'lenen, animasyonlanan, doğrulanan 3D karakter (resmî Blender MCP veya headless) → Humanoid FBX. Her iki yol sayısal QA kapısından geçer, sonra tek unity command ile sprite/klip/event, Animator Controller ve prefab kurulur. Kullanıcı sprite sheet, koşma/zıplama/saldırı animasyonu, piksel karakter, platformer karakteri, Animator kurulumu, Blender'da karakter/rig/animasyon, FBX'i Unity'ye aktarma, humanoid avatar hatası, karakter kayıyor/titriyor/bulanık dediğinde kullan (TR tetikleyiciler "pixel karakter", "sprite animasyonu", "platform oyunu karakteri", "Blender'da karakter yap", "rigle", "Unity'ye aktar"). "Animasyon" demese bile oyun karakteri üretimi veya Unity'ye taşınması konuşuluyorsa devreye gir.
+
+- **Ölçü:** 7.267 bayt · 22 ek dosya · script içerir · referans dosyaları var
+- **Kaynak:** claude.ai senkronu (efemer önbellek), ~/GameStudio/.claude/skills/unity-character-animation
 
